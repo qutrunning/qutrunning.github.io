@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="./public/img/favicon.ico">
+
+	<title>QUT Running</title>
+
+	<script src="./public/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./public/js/app.js"></script>
+	<link href="./public/css/bootstrap.css" rel="stylesheet">
+	<link href="./public/css/carousel.css" rel="stylesheet">
+	<link href="./public/css/app.css" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">QUT Running</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a id="go-home" href="#">Home</a></li>
+					<li><a id="go-timetable" href="#">Timetable</a></li>
+					<li><a id="go-executives" href="#executives">Executives</a></li>
+					<li><a id="go-contact" href="#contact">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="home" class="first-block">
+				<!-- Carousel
+				================================================== -->
+				<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="container">
+								<div class="row carousel-1">
+									<div class="col-md-6">
+										<img src="./public/img/qut_running.jpg" alt="First slide" height="width=500px" width="500px">
+									</div>
+									<div class="col-md-6">
+										<h1>QUT Running</h1>
+										<p>QUT Running is a social & fitness group, for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and give you the opportunity to meet a variety of new people at QUT. We believe everyone can love running. So if you want to start up, pick up where you left off or just keep going this is the perfect group for you.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							
+							<div class="container">
+								
+
+								<div class="row carousel-2">
+
+									<div class="col-md-6">
+										<img src="./public/img/qut_running_social.jpg" alt="Second slide" height="400" width="400">
+									</div>
+									<div class="col-md-6">
+										<h1>QUT Running Social.</h1>
+										<p>QUT Running has a big social aspect. Join the facebook group for more information.</p>
+										<p><a href="https://www.facebook.com/qutrunningsocial/">QUT Running Social Facebook Group</a></p>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+						<div class="item">
+							
+							<div class="container">
+
+								<div class="row carousel-3">
+									<div class="col-md-6">
+										<img src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/76546_537551409595049_719530437_n.jpg?oh=d8b6f6b1de2bd4f94d5cf2884e4a4ca6&oe=56B626DA" alt="Third slide">
+									</div>
+									<div class="col-md-6">
+										<h1>One more for good measure.</h1>
+										<p>Declan loves romantic sunset beach runs. He is athletic and handsome. Call him on 0468137465.</p>
+										<p><a class="btn btn-lg btn-primary" href="#" role="button">I want Declan</a></p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div><!-- /.carousel -->
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div id="timetable" class="second-block">
+				<div class="col-md-12 text-center">
+					<h1 class="color-orange">Timetable</h1>
+					<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+
+							<tr>
+								<th>Time</th>
+								<th>Monday</th>
+								<th>Thuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+								<th>Saturday</th>
+								<th>Sunday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">08:00</th>
+								<td class="info">Swimming Session</td>
+								<td></td>
+								<td></td>
+								<td class="danger">Boot Camp</td>
+								<td class="success">Running Session</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">09:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">10:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">11:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">12:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">13:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">14:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">15:00</th>
+								<td></td>
+								<td></td>
+								<td class="danger">Gym Session</td>
+								<td class="success">Beginner Session</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">16:00</th>
+								<td class="success">Running Session</td>
+								<td></td>
+								<td class="success">Marathon Session</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">17:00</th>
+								<td class="warning">QUT Social</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">18:00</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="executives" class="third-block">
+				<div class="col-md-12 text-center">
+					<h1>Executives</h1>
+					<div class="row executives-1">
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10329235_10201861410776135_3674376356128272233_n.jpg?oh=9ac0832f54ea7e3dfa87495ecfed5225&oe=56AEB7A8" alt="Generic placeholder image" width="140" height="140">
+							<h2>President</h2>
+							<h3>Drew Neibling</h3>
+						</div><!-- /.col-lg-4 -->
+
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/76546_537551409595049_719530437_n.jpg?oh=d8b6f6b1de2bd4f94d5cf2884e4a4ca6&oe=56B626DA" alt="Generic placeholder image" width="140" height="140">
+							<h2>Secretary</h2>
+							<h3>Declan Cox</h3>
+						</div><!-- /.col-lg-4 -->
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11752452_10204579443067685_7121489985036132394_n.jpg?oh=3ac2d249b86c72eb5d339c9ac13813bc&oe=56F67C5D" alt="Generic placeholder image" width="140" height="140">
+							<h2>Treasurer</h2>
+							<h3>Nikki Harris</h3>
+						</div><!-- /.col-lg-4 -->
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xaf1/t31.0-8/10321211_719193791472923_6138984788391282683_o.jpg" alt="Generic placeholder image" width="140" height="140">
+							<h2>Session Coordinator</h2>
+							<h3>Christoph Phlippen</h3>
+						</div><!-- /.col-lg-4 -->
+
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12088114_10153048060621851_7237548943532895085_n.jpg?oh=7c7afa25667a0cb2f9e4cd2d9bf01850&oe=56B7649D" alt="Generic placeholder image" width="140" height="140">
+							<h2>Gym/Swim/Boot Camp</h2>
+							<h3>Håvard Magne Fagervoll </h3>
+						</div><!-- /.col-lg-4 -->
+						<div class="col-lg-4">
+							<img class="img-circle" src="https://scontent.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12208360_10153510685027025_175930975330753673_n.jpg?oh=91d860eaeb02132e5f1d1e3afb5b46e9&oe=56FA7DF5" alt="Generic placeholder image" width="140" height="140">
+							<h2>Social Coordinator</h2>
+							<h3>Chris Owens</h3>
+						</div><!-- /.col-lg-4 -->
+					</div><!-- /.row -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="contact" class="fourth-block">
+				<div class="col-md-12 text-center">
+					<h1>Contact</h1>
+					<div class="row">
+						<p>
+							To contact QUT Running, join our facebook group or contact any of the executives.
+							<br>
+							Facebook - <a href="https://www.facebook.com/groups/qutrunning/">https://www.facebook.com/groups/qutrunning/</a>
+						</p>
+					</div>
+					<div class="row">
+						Follow QUT Running
+						<br>
+						<a href="https://www.strava.com/clubs/qutrunning">
+							<img src="./public/img/strava.png" alt="Strava" height="50" width="50">
+						</a>
+						<a href="https://www.facebook.com/QUTRunning/">
+							<img src="./public/img/facebook.png" alt="Facebook" height="50" width="50">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./public/js/bootstrap.min.js"></script>
+</body>
+</html>	

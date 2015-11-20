@@ -1,0 +1,12 @@
+.map-row-1 {
+	background-color: black;
+	float: left;
+	width: 100%;
+
+}
+
+.map-row-2 {
+	background-color: red;
+	height: 300px;
+	width: 100%;
+}
