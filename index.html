@@ -32,12 +32,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">QUT Running</a>
+				<a id="go-home" class="navbar-brand" href="#">QUT Running</a>
 			</div>
 
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a id="go-home" href="#">Home</a></li>
+					<li><a id="go-about" href="#">About</a></li>
+					<li><a id="go-get-started" href="#">Get Started</a></li>
 					<li><a id="go-timetable" href="#">Timetable</a></li>
 					<li><a id="go-map" href="#">Map</a></li>
 					<li><a id="go-executives" href="#executives">Executives</a></li>
@@ -47,6 +49,9 @@
 		</div>
 	</nav>
 	<div class="container-fluid">
+
+		<!-- ============== First block =================== -->
+		<!-- ============== Carousel ====================== -->
 		<div class="row">
 			<div id="home" class="first-block">
 				<!-- Carousel
@@ -63,11 +68,13 @@
 							<div class="container">
 								<div class="row carousel-1">
 									<div class="col-md-6">
-										<img src="./public/img/qut_running.jpg" alt="First slide" height="width=500px" width="500px">
+										<img class="img-responsive" src="./public/img/qut_running.jpg" alt="First slide">
 									</div>
 									<div class="col-md-6">
-										<h1>QUT Running</h1>
-										<p>QUT Running is a social & fitness group, for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and give you the opportunity to meet a variety of new people at QUT. We believe everyone can love running. So if you want to start up, pick up where you left off or just keep going this is the perfect group for you.</p>
+										<h1>O-week stand</h1>
+										<p>
+											Text about our O-week stand
+										</p>
 									</div>
 								</div>
 							</div>
@@ -80,7 +87,7 @@
 								<div class="row carousel-2">
 
 									<div class="col-md-6">
-										<img src="./public/img/qut_running_social.jpg" alt="Second slide" height="400" width="400">
+										<img class="img-responsive" src="./public/img/qut_running_social.jpg" alt="Second slide">
 									</div>
 									<div class="col-md-6">
 										<h1>QUT Running Social.</h1>
@@ -99,7 +106,7 @@
 
 								<div class="row carousel-3">
 									<div class="col-md-6">
-										<img src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/76546_537551409595049_719530437_n.jpg?oh=d8b6f6b1de2bd4f94d5cf2884e4a4ca6&oe=56B626DA" alt="Third slide">
+										<img class="img-responsive" src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/76546_537551409595049_719530437_n.jpg?oh=d8b6f6b1de2bd4f94d5cf2884e4a4ca6&oe=56B626DA" alt="Third slide">
 									</div>
 									<div class="col-md-6">
 										<h1>O-week</h1>
@@ -122,13 +129,47 @@
 			</div>
 		</div>
 
-
-
+		<!-- ============== Second block =================== -->
+		<!-- ============== About ========================== -->
 		<div class="row">
-			<div id="timetable" class="second-block">
+			<div id="about" class="second-block">
+				<div class="col-md-4 text-center col-md-offset-1">
+					<img class="img-responsive" src="./public/img/qut_running.jpg" alt="Second slide">
+				</div>
+				<div class="col-md-6 text-center">
+					<h1> About QUT Running </h1>
+					<p>
+						QUT Running is a social & fitness group, for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and give you the opportunity to meet a variety of new people at QUT. We believe everyone can love running. So if you want to start up, pick up where you left off or just keep going this is the perfect group for you.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ============== Third block =================== -->
+		<!-- ============== Get Started =================== -->
+		<div class="row">
+			<div id="get-started" class="third-block">
+				<div class="col-md-6 text-center col-md-offset-1">
+					<h1> Get Started with QUT Running </h1>
+					<p>
+						Text about visiting o-week stand and where to meet up for the sessions and so on.
+					</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img class="img-responsive" src="./public/img/o-week.jpg" alt="Second slide">
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ============== Fourth block =================== -->
+		<!-- ============== Timetable ====================== -->
+		<div class="row">
+			<div id="timetable" class="fourth-block">
 				<div class="col-md-12 text-center">
 					<h1 class="color-orange">Timetable</h1>
-					<p class="color-orange">Hover or click a session to read more about it.</p>
+					<p class="color-orange">Click or hover over a session to read more about it.</p>
 					<div class="visible-xs color-orange">To see the rest of the table, scroll sideways.</div>
 					
 					<div class="table-responsive">
@@ -165,7 +206,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="social">Occasional</td>
+								<td class="social"><a href="#" class="session-box" rel="tooltip" title="The swimming sessions are designs for all levels.">Occasional</a></td>
 							</tr>
 							<tr>
 								<th scope="row">10:00</th>
@@ -175,7 +216,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="social">Sessions to</td>
+								<td class="social"><a href="#" class="session-box" rel="tooltip" title="The swimming sessions are designs for all levels.">Sessions to</a></td>
 							</tr>
 							<tr>
 								<th scope="row">11:00</th>
@@ -185,7 +226,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="social">be announced</td>
+								<td class="social"><a href="#" class="session-box" rel="tooltip" title="The swimming sessions are designs for all levels.">be announced</a></td>
 							</tr>
 							<tr>
 								<th scope="row">12:00</th>
@@ -265,8 +306,10 @@
 		</div>
 
 
+		<!-- ============== Fifth block =================== -->
+		<!-- ============== Map and Strava ================ -->
 		<div class="row">
-			<div id="map" class="third-block">
+			<div id="map" class="fifth-block">
 				<div class="col-md-8 text-center">
 					<div id="map-canvas"></div> 
 				</div>
@@ -278,8 +321,10 @@
 		</div>
 
 
+		<!-- ============== Sixth block =================== -->
+		<!-- ============== Executives ==================== -->
 		<div class="row">
-			<div id="executives" class="fourth-block">
+			<div id="executives" class="sixth-block">
 				<div class="col-md-12 text-center">
 					<h1>Executives</h1>
 					<div class="row executives-1">
@@ -322,8 +367,12 @@
 				</div>
 			</div>
 		</div>
+
+
+		<!-- ============== Seventh block =================== -->
+		<!-- ============== Contact ========================= -->
 		<div class="row">
-			<div id="contact" class="fifth-block">
+			<div id="contact" class="seventh-block">
 				<div class="col-md-12 text-center">
 					<h1>Contact</h1>
 					<div class="row">
@@ -351,6 +400,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="./public/js/bootstrap.min.js"></script>
 </body>
 </html>	

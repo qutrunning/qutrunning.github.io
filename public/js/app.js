@@ -1,10 +1,17 @@
 function initialize() {
-  var mapOptions = {
-    scrollwheel: false,
-    zoom: 17,
-    center: new google.maps.LatLng(-27.476979, 153.027690)
-  };
-  var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+    var mapOptions = {
+        scrollwheel: false,
+        zoom: 17,
+        center: new google.maps.LatLng(-27.477400, 153.029349)
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+    var Qmarker = new google.maps.Marker({
+        position: new google.maps.LatLng(-27.477400, 153.029349),
+        map: map,
+        icon: './public/img/flag.png',
+        title: 'Kidney Lawn'
+    });
+    addEvent(Qmarker);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -15,6 +22,16 @@ $(document).ready(function (){
     $("#go-home").click(function (){
         $('html, body').animate({
             scrollTop: $("#home").offset().top-50
+        }, 1000);
+    });
+    $("#go-about").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top-50
+        }, 1000);
+    });
+    $("#go-get-started").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#get-started").offset().top-50
         }, 1000);
     });
     $("#go-timetable").click(function (){
