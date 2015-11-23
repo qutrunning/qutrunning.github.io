@@ -1,22 +1,39 @@
+// ----- Google Maps -------
+var map;
+
 function initialize() {
+    var isDraggable = $(document).width() > 480 ? true : false;
     var mapOptions = {
+        draggable: isDraggable,
         scrollwheel: false,
         zoom: 17,
         center: new google.maps.LatLng(-27.477400, 153.029349)
     };
+
     var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
-    var Qmarker = new google.maps.Marker({
+
+    var KidneyLawn = new google.maps.Marker({
         position: new google.maps.LatLng(-27.477400, 153.029349),
         map: map,
         icon: './public/img/flag.png',
         title: 'Kidney Lawn'
     });
-    addEvent(Qmarker);
+    addEvent(KidneyLawn);
+}
+
+function addEvent(marker) {
+    var infowindow = new google.maps.InfoWindow({
+        content: marker.title
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+    });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
+// ------ Scroll ------
 // Enables the click and scroll functionality
 $(document).ready(function (){
     $("#go-home").click(function (){
@@ -55,7 +72,7 @@ $(document).ready(function (){
         }, 1000);
     });
 
-    // Popover settings
+    // ----  Popover settings  -----
     $('a.session-box').click(function(e){
         // Prevents scrolling to the top of the page when clicking a tag with href="#"
         e.preventDefault();
