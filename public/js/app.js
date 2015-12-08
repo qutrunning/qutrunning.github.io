@@ -15,7 +15,7 @@ function initialize() {
     var KidneyLawn = new google.maps.Marker({
         position: new google.maps.LatLng(-27.477400, 153.029349),
         map: map,
-        icon: './public/img/flag.png',
+        icon: './public/img/running_pin.png',
         title: 'Kidney Lawn'
     });
     addEvent(KidneyLawn);
