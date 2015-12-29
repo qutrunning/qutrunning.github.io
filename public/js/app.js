@@ -21,11 +21,22 @@ function initialize() {
     addEvent(KidneyLawn);
 }
 
+// function addEvent(marker) {
+//     var infowindow = new google.maps.InfoWindow({
+//         content: marker.title
+//     });
+//     google.maps.event.addListener(marker, 'click', function() {
+//         infowindow.open(map, marker);
+//     });
+// }
+
 function addEvent(marker) {
     var infowindow = new google.maps.InfoWindow({
         content: marker.title
     });
     google.maps.event.addListener(marker, 'click', function() {
+        map.setZoom(19);
+        map.setCenter(marker.getPosition());
         infowindow.open(map, marker);
     });
 }
