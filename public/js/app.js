@@ -35,9 +35,9 @@ function addEvent(marker) {
         content: marker.title
     });
     google.maps.event.addListener(marker, 'click', function() {
-        map.setZoom(19);
-        map.setCenter(marker.getPosition());
-        infowindow.open(map, marker);
+        //marker.map.setZoom(19);
+        //marker.map.setCenter(marker.getPosition());
+        infowindow.open(marker.map, marker);
     });
 }
 
@@ -48,6 +48,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // Enables the click and scroll functionality
 $(document).ready(function (){
     $("#go-home").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top-50
+        }, 1000);
+    });
+    $("#go-home2").click(function (){
         $('html, body').animate({
             scrollTop: $("#home").offset().top-50
         }, 1000);

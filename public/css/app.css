@@ -132,6 +132,36 @@ a.session-box:hover {
 }
 
 
+.carousel {
+  height: 500px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+@media (min-width: 768px) {
+	.carousel-inner > .item > img {
+	  position: center;
+	  width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.carousel-inner > .item > img {
+	  position: center;
+	  height: 100%;
+	  width: fixed;
+	}
+
+}
+
 
 
 .navbar-default {
