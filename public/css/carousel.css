@@ -4,8 +4,7 @@
 
 /* Carousel base class */
 .carousel {
-  height: 600px;
-  margin-top: 50px;
+  height: 500px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -14,11 +13,19 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 600px;
+  height: 500px;
   background-color: #ff9900;
 }
 
-
+@media (max-width:767px) {
+.carousel-inner > .item > img {
+    position: center;
+    height: 100%;
+    max-width: none;
+    opacity: 0.7;
+    
+  }
+}
 
 
 /* RESPONSIVE CSS
@@ -32,6 +39,12 @@
     line-height: 1.4;
   }
 
+  .carousel-inner > .item > img {
+    position: center;
+    width: 100%;
+    opacity: 0.7;
+  }
+
   .featurette-heading {
     font-size: 50px;
   }
@@ -42,3 +55,4 @@
     margin-top: 120px;
   }
 }
+

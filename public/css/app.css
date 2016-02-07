@@ -62,6 +62,10 @@
 	border-color: #000033;
 }
 
+.sponsors {
+	padding-top: 50px;
+}
+
 
 
 #map-canvas {
@@ -83,20 +87,14 @@
 	padding-bottom: 100px;
 }
 
-.carousel-1 {
-	padding-top: 150px;
-}
-.carousel-2 {
-	padding-top: 20px;
-}
-.carousel-3 {
-	padding-top: 30px;
-}
+
+
+/* Timetable */
+
 
 th {
 	color: white;
 }
-
 
 .run {
 	background-color: #84e184;
@@ -111,7 +109,6 @@ th {
 	background-color: #ffff80;
 }
 
-
 .tooltip.top .tooltip-inner {
     background-color: #ff9900;
     color: #000033;
@@ -120,7 +117,6 @@ th {
       border-top-color: #ff9900;
       color: #000033;
 }
-
 
 a.session-box {
     color: #000033;
@@ -132,37 +128,8 @@ a.session-box:hover {
 }
 
 
-.carousel {
-  height: 500px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-
-@media (min-width: 768px) {
-	.carousel-inner > .item > img {
-	  position: center;
-	  width: 100%;
-	}
-}
-
-@media (max-width: 767px) {
-	.carousel-inner > .item > img {
-	  position: center;
-	  height: 100%;
-	  width: fixed;
-	}
-
-}
-
-
+/* Navbar */
 
 .navbar-default {
   background-color: #000033;
