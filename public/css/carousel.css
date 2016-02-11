@@ -17,6 +17,16 @@
   background-color: #ff9900;
 }
 
+.btn-orange {
+  color: #000033;
+  background-color: #ff9900;
+  border-color: #e09000;
+}
+
+.btn-orange:hover {
+  color: #fff;
+}
+
 @media (max-width:767px) {
 .carousel-inner > .item > img {
     position: center;
