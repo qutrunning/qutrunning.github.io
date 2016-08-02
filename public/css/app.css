@@ -2,12 +2,12 @@
 	width: 100%;
 	background-color: #ff9900;
 	padding-bottom: 0px;
-	color: #000033;
+	color: #0C2F55;
 }
 .second-block {
 	width: 100%;
 	float: left;
-	background-color: #000033;
+	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	color: #ff9900; 
@@ -19,12 +19,12 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
 
-    color: #000033;
+    color: #0C2F55;
 }
 .fourth-block {
 	width: 100%;
 	float: left;
-	background-color: #000033;
+	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
 
@@ -36,13 +36,13 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
 
-    color: #000033;
+    color: #0C2F55;
 
 }
 .sixth-block {
 	width: 100%;
 	float: left;
-	background-color: #000033;
+	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	color: #ff9900;
@@ -54,12 +54,12 @@
 	background-color: #ff9900;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	color: #000033;
+	color: #0C2F55;
 
 }
 
 .race-table {
-	border-color: #000033;
+	border-color: #0C2F55;
 }
 
 .sponsors {
@@ -78,7 +78,7 @@
 	color: #ff9900;
 }
 .color-blue {
-	color: #000033;
+	color: #0C2F55;
 }
 .timetable {
 	width: 90%;
@@ -115,11 +115,11 @@ th {
 }
 .tooltip.top .tooltip-arrow {
       border-top-color: #ff9900;
-      color: #000033;
+      color: #0C2F55;
 }
 
 a.session-box {
-    color: #000033;
+    color: #0C2F55;
     text-decoration: underline;
 }
 a.session-box:hover {
