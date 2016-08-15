@@ -10,7 +10,7 @@
 	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	color: #ff9900; 
+	color: #ffffff; 
 }
 .third-block {
 	width: 100%;
@@ -45,7 +45,7 @@
 	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	color: #ff9900;
+	color: #ffffff;
 
 }
 .seventh-block {
@@ -75,7 +75,7 @@
 }
 
 .color-orange {
-	color: #ff9900;
+	color: #ffffff;
 }
 .color-blue {
 	color: #0C2F55;
@@ -110,11 +110,11 @@ th {
 }
 
 .tooltip.top .tooltip-inner {
-    background-color: #ff9900;
+    background-color: #ffffff;
     color: #000033;
 }
 .tooltip.top .tooltip-arrow {
-      border-top-color: #ff9900;
+      border-top-color: #ffffff;
       color: #0C2F55;
 }
 
