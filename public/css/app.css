@@ -1,61 +1,82 @@
 .first-block {
-	width: 100%;
-	background-color: #ff9900;
-	padding-bottom: 0px;
-	color: #0C2F55;
+	background-color:#0C2F55;
+    position: fixed;
+    width: 105%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
 }
+
 .second-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	color: #ffffff; 
+	font-family: 'Lato', sans-serif;
 }
 .third-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #ff9900;
 	padding-top: 5%;
 	padding-bottom: 5%;
-
     color: #0C2F55;
+    font-family: 'Lato', sans-serif;
 }
 .fourth-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
-
+	font-family: 'Lato', sans-serif;
 }
+
 .fifth-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #ff9900;
 	padding-top: 5%;
 	padding-bottom: 5%;
-
     color: #0C2F55;
-
+	font-family: 'Lato', sans-serif;
 }
 .sixth-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #0C2F55;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	color: #ffffff;
-
+	font-family: 'Lato', sans-serif;
 }
+
 .seventh-block {
+	position: relative;
 	width: 100%;
 	float: left;
 	background-color: #ff9900;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	color: #0C2F55;
+	font-family: 'Lato', sans-serif;
+}
 
+.invis-block {
+	height: 500px; 
+	z-index: -50;
+	margin-right: -5px;
+
+	background-color:#0C2F55;
+}
+.fixed {
+	z-index: 1;
 }
 
 .race-table {
@@ -154,6 +175,7 @@ a.session-box:hover {
 .navbar-default {
   background-color: #000033;
   border-color: #e7e7e7;
+  font-family: 'Lato', sans-serif;
 }
 .navbar-default .navbar-text {
   color: #ffffff;
