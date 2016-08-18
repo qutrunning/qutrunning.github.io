@@ -809,12 +809,13 @@
 		    var scrollTop = $(window).scrollTop();
 		    var height = ($(window).height() / 2);
 		    $('.first-block, .slogan').css({
+
 		        'opacity': ((height - scrollTop) / (height))
 		    });
 		});
 	</script>
 	<script>
-	//Script to fade-in the About div
+	//Script to fade-in the Events div
 		$(document).ready(function() {
 	    
 	    /* Every time the window is scrolled ... */
@@ -827,7 +828,32 @@
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it it */
-	            if( (bottom_of_window + 400) > bottom_of_object){
+	            if( bottom_of_window > (bottom_of_object * 0.8)){
+
+	                $(this).animate({'opacity':'1'},500);             
+	            }            
+	        });     
+	    }); 
+		});
+	</script>
+	<!--
+
+	<script>
+	//Script to fade-in the Timetable div
+		$(document).ready(function() {
+	    
+	    /* Every time the window is scrolled ... */
+	    $(window).scroll( function(){
+	    
+	        /* Check the location of each desired element */
+	        $('.third-block').each( function(i){
+	            
+	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > bottom_of_object){
+
 	                $(this).animate({'opacity':'1'},500);             
 	            }            
 	        });     
@@ -835,29 +861,7 @@
 		});
 	</script>
 	<script>
-	//Script to fade-in the Events div
-		$(document).ready(function() {
-	    
-	    /* Every time the window is scrolled ... */
-	    $(window).scroll( function(){
-	    
-	        /* Check the location of each desired element */
-	        $('.fourth-block').each( function(i){
-	            
-	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-	            var bottom_of_window = $(window).scrollTop() + $(window).height();
-	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( (bottom_of_window + 1300) > bottom_of_object){
-	                
-	                $(this).animate({'opacity':'1'},500);	                    
-	            }	            
-	        }); 	    
-	    });	    
-		});
-	</script>
-	<script>
-	//Script to fade-in the Timetable div
+	//Script to fade-in the Maps/Strava div
 		$(document).ready(function() {
 	    
 	    /* Every time the window is scrolled ... */
@@ -869,8 +873,8 @@
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( (bottom_of_window + 500) > bottom_of_object){
+	            /* If the object is completely visible in the window, fade it in */
+	            if( bottom_of_window > (bottom_of_object * 0.8)){
 	                
 	                $(this).animate({'opacity':'1'},500);
 	                    
@@ -880,7 +884,7 @@
 		});
 	</script>
 	<script>
-	//Script to fade-in the Maps/Strava div
+	//Script to fade-in the Executives div
 		$(document).ready(function() {
 	    
 	    /* Every time the window is scrolled ... */
@@ -892,8 +896,8 @@
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( (bottom_of_window + 1200) > bottom_of_object){
+	            /* If the object is completely visible in the window, fade it in */
+	            if( bottom_of_window > (bottom_of_object * 0.8)){
 	                
 	                $(this).animate({'opacity':'1'},500);
 	                    
@@ -916,7 +920,7 @@
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it it */
-	            if( (bottom_of_window + 1300) > bottom_of_object){
+	            if( bottom_of_window > (bottom_of_object * 0.8))){
 	                
 	                $(this).animate({'opacity':'1'},500);
 	                    
@@ -925,6 +929,7 @@
 	    });	    
 		});
 	</script>
+	-->
 </body>
 <footer>
 	<div class="footer">

@@ -41,7 +41,7 @@
 	padding-right: 5%;
 	padding-left: 5%;
 	font-family: 'Lato', sans-serif;
-	opacity: 0;
+	/*opacity: 0;*/
 }
 
 .fifth-block {
@@ -55,7 +55,7 @@
 	padding-left: 5%;
     color: #0C2D56;
 	font-family: 'Lato', sans-serif;
-	opacity: 0;
+	/*opacity: 0;*/
 }
 .sixth-block {
 	position: relative;
@@ -68,7 +68,7 @@
 	padding-left: 5%;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
-	opacity: 0;
+	/*opacity: 0;*/
 }
 
 .seventh-block {
@@ -82,7 +82,7 @@
 	padding-left: 5%;
 	color: #0C2D56;
 	font-family: 'Lato', sans-serif;
-	opacity: 0;
+	/*opacity: 0;*/
 }
 
 .fixed {
