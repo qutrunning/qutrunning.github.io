@@ -32,7 +32,6 @@
 		ga('create', 'UA-74966886-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	<link rel="stylesheet" href="./public/css/flickity.css" media="screen">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="./public/css/bootstrap.css" rel="stylesheet">
 	<link href="./public/css/carousel.css" rel="stylesheet">
@@ -69,55 +68,68 @@
 		</div>
 	</nav>
 	
-		<!-- ============== First block =================== -->
-		<!-- ============== Carousel ====================== -->
-	
-		<div class="container-fluid">
-			<div class="fixed">
-				<div class="row">
-					<div id="home2" class="first-block">
+	<!-- ============== First block =================== -->
+	<!-- ============== Carousel ====================== -->
+
+	<div class="fixed">
+		<div class="row">
+			<div id="home2" class="first-block">
 						<!-- Carousel ================================================== -->
-							<div class="js-flickity"  data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": true, "autoPlay": 5000, "pauseAutoPlayOnHover": true, "pageDots": true}'>
-							  <div class="carousel-cell">
-							    <img class="img-responsive" src="./public/img/b2brisbane.jpg" alt="First slide">
-							   		<div class="container">
-										<div class="caption">
-											<h1>Bridge to Brisbane</h1>
-											<p>The Bridge to Brisbane race is upon us again! Join our team as we
-											compete in both the 5km and 10km races. When you go sign up, enter the
-											team name as "QUT running" (without quotes) to join :)<br>
-												<br>
-												<a class="btn btn-lg btn-green" href="https://b2b.racetorun.com/enternow.aspx" role="button">Enter the race</a>
-											</p>
-										</div>
-									</div>
-							 	 </div>
-							  <div class="carousel-cell">
-							    <img class="img-responsive" src="./public/img/fun.jpg" alt="Second slide">
-								    <div class="container">
-										<div class="caption">
-											<h1>New semester, new<br>
-											fun with QUT Running</h1>
-											<p>The new timetable is released. Make sure you check the latest updates and
-											don’t miss out on our sessions. We prepared some really good stuff for you!</p>
-										</div>
-									</div>
-							  </div>
-							  <div class="carousel-cell">
-							    <img class="img-responsive" src="./public/img/running-club-2016.jpg" alt="Third slide">
-							    	<div class="container">
-										<div class="caption">
-											<h1>&nbsp;Perks of Membership</h1>
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Sessions designed for <b>all levels</b>
-													<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>Bootcamp</b> session once a week
-													<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to <b>Swimming</b> pool once a week
-													<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>Gym access</b> every wednesday
-													<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Complimentary <b>singlet</b><br>
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+							</ol>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="first-slide" src="./public/img/b2brisbane.jpg" alt="First slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Bridge to Brisbane</h1>
+												<p>The Bridge to Brisbane race is upon us again! Join our team as we compete in both the 5km and 10km races. When you go to sign up, enter the team name as "QUT running" (without quotes) to join!<br>
+													<br>
+													<a class="btn btn-lg btn-orange" href="https://b2b.racetorun.com/enternow.aspx" target="_blank" role="button">Enter the race</a>
 												</p>
-											<a class="btn btn-lg btn-green" href="#" role="button" id="go-timetable-2">See the timetable</a>
+
+											</div>
 										</div>
 									</div>
-							  	</div>
+									<div class="item">
+										<img class="second-slide" src="./public/img/fun.jpg" alt="Second slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>New semester, new fun with QUT Running</h1>
+												<p>The new timetable is released. Make sure you check the latest updates and don’t miss out on our sessions. We prepared some really good stuff for you!</p>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<img class="third-slide" src="./public/img/qut_classic_winner_team.jpg" alt="Third slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Perks of Membership</h1>
+												<p>
+													Sessions designed for <b>all levels</b><br>
+													<b>Bootcamp</b> session once a week<br>
+													Access to <b>Swimming</b> pool once a week<br>
+													<b>Gym access</b> every wednesday<br>
+													Complimentary <b>singlet</b><br>				
+												</p>
+												<a class="btn btn-lg btn-orange" href="#" role="button" id="go-timetable-2">See the timetable</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div><!-- /.carousel -->
 						</div>
 					</div>
@@ -540,7 +552,7 @@
 
 						<h3>Running</h3>
 						<p>
-							This is our most popular running session. Non regard of your running skills, come along to a fun session through the Botanic Garden. Our running coordinator Christoph is providing many different exercises to help you to improve agility, speed, acceleration and endurance. The sessions will usually have the form of an interval session with varying length and amount of the intervals. Furthermore this is a great opportunity to meet other fellow runners, to have a chat and make friends. If you are new to QUT Running, this is the session you should definitely attend. We are happy to answer questions, explain what’s going on or just introduce you to other people. Meeting point for this session is the Kidney Lawn. From there we head to X-Block to store our bags, before we start our run in the Botanic Garden.
+							This is our most popular running session. Non regard of your running skills, come along to a fun session through the Botanic Garden. Our running coordinator Eamon provides many different exercises to help you to improve agility, speed, acceleration and endurance. The sessions will usually have the form of an interval session with varying length and amount of the intervals. Furthermore this is a great opportunity to meet other fellow runners, to have a chat and make friends. If you are new to QUT Running, this is the session you should definitely attend. We are happy to answer questions, explain what’s going on or just introduce you to other people. Meeting point for this session is the Kidney Lawn. From there we head to X-Block to store our bags, before we start our run in the Botanic Garden.
 						</p>
 
 						<h3>Casual Running</h3>
@@ -641,7 +653,7 @@
 						<div class="col-lg-4">
 						<br></br>
 								<img class="img-circle" src="./public/img/tim.png" alt="IT" width="140" height="140">
-								<h2>IT Coordinator</h2>
+								<h2>IT Guy</h2>
 								<h3>Tim Jones</h3>
 							</div><!-- /.col-lg-4 -->
 					</div><!-- /.row -->
@@ -659,21 +671,21 @@
 					<h1>Contact</h1>
 					<div class="row">
 						<p>
-							To contact QUT Running, join our facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com">email</a>.
+							To contact QUT Running, join our Facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com">email</a>.
 							<br>
-							Facebook - <a href="https://www.facebook.com/groups/qutrunning/">https://www.facebook.com/groups/qutrunning/</a>
+							Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank">https://www.facebook.com/groups/qutrunning/</a>
 						</p>
 					</div>
 					<div class="row">
 						Follow QUT Running
 						<br>
-						<a href="https://www.strava.com/clubs/qutrunning">
+						<a href="https://www.strava.com/clubs/qutrunning" target="_blank">
 							<img src="./public/img/strava.png" alt="Strava" height="50" width="50">
 						</a>
-						<a href="https://www.facebook.com/QUTRunning/">
+						<a href="https://www.facebook.com/QUTRunning/" target="_blank">
 							<img src="./public/img/facebook.png" alt="Facebook" height="50" width="50">
 						</a>
-						<a href="https://instagram.com/qutrunning/">
+						<a href="https://instagram.com/qutrunning/" target="_blank">
 							<img src="./public/img/instagram.png" alt="Instagram" height="50" width="50">
 						</a>
 
@@ -685,8 +697,8 @@
 						<div class="col-md-4 col-md-offset-1">
 							<img class="img-responsive" align="middle" src="./public/img/logo-downunderbar.jpg" alt="Down Under Bar">
 							<p>
-								<a class="dont-break-out" href="http://www.stayatbase.com/">http://www.stayatbase.com/</a><br>
-								<a class="dont-break-out" href="https://www.facebook.com/downunderbarbrisbane/">https://www.facebook.com/downunderbarbrisbane/</a><br>
+								<a class="dont-break-out" href="http://www.stayatbase.com/" target="_blank">http://www.stayatbase.com/</a><br>
+								<a class="dont-break-out" href="https://www.facebook.com/downunderbarbrisbane/" target="_blank">https://www.facebook.com/downunderbarbrisbane/</a><br>
 								
 								Brisbane is the perfect place to party, with its superb weather, bars, clubs and pubs, and the Base Backpackers Brisbane Central youth hostel is located in the centre of all the action!
 								<br>
@@ -697,8 +709,8 @@
 							<br>
 							<img class="img-responsive" src="./public/img/logo-intraining.png" alt="intraining">
 							<p>
-								<a class="dont-break-out" href="http://intraining.com.au/">http://intraining.com.au/</a><br>
-								<a class="dont-break-out" href="https://www.facebook.com/intrainingshop/">https://www.facebook.com/intrainingshop/</a><br>
+								<a class="dont-break-out" href="http://intraining.com.au/" target="_blank">http://intraining.com.au/</a><br>
+								<a class="dont-break-out" href="https://www.facebook.com/intrainingshop/" target="_blank">https://www.facebook.com/intrainingshop/</a><br>
 								
 								Our goal at intraining is to share the joy of running with the community.  We are the one stop running shop where you can find the best advice for all your running needs.  We help people of all abilities find the best pair of running shoes to suit you.
 								<br>
@@ -706,7 +718,7 @@
 								<br>
 								intraining has one of Australia’s biggest running and triathlon clubs with multiple coached sessions all over Brisbane.
 								<br>
-								intraining organise and manage many of Brisbane’s biggest events including the <a href="http://www.brisbanemarathon.com.au/">Brisbane Marathon Festival</a> and the Twilight Run Series in <a href="http://www.twilightrun.com.au/">March</a> and <a href="http://www.twilightbayrun.com.au/">September</a>.
+								intraining organise and manage many of Brisbane’s biggest events including the <a href="http://www.brisbanemarathon.com.au/" target="_blank">Brisbane Marathon Festival</a> and the Twilight Run Series in <a href="http://www.twilightrun.com.au/" target="_blank">March</a> and <a href="http://www.twilightbayrun.com.au/">September</a>.
 								<br>
 								The two stores are located at 33 Park Road, Milton and Indooroopilly Shopping Centre.
 							</p>
@@ -716,8 +728,8 @@
 						<div class="col-md-4 col-md-offset-2">
 							<img class="img-responsive" src="./public/img/logo-injinji.jpg" alt="Injinji">
 							<p>
-								<a class="dont-break-out" href="http://www.injinjiperformanceshop.com.au/">http://www.injinjiperformanceshop.com.au/</a><br>
-								<a class="dont-break-out" href="https://www.facebook.com/InjinjiPP/">https://www.facebook.com/InjinjiPP/</a><br>
+								<a class="dont-break-out" href="http://www.injinjiperformanceshop.com.au/" target="_blank">http://www.injinjiperformanceshop.com.au/</a><br>
+								<a class="dont-break-out" href="https://www.facebook.com/InjinjiPP/" target="_blank">https://www.facebook.com/InjinjiPP/</a><br>
 								 
 								Injinji, pronounced (In-gin-gee), which means to reach one's peak of performance, is dedicated to helping athletes attain their personal best by offering a five-toe-sleeve designed, seamless, anti-fricion interface that allows the foot to perform naturally and efficiently inside any shoe. Injinji Performance Products is a proud distributor for leading high quality American athletic apparel and footwear brands in Australia.<br>
 								Their products include Injinji Performance Toesocks, Altra Zero Drop Footwear, Body Glide Anti-Chafe Balm, Ultimate Direction, Armpocket Armband, Yankz Surelace  and, Zensah Compression.
@@ -725,7 +737,7 @@
 							<br>
 							<img class="img-responsive" src="./public/img/logo-tomtom.jpg" alt="TomTom">
 							<p>
-								<a class="dont-break-out" href="http://www.tomtom.com/en_au/sports/fitness-watches/">http://www.tomtom.com/en_au/sports/fitness-watches/</a><br>
+								<a class="dont-break-out" href="http://www.tomtom.com/en_au/sports/fitness-watches/" target="_blank">http://www.tomtom.com/en_au/sports/fitness-watches/</a><br>
 								<a class="dont-break-out" href="https://www.facebook.com/TomTomAUNZ/">https://www.facebook.com/TomTomAUNZ/</a><br>
 								
 								At TomTom our mission is to make technology so easy to use, that everyone can benefit from it.
@@ -735,8 +747,8 @@
 							<br>
 							<img class="img-responsive" src="./public/img/logo-healthstream.png" alt="Healthstream QUT">
 							<p>
-								<a class="dont-break-out" href="http://www.healthstreamqut.com.au/">http://www.healthstreamqut.com.au/</a><br>
-								<a class="dont-break-out" href="https://www.facebook.com/HealthstreamQutGardensPoint/">https://www.facebook.com/HealthstreamQutGardensPoint/</a><br>
+								<a class="dont-break-out" href="http://www.healthstreamqut.com.au/" target="_blank">http://www.healthstreamqut.com.au/</a><br>
+								<a class="dont-break-out" href="https://www.facebook.com/HealthstreamQutGardensPoint/ target="_blank"">https://www.facebook.com/HealthstreamQutGardensPoint/</a><br>
 								 
 								Healthstream Fitness Club and Aquatics Centres are your complete health and fitness facility. We offer a wide variety of facilities at Kelvin Grove and Gardens Point QUT campuses including a state of the art Fitness club, Olympic standard Swimming pool and Sports stadium. We also offer a range of services including Personal Training, massage and fitness certification in partnership with AIPT.
 								<br>
@@ -751,13 +763,23 @@
 			</div>
 		</div>
 	</div>
-	<script src="./public/js/flickity.pkgd.min.js">
-				$('.main-gallery').flickity({
-			  	// options
-			  		
-			  		cellAlign: 'left',
-			  		contain: true, 		
-					});
+	<script type="text/javascript" src="./public/js/jquery.touchSwipe.min.js"></script>
+	<script src=”jquery.mobile.custom.min.js”></script> 
+	<script>
+	$(document).ready(function() {  
+			//Enable swiping...
+			$(".carousel-inner").swipe( {
+				//Generic swipe handler for all directions
+				swipeLeft:function(event, direction, distance, duration, fingerCount) {
+					$(this).parent().carousel('prev'); 
+				},
+				swipeRight: function() {
+					$(this).parent().carousel('next'); 
+				},
+				//Default is 75px, set to 0 for demo so any distance triggers swipe
+				threshold:0
+			});
+		});
 	</script>
 	<script>
 		$(window).scroll(function () {

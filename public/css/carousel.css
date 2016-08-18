@@ -17,7 +17,15 @@
   background-color: #ff9900;
 }
 
+.btn-orange {
+  color: #0C2F55;
+  background-color: #ff9900;
+  border-color: #e09000;
+}
 
+.btn-orange:hover {
+  color: #fff;
+}
 
 @media (max-width:767px) {
 .carousel-inner > .item > img {
