@@ -232,8 +232,15 @@ a.session-box:hover {
   background-color: transparent;
 }
 
-body { font-family: sans-serif; }
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
 
+body {
+    overflow-x: hidden;
+    width: 100%
+}
 .carousel {
   background: black;
 }
@@ -275,13 +282,13 @@ body { font-family: sans-serif; }
           filter: none;
 }
 
-
+/* RESPONSIVE CAROUSEL */
 @media screen and ( min-width: 200px ) {
   .carousel-cell {
       height: 180px;
-      width: 380px;
-      padding-right: 1vw;
-	  padding-left: 1vw;
+      width: 360px;
+      padding-right: 3vw;
+	  padding-left: 6vw;
   }
 
   .carousel-cell img {
@@ -324,7 +331,7 @@ body { font-family: sans-serif; }
       height: 180px;
       width: 430px;
       padding-right: 1vw;
-	  padding-left: 1vw;
+	  padding-left: 5vw;
   }
 
   .carousel-cell img {
@@ -365,9 +372,9 @@ body { font-family: sans-serif; }
 @media screen and ( min-width: 600px ) {
   .carousel-cell {
       height: 300px;
-      width: 680px;
-      padding-right: 2vw;
-	  padding-left: 2vw;
+      width: 710px;
+      padding-right: 4vw;
+	  padding-left: 4vw;
   }
 
   .carousel-cell img {
@@ -381,13 +388,13 @@ body { font-family: sans-serif; }
   }
 
   .fixed {
-  	height: 40vh;
+  	height: 52vh;
   	padding-top: 1vh;
-  	padding-bottom: 2vh;
+  	padding-bottom: 3vh;
   }
 
   .first-block {
-  	height: 40vh;
+  	height: 52vh;
   	padding-top: 1vh;
   	padding-bottom: 2vh;
   }
@@ -423,15 +430,15 @@ body { font-family: sans-serif; }
   }
 
   .fixed {
-  	height: 42vh;
-  	padding-top: 2vh;
-  	padding-bottom: 1vh;
+  	height: 52vh;
+  	padding-top: 1vh;
+  	padding-bottom: 2vh;
   }
 
   .first-block {
-  	height: 42vh;
-  	padding-top: 2vh;
-  	padding-bottom: 1vh;
+  	height: 52vh;
+  	padding-top: 1vh;
+  	padding-bottom: 2vh;
   }
 
   .caption p{
@@ -464,13 +471,13 @@ body { font-family: sans-serif; }
   }
 
   .fixed {
-  	height: 43vh;
+  	height: 55vh;
   	padding-top: 2vh;
   	padding-bottom: 1vh;
   }
 
   .first-block {
-  	height: 43vh;
+  	height: 55vh;
   	padding-top: 2vh;
   	padding-bottom: 1vh;
   }
@@ -491,7 +498,7 @@ body { font-family: sans-serif; }
 
 @media screen and ( min-width: 1200px ) {
   .carousel-cell {
-    width: 990px;
+    width: 1300px;
   }
 
   .carousel-cell img {
@@ -505,13 +512,13 @@ body { font-family: sans-serif; }
   }
 
   .fixed {
-  	height: 43vh;
+  	height: 55vh;
   	padding-top: 2vh;
   	padding-bottom: 1vh;
   }
 
   .first-block {
-  	height: 43vh;
+  	height: 55vh;
   	padding-top: 2vh;
   	padding-bottom: 1vh;
   }
@@ -533,8 +540,8 @@ body { font-family: sans-serif; }
 @media screen and ( min-width: 1440px ) {
   .carousel-cell {
   	padding-left: 6vw;
-  	padding-right: 6vw;
-    width: 2000px;
+  	padding-right: 10vw;
+    width: 1800px;
   }
 
   .carousel-cell img {
@@ -548,14 +555,14 @@ body { font-family: sans-serif; }
   }
 
   .fixed {
-  	height: 45vh;
-  	padding-top: 3.5vh;
+  	height: 60vh;
+  	padding-top: 4vh;
   	padding-bottom: 2vh;
   }
 
   .first-block {
-  	height: 45vh;
-  	padding-top: 3.5vh;
+  	height: 60vh;
+  	padding-top: 4vh;
   	padding-bottom: 2vh;
   }
 
