@@ -275,6 +275,50 @@ body { font-family: sans-serif; }
           filter: none;
 }
 
+
+@media screen and ( min-width: 200px ) {
+  .carousel-cell {
+      height: 180px;
+      width: 380px;
+      padding-right: 1vw;
+	  padding-left: 1vw;
+  }
+
+  .carousel-cell img {
+	  max-width: 70%;
+	  max-height: 65%;
+  }
+
+  .carousel-cell.is-selected img {
+  	  max-width: 70%;
+	  max-height: 70%;
+  }
+
+  .fixed {
+  	height: 39vh;
+  	padding-top: 3vh;
+  	padding-bottom: 0;
+  }
+
+  .first-block {
+  	height: 39vh;
+  	padding-top: 3vh;
+  	padding-bottom: 0;
+  }
+
+  .caption p{
+  	font-size: 1.3vh;
+  }
+
+  .caption h1{
+  	font-size: 1.8vh;
+  }
+
+  .btn-green {
+  	font-size: 1.3vh;
+  }
+}
+
 @media screen and ( min-width: 400px ) {
   .carousel-cell {
       height: 180px;
