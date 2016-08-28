@@ -44,7 +44,7 @@ $(document).ready(function (){
     });
     $("#go-home2").click(function (){
         $('html, body').animate({
-            scrollTop: $("#home").offset().top-50
+            scrollTop: $("#home2").offset().top-50
         }, 1000);
     });
     $("#go-about").click(function (){

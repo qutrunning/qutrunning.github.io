@@ -1,3 +1,5 @@
+
+/*Carousel*/
 .first-block {
 	background-color: #ffffff;
     position: fixed;
@@ -6,6 +8,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+/*About*/
 .second-block {
 	position: relative;
 	width: 100%;
@@ -18,59 +21,63 @@
 	color: #ffffff; 
 	font-family: 'Lato', sans-serif;
 }
+
+/*Events*/
 .third-block {
 	position: relative;
 	width: 100%;
 	float: left;
-	background-color: #ffffff;
+	background-color: #F89D0E;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 5%;
-    color: #0C2D56;
+    color: #ffffff;
     font-family: 'Lato', sans-serif;
-    opacity: 0;
 }
+
+/*Timetable*/
 .fourth-block {
 	position: relative;
 	width: 100%;
 	float: left;
-	background-color: #0C2D56;
+	background-color: #1BAEE4;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 5%;
 	font-family: 'Lato', sans-serif;
-	/*opacity: 0;*/
 }
 
+/*Map*/
 .fifth-block {
 	position: relative;
 	width: 100%;
 	float: left;
-	background-color: #ffffff;
+	background-color: #F35F72;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 5%;
     color: #0C2D56;
 	font-family: 'Lato', sans-serif;
-	/*opacity: 0;*/
 }
+
+/*Executives*/
 .sixth-block {
 	position: relative;
 	width: 100%;
 	float: left;
-	background-color: #0C2D56;
+	background-color: #435196;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 5%;
 	padding-left: 5%;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
-	/*opacity: 0;*/
 }
 
+/*Contact*/
 .seventh-block {
 	position: relative;
 	width: 100%;
@@ -86,10 +93,10 @@
 }
 
 .fixed {
-	z-index: 1;
-	height: 500px;
+	z-index: -10;
+	height: 600px;
 	width: 100%;
-	background-color:#0C2D56;
+	background-color: #0C2D56;
 		
 }
 
@@ -117,6 +124,7 @@
 }
 .timetable {
 	width: 90%;
+	
 }
 .executives-1 {
 	padding-bottom: 100px;
@@ -142,22 +150,27 @@ body {
 }
 /* Timetable */
 
-
 th {
 	color: white;
+	background-color: #0C2D56;
+}
+
+td {
+	color: white;
+	background-color: #0C2D56;
 }
 
 .run {
-	background-color: #84e184;
+	background-color: #00B55B;
 }
 .workout {
-	background-color: #ff6666;
+	background-color: #CF1A02;
 }
 .swim {
-	background-color: #80ccff;
+	background-color: #0051FF;
 }
 .social {
-	background-color: #ffff80;
+	background-color: #FF9100;
 }
 
 .tooltip.top .tooltip-inner {
@@ -176,6 +189,11 @@ a.session-box {
 a.session-box:hover {
 	text-decoration: underline;
 	color: #ff9900;
+}
+
+.img-responsive {
+	display:block;
+    margin:auto;
 }
 
 .dont-break-out {
@@ -203,25 +221,30 @@ a.session-box:hover {
 /* Navbar */
 
 .navbar-default {
-  background-color: #000033;
-  border-color: #e7e7e7;
+-webkit-transition: all .2s;
+   -moz-transition: all .2s;
+  transition: all .2s; 
+  opacity: 0.2;
+  background-color: #0C2D56;
+  color: #ffffff;
   font-family: 'Lato', sans-serif;
 }
+
 .navbar-default .navbar-text {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ff9900;
+  color: #00FBFF;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ff9900;
+  color: #00FBFF;
   background-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -229,6 +252,6 @@ a.session-box:hover {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ff9900;
+  color: #00FBFF;
   background-color: transparent;
 }
