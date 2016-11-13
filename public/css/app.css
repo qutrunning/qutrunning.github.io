@@ -20,8 +20,6 @@
 	color: #ffffff; 
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -37,8 +35,6 @@
 	background-color: #F89D0E;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	color: #ffffff; 
   	font-family: 'Lato', sans-serif;
@@ -55,8 +51,6 @@
 	background-color: #1BAEE4;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -72,8 +66,6 @@
 	background-color: #F35F72;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	color: #0C2D56;
   	font-family: 'Lato', sans-serif;
@@ -90,8 +82,6 @@
 	background-color: #435196;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
@@ -108,8 +98,6 @@
 	background-color: #ffffff;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	padding-right: 5%;
-  	padding-left: 5%;
   	z-index: 1;
   	color: #0C2D56;
   	font-family: 'Lato', sans-serif;
