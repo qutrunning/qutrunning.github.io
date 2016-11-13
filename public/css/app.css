@@ -3,6 +3,7 @@
 .first-block {
 	background-color: #ffffff;
     position: fixed;
+    z-index: 0;
     margin: 0;
     width: 105%;
     font-family: 'Lato', sans-serif;
@@ -10,95 +11,157 @@
 
 /*About*/
 .second-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #0C2D56;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
 	color: #ffffff; 
-	font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
 }
 
 /*Events*/
 .third-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #F89D0E;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	color: #ffffff; 
+  	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
 }
 
 /*Timetable*/
 .fourth-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #1BAEE4;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
-	font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
 }
 
 /*Map*/
 .fifth-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #F35F72;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
-    color: #0C2D56;
-	font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	color: #0C2D56;
+  	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
 }
 
 /*Executives*/
 .sixth-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #435196;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
-	color: #ffffff;
-	font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	color: #ffffff;
+  	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
 }
 
 /*Contact*/
 .seventh-block {
-	position: relative;
-	width: 100%;
-	float: left;
+	border-radius: 10px;
+	width: 85%;
+  	height: 100%;
+ 	margin: 0 auto;
+  	position: relative;
 	background-color: #ffffff;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
-	color: #0C2D56;
-	font-family: 'Lato', sans-serif;
+	padding-top: 3%;
+  	padding-bottom: 5%;
+  	padding-right: 5%;
+  	padding-left: 5%;
+  	z-index: 1;
+  	color: #0C2D56;
+  	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
+}
+
+.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block {
+  width: 85%;
+  text-align: center;
+}
+
+.second-block:before, .third-block:before, .fourth-block:before, .fifth-block:before, .sixth-block:before, .seventh-block:before {
+  display: inline-block;
+  width: 85%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+
+  /* For visualization 
+  background: #808080; width: 5px;
+  */
+}
+.spacer {
+  height: 100px;
+  opacity: 0;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  z-index: 10;
+}
+
+.spacerTwo {
+  height: 100px;
+  opacity: 0;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  z-index: auto;
 }
 
 .fixed {
 	z-index: -10;
 	height: 600px;
 	width: 100%;
-	background-color: #0C2D56;
-		
 }
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 85%;
+  border-radius: 10px;
+}
+
 
 .race-table {
 	border-color: #0C2D56;
@@ -134,6 +197,22 @@
 	padding-bottom: 100px;
 }
 
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../img/wall.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 html {
     overflow-x: hidden;
     width: 100%;
@@ -142,6 +221,7 @@ html {
 body {
     overflow-x: hidden;
     width: 100%
+    background-image: url("./public/img/tile.jpg");
 }
 
 .footer p {
