@@ -231,6 +231,9 @@ td {
 .run {
 	background-color: #00B55B;
 }
+.intermediate-run {
+  background-color: #ffffff;
+}
 .workout {
 	background-color: #CF1A02;
 }
