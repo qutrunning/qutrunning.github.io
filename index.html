@@ -909,20 +909,13 @@
 	<script type="text/javascript" src="./public/js/jquery.touchSwipe.min.js"></script>
 	<script src="./public/js/jquery.mobile.custom.min.js"></script> 
 	<script>
-	//Script to allow the Bootstrap Carousel to be swiped left and right
-	$(document).ready(function() {  
-			//Enable swiping...
-			$(".carousel-inner").swipe( {
-				//Generic swipe handler for all directions
-				swipeLeft:function(event, direction, distance, duration, fingerCount) {
-					$(this).parent().carousel('next'); 
-				},
-				swipeRight: function() {
-					$(this).parent().carousel('prev'); 
-				},
-				//Default is 75px, set to 0 for demo so any distance triggers swipe
-				threshold:0
-			});
+		$(document).ready(function() {
+		   $("#myCarousel").swiperight(function() {
+		      $(this).carousel('prev');
+		    });
+		   $("#myCarousel").swipeleft(function() {
+		      $(this).carousel('next');
+		   });
 		});
 	</script>
 	<script>
