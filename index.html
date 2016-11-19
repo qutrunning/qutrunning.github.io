@@ -24,6 +24,7 @@
 	<script src="./public/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./public/js/app.js"></script>
 	
+	
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,8 +73,10 @@
 	<!-- ============== First block =================== -->
 	<!-- ============== Carousel ====================== -->
 
-	<div id="home2" class="fixed">
-		<div class="row">
+	<div id="home2" class="row">
+		<br>
+		<br>
+		<br>
 			<div class="first-block">
 						<!-- Carousel ================================================== -->
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -145,7 +148,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		<br>
 		<br>
 		
@@ -922,7 +924,7 @@
 	//Script to fade out the Carousel when scrolled past
 		$(window).scroll(function () {
 		    var scrollTop = $(window).scrollTop();
-		    var height = ($(window).height() / 3); //1.7 previous
+		    var height = ($(window).height() / 2.5); //1.7 previous
 		    $('.first-block').css({
 
 		        'opacity': ((height - scrollTop) / (height))
@@ -1145,6 +1147,13 @@
 	       }
 	   });
 	    }
+	});
+	function parallax(){
+	    var scrolled = $(window).scrollTop();
+	    $('.body:before').css('top', -(scrolled * 0.2) + 'px');
+	}
+	$(window).scroll(function(e){
+    	parallax();
 	});
 </script>
 </body>
