@@ -73,7 +73,8 @@
 	<!-- ============== First block =================== -->
 	<!-- ============== Carousel ====================== -->
 
-	<div id="home2" class="row">
+	<div id="home2" class="fixed">
+		<div class="row">
 		<br>
 		<br>
 		<br>
@@ -148,6 +149,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		<br>
 		<br>
 		
@@ -924,7 +926,7 @@
 	//Script to fade out the Carousel when scrolled past
 		$(window).scroll(function () {
 		    var scrollTop = $(window).scrollTop();
-		    var height = ($(window).height() / 2.5); //1.7 previous
+		    var height = ($(window).height() / 1); //1.7 previous
 		    $('.first-block').css({
 
 		        'opacity': ((height - scrollTop) / (height))
@@ -1050,12 +1052,13 @@
 	    });	    
 		});
 	</script>
-	-->
+	
 	<script>
 		$(document).on('scroll', function (e) {
-		    $('.navbar-default').css('opacity', (0.2 + ($(document).scrollTop() / 300)));
+		    $('.navbar-default').css('opacity', (0.4 + ($(document).scrollTop() / 300)));
 		});
 	</script>
+	-->
 	<script>
 	$(document).ready(function(){       
 	   var scroll_start = 0;
@@ -1065,7 +1068,7 @@
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#0C2D56');
+	          $(".navbar-default").css('background-color', '#06182d');
 	       }
 	   });
 	    }
@@ -1078,7 +1081,7 @@
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop() + 300;
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#0C2D56');
+	          $(".navbar-default").css('background-color', '#06182d');
 	       }
 	   });
 	    }
@@ -1091,7 +1094,7 @@
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop() + 300;
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#F89D0E');
+	          $(".navbar-default").css('background-color', '#ad6d05');
 	       }
 	   });
 	    }
@@ -1130,7 +1133,7 @@
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop() + 300;
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#435196');
+	          $(".navbar-default").css('background-color', '#6600cc');
 	       }
 	   });
 	    }
@@ -1148,13 +1151,18 @@
 	   });
 	    }
 	});
-	function parallax(){
-	    var scrolled = $(window).scrollTop();
-	    $('.body:before').css('top', -(scrolled * 0.2) + 'px');
+	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
+        $('body').on("mousewheel", function () {
+            // remove default behavior
+            event.preventDefault(); 
+
+            //scroll without smoothing
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
 	}
-	$(window).scroll(function(e){
-    	parallax();
-	});
+	
 </script>
 </body>
 <footer>
