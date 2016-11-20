@@ -151,7 +151,6 @@
 			</div>
 		</div>
 		<br>
-		<br>
 		
 		
 
@@ -159,10 +158,10 @@
 		<!-- ============== About ========================== -->
 		
 		<div class="row">
-			<div id="about" class="second-block">
+				<div id="about" class="second-block">
 				<div class="centered">
 				<br>
-					<div class="col-md-4 text-center col-md-offset-1">
+				<div class="col-md-4 text-center col-md-offset-1">
 						<img class="img-responsive" src="./public/img/qut_running.jpg" alt="Second slide">
 						<br>
 						<img class="img-responsive" src="./public/img/qut_running_social.jpg" alt="Second slide">
@@ -217,14 +216,16 @@
 					</div>
 				</div>
 			</div>
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstep.png">
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstepflip.png">
-			<br>
-			<br>
+			<div class="footsteps">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstep.png" alt="yes">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstepflip.png">
+				<br>
+				<br>
+			</div>
 		</div>
 
 
@@ -302,17 +303,22 @@
 						<br>
 						<br>
 						<img class="img-responsive" src="./public/img/banana.jpg" alt="Eamon">
+						<br>
+						<br>
+						<br>
 					</div>
 				</div>
 			</div>
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstep.png">
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstepflip.png">
-			<br>
-			<br>
+			<div class="footsteps">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstep.png" alt="yes">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstepflip.png">
+				<br>
+				<br>
+			</div>
 		</div>
 
 
@@ -675,14 +681,16 @@
 					</div>
 				</div>
 			</div>
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstep.png">
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstepflip.png">
-			<br>
-			<br>
+			<div class="footsteps">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstep.png" alt="yes">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstepflip.png">
+				<br>
+				<br>
+			</div>
 		</div>
 
 		<!-- ============== Fifth block =================== -->
@@ -708,14 +716,16 @@
 					</div>
 				</div>
 			</div>
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstep.png">
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstepflip.png">
-			<br>
-			<br>
+			<div class="footsteps">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstep.png" alt="yes">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstepflip.png">
+				<br>
+				<br>
+			</div>
 		</div>
 
 		<!-- ============== Sixth block =================== -->
@@ -783,14 +793,16 @@
 					</div>
 				</div>
 			</div>
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstep.png">
-			<br>	
-			<br>
-			<img class="img-responsive" src="./public/img/footstepflip.png">
-			<br>
-			<br>
+			<div class="footsteps">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstep.png" alt="yes">
+				<br>	
+				<br>
+				<img class="img-responsive" src="./public/img/footstepflip.png">
+				<br>
+				<br>
+			</div>
 		</div>	
 
 		<!-- ============== Seventh block =================== -->
@@ -906,10 +918,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-			<div class="spacer">
-			</div>
-		</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
 	<script type="text/javascript" src="./public/js/jquery.touchSwipe.min.js"></script>
 	<script src="./public/js/jquery.mobile.custom.min.js"></script> 
 	<script>
@@ -926,7 +939,7 @@
 	//Script to fade out the Carousel when scrolled past
 		$(window).scroll(function () {
 		    var scrollTop = $(window).scrollTop();
-		    var height = ($(window).height() / 1); //1.7 previous
+		    var height = ($(window).height() / 2); //1.7 previous
 		    $('.first-block').css({
 
 		        'opacity': ((height - scrollTop) / (height))
@@ -1133,7 +1146,7 @@
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop() + 300;
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#36014c');
+	          $(".navbar-default").css('background-color', '#0e0026');
 	       }
 	   });
 	    }
@@ -1151,17 +1164,7 @@
 	   });
 	    }
 	});
-	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
-        $('body').on("mousewheel", function () {
-            // remove default behavior
-            event.preventDefault(); 
-
-            //scroll without smoothing
-            var wheelDelta = event.wheelDelta;
-            var currentScrollPosition = window.pageYOffset;
-            window.scrollTo(0, currentScrollPosition - wheelDelta);
-        });
-	}
+	
 	
 </script>
 </body>
