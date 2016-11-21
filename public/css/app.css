@@ -59,7 +59,7 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #1BAEE4;
+	background-color: #0086B8;
 	padding-top: 3%;
   	padding-bottom: 5%;
   	z-index: 1;
@@ -74,7 +74,7 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #F35F72;
+	background-color: #63000D;
 	padding-top: 3%;
   	padding-bottom: 5%;
   	z-index: 1;
@@ -90,7 +90,7 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #250060;
+	background-color: #5C015C;
 	padding-top: 3%;
   	padding-bottom: 5%;
   	z-index: 1;
@@ -106,11 +106,11 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #ffffff;
+	background-color: #015C5C;
 	padding-top: 3%;
   	padding-bottom: 5%;
   	z-index: 1;
-  	color: #0C2D56;
+  	color: #ffffff;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
