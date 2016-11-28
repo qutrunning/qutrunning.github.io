@@ -39,7 +39,6 @@
 /*Events*/
 .third-block {
 	border-radius: 10px;
-	width: 85%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
@@ -55,7 +54,6 @@
 /*Timetable*/
 .fourth-block {
 	border-radius: 10px;
-	width: 85%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
@@ -70,7 +68,6 @@
 /*Map*/
 .fifth-block {
 	border-radius: 10px;
-	width: 85%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
@@ -86,7 +83,6 @@
 /*Executives*/
 .sixth-block {
 	border-radius: 10px;
-	width: 85%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
@@ -102,7 +98,6 @@
 /*Contact*/
 .seventh-block {
 	border-radius: 10px;
-	width: 85%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
@@ -116,7 +111,6 @@
 }
 
 .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block {
-  width: 90%;
   text-align: center;
 }
 
@@ -153,6 +147,30 @@
   border-radius: 10px;
 }
 
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.bgimg-1 {
+  background-image: url(../img/wall_1.jpg);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../img/wall_2.jpg);
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url(../img/wall_3.jpg);
+  min-height: 100%;
+}
 
 .race-table {
 	border-color: #0C2D56;
