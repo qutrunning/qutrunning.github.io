@@ -149,10 +149,14 @@
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   z-index: 10;
 }
