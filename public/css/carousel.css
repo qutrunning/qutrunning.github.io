@@ -20,12 +20,16 @@
     border-radius: 5px;
 
   height: 500px;
-  background-color: #ff9900;
+  background: #ff3236; /* Old browsers */
+background: -moz-linear-gradient(left, #ff3236 0%, #e8d000 100%, #e2d134 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ff3236 0%,#e8d000 100%,#e2d134 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ff3236 0%,#e8d000 100%,#e2d134 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .btn-orange {
   color: #0C2F55;
-  background-color: #ff9900;
+  background: linear-gradient(90deg, rgba(1,249,255,0.84) 0%, rgba(5,249,250,0.84) 15.3%, rgba(15,248,235,0.84) 34.16%, rgba(32,247,210,0.84) 54.89%, rgba(56,245,175,0.84) 76.95%, rgba(86,243,130,0.84) 99.86%, rgba(86,243,130,0.84) 100%);
   border-color: #e09000;
 }
 
