@@ -8,7 +8,7 @@
     top: 60px;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 10;
     font-family: 'Lato', sans-serif;
 }
 
@@ -31,7 +31,7 @@
 	color: #ffffff; 
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
@@ -45,7 +45,7 @@
 	background-color: #F89D0E;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	color: #ffffff; 
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -60,7 +60,7 @@
 	background-color: #0086B8;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
@@ -74,7 +74,7 @@
 	background-color: #63000D;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	color: #0C2D56;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -89,7 +89,7 @@
 	background-color: #5C015C;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -104,7 +104,7 @@
 	background-color: #015C5C;
 	padding-top: 3%;
   	padding-bottom: 5%;
-  	z-index: 1;
+  	z-index: 11;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -127,7 +127,7 @@
 
 
 .fixed {
-	z-index: 1;
+	z-index: 10s;
 	height: 600px;
 	width: 100%;
 }
@@ -152,13 +152,13 @@
   opacity: 1;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 10;
+  z-index: 2;
 }
 
 .bgimg-1 {
@@ -216,7 +216,7 @@ body:before {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 1;
   background: url(../img/wall.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
