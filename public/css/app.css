@@ -5,7 +5,6 @@
     width: 97%;
     margin: 0 auto;
     position: fixed;
-    top: 60px;
     left: 0;
     right: 0;
     z-index: 10;
@@ -29,8 +28,6 @@
   	position: relative;
 	background-color: #0C2D56;
 	color: #ffffff; 
-	padding-top: 3%;
-  	padding-bottom: 5%;
   	z-index: 11;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
@@ -127,7 +124,7 @@
 
 
 .fixed {
-	z-index: 10s;
+	z-index: 10;
 	height: 600px;
 	width: 100%;
 }
@@ -331,7 +328,20 @@ a.session-box:hover {
   background-color: #06182d;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+  margin-bottom: 0px;
+  z-index: 99;
 }
+
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999;
+}
+
+.affix ~ .container {
+     position: relative;
+     top: 50px;
+}	
 
 .navbar-default .navbar-text {
   color: #000000;
