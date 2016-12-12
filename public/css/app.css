@@ -122,15 +122,20 @@
 }
 
 /* RESPONSIVE DIVS */
-@media screen and ( max-width: 600px ) {
- 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-  		width: 91.5%;
-  	}
-}
+
 
 @media screen and ( max-width: 799px ) {
 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   		width: 92.8%;
+  	}
+
+  	.bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+  		height: 160px;
+  		
+  	}
+
+  	.bgimg-initial {
+  		width: 92.1%;
   	}
 }
 
