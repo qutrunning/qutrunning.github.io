@@ -145,7 +145,7 @@
   	}
 
   	.bgimg-initial {
-  		width: 87.9%;
+  		width: 88%;
   	}
 }
 
@@ -159,6 +159,7 @@
   		width: 87.6%;
   	}
 }
+
 
 @media screen and ( min-width: 1200px ) {
 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
@@ -197,7 +198,7 @@
   	}
 
   	.bgimg-initial {
-  		width: 86.1%;
+  		width: 86.6%;
   	}
 }
 
@@ -210,6 +211,7 @@
   		width: 86.1%;
   	}
 }
+
 .third-block:before, .fourth-block:before, .fifth-block:before, .sixth-block:before, .seventh-block:before {
   display: inline-block;
   vertical-align: middle;
