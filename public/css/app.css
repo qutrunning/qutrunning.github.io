@@ -174,7 +174,7 @@
 
 @media screen and ( min-width: 1440px ) {
 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-  		width: 98.7%;
+  		width: 97.8%;
   	}
 
   	.bgimg-initial {
@@ -201,6 +201,7 @@
   		width: 86.6%;
   	}
 }
+
 
 @media screen and ( min-width: 2000px ) {
 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
