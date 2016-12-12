@@ -14,9 +14,9 @@
 .footsteps {
   z-index: 10;
   width: 100%;
-    height: 100%;
+  height: 100%;
   margin: 0 auto;
-    position: relative;
+  position: relative;
 }
 
 /*About*/
@@ -35,13 +35,12 @@
 
 /*Events*/
 .third-block {
-	border-radius: 10px 10px 0px 0px;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #F89D0E;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	color: #ffffff; 
   	font-family: 'Lato', sans-serif;
@@ -51,26 +50,24 @@
 /*Timetable*/
 .fourth-block {
   	height: 100%;
-  	width: 98.7%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #0086B8;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
 
-/*Map*/
+/*Overview*/
 .fifth-block {
   	height: 100%;
-  	width: 98.7%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #63000D;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	color: #0C2D56;
   	font-family: 'Lato', sans-serif;
@@ -79,13 +76,12 @@
 
 /*Location*/
 .sixth-block {
-  	width: 98.7%;
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #5C015C;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
@@ -95,12 +91,11 @@
 /*Executives*/
 .seventh-block {
   	height: 100%;
-  	width: 98.7%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #015C5C;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
@@ -110,28 +105,64 @@
 /*Contact*/
 .eighth-block {
    	height: 100%;
-  	width: 98.7%;
  	margin: 0 auto;
   	position: relative;
 	background-color: #5C015C;
-	padding-top: 3%;
-  	padding-bottom: 5%;
+	padding-top: 2%;
+  	padding-bottom: 2%;
   	z-index: 11;
   	color: #ffffff;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
 
-.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block {
+.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   text-align: center;
+}
+
+/* RESPONSIVE DIVS */
+@media screen and ( max-width: 600px ) {
+ 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 91.5%;
+  	}
+}
+
+@media screen and ( max-width: 799px ) {
+	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 92.8%;
+  	}
+}
+
+@media screen and ( min-width: 800px ) {
+	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 96.5%;
+  	}
+}
+
+
+@media screen and ( min-width: 960px ) {
+	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 97%;
+  	}
+}
+
+@media screen and ( min-width: 1200px ) {
+	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 97.5%;
+  	}
+}
+
+
+@media screen and ( min-width: 1440px ) {
+	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+  		width: 98.7%;
+  	}
+
 }
 
 .third-block:before, .fourth-block:before, .fifth-block:before, .sixth-block:before, .seventh-block:before {
   display: inline-block;
-  width: 100%;
   vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-
   /* For visualization 
   background: #808080; width: 5px;
   */
@@ -147,6 +178,7 @@
 .centered {
   display: inline-block;
   vertical-align: middle;
+  color: #ffffff;
   width: 85%;
 }
 
@@ -159,12 +191,13 @@
 }
 
 .encapsulate {
-	width: 85%;
+	max-width: 85%;
+
+	height: 100%;
 	margin: 0 auto;
-  	position: relative;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
+.bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
   position: relative;
   opacity: 1;
   margin: 0 auto;
@@ -203,10 +236,17 @@
   min-height: 100%;
 }
 
-.bgimg-5 {
-  background-image: url(../img/wall_6.jpg);
+.bgimg-6 {
+  background-image: url(../img/wall_6.png);
   min-height: 100%;
 }
+
+.bgimg-initial {
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../img/wall_initial.jpg);
+  min-height: 100%;
+}
+
 .caption-block {
 	width: 100%;
   	height: 100%;
@@ -214,7 +254,8 @@
 	color: #ffffff; 
   	z-index: 11;
   	font-family: 'Lato', sans-serif;
-  }
+ }
+
 .caption {
     position: absolute;
     left: 0;
@@ -223,7 +264,6 @@
     width: 100%;
     text-align: center;
     color: #ffffff;
-    font-size: 24px;
   	font-family: 'Lato', sans-serif;
 }
 
@@ -232,7 +272,7 @@
     color: #fff;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .race-table {
 	border-color: #0C2D56;
@@ -248,15 +288,15 @@
 	display: block;
 }
 
-.color-orange {
+.color-white {
 	color: #ffffff;
 }
 .color-blue {
 	color: #0C2D56;
 }
+
 .timetable {
-	width: 90%;
-	
+	width: 100%;
 }
 .executives-1 {
 	padding-bottom: 100px;
@@ -267,7 +307,7 @@
 }
 
 body:before {
-  content: "";
+  content: " ";
   display: block;
   position: fixed;
   left: 0;
@@ -292,10 +332,6 @@ body {
     width: 100%
 }
 
-.footer p {
-	font-size: 1vh;
-	float: left;
-}
 /* Timetable */
 
 th {

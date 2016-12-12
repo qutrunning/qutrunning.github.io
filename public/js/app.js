@@ -59,12 +59,12 @@ $(document).ready(function (){
     });
     $("#go-timetable").click(function (){
         $('html, body').animate({
-            scrollTop: $("#timetable").offset().top-50
+            scrollTop: $("#timetablehead").offset().top-50
         }, 1000);
     });
     $("#go-timetable-2").click(function (){
         $('html, body').animate({
-            scrollTop: $("#timetable").offset().top-50
+            scrollTop: $("#timetablehead").offset().top-50
         }, 1000);
     });
     $("#go-map").click(function (){
