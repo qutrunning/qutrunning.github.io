@@ -506,7 +506,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #00FBFF;
+  color: #FF8000;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -515,7 +515,7 @@ a.session-box:hover {
 	-webkit-transition: all .2s;
    -moz-transition: all .2s;
   transition: all .2s; 
-  color: #00FBFF;
+  color: #FF8000;
   background-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
