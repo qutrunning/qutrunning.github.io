@@ -135,8 +135,23 @@
   	}
 
   	.bgimg-initial {
-  		width: 92.1%;
+      width: 94.2%;
   	}
+}
+
+@media screen and ( min-width: 601px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 95.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 89.2%;
+    }
 }
 
 @media screen and ( min-width: 700px ) {
@@ -150,7 +165,7 @@
     }
 
     .bgimg-initial {
-      width: 92.1%;
+      width: 89.2%;
     }
 }
 
