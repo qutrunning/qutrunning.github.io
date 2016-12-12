@@ -310,7 +310,6 @@
 }
 
 .bgimg-initial {
-  border-radius: 20px 20px 0px 0px;
   background-image: url(../img/wall_initial.jpg);
   min-height: 100%;
 }
