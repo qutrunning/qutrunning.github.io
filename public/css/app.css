@@ -544,9 +544,9 @@ a.session-box:hover {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-	-webkit-transition: all 1s;
-   -moz-transition: all 1s;
-  transition: all 1s; 
+	-webkit-transition: all 0.7s;
+   -moz-transition: all 0.7s;
+  transition: all 0.7s; 
   color: #FF8000;
   background-color: #e7e7e7;
 }
