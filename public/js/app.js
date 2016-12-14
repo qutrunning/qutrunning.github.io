@@ -84,5 +84,5 @@ $(document).ready(function (){
         e.preventDefault();
     });
     //Enables popover when rel="popover"
-    // $("[rel='tooltip']").tooltip();
+    $("[rel='tooltip']").tooltip();
 });
