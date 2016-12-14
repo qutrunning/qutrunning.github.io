@@ -2,6 +2,7 @@
 /*Carousel*/
 .first-block {
     border-radius: 5px;
+    height: 550px;
     width: 97%;
     margin: 0 auto;
     position: fixed;
@@ -325,11 +326,6 @@
   min-height: 100%;
 }
 
-.bgimg-6 {
-  background-image: url(../img/wall_6.png);
-  min-height: 100%;
-}
-
 .bgimg-7 {
   background-image: url(../img/wall_7.jpg);
   min-height: 100%;
@@ -442,6 +438,74 @@ th {
 td {
 	color: white;
 	background-color: #0C2D56;
+}
+
+
+/*.slider {
+  border-radius: 5px;
+  height: 500px;
+  vertical-align: middle;
+
+}
+*/
+
+
+.slider {
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+
+}
+
+.slider .slide {
+  border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-dots {
+  bottom: 0px;
+  margin-left: 0; /* Fixes the visible horizontal scroll bar */
+}
+
+.img-container {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  
+}
+
+.img-slider { 
+   position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-filter: sepia; /*sepia, hue-rotate, invert....*/
+-webkit-filter: brightness(70%); 
+}
+
+.img-caption {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  display: inline-block;
+  font-weight: bold;
+  text-shadow: 1px 1px #000000;
+  font-family: 'Lato', sans-serif;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: black;    
+}
+
+.slick-dots {
+    bottom: -40px;
 }
 
 .run {
