@@ -86,7 +86,7 @@
 										<div class="container">
 											<div class="carousel-caption">
 												<h1>Get Social with QUT Running!</h1><br>
-												<p>The new timetable is released. <br>Make sure you check the latest updates and don’t miss out on our sessions.<br> We prepared some really good stuff for you!</p>
+												<p>The new timetable has been released. <br>Make sure you check the latest updates and don’t miss out on our sessions.<br> We've prepared some really fun stuff for you!</p>
 												<br>
 												<br>
 												<br>
@@ -1200,7 +1200,7 @@
 	   var offset = startchange.offset();
 	    if (startchange.length){
 	   $(document).scroll(function() { 
-	      scroll_start = $(this).scrollTop();
+	      scroll_start = $(this).scrollTop() + 150;
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#0e0026');
 	       }
