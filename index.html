@@ -106,29 +106,33 @@
 													<b>Gym access</b> every wednesday<br>
 													Complimentary <b>singlet</b><br>				
 												</p>
-												<a class="btn btn-lg btn-orange" href="#" role="button" id="go-timetable-2">See the timetable</a>
+												<a class="btn btn-lg btn-orange" href="#timetablehead" role="button" id="go-timetable-2">See the timetable</a>
 												<br>
 												<br>
 											</div>
 										</div>
 									</div>
 								</div>
-								<a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 									<span class="sr-only">Previous</span>
 								</a>
-								<a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									<span class="sr-only">Next</span>
 								</a>
 							</div><!-- /.carousel -->
+							<div class="swipe">
+												<br>
+								<img class="img-responsive" src="./public/img/swipe.png" alt="Swipe" align=center width="35px" height="35px">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="600">
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="590">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -137,7 +141,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a id="go-home2" class="navbar-brand" href="#home2">QUT Running</a>
+					<a id="go-home" class="navbar-brand" href="#home2">QUT Running</a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse collapse">
@@ -162,7 +166,7 @@
 				<br>
 				<div class="col-md-4 text-center col-md-offset-1">
 						<br>
-						<br><!---remove this later in place of padding!-->
+						<br>
 						<br>
 						<br>
 						<br>
@@ -264,7 +268,6 @@
 						<dl class="dl-horizontal">
 							<br>
 							<dt>Twillight Running Festival</dt>
-							<br>
 							<dd class="text-left">
 								QUT Running will be entering teams into various running, and obstacle, races throughout the year. One of the earliest races of the year is the Twilight running festival held at St Lucia on the 20th March. This is a festival with distances suiting everyone; 21.1km, 10km, 5km, 1km.
 								<br>
@@ -274,7 +277,6 @@
 							</dd>
 
 							<dt>QUT Classic</dt>
-							<br>
 							<dd class="text-left">
 								QUT Classic is an event organised by the Guild and is set to 15. May. The distances covered are 10km, 5km and 1km.
 								<br>
@@ -284,7 +286,6 @@
 							</dd>
 
 							<dt>Brisbane Marathon</dt>
-							<br>
 							<dd class="text-left">
 								Brisbane Marathon Festival is one of Brisbane’s major sporting events. The distances covered are 42.2km, 21.1km, 10km, 5km and the courses are run through the CBD on the 7th of August.
 								<br>
@@ -294,7 +295,6 @@
 							</dd>
 
 							<dt>Bridge To Brisbane</dt>
-							<br>
 							<dd class="text-left">
 								Later on in August (28th), the annual Bridge to Brisbane event occurs. The race distances are 10km and 5km – with the 10km starting at the Gateway Bridge and finishing at the Brisbane RNA Showgrounds. QUT Running always has a strong presence in this event.
 								<br>
@@ -304,7 +304,6 @@
 							</dd>
 
 							<dt>Tough Mudder</dt>
-							<br>
 							<dd class="text-left">
 								As well as running events, QUT running usually enters teams in obstacle races such as Tough Mudder (7th & 8th May) and Spartan Race (27th Feb) also. These events are always a lot of fun and can be taken as seriously or laid-back as you wish.
 								<br>
@@ -314,7 +313,6 @@
 							</dd>
 
 							<dt>Other Events</dt>
-							<br>
 							<dd class="text-left">
 								There are many other events happing through the year in Brisbane and we will aim to get involved in as many as possible. If you have any suggestions of events you’d like to participate in, let one of our executives know and we can organise a team!
 								<br>
@@ -338,7 +336,7 @@
 
 
 
-		<div id="timetablehead" class="bgimg-1">
+		<div class="bgimg-1"  id="timetablehead">
 		</div>
 
 		<div class="row">
@@ -1150,7 +1148,7 @@
 	   var offset = startchange.offset();
 	    if (startchange.length){
 	   $(document).scroll(function() { 
-	      scroll_start = $(this).scrollTop();
+	      scroll_start = $(this).scrollTop() + 100;
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#106989');
 	       }
@@ -1163,7 +1161,7 @@
 	   var offset = startchange.offset();
 	    if (startchange.length){
 	   $(document).scroll(function() { 
-	      scroll_start = $(this).scrollTop();
+	      scroll_start = $(this).scrollTop() + 100;
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#63000D');
 	       }
@@ -1176,9 +1174,9 @@
 	   var offset = startchange.offset();
 	    if (startchange.length){
 	   $(document).scroll(function() { 
-	      scroll_start = $(this).scrollTop();
+	      scroll_start = $(this).scrollTop() + 100;
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#5C015C');
+	          $(".navbar-default").css('background-color', '#067000');
 	       }
 	   });
 	    }
@@ -1189,7 +1187,7 @@
 	   var offset = startchange.offset();
 	    if (startchange.length){
 	   $(document).scroll(function() { 
-	      scroll_start = $(this).scrollTop();
+	      scroll_start = $(this).scrollTop() + 150;
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#013232');
 	       }

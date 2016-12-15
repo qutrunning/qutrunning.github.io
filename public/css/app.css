@@ -65,11 +65,10 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #63000D;
+	background-color: #8F0002;
 	padding-top: 2%;
   	padding-bottom: 2%;
   	z-index: 11;
-  	color: #0C2D56;
   	font-family: 'Lato', sans-serif;
 	/*opacity: 0;*/
 }
@@ -79,7 +78,7 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #5C015C;
+	background-color: #033B00;
 	padding-top: 2%;
   	padding-bottom: 2%;
   	z-index: 11;
@@ -93,7 +92,7 @@
   	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #015C5C;
+	background-color: #007173;
 	padding-top: 2%;
   	padding-bottom: 2%;
   	z-index: 11;
@@ -108,7 +107,7 @@
    	height: 100%;
  	margin: 0 auto;
   	position: relative;
-	background-color: #5C015C;
+	background-color: #300030;
 	padding-top: 2%;
   	padding-bottom: 2%;
   	z-index: 11;
@@ -117,14 +116,31 @@
 	/*opacity: 0;*/
 }
 
+.swipe {
+  height: 50px;
+  position: relative;
+}
 .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   text-align: center;
 }
 
 /* RESPONSIVE DIVS */
+@media screen and ( max-width: 500px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 92.8%;
+    }
 
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
 
-@media screen and ( max-width: 600px ) {
+    .bgimg-initial {
+      width: 94.6%;
+    }
+}
+
+@media screen and ( min-width: 501px ) {
 	.fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   		width: 92.8%;
   	}
@@ -135,11 +151,11 @@
   	}
 
   	.bgimg-initial {
-      width: 94.2%;
+      width: 86%;
   	}
 }
 
-@media screen and ( min-width: 601px ) {
+@media screen and ( min-width: 600px ) {
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
       width: 95.8%;
     }
@@ -230,6 +246,19 @@
   	.bgimg-initial {
   		width: 86.6%;
   	}
+
+
+
+}
+
+@media screen and ( min-width: 1900px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 98.3%;
+    }
+
+    .bgimg-initial {
+      width: 86.6%;
+    }
 }
 
 
@@ -291,8 +320,8 @@
   -o-background-size: cover;
   background-size: cover;
   z-index: 10;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .bgimg-1 {
