@@ -125,7 +125,7 @@
 }
 
 /* RESPONSIVE DIVS */
-@media screen and ( max-width: 320px ) {
+@media screen and ( max-width: 320px ) { /*for iPhone 5 and 5S*/
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
       width: 92.8%;
     }
@@ -140,7 +140,22 @@
     }
 }
 
-@media screen and ( min-width: 321px ) {
+@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 91.95%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 93.2%;
+    }
+}
+
+@media screen and ( min-width: 375px ) { /*for iPhone 6 and above*/
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
       width: 92.8%;
     }
