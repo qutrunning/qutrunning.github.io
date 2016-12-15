@@ -5,7 +5,7 @@
 /* Carousel base class */
 .carousel {
   border-radius: 5px;
-  height: 500px;
+  height: 480px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
