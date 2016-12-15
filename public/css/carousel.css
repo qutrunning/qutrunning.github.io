@@ -18,7 +18,7 @@
 .carousel .item {
 border-radius: 5px;
 
-height: 500px;
+height: 480px;
 background: #ff3236; /* Old browsers */
 background: -moz-linear-gradient(left, #ff3236 0%, #e8d000 100%, #e2d134 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, #ff3236 0%,#e8d000 100%,#e2d134 100%); /* Chrome10-25,Safari5.1-6 */
