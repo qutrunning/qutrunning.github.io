@@ -101,7 +101,7 @@ $(document).ready(function (){
 
 $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
-    if($(window).width() > 900) {
+    if($(window).width() > 1000) {
         /* Every time the window is scrolled ... */
 	    $(window).scroll( function(){
 	    
