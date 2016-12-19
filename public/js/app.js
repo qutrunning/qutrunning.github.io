@@ -96,3 +96,193 @@ $(document).ready(function (){
     //Enables popover when rel="popover"
     $("[rel='tooltip']").tooltip();
 });
+
+
+
+$(document).ready(function() {
+	//if the user agent is not mobile, run the scripts
+    if($(window).width() > 900) {
+        /* Every time the window is scrolled ... */
+	    $(window).scroll( function(){
+	    
+	        /* Check the location of each desired element */
+	        $('.centered').each( function(i){
+	            
+	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > (bottom_of_object * 0.9)){
+
+	                $(this).animate({'opacity':'1'},400);             
+	            }            
+	        });
+	        $('.centered-about').each( function(i){
+	            
+	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > (bottom_of_object * 0.6)){
+
+	                $(this).animate({'opacity':'1'},400);             
+	            }            
+	        });     
+	        $('.centered-contact').each( function(i){
+	            
+	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > (bottom_of_object * 0.9)){
+
+	                $(this).animate({'opacity':'1'},400);             
+	            }            
+	        });     
+	    });
+		
+    }
+    //if mobile screen width detected, don't run fade in scripts
+    else{
+    	$('.centered').css({
+        'opacity': 1
+    	});
+    	$('.centered-contact').css({
+        'opacity': 1
+    	});
+    	$('.centered-about').css({
+        'opacity': 1
+    	});
+    }
+    if($('.first-block').css('opacity') == 0) {
+    	$(".first-block").hide();
+	}
+});
+
+//Script to fade out the Carousel when scrolled past
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = ($(window).height() / 2); //1.7 previous
+    $('.first-block').css({
+
+        'opacity': ((height - scrollTop) / (height))
+    });
+});
+
+//Fade in the navbar upon scroll
+$(document).on('scroll', function (e) {
+    $('.navbar-header').css('opacity', (0 + ($(document).scrollTop() / 600)));
+});
+
+//change the colour of the navbar to match the colour of the div currently in view
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#home2');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#06182d');
+       }
+   });
+    }
+});	
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#about');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#06182d');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#get-started');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#ad6d05');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#timetablehead');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#00051C');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#overview');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#292929');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#map');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#022900');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#executives');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#013232');
+       }
+   });
+    }
+});
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#contact');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#000B17');
+       }
+   });
+}
+});
+
+//collapse the navbar upon selection from hamburger menu
+$(document).on('click','.navbar-collapse.in',function(e) {
+	if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+	    $(this).collapse('hide');
+	}
+});
