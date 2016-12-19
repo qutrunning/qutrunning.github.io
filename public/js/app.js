@@ -98,6 +98,15 @@ $(document).ready(function (){
 });
 
 
+//Allow touch-based interaction with the carousel
+$(document).ready(function() {
+		   $("#myCarousel").swiperight(function() {
+		      $(this).carousel('prev');
+		    });
+		   $("#myCarousel").swipeleft(function() {
+		      $(this).carousel('next');
+		   });
+});	 
 
 $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
