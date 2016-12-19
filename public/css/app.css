@@ -117,6 +117,7 @@
 
 .swipe {
   height: 50px;
+  opacity: 0.5;
   position: relative;
 }
 .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
