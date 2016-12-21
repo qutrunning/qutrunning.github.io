@@ -1,4 +1,3 @@
-
 /*Carousel*/
 .first-block {
     border-radius: 5px;
@@ -9,14 +8,6 @@
     right: 0;
     z-index: 10;
     font-family: 'Lato', sans-serif;
-}
-
-.footsteps {
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 /*About*/
@@ -31,7 +22,6 @@
 	z-index: 11;
 	font-family: 'Lato', sans-serif;
   text-align: center;
-
 }
 
 /*Events*/
@@ -348,6 +338,15 @@
 
 }
 
+.centered-overview {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  width: 85%;
+  opacity: 0;
+
+}
+
 .centered-about {
   display: inline-block;
   vertical-align: middle;
@@ -477,6 +476,14 @@
 }
 .race-table {
 	border-color: #0C2D56;
+}
+
+.footsteps {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .sponsors {
@@ -612,7 +619,7 @@ a.session-box:hover {
 -webkit-transition: all .2s;
    -moz-transition: all .2s;
   transition: all .2s; 
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: #06182d;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
