@@ -522,6 +522,9 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 html {

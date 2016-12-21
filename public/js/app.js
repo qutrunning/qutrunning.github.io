@@ -176,7 +176,7 @@ $(document).ready(function() {
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.9)){
+	            if( bottom_of_window > (bottom_of_object * 0.87)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -224,6 +224,17 @@ $(window).scroll(function () {
 $(document).on('scroll', function (e) {
     $('.navbar-header').css('opacity', (0 + ($(document).scrollTop() / 600)));
 });
+
+
+//Make a separate fade in to offest for mobile url bar
+
+
+
+
+
+
+
+
 
 //change the colour of the navbar to match the colour of the div currently in view
 $(document).ready(function(){       
