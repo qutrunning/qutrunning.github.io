@@ -383,14 +383,16 @@
   margin: 0 auto;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat center center;
+  background-repeat: no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-overflow-scrolling: touch;
   background-size: cover;
   z-index: 10;
   padding-top: 8%;
   padding-bottom: 8%;
+
 }
 
 .bgimg-1 {
