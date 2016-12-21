@@ -121,7 +121,7 @@ $(document).ready(function() {
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.9)){
+	            if( bottom_of_window > (bottom_of_object * 0.94)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -137,24 +137,46 @@ $(document).ready(function() {
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
 	        }); 
-          $('.centered-overview').each( function(i){
+          	$('.centered-executives').each( function(i){
               
-              var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+              	var bottom_of_window = $(window).scrollTop() + $(window).height();
               
-              /* If the object is completely visible in the window, fade it in */
-              if( bottom_of_window > (bottom_of_object * 0.875)){
+              	/* If the object is completely visible in the window, fade it in */
+              	if( bottom_of_window > (bottom_of_object * 0.925)){
 
-                  $(this).animate({'opacity':'1'},400);             
+              		$(this).animate({'opacity':'1'},400);             
               }            
-          });         
+          	});     
+          	$('.centered-map').each( function(i){
+              
+              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+              	var bottom_of_window = $(window).scrollTop() + $(window).height();
+              
+              	/* If the object is completely visible in the window, fade it in */
+              	if( bottom_of_window > (bottom_of_object * 0.95)){
+
+              		$(this).animate({'opacity':'1'},400);             
+              }            
+          	});      
+          	$('.centered-overview').each( function(i){
+              
+              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+              	var bottom_of_window = $(window).scrollTop() + $(window).height();
+              
+              	/* If the object is completely visible in the window, fade it in */
+              	if( bottom_of_window > (bottom_of_object * 0.9)){
+
+              		$(this).animate({'opacity':'1'},400);             
+              }            
+          	});   
 	        $('.centered-contact').each( function(i){
 	            
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.7)){
+	            if( bottom_of_window > (bottom_of_object * 0.9)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -168,6 +190,15 @@ $(document).ready(function() {
         'opacity': 1
     	});
     	$('.centered-contact').css({
+        'opacity': 1
+    	});
+    	$('.centered-overview').css({
+        'opacity': 1
+    	});
+    	$('.centered-map').css({
+        'opacity': 1
+    	});
+    	$('.centered-executives').css({
         'opacity': 1
     	});
     	$('.centered-about').css({

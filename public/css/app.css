@@ -338,21 +338,13 @@
 
 }
 
-.centered-overview {
+.centered-overview, .centered-about, .centered-executives, .centered-map {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
   width: 85%;
   opacity: 0;
 
-}
-
-.centered-about {
-  display: inline-block;
-  vertical-align: middle;
-  color: #ffffff;
-  width: 85%;
-  opacity: 0;
 }
 
 .centered-contact {

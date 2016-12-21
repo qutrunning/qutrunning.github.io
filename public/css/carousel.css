@@ -12,6 +12,13 @@
   border-radius: 5px;
   text-shadow: 1px 1px #000000;
   z-index: 10;
+  /* Make text unselectable on carousel when swiping with mouse cursor click and drag */
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Declare heights because of positioning of img element */
