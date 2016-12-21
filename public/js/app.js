@@ -120,8 +120,8 @@ $(document).ready(function() {
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( bottom_of_window > (bottom_of_object * 0.9)){
+	            /* If the object is completely visible in the window, fade it in */
+	            if( bottom_of_window > (bottom_of_object * 0.95)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -131,8 +131,8 @@ $(document).ready(function() {
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( bottom_of_window > (bottom_of_object * 0.6)){
+	            /* If the object is completely visible in the window, fade it in */
+	            if( bottom_of_window > (bottom_of_object * 0.95)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -142,8 +142,8 @@ $(document).ready(function() {
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it it */
-	            if( bottom_of_window > (bottom_of_object * 0.9)){
+	            /* If the object is completely visible in the window, fade it in */
+	            if( bottom_of_window > (bottom_of_object * 0.95)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -295,3 +295,21 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 	    $(this).collapse('hide');
 	}
 });
+
+(function(){
+
+  var parallax = document.querySelectorAll(".bgimg-initial"),
+      speed = 0.5;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
