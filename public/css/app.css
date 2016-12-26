@@ -12,8 +12,8 @@
 
 /*About*/
 .second-block {
-	border-radius: 10px;
-	width: 100%;
+	border-radius: 0px 0px 15px;
+	width: 85%;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -413,12 +413,7 @@
 }
 
 .bgimg-6 {
-  background-image: url(../img/wall_6.png);
-  min-height: 100%;
-}
-
-.bgimg-6 {
-  background-image: url(../img/wall_6.png);
+  background-image: url(../img/wall_6.jpg);
   min-height: 100%;
 }
 
@@ -613,30 +608,37 @@ a.session-box:hover {
 /* Navbar */
 
 .navbar-default {
--webkit-transition: all .2s;
-   -moz-transition: all .2s;
-  transition: all .2s; 
+  -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+  transition: all 0.8ss; 
   opacity: 0.8;
   background-color: #06182d;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
   margin-bottom: 0px;
   z-index: 99;
+width: 86.8%;
+  margin: 0 auto;
 }
 
 .navbar {
-  border: 0px solid transparent;
+  border: 0px transparent;
 }
 
 .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999;
+  -webkit-transition: all 0.7s;
+   -moz-transition: all 0.7s;
+  transition: all 0.7s; 
+  width: 100%;
+  top:0;
+  z-index: 9999;
 }
 
 .affix ~ .container {
-     position: relative;
-     top: 50px;
+  -webkit-transition: all 0.7s;
+   -moz-transition: all 0.7s;
+  transition: all 0.7s;  
+  position: relative;
 }	
 
 .navbar-header {
