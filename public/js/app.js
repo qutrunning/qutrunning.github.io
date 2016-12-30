@@ -1,37 +1,19 @@
 // ----- Google Maps -------
-var map;
-
-function initialize() {
-    var isDraggable = $(document).width() > 480 ? true : false;
-    var mapOptions = {
-        draggable: isDraggable,
-        scrollwheel: false,
-        zoom: 17,
-        center: new google.maps.LatLng(-27.477400, 153.029349)
-    };
-
-    var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
-
-    var KidneyLawn = new google.maps.Marker({
-        position: new google.maps.LatLng(-27.477400, 153.029349),
-        map: map,
-        icon: './public/img/running_pin.png',
-        title: 'Kidney Lawn'
-    });
-    addEvent(KidneyLawn);
-}
-
-
-function addEvent(marker) {
-    var infowindow = new google.maps.InfoWindow({
-        content: marker.title
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(marker.map, marker);
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
+function initMap() {
+        var lawn = {lat: -27.477400, lng: 153.029349};
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 19,
+          center: lawn,
+          gestureHandling: 'cooperative',
+          scrollwheel:  false
+        });
+        var marker = new google.maps.Marker({
+          position: lawn,
+          map: map,
+          icon: './public/img/running_pin.png',
+          title: 'Kidney Lawn'
+        });
+      }
 
 
 // ------ Scroll ------
