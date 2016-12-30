@@ -455,7 +455,43 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 (function(){
 
   var parallax = document.querySelectorAll(".bgimg-initial"),
-      speed = 0.5;
+      speed = 0.2;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+
+(function(){
+
+  var parallax = document.querySelectorAll(".bgimg-1"),
+      speed = 0.2;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+
+(function(){
+
+  var parallax = document.querySelectorAll(".bgimg-2"),
+      speed = 0.2;
 
   window.onscroll = function(){
     [].slice.call(parallax).forEach(function(el,i){
