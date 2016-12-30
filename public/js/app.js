@@ -439,7 +439,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#000B17');
+          $(".navbar-default").css('background-color', '#00070F');
        }
    });
 }
