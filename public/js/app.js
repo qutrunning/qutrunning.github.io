@@ -5,7 +5,7 @@ function initMap() {
           zoom: 19,
           center: lawn,
           gestureHandling: 'cooperative',
-          scrollwheel:  false
+          scrollwheel:  true
         });
         var marker = new google.maps.Marker({
           position: lawn,
