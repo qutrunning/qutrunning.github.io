@@ -12,7 +12,7 @@
 
 /*About*/
 .second-block {
-	border-radius: 0px 0px 15px;
+	border-radius: 0px 0px 15px 15px;
 	width: 85%;
 	height: 100%;
  	margin: 0 auto;
@@ -26,6 +26,7 @@
 
 /*Events*/
 .third-block {
+  border-radius: 15px;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -40,6 +41,7 @@
 
 /*Timetable*/
 .fourth-block {
+  border-radius: 15px;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -53,6 +55,7 @@
 
 /*Overview*/
 .fifth-block {
+  border-radius: 15px;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -66,6 +69,7 @@
 
 /*Location*/
 .sixth-block {
+  border-radius: 15px;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -80,6 +84,7 @@
 
 /*Executives*/
 .seventh-block {
+  border-radius: 15px;
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -94,7 +99,7 @@
 
 /*Contact*/
 .eighth-block {
-  border-radius: 0px 0px 20px 20px;	
+  border-radius: 15px;
  	height: 100%;
  	margin: 0 auto;
 	position: relative;
@@ -449,31 +454,38 @@
 .bgimg-1 {
   background-image: url(../img/wall_1.jpg);
   min-height: 100%;
+  width: 50%;
+
 }
 
 .bgimg-2 {
   background-image: url(../img/wall_2.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .bgimg-3 {
   background-image: url(../img/wall_3.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .bgimg-4 {
   background-image: url(../img/wall_4.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .bgimg-5 {
   background-image: url(../img/wall_5.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .bgimg-6 {
   background-image: url(../img/wall_6.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .bgimg-7 {
@@ -481,6 +493,7 @@
   min-height: 100%;
   padding-top: 9%;
   padding-bottom: 10%;
+  width: 50%;
 }
 
 .bgimg-8 {
@@ -488,11 +501,13 @@
   min-height: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
+  width: 50%;
 }
 
 .bgimg-initial {
   background-image: url(../img/wall_initial.jpg);
   min-height: 100%;
+  width: 50%;
 }
 
 .caption-block {
