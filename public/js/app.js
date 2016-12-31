@@ -257,7 +257,7 @@ $(document).ready(function() {
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
               
                 /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 0.95)){
+                if( bottom_of_window > (bottom_of_object * 0.9)){
 
                   $(this).animate({'opacity':'1'},400);             
               }            
@@ -268,7 +268,7 @@ $(document).ready(function() {
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
               
                 /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 0.9)){
+                if( bottom_of_window > (bottom_of_object * 0.8)){
 
                   $(this).animate({'opacity':'1'},400);             
               }            
@@ -356,7 +356,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#ad6d05');
+          $(".navbar-default").css('background-color', '#0A0A0A');
        }
    });
     }
@@ -369,7 +369,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#00051C');
+          $(".navbar-default").css('background-color', '#220926');
        }
    });
     }
@@ -382,7 +382,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#292929');
+          $(".navbar-default").css('background-color', '#0E2859');
        }
    });
     }
@@ -395,7 +395,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#022900');
+          $(".navbar-default").css('background-color', '#1A0209');
        }
    });
     }
@@ -408,7 +408,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#013232');
+          $(".navbar-default").css('background-color', '#07021A');
        }
    });
     }

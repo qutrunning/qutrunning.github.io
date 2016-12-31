@@ -30,7 +30,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #F89D0E;
+	background-color: #0A0A0A;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -45,7 +45,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #000724;
+	background-color: #220926;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -59,7 +59,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #525252;
+	background-color: #14397F;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -73,7 +73,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #033B00;
+	background-color: #170007;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -88,7 +88,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #007173;
+	background-color: #07001F;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -119,10 +119,10 @@
 }
 .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   text-align: center;
-  box-shadow: inset 0px 4px 62px -1px #333333;
+  /*box-shadow: inset 0px 4px 62px -1px #333333;
   -webkit-box-shadow: inset 0px 4px 62px -1px #333333;
   -moz-box-shadow: inset 0px 4px 62px -1px #333333;
-  -o-box-shadow: inset 0px 4px 62px -1px #333333;
+  -o-box-shadow: inset 0px 4px 62px -1px #333333;*/
 }
 
 /* RESPONSIVE DIVS */
@@ -453,61 +453,70 @@
 
 .bgimg-1 {
   background-image: url(../img/wall_1.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 80px 40px 0px 0px;
+  width: 80%;
 
 }
 
 .bgimg-2 {
   background-image: url(../img/wall_2.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 0px 0px 80px 40px;
+  width: 80%;
 }
 
 .bgimg-3 {
   background-image: url(../img/wall_3.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 80px 40px 0px 0px;
+  width: 80%;
 }
 
 .bgimg-4 {
   background-image: url(../img/wall_4.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 0px 0px 80px 40px;
+  width: 80%;
 }
 
 .bgimg-5 {
   background-image: url(../img/wall_5.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 80px 40px 0px 0px;
+  width: 80%;
 }
 
 .bgimg-6 {
   background-image: url(../img/wall_6.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 0px 0px 80px 40px;
+  width: 80%;
 }
 
 .bgimg-7 {
   background-image: url(../img/wall_7.jpg);
-  min-height: 100%;
+  height: 80%;
   padding-top: 9%;
   padding-bottom: 10%;
-  width: 50%;
+  border-radius: 120px 40px 120px 40px;
+  width: 80%;
 }
 
 .bgimg-8 {
   background-image: url(../img/wall_8.jpg);
-  min-height: 100%;
+  height: 80%;
   padding-top: 10%;
   padding-bottom: 10%;
-  width: 50%;
+  border-radius: 120px 40px 120px 40px;
+  width: 80%;
 }
 
 .bgimg-initial {
   background-image: url(../img/wall_initial.jpg);
-  min-height: 100%;
-  width: 50%;
+  height: 80%;
+  border-radius: 120px 40px 120px 40px;
+  width: 80%;
 }
 
 .caption-block {
@@ -541,10 +550,12 @@
 	border-color: #0C2D56;
 }
 
-.footsteps {
+.dots {
   z-index: 10;
   width: 100%;
   height: 100%;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
   margin: 0 auto;
   position: relative;
 }
@@ -682,9 +693,10 @@ a.session-box:hover {
 /* Navbar */
 
 .navbar-default {
-  -webkit-transition: all 0.8s;
-   -moz-transition: all 0.8s;
-  transition: all 0.8s; 
+  -webkit-transition: all 0.6s;
+   -moz-transition: all 0.6s;
+  transition: all 0.6s; 
+  transition: background 0.2s, padding 0.2s;
   opacity: 0.8;
   background-color: #06182d;
   outline: 1px solid transparent;
@@ -700,18 +712,18 @@ a.session-box:hover {
 }
 
 .affix {
-  -webkit-transition: all 0.7s;
-   -moz-transition: all 0.7s;
-  transition: all 0.7s; 
+  -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+  transition: all 0.8s; 
   width: 100%;
   top:0;
   z-index: 9999;
 }
 
 .affix ~ .container {
-  -webkit-transition: all 0.7s;
-   -moz-transition: all 0.7s;
-  transition: all 0.7s;  
+  -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+  transition: all 0.8s;  
   position: relative;
 }	
 
