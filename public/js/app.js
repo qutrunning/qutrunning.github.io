@@ -5,7 +5,7 @@ function initMap() {
           zoom: 19,
           center: lawn,
           gestureHandling: 'cooperative',
-          scrollwheel:  true
+          scrollwheel:  false
         });
         var marker = new google.maps.Marker({
           position: lawn,
@@ -36,37 +36,37 @@ $(document).ready(function (){
     });
     $("#go-get-started").click(function (){
         $('html, body').animate({
-            scrollTop: $("#get-started").offset().top-50
+            scrollTop: $("#get-started2").offset().top-50
         }, 1000);
     });
     $("#go-timetable").click(function (){
         $('html, body').animate({
-            scrollTop: $("#timetablehead").offset().top-50
+            scrollTop: $("#timetablehead2").offset().top-50
         }, 1000);
     });
     $("#go-timetable-2").click(function (){
         $('html, body').animate({
-            scrollTop: $("#timetablehead").offset().top-50
+            scrollTop: $("#timetablehead2").offset().top-50
         }, 1000);
     });
     $("#go-overview").click(function (){
         $('html, body').animate({
-            scrollTop: $("#overview").offset().top-50
+            scrollTop: $("#overview2").offset().top-50
         }, 1000);
     });
     $("#go-map").click(function (){
         $('html, body').animate({
-            scrollTop: $("#map").offset().top-50
+            scrollTop: $("#map2").offset().top-50
         }, 1000);
     });
     $("#go-executives").click(function (){
         $('html, body').animate({
-            scrollTop: $("#executives").offset().top-50
+            scrollTop: $("#executives2").offset().top-50
         }, 1000);
     });
     $("#go-contact").click(function (){
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top-50
+            scrollTop: $("#contact2").offset().top-50
         }, 1000);
     });
 
