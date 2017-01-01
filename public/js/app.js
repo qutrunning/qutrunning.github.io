@@ -2,7 +2,7 @@
 function initMap() {
         var lawn = {lat: -27.477400, lng: 153.029349};
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
-          zoom: 19,
+          zoom: 17,
           center: lawn,
           gestureHandling: 'cooperative',
           scrollwheel:  false
