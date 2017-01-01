@@ -701,7 +701,6 @@ a.session-box:hover {
   transition: background 0.2s, padding 0.2s;
   opacity: 0.8;
   background-color: #06182d;
-  outline: 1px solid transparent;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
   margin-bottom: 0px;
@@ -710,7 +709,7 @@ a.session-box:hover {
 }
 
 .navbar {
-  border: 0px 2px 2px 0px transparent;
+  border: 0px;
 }
 
 .affix {
