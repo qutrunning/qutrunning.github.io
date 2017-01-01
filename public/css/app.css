@@ -598,12 +598,13 @@ body:before {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  background: url(../img/wall.jpg) no-repeat center center;
+  z-index: 10;
+  background: url(../img/wall.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed
   top: 0;
   left: 0;
   right: 0;
@@ -616,6 +617,7 @@ html {
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%
 }
 
