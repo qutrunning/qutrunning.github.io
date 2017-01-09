@@ -24,11 +24,6 @@ $(document).ready(function (){
             scrollTop: $("#home").offset().top-50
         }, 1000);
     });
-    $("#go-home2").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top-50
-        }, 1000);
-    });
     $("#go-about").click(function (){
         $('html, body').animate({
             scrollTop: $("#about").offset().top-50
@@ -324,7 +319,7 @@ $(document).ready(function() {
 //change the colour of the navbar to match the colour of the div currently in view
 $(document).ready(function(){       
    var scroll_start = 0;
-   var startchange = $('#home2');
+   var startchange = $('#home');
    var offset = startchange.offset();
     if (startchange.length){
    $(document).scroll(function() { 
