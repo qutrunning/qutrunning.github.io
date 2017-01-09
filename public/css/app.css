@@ -180,25 +180,45 @@
 	max-width: 85%;
 	height: 100%;
 	margin: 0 auto;
+  overflow: none;
 }
 
 .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
   position: relative;
   opacity: 1;
   margin: 0 auto;
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat center center fixed; 
+  background-repeat: no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-overflow-scrolling: touch;
-  background-size: cover;
+  -webkit-backface-visibility: hidden;
+  background-attachment: fixed;
   z-index: 10;
   padding-top: 6%;
   padding-bottom: 6%;
 }
+/*
+.bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
 
+  position: relative;
+  opacity: 1;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  background-attachment: fixed;
+  z-index: 10;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  overflow-x: hidden; 
+}
+*/
 .bgimg-initial {
   background-image: url(../img/wall_initial.jpg);
   min-height: 100%;
@@ -277,7 +297,6 @@
 
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      border-radius: 15px 15px 0px 0px;
     }
 
     .bgimg-initial {
@@ -510,7 +529,7 @@
 
 @media screen and ( min-width: 2000px ) {
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98.7%;
+      width: 98.8%;
     }
 
     .bgimg-initial {
@@ -598,29 +617,22 @@ body:before {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
-  background: url(../img/wall.jpg) no-repeat center center scroll;
+  z-index: auto;
+  background: url(../img/wall.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 html {
     overflow-x: hidden;
-    width: 100%;
 }
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100%
+    width: 100%;
 }
-
 /* Timetable */
 
 th {
@@ -732,7 +744,7 @@ a.session-box:hover {
 }	
 
 .affix .navbar-default {
-   background-color: #000000 !important;
+ background-color: #000000 !important;
 }
 
 .navbar-header {

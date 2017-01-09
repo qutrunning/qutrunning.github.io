@@ -21,12 +21,12 @@ function initMap() {
 $(document).ready(function (){
     $("#go-home").click(function (){
         $('html, body').animate({
-            scrollTop: $("#home2").offset().top-50
+            scrollTop: $("#home").offset().top-50
         }, 1000);
     });
     $("#go-home2").click(function (){
         $('html, body').animate({
-            scrollTop: $("#home2").offset().top-50
+            scrollTop: $("#home").offset().top-50
         }, 1000);
     });
     $("#go-about").click(function (){
