@@ -24,6 +24,11 @@ $(document).ready(function (){
             scrollTop: $("#home").offset().top-50
         }, 1000);
     });
+     $("#go-home2").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top-50
+        }, 1000);
+    });
     $("#go-about").click(function (){
         $('html, body').animate({
             scrollTop: $("#about").offset().top-50

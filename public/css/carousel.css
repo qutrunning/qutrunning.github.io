@@ -23,9 +23,6 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  border-radius: 25px 25px 25px 25px;
-  -moz-border-radius: 25px 25px 25px 25px;
-  -webkit-border-radius: 25px 25px 25px 25px;
   border: 2px solid #666666;
   overflow: hidden;
   height: 470px;
@@ -83,9 +80,6 @@
 }
 
 .left, .carousel-control {
-  border-radius: 25px 25px 25px 25px;
-  -moz-border-radius: 25px 25px 25px 25px;
-  -webkit-border-radius: 25px 25px 25px 25px;
   border: 0px solid #666666;
   overflow: hidden;
 }

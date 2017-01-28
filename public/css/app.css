@@ -1,7 +1,6 @@
 /*Carousel*/
 .first-block {
-    border-radius: 5px;
-    width: 97%;
+    width: 100%;
     margin: 0 auto;
     position: fixed;
     left: 0;
@@ -707,7 +706,9 @@ a.session-box:hover {
 
 
 /* Navbar */
-
+.navbar {
+  height: 100px;
+}
 .navbar-default {
   -webkit-transition: all 0.6s;
    -moz-transition: all 0.6s;
@@ -768,6 +769,9 @@ a.session-box:hover {
 	-webkit-transition: all 0.6s;
    -moz-transition: all 0.6s;
   transition: all 0.6s;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
   color: #000000;
   background-color: #e7e7e7;
 }
@@ -777,4 +781,7 @@ a.session-box:hover {
 .navbar-brand>img {
   height: 100%;
   width: auto;
+}
+.navbar-left{
+  padding-top: 5px;
 }
