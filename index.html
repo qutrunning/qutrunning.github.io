@@ -19,6 +19,7 @@
 	<title>QUT Running</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="./public/css/carousel.css" rel="stylesheet">
@@ -28,7 +29,7 @@
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 	
 	
 	<!-- ============== First block =================== -->
@@ -36,7 +37,6 @@
 	<div class="fixed">
 	
 		<div id="home" class="row">
-			<br>
 			<div class="first-block">
 					<!-- Carousel ================================================== -->
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -104,17 +104,12 @@
 								<span class="sr-only">Next</span>
 							</a>
 					</div><!-- /.carousel -->
-					<div class="swipe">
-						<br>
-						<img class="img-responsive" src="./public/img/swipe.png" alt="Swipe" align=center width="35px" height="35px">
-						<br>
-					</div>
 				</div>
 			</div>
 		</div>
 
 
-		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="590">
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="800">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -129,14 +124,14 @@
 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a id="go-home2" href="#home">Home</a></li>
-						<li><a id="go-about" href="#about">About</a></li>
-						<li><a id="go-get-started" href="#get-started">Events</a></li>
-						<li><a id="go-timetable" href="#timetablehead">Timetable</a></li>
-						<li><a id="go-overview" href="#overview">Sessions</a></li>
-						<li><a id="go-map" href="#map">Map</a></li>
-						<li><a id="go-executives" href="#executives">Executives</a></li>
-						<li><a id="go-contact" href="#contact">Contact</a></li>
+						<li><a id="go-home2" href="#home">HOME</a></li>
+						<li><a id="go-about" href="#about">ABOUT</a></li>
+						<li><a id="go-get-started" href="#get-started">EVENTS</a></li>
+						<li><a id="go-timetable" href="#timetablehead">TIMETABLE</a></li>
+						<li><a id="go-overview" href="#overview">SESSIONS</a></li>
+						<li><a id="go-map" href="#map">MAP</a></li>
+						<li><a id="go-executives" href="#executives">EXECUTIVES</a></li>
+						<li><a id="go-contact" href="#contact">CONTACT</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -202,7 +197,7 @@
 					<br>
 					<h1> QUT Running Social </h1>
 					<br>
-					<p>
+					<p id="get-started">
 						QUT Running has a big social aspect. Following our running session on Monday we unwind with dinner and drinks at Beach House in the city. This is a great way to get to know your fellow runners, as it is a relaxed and friendly atmosphere. After dinner we usually kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
 						<br>
 						<br>
@@ -218,10 +213,6 @@
 			</div>
 		</div>		
 	</div>
-	<div class="dots" id="get-started">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-	</div>
-
 	<div class="bgimg-initial" id="get-started2">
 		<div class="caption-block">
 				<div class="caption">
@@ -298,7 +289,7 @@
 					<div class="col-md-3 text-center">
 						<br>
 						<br>
-						<img class="img-responsive" src="./public/img/banana.jpg" alt="Eamon">
+						<img id="timetablehead" class="img-responsive" src="./public/img/banana.jpg" alt="Eamon">
 						<br>
 						<br>
 						<br>
@@ -306,10 +297,6 @@
 					</div>
 			</div>
 		</div>
-		<div class="dots" id="timetablehead">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-		</div>
-
 		<div class="bgimg-1" id="timetablehead2">
 			<div class="caption-block">
 				<div class="caption">
@@ -583,7 +570,7 @@
 									<tr>
 										<th scope="row">18:00</th>
 										<td class="social">
-											<a href="#" class="session-box" rel="tooltip" title="
+											<a id="overview" href="#" class="session-box" rel="tooltip" title="
 											Everyone welcome.
 											A relaxed, low-key way to meet people outside the sessions.
 											We go to a variety of venues so you won’t get bored.
@@ -605,11 +592,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="dots" id="overview">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-		</div>
-
-
 		<div class="bgimg-4" id="overview2">
 			<div class="caption-block">
 				<div class="caption">
@@ -674,18 +656,13 @@
 
 						<h3>Bootcamp</h3>
 						<br>
-						<p>
+						<p id="map">
 							Bootcamp is an excellent opportunity to hone your stamina and strength/stability at the same time. Our bootcamp coordinator Joe combines running and body-weight exercises for you so that you can get that perfect beach body! Every fitness level is welcome. Meeting point is the Kidney Lawn.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="dots" id="map">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-		</div>
-
 		<div class="bgimg-6" id="map2">
 			<div class="caption-block">
 				<div class="caption">
@@ -704,7 +681,7 @@
 					<br>
 					<br>
 					<div class="visible-xs color-white"><br></div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" id="executives">
 						<iframe height='160' width='280' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/qutrunning/latest-rides/128a3994c022301ebb848cc884c082fef33038ed?show_rides=false'></iframe>
 						<br>
 						<iframe height='454' width='280' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/qutrunning/latest-rides/128a3994c022301ebb848cc884c082fef33038ed?show_rides=true'></iframe>
@@ -712,11 +689,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="dots" id="executives">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-		</div>
-
 		<div class="bgimg-7" id="executives2">
 			<div class="caption-block">
 				<div class="caption">
@@ -724,7 +696,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- ============== Seventh block =================== -->
 		<!-- ============== Executives ==================== -->
 		<div class="row">
@@ -782,8 +753,8 @@
 						<div class="row">
 							<div class="col-md-12 text-center">		
 								<img class="img-circle" src="./public/img/tim.jpg" alt="IT">
-								<h2>Website and IT</h2>
-								<h3>Tim Jones</h3>
+								<h2 >Website and IT</h2>
+								<h3 id="contact">Tim Jones</h3>
 								<br>
 							</div>
 						</div><!-- /.row -->
@@ -792,11 +763,6 @@
 				</div>
 			</div>
 		</div>	
-
-		<div class="dots" id="contact">
-			<img class="img-responsive" src="./public/img/dots.png" alt="yes" width="35px" height="35px">	
-		</div>
-
 		<div class="bgimg-8" id="contact2">
 			<div class="caption-block">
 				<div class="caption">
