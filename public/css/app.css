@@ -170,7 +170,7 @@
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
-  width: 100%;
+  width: 85%;
   opacity: 0;
 
 }
@@ -179,7 +179,7 @@
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
-  width: 100%;
+  width: 85%;
   opacity: 0;
 
 }
@@ -188,7 +188,7 @@
   display: inline-block;
   vertical-align: middle;
   color: #0C2D56;
-  width: 100%;
+  width: 85%;
   opacity: 0;
 }
 
@@ -291,278 +291,54 @@
   background-image: url(../img/wall_8.jpg);
   min-height: 100%;
 }
-/*
-/* RESPONSIVE DIVS 
-@media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 92.8%;
-    }
 
+/* RESPONSIVE DIVS */
+@media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
       
     }
-
-    .bgimg-initial {
-      width: 94.4%;
-    }
-
-    .navbar-default {
-      width: 90%;
-    }
 }
 
-@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 91.95%;
-    }
-
+@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
-
-    .bgimg-initial {
-      width: 93.2%;
-    }
-
-    .navbar-default {
-        width: 92%;
-    }
 }
 
-@media screen and ( min-width: 375px ) { /*for iPhone 6 and above
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 92.8%;
-    }
-
+@media screen and ( min-width: 375px ) { /*for iPhone 6 and above*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
       
-    }
-
-    .bgimg-initial {
-      width: 93%;
-    }
-
-    .navbar-default {
-      width: 92%;
     }
 }
 
 @media screen and ( min-width: 400px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 92.8%;
-    }
-
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
       
-    }
-
-    .bgimg-initial {
-      width: 91.4%;
-    }
-
-    .navbar-default {
-      width: 91%;
     }
 }
 
 
 @media screen and ( min-width: 500px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 92.8%;
-    }
-
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
-    }
-
-    .bgimg-initial {
-      width: 90.2%;
-    }
-
-    .navbar-default {
-        width: 90%;
     }
 }
 
 @media screen and ( min-width: 600px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 95.8%;
-    }
-
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
-    }
-
-    .bgimg-initial {
-      width: 89.2%;
-    }
-
-    .navbar-default {
-        width: 88.8%;
     }
 }
 
 @media screen and ( min-width: 700px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 95.8%;
-    }
-
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
-    }
-
-    .bgimg-initial {
-      width: 89%;
-    }
-
-    .navbar-default {
-        width: 88.5%;
     }
 }
 
-@media screen and ( min-width: 800px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 96.5%;
-    }
-
-    .bgimg-initial {
-      width: 88.5%;
-    }
-
-    .navbar-default {
-        width: 88%;
-    }
-}
-
-
-@media screen and ( min-width: 960px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97%;
-    }
-
-    .bgimg-initial {
-      width: 87.6%;
-    }
-
-    .navbar-default {
-        width: 87.2%;
-    }
-}
-
-@media screen and ( min-width: 1000px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97%;
-    }
-
-    .bgimg-initial {
-      width: 87.6%;
-    }
-}
-
-@media screen and ( min-width: 1000px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97%;
-    }
-
-    .bgimg-initial {
-      width: 88%;
-    }
-}
-
-@media screen and ( min-width: 1200px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97.5%;
-    }
-
-    .bgimg-initial {
-      width: 87.2%;
-    }
-
-    .navbar-default {
-      width: 86.8%;
-    }
-}
-
-
-@media screen and ( min-width: 1440px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97.8%;
-    }
-
-    .bgimg-initial {
-      width: 87%;
-    }
-
-  .navbar-default {
-      width: 86.6%;
-  }
-
-}
-
-@media screen and ( min-width: 1600px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98%;
-    }
-
-    .bgimg-initial {
-      width: 86.7%;
-    }
-
-    .navbar-default {
-      width: 86.4%;
-    }
-}
-
-@media screen and ( min-width: 1800px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98.3%;
-    }
-
-    .bgimg-initial {
-      width: 86.6%;
-    }
-
-    .navbar-default {
-      width: 86.3%;
-    }
-
-}
-
-@media screen and ( min-width: 1900px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98.3%;
-    }
-
-    .bgimg-initial {
-      width: 86.6%;
-    }
-
-    .navbar-default {
-      width: 86.3%;
-    }
-}
-
-
-@media screen and ( min-width: 2000px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98.8%;
-    }
-
-    .bgimg-initial {
-      width: 86.1%;
-    }
-
-    .navbar-default {
-      width: 85.9%;
-    }
-}
-*/
 .caption-block {
 	width: 100%;
 	height: 100%;
@@ -730,7 +506,7 @@ a.session-box:hover {
 
 /* Navbar */
 .navbar {
-  height: 100px;
+  min-height: 75px;
 }
 .navbar-default {
   -webkit-transition: all 0.6s;
