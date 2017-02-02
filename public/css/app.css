@@ -1,6 +1,5 @@
 /*Carousel*/
 .first-block {
-  height: 87.8vh;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -137,31 +136,31 @@
 }
 
 .fixed > .row {
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block {
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block > .carousel {
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block > .carousel > .carousel-inner {
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-  height: 97.7%;
+  height: 98%;
 }  
 .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-  height: 97.7%;
+  height: 98%;
 } 
 
 
 .fixed {
   width: 100vw;
-  height: 91vh;
+  height: 92.3vh;
 	z-index: 10;
 	width: 100%;
 }
@@ -338,7 +337,13 @@
       height: 160px;
     }
 }
-
+/*h1 {
+  -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}*/
 .caption-block {
 	width: 100%;
 	height: 100%;
@@ -506,7 +511,7 @@ a.session-box:hover {
 
 /* Navbar */
 .navbar {
-  min-height: 75px;
+  min-height: 60px;
 }
 .navbar-default {
   -webkit-transition: all 0.6s;
@@ -543,7 +548,6 @@ a.session-box:hover {
   transition: all 0.8s;  
   background-color: #000000 !important;
   position: absolute;
-  padding-top: 100px;
 }	
 
 .affix .navbar-default {
@@ -560,7 +564,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 100%;
-  padding-top: 3.8vh;
+  padding-top: 3vh;
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
