@@ -31,10 +31,10 @@
 .carousel .item {
   overflow: hidden;
   height: 100%;
-  background: #1d2c91; /* Old browsers */
-  background: -moz-linear-gradient(left, #1d2c91 0%, #470854 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #1d2c91 0%,#470854 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #1d2c91 0%,#470854 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  
+  background: #661896; /* Old browsers */
+  background: -moz-linear-gradient(left, #661896 0%, #207cca 52%, #ad0606 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #661896 0%,#207cca 52%,#ad0606 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #661896 0%,#207cca 52%,#ad0606 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
 }
 
 .btn-orange {

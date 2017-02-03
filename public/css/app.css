@@ -29,7 +29,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #0A0A0A;
+	background-color: #2c3e50;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -45,7 +45,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #574D3D;
+	background-color: #c0392b;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -59,7 +59,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #1B241C;
+	background-color: #16a085;
   text-align: center;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -74,7 +74,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #578700;
+	background-color: #2980B9;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -89,7 +89,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-	background-color: #150F0C;
+	background-color: #2c3e50;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	z-index: 11;
@@ -119,7 +119,7 @@
   opacity: 0.5;
   position: relative;
 }
-.second-block, .fourth-block, .sixth-block, .eighth-block{
+.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   text-align: center;
   box-shadow: inset 0px 4px 62px -1px #333333;
   -webkit-box-shadow: inset 0px 4px 62px -1px #333333;
@@ -222,6 +222,7 @@
   height: 100%;
   padding-top: 12%;
   padding-bottom: 12%;
+  transform: translateZ(0);
 }
 /*
 .bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
@@ -295,7 +296,13 @@
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
+    }
+    .navbar {
+      min-height: 40px;
+    }
+    .logo {
+      width: 85px;
+      height: 56px;
     }
 }
 
@@ -303,19 +310,38 @@
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
+    .navbar {
+      min-height: 40px;
+    }
+    .logo {
+      width: 85px;
+      height: 56px;
+    }
 }
 
 @media screen and ( min-width: 375px ) { /*for iPhone 6 and above*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
+    }
+    .navbar {
+      min-height: 40px;
+    }
+    .logo {
+      width: 85px;
+      height: 56px;
     }
 }
 
 @media screen and ( min-width: 400px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-      
+    }
+    .navbar {
+      min-height: 40px;
+    }
+    .logo {
+      width: 85px;
+      height: 56px;
     }
 }
 
@@ -324,17 +350,40 @@
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
+    .navbar {
+      min-height: 40px;
+    }
+    .logo {
+      width: 85px;
+      height: 56px;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
+
+    .navbar {
+      min-height: 40px;
+    }    
+    .logo {
+      width: 85px;
+      height: 56px;
+    }
 }
 
 @media screen and ( min-width: 700px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
+    }
+    .navbar {
+      min-height: 60px;
+    }
+
+    .logo {
+      width: 112px;
+      height: 75px;
     }
 }
 /*h1 {
@@ -370,6 +419,7 @@
     font-size: 25px;
     letter-spacing: 5px;
 }
+
 .race-table {
 	border-color: #0C2D56;
 }
@@ -510,9 +560,7 @@ a.session-box:hover {
 
 
 /* Navbar */
-.navbar {
-  min-height: 60px;
-}
+
 .navbar-default {
   -webkit-transition: all 0.6s;
    -moz-transition: all 0.6s;
@@ -564,13 +612,12 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 100%;
-  padding-top: 3vh;
+  padding-top: 3.3vh;
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #00A4C4;
-  background-color: #06182d;
+  background-color: #15B1D4;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

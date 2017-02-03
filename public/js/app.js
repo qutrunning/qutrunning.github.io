@@ -356,7 +356,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#0A0A0A');
+          $(".navbar-default").css('background-color', '#1F2C38');
        }
    });
     }
@@ -369,7 +369,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#574D3D');
+          $(".navbar-default").css('background-color', '#752119');
        }
    });
     }
@@ -382,7 +382,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#1B241C');
+          $(".navbar-default").css('background-color', '#0F594B');
        }
    });
     }
@@ -395,7 +395,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#578700');
+          $(".navbar-default").css('background-color', '#1B4B6B');
        }
    });
     }
@@ -408,7 +408,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#150F0C');
+          $(".navbar-default").css('background-color', '#1F2C38');
        }
    });
     }
