@@ -222,6 +222,7 @@
   height: 100%;
   padding-top: 12%;
   padding-bottom: 12%;
+  transform: translateZ(0);
 }
 /*
 .bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
@@ -296,51 +297,23 @@
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
-    .navbar {
-      min-height: 40px;
-    }
-    .logo {
-      width: 85px;
-      height: 56px;
-    }
 }
-
-@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
+/*
+@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
-    .navbar {
-      min-height: 40px;
-    }
-    .logo {
-      width: 85px;
-      height: 56px;
-    }
 }
 
-@media screen and ( min-width: 375px ) { /*for iPhone 6 and above*/
+@media screen and ( min-width: 375px ) { /*for iPhone 6 and above
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-    }
-    .navbar {
-      min-height: 40px;
-    }
-    .logo {
-      width: 85px;
-      height: 56px;
     }
 }
 
 @media screen and ( min-width: 400px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-    }
-    .navbar {
-      min-height: 40px;
-    }
-    .logo {
-      width: 85px;
-      height: 56px;
     }
 }
 
@@ -349,26 +322,11 @@
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
-    .navbar {
-      min-height: 40px;
-    }
-    .logo {
-      width: 85px;
-      height: 56px;
-    }
 }
 
 @media screen and ( min-width: 600px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
-    }
-
-    .navbar {
-      min-height: 40px;
-    }    
-    .logo {
-      width: 85px;
-      height: 56px;
     }
 }
 
@@ -376,15 +334,7 @@
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
     }
-    .navbar {
-      min-height: 60px;
-    }
-
-    .logo {
-      width: 112px;
-      height: 75px;
-    }
-}
+}*/
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
@@ -578,6 +528,7 @@ a.session-box:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
   border: 0px;
+  min-height: 7.7vh;
 }
 
 .affix {
@@ -633,7 +584,4 @@ a.session-box:hover {
 .navbar-brand>img {
   height: 100%;
   width: auto;
-}
-.navbar-left{
-  padding-top: 5px;
 }
