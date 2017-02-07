@@ -144,15 +144,15 @@ $(document).ready(function() {
           	});      
           	$('.centered-overview').each( function(i){
               
-              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              	var bottom_of_window = $(window).scrollTop() + $(window).height();
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
               
-              	/* If the object is completely visible in the window, fade it in */
-              	if( bottom_of_window > (bottom_of_object * 0.9)){
+                /* If the object is completely visible in the window, fade it in */
+                if( bottom_of_window > (bottom_of_object * 1)){
 
-              		$(this).animate({'opacity':'1'},400);             
+                  $(this).animate({'opacity':'1'},400);             
               }            
-          	});   
+            });      
 	        $('.centered-contact').each( function(i){
 	            
 	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();

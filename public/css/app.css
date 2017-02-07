@@ -211,18 +211,10 @@
   opacity: 1;
   margin: 0 auto;
   background-position: center;
-  background-repeat: no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-overflow-scrolling: touch;
-  -webkit-backface-visibility: hidden;
-  background-attachment: fixed;
   z-index: 10;
   height: 100%;
   padding-top: 12%;
   padding-bottom: 12%;
-  transform: translateZ(0);
 }
 /*
 .bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
@@ -245,13 +237,16 @@
 }
 */
 .bgimg-initial {
-  background-image: url(../img/wall_initial.jpg);
+  background: #41547F;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 .bgimg-1 {
-  background-image: url(../img/wall_1.jpg);
+  /*background-image: url(../img/wall_1.jpg);*/
+  background: #CFDEFF;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 /*.bgimg-2 {
@@ -260,14 +255,10 @@
   width: 75%;
 }*/
 
-.bgimg-3 {
-  background-image: url(../img/wall_3.jpg);
-  min-height: 100%;
-}
-
 .bgimg-4 {
-  background-image: url(../img/wall_4.jpg);
+  background: #83A9FF;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 /*.bgimg-5 {
@@ -278,24 +269,29 @@
 }*/
 
 .bgimg-6 {
-  background-image: url(../img/wall_6.jpg);
+  background: #00277F;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 .bgimg-7 {
-  background-image: url(../img/wall_7.jpg);
+  background: #747778;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 .bgimg-8 {
-  background-image: url(../img/wall_8.jpg);
+  background: #6987CC;
   min-height: 100%;
+  opacity: 0.8;
 }
 
 /* RESPONSIVE DIVS */
-@media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
+@media screen and ( min-width: 320px ) { /*for iPhone 5 and 5S*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
+      padding-top: 15%;
+      padding-bottom: 15%;
     }
 }
 /*
@@ -329,12 +325,13 @@
       height: 160px;
     }
 }
-
+*/
 @media screen and ( min-width: 700px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 160px;
+      padding-top: 10%;
+      padding-bottom: 10%;
     }
-}*/
+}
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
