@@ -20,54 +20,54 @@ function initMap() {
 // Enables the click and scroll functionality
 $(document).ready(function (){
     $("#go-home").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top-50
-        }, 1000);
+        $("#home").velocity("scroll", { 
+            duration: 1000,
+        });
     });
      $("#go-home2").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top-50
-        }, 1000);
+        $("#home").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-about").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top-50
-        }, 1000);
+        $("#about").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-get-started").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#get-started2").offset().top-50
-        }, 1000);
+        $("#go-get-started-2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-timetable").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#timetablehead2").offset().top-50
-        }, 1000);
+        $("#timetablehead2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-timetable-2").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#timetablehead2").offset().top-50
-        }, 1000);
+        $("#timetablehead2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-overview").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#overview2").offset().top-50
-        }, 1000);
+        $("#overview2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-map").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#map2").offset().top-50
-        }, 1000);
+        $("#map2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-executives").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#executives2").offset().top-50
-        }, 1000);
+        $("#executives2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
     $("#go-contact").click(function (){
-        $('html, body').animate({
-            scrollTop: $("#contact2").offset().top-50
-        }, 1000);
+        $("#contact2").velocity("scroll", { 
+            duration: 1000,
+        });
     });
 
     // ----  Popover settings  -----
@@ -196,7 +196,7 @@ $(document).ready(function() {
 //Script to fade out the Carousel when scrolled past
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var height = ($(window).height() / 2); //1.7 previous
+    var height = ($(window).height() / 1); //1.7 previous
     $('.first-block').css({
 
         'opacity': ((height - scrollTop) / (height))
