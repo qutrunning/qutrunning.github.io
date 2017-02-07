@@ -35,7 +35,7 @@ $(document).ready(function (){
         });
     });
     $("#go-get-started").click(function (){
-        $("#go-get-started-2").velocity("scroll", { 
+        $("#get-started2").velocity("scroll", { 
             duration: 1000,
         });
     });
