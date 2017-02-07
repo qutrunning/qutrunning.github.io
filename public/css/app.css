@@ -287,7 +287,19 @@
 }
 
 /* RESPONSIVE DIVS */
-@media screen and ( min-width: 320px ) { /*for iPhone 5 and 5S*/
+
+@media screen and ( max-width: 398px ) { /*for iPhone 5 and 5S*/
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      padding-top: 15%;
+      padding-bottom: 15%;
+    }
+    .logo {
+      width: 70px;
+      height: 46px;
+    }
+}
+@media screen and ( min-width: 399px ) { /*for iPhone 5 and 5S*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 160px;
       padding-top: 15%;
@@ -306,26 +318,21 @@
       height: 160px;
     }
 }
-
+*/
 @media screen and ( min-width: 400px ) {
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 160px;
-    }
-}
-
-
-@media screen and ( min-width: 500px ) {
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 160px;
+    .logo {
+      width: 95px;
+      height: 62px;
     }
 }
 
 @media screen and ( min-width: 600px ) {
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 160px;
+    .logo {
+      width: 112px;
+      height: 85px;
     }
 }
-*/
+
 @media screen and ( min-width: 700px ) {
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       padding-top: 10%;
