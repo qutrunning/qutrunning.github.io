@@ -104,7 +104,7 @@ background: linear-gradient(to right, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 1
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1370px) {
   /* Bump up size of carousel content */
   .featurette-heading {
     margin-top: 120px;
