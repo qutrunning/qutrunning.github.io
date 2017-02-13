@@ -417,7 +417,7 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: auto;
-  background: url(../img/transparent_wall.svg) no-repeat center center;
+  background: #0C2D56 url(../img/transparent_wall.svg) no-repeat center center;
   background-size: 100%;
 
 }
