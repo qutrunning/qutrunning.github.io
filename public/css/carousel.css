@@ -26,9 +26,6 @@
 }
 .carousel-caption > h1 {
   font-size: 50px;
-  line-height: 1.5;
-  font-weight: 900;
-  letter-spacing: 5px;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
