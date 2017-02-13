@@ -419,7 +419,10 @@ body:before {
   z-index: auto;
   background: #0C2D56 url(../img/transparent_wall.svg) no-repeat center center;
   background-size: 100%;
-
+/*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
 }
 
 body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, span, .col-lg-4 {
