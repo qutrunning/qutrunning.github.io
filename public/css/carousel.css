@@ -9,6 +9,8 @@
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
   text-shadow: 1px 1px #000000;
   z-index: 10;
   /* Make text unselectable on carousel when swiping with mouse cursor click and drag */
@@ -23,8 +25,11 @@
   visibility: hidden; 
 }
 .carousel-caption > h1 {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
   font-size: 50px;
-  
+  line-height: 1.5;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {

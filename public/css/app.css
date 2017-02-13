@@ -418,11 +418,8 @@ body:before {
   height: 100%;
   z-index: auto;
   background: url(../img/transparent_wall.svg) no-repeat center center;
-  background-size: 1440px 900px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
+
 }
 
 body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, span, .col-lg-4 {
@@ -440,6 +437,8 @@ html {
 body {
     overflow-x: hidden;
     width: 100%;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
 }
 /* Timetable */
 
