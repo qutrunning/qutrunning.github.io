@@ -425,12 +425,11 @@ body:before {
   background-size: cover;*/
 }
 
-body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, span, .col-lg-4 {
-  transition:all 2s ease; 
-    -o-transition:all 2s ease; 
-    -moz-transition:all 2s ease; 
-    -webkit-transition:all 2s ease;
-
+body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, .col-lg-4 {
+  transition:all 1s ease-in-out; 
+    -o-transition:all 1s ease-in-out; 
+    -moz-transition:all 1s ease-in-out; 
+    -webkit-transition:all 1s ease-in-out;
 }
 
 html {
@@ -446,12 +445,12 @@ body {
 /* Timetable */
 
 th {
-	color: white;
-	background-color: #757575;
+	color: black;
+	background-color: #26A6D1;
 }
 
 td {
-	color: white;
+	color: black;
 	background-color: #ffffff;
 }
 
@@ -462,7 +461,7 @@ td {
   background-color: #f6ff00;
 }
 .workout {
-	background-color: #CF1A02;
+	background-color: #c0392b;
 }
 .swim {
 	background-color: #00DFFC;
