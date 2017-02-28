@@ -196,7 +196,7 @@ $(document).ready(function() {
 //Script to fade out the Carousel when scrolled past
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var height = ($(window).height() / 0.5); //1.7 previous
+    var height = ($(window).height() / 0.8); //1.7 previous
     $('.first-block').css({
 
         'opacity': ((height - scrollTop) / (height))
