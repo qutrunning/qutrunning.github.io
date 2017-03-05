@@ -283,9 +283,16 @@
       padding-top: 15%;
       padding-bottom: 15%;
     }
-    .logo {
-      width: 70px;
-      height: 46px;
+    .icon-scroll {
+      width: 10px;
+      height: 17px;
+      top: 90%;
+      left: 53%;
+    }
+    .icon-scroll:before {
+      width: 4px;
+      height: 4px;
+      margin-left: -2px;
     }
 }
 @media screen and ( min-width: 399px ) { /*for iPhone 5 and 5S*/
@@ -293,6 +300,9 @@
       height: 160px;
       padding-top: 15%;
       padding-bottom: 15%;
+    }
+    .icon-scroll:before {
+      margin-left: -4px;
     }
 }
 /*
@@ -309,17 +319,11 @@
 }
 */
 @media screen and ( min-width: 400px ) {
-    .logo {
-      width: 95px;
-      height: 62px;
-    }
+
 }
 
 @media screen and ( min-width: 600px ) {
-    .logo {
-      width: 112px;
-      height: 85px;
-    }
+
 }
 
 @media screen and ( min-width: 700px ) {
@@ -328,6 +332,22 @@
       padding-bottom: 10%;
     }
 }
+@media screen and ( min-width: 800px ) {
+    .icon-scroll,
+    .icon-scroll:before {
+      position: absolute;
+      left: 50%;
+    }
+    .icon-scroll {
+      width: 40px;
+      height: 70px;
+      margin-left: -20px;
+      top: 94%;
+      margin-top: -35px;
+      box-shadow: inset 0 0 0 1px #fff;
+      border-radius: 25px;
+    }
+  }
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
@@ -406,6 +426,58 @@
 
 .executives-2 {
 	padding-bottom: 20px;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+  opacity: 0.2;
+}
+.icon-scroll {
+  width: 20px;
+  height: 35px;
+  margin-left: -10px;
+  top: 103%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  margin-left: -2px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
 }
 
 body:before {
@@ -537,7 +609,9 @@ a.session-box:hover {
   border-radius: 0px 0px 0px 0px;
   border: 0px;
 }
-
+.logo{
+  height: 8vh;
+}
 .affix {
   -webkit-transition: all 0.8s;
    -moz-transition: all 0.8s;
@@ -569,7 +643,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 100%;
-  padding-top: 3.3vh;
+  line-height: 4vh;
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
