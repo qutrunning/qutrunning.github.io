@@ -283,17 +283,25 @@
       padding-top: 15%;
       padding-bottom: 15%;
     }
+/*    .icon-scroll,
+    .icon-scroll:before {
+      position: absolute;
+      left: 50%;
+    }
     .icon-scroll {
-      width: 10px;
-      height: 17px;
-      top: 90%;
-      left: 53%;
+      width: 20px;
+      height: 35px;
+      margin-left: -10px;
+      top: 103%;
+      margin-top: -35px;
+      box-shadow: inset 0 0 0 1px #fff;
+      border-radius: 25px;
     }
     .icon-scroll:before {
       width: 4px;
       height: 4px;
       margin-left: -2px;
-    }
+    }*/
 }
 @media screen and ( min-width: 399px ) { /*for iPhone 5 and 5S*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
@@ -339,10 +347,10 @@
       left: 50%;
     }
     .icon-scroll {
-      width: 40px;
-      height: 70px;
-      margin-left: -20px;
-      top: 94%;
+      width: 20px;
+      height: 35px;
+      margin-left: -10px;
+      top: 100%;
       margin-top: -35px;
       box-shadow: inset 0 0 0 1px #fff;
       border-radius: 25px;
@@ -428,7 +436,7 @@
 	padding-bottom: 20px;
 }
 
-.icon-scroll,
+/*.icon-scroll,
 .icon-scroll:before {
   position: absolute;
   left: 50%;
@@ -442,7 +450,7 @@
   margin-top: -35px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
-}
+}*/
 
 .icon-scroll:before {
   content: '';
@@ -465,8 +473,8 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
   }
 }
 @keyframes scroll {
@@ -475,8 +483,8 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
   }
 }
 
@@ -612,25 +620,15 @@ a.session-box:hover {
 .logo{
   height: 8vh;
 }
-.affix {
-  -webkit-transition: all 0.8s;
-   -moz-transition: all 0.8s;
-  transition: all 0.8s; 
+
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
   width: 100%;
-  top:0;
-  z-index: 9999;
-}
-
-.affix ~ .container {
   -webkit-transition: all 0.8s;
-   -moz-transition: all 0.8s;
-  transition: all 0.8s;  
-  background-color: #000000 !important;
-  position: absolute;
-}	
-
-.affix .navbar-default {
- background-color: #000000 !important;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s; 
 }
 
 .navbar-header {
@@ -643,7 +641,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 100%;
-  line-height: 4vh;
+  line-height: 4.5vh;
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
