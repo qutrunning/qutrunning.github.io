@@ -46,9 +46,22 @@
 .btn-white:hover {
   color: #fff;
 }
+@media (max-width: 330px){
+  .header{
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 499px){
+  .first-slide{
+    content:url(../img/first-slide-2.png);
+  }
 
+  .carousel-inner > .item > img {
+    min-width: 100%;
+  }
+}
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
 .carousel-inner > .item > img {
     height: 100%;
     max-width: none;
@@ -57,6 +70,8 @@
   .header {
     font-size: 30px;
   }
+
+
 }
 @media (min-width:768px) {
 

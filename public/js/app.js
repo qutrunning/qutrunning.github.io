@@ -190,7 +190,7 @@ $(document).ready(function() {
     }
     if($('.first-block').css('opacity') == 0) {
     	$(".first-block").hide();
-	}
+    }
 });
 
 //Script to fade out the Carousel when scrolled past
