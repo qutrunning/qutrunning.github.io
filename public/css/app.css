@@ -355,6 +355,9 @@
       box-shadow: inset 0 0 0 1px #fff;
       border-radius: 25px;
     }
+    .header {
+      margin-bottom: 60px;
+    }
   }
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
@@ -618,7 +621,7 @@ a.session-box:hover {
   border: 0px;
 }
 .logo{
-  height: 8vh;
+  height: 7.6vh;
 }
 
 .navbar-fixed {
@@ -641,7 +644,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 100%;
-  line-height: 4.5vh;
+  line-height: 4.4vh;
   color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
