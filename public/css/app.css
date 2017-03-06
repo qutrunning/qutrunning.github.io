@@ -505,6 +505,15 @@
     .navbar-default, .navbar-fixed {
         width: 87.2%;
     }
+    .first-block {
+      width: 87%;
+    }
+    .second-block{
+       width: 85.3%;
+    }
+    .navbar-fixed{
+      left: 6.5%;
+    }
 }
 /*
 @media screen and ( min-width: 1000px ) {
@@ -525,24 +534,40 @@
     .bgimg-initial {
       width: 88%;
     }
+    .navbar-default, .navbar-fixed {
+      width: 87%;
+    }
+    .first-block {
+      width: 87%;
+    }
+    .second-block{
+       width: 85.3%;
+    }
+    .navbar-fixed{
+      left: 6.5%;
+    }
 }
 
 @media screen and ( min-width: 1200px ) {
     .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97.4%;
+      width: 97.56%;
     }
 
-    .bgimg-initial, .navbar-default, .navbar-fixed {
-      width: 87.35%;
+    .bgimg-initial {
+      width: 87.2%;
+    }
+    
+    .navbar-default, .navbar-fixed {
+      width: 87.15%;
     }
     .first-block {
-      width: 87.3%;
+      width: 87%;
     }
     .second-block{
-       width: 85.4%;
+       width: 85.3%;
     }
     .navbar-fixed{
-      left: 6.325%;
+      left: 6.445%;
     }
 }
 
@@ -557,16 +582,16 @@
     }
 
     .navbar-default, .navbar-fixed {
-      width: 87.2%;
+      width: 87%;
     }
     .first-block {
-      width: 87.1%;
+      width: 87%;
     }
     .second-block{
-       width: 85.4%;
+       width: 85.3%;
     }
     .navbar-fixed{
-      left: 6.4%;
+      left: 6.5%;
     }
 }
 
@@ -578,9 +603,8 @@
     .bgimg-initial {
       width: 86.7%;
     }
-
     .navbar-default, .navbar-fixed {
-      width: 87%;
+      width: 86.7%;
     }
     .first-block {
       width: 86.8%;
@@ -589,7 +613,7 @@
        width: 85.2%;
     }
     .navbar-fixed{
-      left: 6.49%;
+      left: 6.65%;
     }
 }
 

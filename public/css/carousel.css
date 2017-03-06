@@ -36,7 +36,6 @@
   background: -webkit-linear-gradient(left, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-radius: 25px 25px 0px 0px;
-
 }
 
 .btn-white {

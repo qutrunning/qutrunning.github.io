@@ -115,7 +115,7 @@ $(document).ready(function() {
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.7)){
+	            if( bottom_of_window > (bottom_of_object * 0.5)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -126,7 +126,7 @@ $(document).ready(function() {
               	var bottom_of_window = $(window).scrollTop() + $(window).height();
               
               	/* If the object is completely visible in the window, fade it in */
-              	if( bottom_of_window > (bottom_of_object * 0.925)){
+              	if( bottom_of_window > (bottom_of_object * 0.9)){
 
               		$(this).animate({'opacity':'1'},400);             
               }            
@@ -159,7 +159,7 @@ $(document).ready(function() {
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.87)){
+	            if( bottom_of_window > (bottom_of_object * 0.9)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
@@ -196,7 +196,7 @@ $(document).ready(function() {
 //Script to fade out the Carousel when scrolled past
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var height = ($(window).height() / 0.8); //1.7 previous
+    var height = ($(window).height() / 1.2); //1.7 previous
     $('.first-block').css({
 
         'opacity': ((height - scrollTop) / (height))
