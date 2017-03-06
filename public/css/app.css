@@ -130,31 +130,10 @@
   */
 }
 
-.fixed > .row {
-  height: 90vh;
-}  
-.fixed > .row > .first-block {
-  height: 90vh;
-}  
-.fixed > .row > .first-block > .carousel {
-  height: 90vh;
-}  
-.fixed > .row > .first-block > .carousel > .carousel-inner {
-  height: 90vh;
-}  
-.fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-  height: 90vh;
-}  
-.fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-  height: 90vh;
-}  
-.fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-  height: 90vh;
-} 
+
 
 
 .fixed {
-  margin-top: 2.5vh;
   width: 100vw;
   height: 100%;
   border-radius: 25px 25px 0px 0px;
@@ -705,9 +684,6 @@
     .header {
       margin-bottom: 90px;
     }
-    .btn-white {
-      margin-bottom: 15px;
-    }
   }
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
@@ -1032,4 +1008,13 @@ a.session-box:hover {
 
 .col-md-12 {
   padding: 5%;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default-home .navbar-toggle {
+  border-color: transparent; /* Removes border color */
+}
+.navbar-default .navbar-toggle .icon-bar, 
+.navbar-default-home .navbar-toggle .icon-bar{
+  background-color: #ffffff; /* Changes regular toggle color */
 }
