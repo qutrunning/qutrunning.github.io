@@ -133,6 +133,9 @@
   .header {
     font-size: 30px;
   }
+  .fixed{
+    padding-top: 2vh;
+  }
 }
 @media (min-width:768px) {
 
