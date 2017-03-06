@@ -293,16 +293,7 @@
       margin-left: -2px;
     }*/
 }
-@media screen and ( min-width: 399px ) { /*for iPhone 5 and 5S*/
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 180px;
-      padding-top: 15%;
-      padding-bottom: 15%;
-    }
-    .icon-scroll:before {
-      margin-left: -4px;
-    }
-}
+
 /* RESPONSIVE DIVS */
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
@@ -326,8 +317,11 @@
     .second-block{
        width: 86.6%;
     }
-    .navbar-fixed{
+/*    .navbar-fixed{
       left: 2.5%;
+    }*/
+    .divider {
+      display: none;
     }
 }
 
@@ -352,8 +346,11 @@
     .second-block{
        width: 86.1%;
     }
-    .navbar-fixed{
+/*    .navbar-fixed{
       left: 3.4%;
+    }*/
+    .divider {
+      display: none;
     }
 }
 
@@ -372,7 +369,7 @@
     }
 
     .navbar-default, .navbar-fixed {
-      width: 93.35%;
+      width: 93.4%;
     }
     .first-block {
       width: 93%;
@@ -380,9 +377,9 @@
     .second-block{
        width: 86.1%;
     }
-    .navbar-fixed{
+/*    .navbar-fixed{
       left: 3.4%;
-    }
+    }*/
 }
 
 @media screen and ( min-width: 400px ) {
@@ -409,9 +406,9 @@
     .second-block{
        width: 86.1%;
     }
-    .navbar-fixed{
+/*    .navbar-fixed{
       left: 3.8%;
-    }
+    }*/
 }
 
 
@@ -429,9 +426,9 @@
       width: 90.2%;
     }
 
-    .navbar-default, .navbar-fixed {
+/*    .navbar-default, .navbar-fixed {
         width: 90%;
-    }
+    }*/
 }
 
 @media screen and ( min-width: 600px ) {
@@ -445,9 +442,9 @@
     .bgimg-initial {
       width: 89.2%;
     }
-    .navbar-default, .navbar-fixed {
+/*    .navbar-default, .navbar-fixed {
         width: 88.8%;
-    }
+    }*/
 }
 
 @media screen and ( min-width: 700px ) {
@@ -464,9 +461,9 @@
       width: 89%;
     }
 
-    .navbar-default, .navbar-fixed {
+/*    .navbar-default, .navbar-fixed {
         width: 88.5%;
-    }
+    }*/
 }
 
 @media screen and ( min-width: 800px ) {
@@ -721,6 +718,9 @@
     .header {
       margin-bottom: 90px;
     }
+    .divider {
+      display: inline-block;
+    }
   }
 /*h1 {
   -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
@@ -928,7 +928,6 @@ td {
       border-top-color: #ffffff;
       color: #0C2D56;
 }
-
 a.session-box {
     color: #0C2D56;
     text-decoration: none;
@@ -995,9 +994,10 @@ a.session-box:hover {
   position: fixed;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
-  transition: all 0.8s; 
+  transition: all 0.8s;
+  overflow: hidden;
 }
-.navbar-header {
+.navbar-left {
   opacity: 0;
 }
 .navbar-nav{
@@ -1005,13 +1005,11 @@ a.session-box:hover {
 }
 .navbar-default .navbar-text {
   color: #000000;
-
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 13px;
   line-height: 4.4vh;
   color: #ffffff;
-  margin-left: 2.5vw;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -1033,12 +1031,15 @@ a.session-box:hover {
   height: 100%;
   width: auto;
 }
-
 .sponsors > .col-md-4 {
     padding-left: 5%;
     padding-right: 5%;
 }
-
+.divider{
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+}
 .col-md-12 {
   padding: 5%;
 }

@@ -78,6 +78,12 @@
   .btn-white {
       margin-top: 0px;
   } 
+  .fixed{
+    padding-top: 5vh;
+  }
+  .navbar-default {
+    left: 0%;
+  }
 }
 @media (min-width: 360px){
   .header{
@@ -106,6 +112,9 @@
   } 
   .btn-white{
     margin-top: 5vh;
+  }
+  .fixed{
+    padding-top: 7.5vh;
   }
 }
 @media (max-width: 499px){
@@ -174,6 +183,9 @@
   .btn-white {
       margin-bottom: 15px;
   } 
+  .fixed{
+    padding-top: 0vh;
+  }
 }
 
 @media (min-width: 769px) {

@@ -93,7 +93,7 @@ $(document).ready(function() {
 //for the text div fade
 $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
-    if($(window).width() > 1000) {
+    if($(window).width() > 758) {
         /* Every time the window is scrolled ... */
 	    $(window).scroll( function(){
 	    
@@ -205,7 +205,7 @@ $(window).scroll(function () {
 
 //Fade in the navbar upon scroll
 $(document).on('scroll', function (e) {
-    $('.navbar-header').css('opacity', (0 + ($(document).scrollTop() / 600)));
+    $('.navbar-left').css('opacity', (0 + ($(document).scrollTop() / 600)));
 });
 
 
@@ -213,7 +213,7 @@ $(document).on('scroll', function (e) {
 //for the text div fade
 $(document).ready(function() {
   //if the user agent is not mobile, run the scripts
-    if($(window).width() > 1000) {
+    if($(window).width() > 758) {
         /* Every time the window is scrolled ... */
       $(window).scroll( function(){
       
@@ -307,19 +307,10 @@ $(document).ready(function() {
       $('.centered-about').css({
         'opacity': 1
       });
-    }
-    if($('.first-block').css('opacity') == 0) {
-      $(".first-block").hide();
+      $('#topnav').addClass('navbar-fixed-top');
+      $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
   }
 });
-
-
-
-
-
-
-
-
 
 //change the colour of the navbar to match the colour of the div currently in view
 $(document).ready(function(){       
