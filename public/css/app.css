@@ -1,6 +1,6 @@
 /*Carousel*/
 .first-block {
-  width: 85.9%;
+  /*width: 85.9%;*/
   margin: 0 auto;
   position: fixed;
   left: 0;
@@ -109,11 +109,6 @@
 	/*opacity: 0;*/
 }
 
-.swipe {
-  height: 50px;
-  opacity: 0.5;
-  position: relative;
-}
 .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
   text-align: center;
   box-shadow: inset 0px 4px 62px -1px #333333;
@@ -140,9 +135,8 @@
   background-color: #3b3b3b !important;
 	z-index: 10;
 }
-
 .spacer{
-  height: 4vh;
+  height: 0vh;
 }
 .centered {
   display: inline-block;
@@ -353,7 +347,7 @@
       width: 93.35%;
     }
     .first-block {
-      width: 93%;
+      width: 93.35%;
     }
     .second-block{
        width: 86.1%;
@@ -447,13 +441,10 @@
 
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 180px;
-      
     }
-
     .bgimg-initial {
       width: 89.2%;
     }
-
     .navbar-default, .navbar-fixed {
         width: 88.8%;
     }
@@ -550,7 +541,7 @@
 
 @media screen and ( min-width: 1200px ) {
     .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 97.56%;
+      width: 97.45%;
     }
 
     .bgimg-initial {
@@ -558,16 +549,16 @@
     }
     
     .navbar-default, .navbar-fixed {
-      width: 87.15%;
+      width: 87.4%;
     }
     .first-block {
-      width: 87%;
+      width: 87.4%;
     }
     .second-block{
-       width: 85.3%;
+       width: 85.4%;
     }
     .navbar-fixed{
-      left: 6.445%;
+      left: 6.3%;
     }
 }
 
@@ -597,24 +588,24 @@
 
 @media screen and ( min-width: 1599px ) {
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98%;
-    }
+    width: 98%;
+  }
 
-    .bgimg-initial {
-      width: 86.7%;
-    }
-    .navbar-default, .navbar-fixed {
-      width: 86.7%;
-    }
-    .first-block {
-      width: 86.8%;
-    }
-    .second-block{
-       width: 85.2%;
-    }
-    .navbar-fixed{
-      left: 6.65%;
-    }
+  .bgimg-initial {
+    width: 86.7%;
+  }
+  .navbar-default, .navbar-fixed {
+    width: 86.7%;
+  }
+  .first-block {
+    width: 86.8%;
+  }
+  .second-block{
+     width: 85.2%;
+  }
+  .navbar-fixed{
+    left: 6.65%;
+  }
 }
 
 @media screen and ( min-width: 1800px ) {
@@ -642,27 +633,46 @@
 
 @media screen and ( min-width: 1900px ) {
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 98.7%;
-    }
-
-    .bgimg-initial {
-      width: 86.1%;
-    }
-
-    .navbar-default, .navbar-fixed {
-      width: 86.1%;
-    }
-    .first-block {
-      width: 86%;
-    }
-    .second-block{
-       width: 85.1%;
-    }
-    .navbar-fixed{
-      left: 6.95%;
-    }
+    width: 98.25%;
+  }
+  .bgimg-initial {
+    width: 86.55%;
+  }
+  .navbar-default, .navbar-fixed {
+    width: 86.55%;
+  }
+  .first-block {
+    width: 86.55%;
+  }
+  .second-block{
+     width: 85.25%;
+  }
+  .navbar-fixed{
+    left: 6.7%;
+  }
 }
+@media screen and ( min-width: 1900px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+    width: 98.7%;
+  }
 
+  .bgimg-initial {
+    width: 86%;
+  }
+
+  .navbar-default, .navbar-fixed {
+    width: 86%;
+  }
+  .first-block {
+    width: 86%;
+  }
+  .second-block{
+     width: 85.1%;
+  }
+  .navbar-fixed{
+    left: 6.95%;
+  }
+}
 
 
 /*@media screen and ( min-width: 2000px ) {
@@ -741,11 +751,7 @@
   text-align: center;
 }
 .caption span.border{
-    background: #b5bdc8; /* Old browsers */
-    background: #7d7e7d; /* Old browsers */
-    background: -moz-linear-gradient(left, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #363636;
     color: #fff;
     padding: 18px;
     font-size: 25px;
@@ -957,8 +963,6 @@ a.session-box:hover {
 
 }
 
-
-
 /* Navbar */
 
 .navbar-default {
@@ -974,7 +978,6 @@ a.session-box:hover {
   z-index: 99;
   margin: 0 auto;
 }
-
 .navbar {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px;
@@ -983,8 +986,9 @@ a.session-box:hover {
 }
 .logo{
   height: 7.6vh;
+  margin-right: 15px;
+  margin-left: 15px;
 }
-
 .navbar-fixed {
   top: 0;
   z-index: 100;
@@ -993,11 +997,12 @@ a.session-box:hover {
   -moz-transition: all 0.8s;
   transition: all 0.8s; 
 }
-
 .navbar-header {
   opacity: 0;
 }
-
+.navbar-nav{
+  margin-right: -20%;
+}
 .navbar-default .navbar-text {
   color: #000000;
 
@@ -1006,6 +1011,7 @@ a.session-box:hover {
   font-size: 100%;
   line-height: 4.4vh;
   color: #ffffff;
+  margin-left: 2.5vw;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {

@@ -35,7 +35,7 @@
   background: -moz-linear-gradient(left, #ea7274 0%, #b22a58 0%, #d1272a 0%, #00acb2 100%, #005700 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-radius: 25px 25px 0px 0px;
+  /*border-radius: 25px 25px 0px 0px;*/
 }
 
 .btn-white {
@@ -52,25 +52,25 @@
     font-size: 38px !important;
   }
   .fixed > .row {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-    height: 82vh;
+    height: 80vh;
   } 
   .btn-white {
       margin-bottom: -60px;
@@ -84,25 +84,25 @@
     font-size: 44px !important;
   }
   .fixed > .row {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-    height: 82vh;
+    height: 80vh;
   }  
   .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-    height: 82vh;
+    height: 80vh;
   } 
   .btn-white{
     margin-top: 5vh;
@@ -133,7 +133,7 @@
     font-size: 30px;
   }
   .fixed{
-    padding-top: 2vh;
+    padding-top: 10vh;
   }
 }
 @media (min-width:768px) {
@@ -154,25 +154,25 @@
     font-size: 50px;
   }
   .fixed > .row {
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block {
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block > .carousel {
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner {
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-    height: 88.2vh;
+    height: 92.2vh;
   }  
   .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-    height: 88.2vh;
+    height: 92.2vh;
   } 
   .btn-white {
       margin-bottom: 15px;
@@ -233,17 +233,17 @@
 
 
 .first-slide, .second-slide, .third-slide {
-  border-radius: 5px 5px 0px 0px !important;
+  /*border-radius: 5px 5px 0px 0px !important;*/
 }
 .right {
   border: 0px solid #666666;
   overflow: hidden;
-  border-radius: 0px 25px 0px 0px;
+  /*border-radius: 0px 25px 0px 0px;*/
 }
 .left {
   border: 0px solid #666666;
   overflow: hidden;
-  border-radius: 25px 0px 0px 0px;
+  /*border-radius: 25px 0px 0px 0px;*/
 }
 .carousel-control {
   opacity: 0.8;
