@@ -52,25 +52,25 @@
     font-size: 38px !important;
   }
   .fixed > .row {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-    height: 80vh;
+    height: 82vh;
   } 
   .btn-white {
       margin-bottom: -60px;
@@ -84,25 +84,25 @@
     font-size: 44px !important;
   }
   .fixed > .row {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item {
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > .carousel-inner > .item > .active{
-    height: 80vh;
+    height: 82vh;
   }  
   .fixed > .row > .first-block > .carousel > > .carousel-inner > .carousel-caption {
-    height: 80vh;
+    height: 82vh;
   } 
   .btn-white{
     margin-top: 5vh;
@@ -131,9 +131,6 @@
   }
   .header {
     font-size: 30px;
-  }
-  .fixed{
-    padding-top: 10vh;
   }
 }
 @media (min-width:768px) {
