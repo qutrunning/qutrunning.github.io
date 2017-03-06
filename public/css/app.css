@@ -141,6 +141,9 @@
 	z-index: 10;
 }
 
+.spacer{
+  height: 4vh;
+}
 .centered {
   display: inline-block;
   vertical-align: middle;
@@ -804,8 +807,8 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(23px);
-            transform: translateY(23px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 @keyframes scroll {
@@ -814,8 +817,8 @@
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(23px);
-            transform: translateY(23px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 
