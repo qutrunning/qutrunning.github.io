@@ -30,10 +30,13 @@
 .carousel .item {
   overflow: hidden;
   height: 100%;
+  background-color: #3b3b3b !important;
   background: #ea7274; /* Old browsers */
   background: -moz-linear-gradient(left, #ea7274 0%, #b22a58 0%, #d1272a 0%, #00acb2 100%, #005700 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ea7274 0%,#b22a58 0%,#d1272a 0%,#00acb2 100%,#005700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 25px 25px 0px 0px;
+
 }
 
 .btn-white {
@@ -51,11 +54,21 @@
     font-size: 38px !important;
   }
 }
+@media (min-width: 360px){
+  .header{
+    font-size: 44px !important;
+  }
+}
 @media (max-width: 499px){
   .first-slide{
-    content:url(../img/first-slide-2.png);
+    content:url(../img/carousel-slides/first-slide-2-mobile.png);
   }
-
+  .second-slide{
+    content:url(../img/carousel-slides/second-slide-mobile.png);
+  }
+  .third-slide{
+    content:url(../img/carousel-slides/third-slide-mobile.png);
+  }
   .carousel-inner > .item > img {
     min-width: 100%;
   }
@@ -145,8 +158,19 @@
 }
 
 
-
-.left, .carousel-control {
+.first-slide, .second-slide, .third-slide {
+  border-radius: 5px 5px 0px 0px !important;
+}
+.right {
   border: 0px solid #666666;
   overflow: hidden;
+  border-radius: 0px 25px 0px 0px;
+}
+.left {
+  border: 0px solid #666666;
+  overflow: hidden;
+  border-radius: 25px 0px 0px 0px;
+}
+.carousel-control {
+  opacity: 0.8;
 }
