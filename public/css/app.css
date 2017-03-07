@@ -350,7 +350,7 @@
       left: 3.4%;
     }*/
     .divider {
-      display: none;
+      display: none !important;
     }
 }
 
