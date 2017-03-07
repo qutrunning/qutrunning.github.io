@@ -317,11 +317,14 @@
     .second-block{
        width: 86.6%;
     }
+    .caption-block {
+      padding-top: 20px;
+    }
 /*    .navbar-fixed{
       left: 2.5%;
     }*/
     .divider {
-      display: none;
+      display: !important;
     }
 }
 
@@ -345,6 +348,9 @@
     }
     .second-block{
        width: 86.1%;
+    }
+    .caption-block {
+      padding-top: 20px;
     }
 /*    .navbar-fixed{
       left: 3.4%;
