@@ -451,6 +451,10 @@
 /*    .navbar-default, .navbar-fixed {
         width: 88.8%;
     }*/
+    .logo{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
 }
 
 @media screen and ( min-width: 700px ) {
@@ -467,9 +471,15 @@
       width: 89%;
     }
 
-/*    .navbar-default, .navbar-fixed {
-        width: 88.5%;
-    }*/
+    .navbar-default, .navbar-fixed {
+        width: 89.6%;
+    }
+    .navbar-fixed{
+      left: 5.2%;
+    }
+    .navbar-default .navbar-nav > li > a {
+      font-size: 8px;
+    }
 }
 
 @media screen and ( min-width: 800px ) {
@@ -484,11 +494,22 @@
     .navbar-default, .navbar-fixed {
         width: 88%;
     }
+
+    .navbar-fixed{
+      left: 5.2%;
+    }
+    .navbar-default .navbar-nav > li > a {
+      font-size: 8px;
+    }
+    .logo{
+      margin-left: -20px !important;
+      margin-right: 0px !important;
+    }
 }
 
 
 @media screen and ( min-width: 960px ) {
-  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+    .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
       width: 97%;
     }
 
@@ -497,7 +518,7 @@
     }
 
     .navbar-default, .navbar-fixed {
-        width: 87.2%;
+        width: 87.9%;
     }
     .first-block {
       width: 87%;
@@ -506,7 +527,10 @@
        width: 85.3%;
     }
     .navbar-fixed{
-      left: 6.5%;
+      left: 6.1%;
+    }
+    .navbar-default .navbar-nav > li > a {
+      font-size: 13px;
     }
 }
 /*
@@ -1013,7 +1037,6 @@ a.session-box:hover {
   color: #000000;
 }
 .navbar-default .navbar-nav > li > a {
-  font-size: 13px;
   line-height: 4.4vh;
   color: #ffffff;
 }
@@ -1052,9 +1075,12 @@ a.session-box:hover {
 
 .navbar-default .navbar-toggle,
 .navbar-default-home .navbar-toggle {
-  border-color: transparent; /* Removes border color */
+  border: transparent; /* Removes border color */
 }
 .navbar-default .navbar-toggle .icon-bar, 
 .navbar-default-home .navbar-toggle .icon-bar{
   background-color: #ffffff; /* Changes regular toggle color */
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
 }
