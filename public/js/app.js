@@ -204,9 +204,9 @@ $(window).scroll(function () {
 });
 
 //Fade in the navbar upon scroll
-$(document).on('scroll', function (e) {
-    $('.navbar-left').css('opacity', (0 + ($(document).scrollTop() / 600)));
-});
+// $(document).on('scroll', function (e) {
+//     $('.navbar-left').css('opacity', (0 + ($(document).scrollTop() / 600)));
+// });
 
 
 //Make a separate fade in to offest for mobile url bar
