@@ -541,7 +541,6 @@
       font-size: 8px;
     }
     .logo{
-      margin-left: -20px !important;
       margin-right: 0px !important;
     }
     .icon-scroll,
@@ -694,13 +693,35 @@
   }
 }
 
+@media screen and ( min-width: 1599px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+    width: 98%;
+  }
+
+  .bgimg-initial {
+    width: 86.7%;
+  }
+  .navbar-default, .navbar-fixed {
+    width: 86.7%;
+  }
+  .first-block {
+    width: 86.8%;
+  }
+  .second-block{
+     width: 85.2%;
+  }
+  .navbar-fixed{
+    left: 6.65%;
+  }
+}
+
 @media screen and ( min-width: 1800px ) {
   .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
       width: 98.1%;
     }
 
     .bgimg-initial {
-      width: 86.6%;
+      width: 86.8%;
     }
     .navbar-default, .navbar-fixed {
       width: 86.7%;
@@ -722,10 +743,10 @@
     width: 98.25%;
   }
   .bgimg-initial {
-    width: 86.55%;
+    width: 86.66%;
   }
   .navbar-default, .navbar-fixed {
-    width: 86.55%;
+    width: 86.66%;
   }
   .first-block {
     width: 86.55%;
@@ -734,7 +755,7 @@
      width: 85.25%;
   }
   .navbar-fixed{
-    left: 6.7%;
+    left: 6.69%;
   }
 }
 @media screen and ( min-width: 2000px ) {
