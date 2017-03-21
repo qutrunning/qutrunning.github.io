@@ -95,8 +95,14 @@ $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
     if($(window).width() > 758) {
         /* Every time the window is scrolled ... */
+      $('.bgimg-initial').addClass('bgfix');
+      $('.bgimg-1').addClass('bgfix');
+      $('.bgimg-4').addClass('bgfix');
+      $('.bgimg-6').addClass('bgfix');
+      $('.bgimg-7').addClass('bgfix');
+      $('.bgimg-8').addClass('bgfix');
 	    $(window).scroll( function(){
-	    
+	       
 	        /* Check the location of each desired element */
 	        $('.centered').each( function(i){
 	            
@@ -187,10 +193,12 @@ $(document).ready(function() {
     	$('.centered-about').css({
         'opacity': 1
     	});
+      $('.bgimg-initial .bgimg-1').removeClass('bgfix');
     }
     if($('.first-block').css('opacity') == 0) {
     	$(".first-block").hide();
     }
+
 });
 
 //Script to fade out the Carousel when scrolled past

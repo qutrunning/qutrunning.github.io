@@ -178,7 +178,15 @@
   overflow: none;
 }
 
-.bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+.bgimg-initial, 
+.bgimg-1, 
+.bgimg-2, 
+.bgimg-3, 
+.bgimg-4, 
+.bgimg-5, 
+.bgimg-6, 
+.bgimg-7, 
+.bgimg-8{
   position: relative;
   margin: 0 auto;
   background-position: center;
@@ -188,10 +196,21 @@
   -o-background-size: cover;
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
-  background-attachment: fixed;
   z-index: 10;
   height: 100%;
 }
+.bgimg-initial.bgfix, 
+.bgimg-1.bgfix, 
+.bgimg-2.bgfix, 
+.bgimg-3.bgfix, 
+.bgimg-4.bgfix, 
+.bgimg-5.bgfix, 
+.bgimg-6.bgfix, 
+.bgimg-7.bgfix, 
+.bgimg-8.bgfix {
+  background-attachment: fixed;
+}
+
 /*
 .bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
 
