@@ -377,8 +377,8 @@
       font-size: 8px;
     }
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      padding-top: 5%;
-      padding-bottom: 8%;
+      padding-top: 10%;
+      padding-bottom: 10%;
     }
 }
 
@@ -421,9 +421,7 @@
       display: inline-block;
     }
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      margin-top: 8%;
-      margin-bottom: 8%;
-      width: 40%;
+      width: 100%;
     }
 }
 
