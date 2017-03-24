@@ -119,10 +119,10 @@
 }
 @media (max-width: 499px){
   .first-slide{
-    content:url(../img/carousel-slides/first-slide-2-mobile.png);
+    content:url(../img/carousel-slides/first-slide.jpg);
   }
   .second-slide{
-    content:url(../img/carousel-slides/second-slide2.jpg);
+    content:url(../img/carousel-slides/second-slide-mobile.png);
   }
   .third-slide{
     content:url(../img/carousel-slides/third-slide-mobile.png);
