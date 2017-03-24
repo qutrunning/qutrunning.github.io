@@ -195,10 +195,6 @@ $(document).ready(function() {
     	});
       $('.bgimg-initial .bgimg-1').removeClass('bgfix');
     }
-    if($('.first-block').css('opacity') == 0) {
-    	$(".first-block").hide();
-    }
-
 });
 
 //Script to fade out the Carousel when scrolled past
