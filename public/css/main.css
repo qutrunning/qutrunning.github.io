@@ -211,6 +211,42 @@
   background-attachment: fixed;
 }
 
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 40vh;
+    z-index: 1;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+.parallax-container .text-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -27px
+}
+
 /*
 .bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
 
@@ -465,6 +501,7 @@
     left: 0;
     padding-bottom: 5px;
     width: 100%;
+    top: 45%;
     text-align: center;
     color: #ffffff;
   	font-family: 'Lato', sans-serif;
