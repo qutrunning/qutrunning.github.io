@@ -169,7 +169,11 @@ $(document).ready(function() {
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
-	        });     
+	        });
+          $(document).ready(function(){
+              $('.parallax').parallax();
+          });     
+          $('.parallax img').addClass('desktop');
 	    });
 		
     }
@@ -194,6 +198,7 @@ $(document).ready(function() {
         'opacity': 1
     	});
       $('.bgimg-initial .bgimg-1').removeClass('bgfix');
+      $('.parallax img').addClass('mobile');
     }
 });
 
@@ -443,6 +448,3 @@ $(document).ready(function() {
     }
   });
 });
-$(document).ready(function(){
-      $('.parallax').parallax();
-    });

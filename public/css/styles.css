@@ -227,20 +227,27 @@
     z-index: 1;
 }
 
-.parallax img {
+.parallax-container .text-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.mobile {
+    position: absolute;
+    bottom: 0;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.desktop {
     display: none;
     position: absolute;
     left: 50%;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
-.parallax-container .text-center {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin-top: -27px
 }
 
 /*
