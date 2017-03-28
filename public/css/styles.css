@@ -271,14 +271,14 @@
 }
 */
 .bgimg-initial {
-  /*background: rgba(116, 118, 127, 0.7); */
-  background-image: url(../img/parallax/wall_initial.jpg);
+  background: rgba(125, 127, 127, 0.5); 
+  /*background-image: url(../img/parallax/wall_initial.jpg);*/
   /*background: #74767F;*/
 }
 
 .bgimg-1 {
-  /*background: rgba(156, 170, 255, 0.7); */
-  background-image: url(../img/parallax/wall_1.jpg);
+  background: rgba(69, 201, 255, 0.5); 
+  /*background-image: url(../img/parallax/wall_1.jpg);*/
   /*background: #9CAAFF;*/
 }
 
@@ -289,8 +289,8 @@
 }*/
 
 .bgimg-4 {
-  /*background: #E9ECFF;*/
-  background-image: url(../img/parallax/wall_4.jpg);
+  background: rgba(250, 254, 255, 0.5); 
+  /*background-image: url(../img/parallax/wall_4.jpg);*/
   min-height: 100%;
 }
 
@@ -302,20 +302,20 @@
 }*/
 
 .bgimg-6 {
-  /*background: #4E557F;*/
-  background-image: url(../img/parallax/wall_5.jpg);
+  background: rgba(9, 93, 127, 0.5); 
+  /*background-image: url(../img/parallax/wall_5.jpg);*/
   min-height: 100%;
 }
 
 .bgimg-7 {
-  /*background: #BABDCC;*/
-  background-image: url(../img/parallax/wall_7.jpg);
+  background: rgba(200, 203, 204, 0.5); 
+  /*background-image: url(../img/parallax/wall_7.jpg);*/
   min-height: 100%;
 }
 
 .bgimg-8 {
-  /*background: rgba(255, 255, 255, 0.4);*/
-  background-image: url(../img/parallax/wall_8.jpg);
+  background: rgba(69, 201, 255, 0.5);
+  /*background-image: url(../img/parallax/wall_8.jpg);*/
   min-height: 100%;
 }
 

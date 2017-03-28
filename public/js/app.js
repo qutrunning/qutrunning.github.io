@@ -13,7 +13,7 @@ function initMap() {
           icon: './public/img/running_pin.png',
           title: 'Kidney Lawn'
         });
-      }
+}
 
 
 // ------ Scroll ------
@@ -205,7 +205,7 @@ $(document).ready(function() {
 //Script to fade out the Carousel when scrolled past
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var height = ($(window).height() / 1.2); //1.7 previous
+    var height = ($(window).height() / 1); //1.7 previous
     $('.first-block').css({
 
         'opacity': ((height - scrollTop) / (height))
