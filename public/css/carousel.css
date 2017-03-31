@@ -42,11 +42,27 @@
   color: #ffffff;
   border-color: #ffffff;
   border: 2px solid;
+   transition:all 0.5s ease-in-out; 
+  -o-transition:all 0.5s ease-in-out; 
+  -moz-transition:all 0.5s ease-in-out; 
+  -webkit-transition:all 0.5s ease-in-out;
 }
 
-.btn-white:hover {
-  color: #fff;
-}
+.btn-white:hover, 
+.btn-white:focus, 
+.btn-white:active, 
+.btn-white.active, 
+.open .dropdown-toggle.select { 
+  color: #000; 
+  background-color: #fff; 
+  border-color: #fff; 
+  text-decoration: none;
+  transition:all 0.5s ease-in-out; 
+  -o-transition:all 0.5s ease-in-out; 
+  -moz-transition:all 0.5s ease-in-out; 
+  -webkit-transition:all 0.5s ease-in-out;
+} 
+
 @media (max-width: 330px){
   .header{
     font-size: 38px !important;
@@ -259,8 +275,11 @@
 }
 @media (min-width: 2000px) {
 
-.third-slide{
-    content:url(../img/carousel-slides/third.jpg);
+  .third-slide{
+    content:url(../img/carousel-slides/third_wide.jpg);
+  }
+  .first-slide{
+    content:url(../img/carousel-slides/first_wide.jpg);
   }
 
 }

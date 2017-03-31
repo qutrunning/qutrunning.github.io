@@ -177,7 +177,9 @@
 	margin: 0 auto;
   overflow: none;
 }
-
+/*---------------------------
+PARALLAX WINDOWS IF NEEDED
+----------------------------*/
 .bgimg-initial, 
 .bgimg-1, 
 .bgimg-2, 
@@ -271,13 +273,13 @@
 }
 */
 .bgimg-initial {
-  background: rgba(125, 127, 127, 0.5); 
+  background: rgba(125, 127, 127, 0.7); 
   /*background-image: url(../img/parallax/wall_initial.jpg);*/
   /*background: #74767F;*/
 }
 
 .bgimg-1 {
-  background: rgba(69, 201, 255, 0.5); 
+  background: rgba(69, 201, 255, 0.7); 
   /*background-image: url(../img/parallax/wall_1.jpg);*/
   /*background: #9CAAFF;*/
 }
@@ -289,7 +291,7 @@
 }*/
 
 .bgimg-4 {
-  background: rgba(250, 254, 255, 0.5); 
+  background: rgba(250, 254, 255, 0.7); 
   /*background-image: url(../img/parallax/wall_4.jpg);*/
   min-height: 100%;
 }
@@ -302,19 +304,19 @@
 }*/
 
 .bgimg-6 {
-  background: rgba(9, 93, 127, 0.5); 
+  background: rgba(9, 93, 127, 0.7); 
   /*background-image: url(../img/parallax/wall_5.jpg);*/
   min-height: 100%;
 }
 
 .bgimg-7 {
-  background: rgba(200, 203, 204, 0.5); 
+  background: rgba(200, 203, 204, 0.7); 
   /*background-image: url(../img/parallax/wall_7.jpg);*/
   min-height: 100%;
 }
 
 .bgimg-8 {
-  background: rgba(69, 201, 255, 0.5);
+  background: rgba(69, 201, 255, 0.7);
   /*background-image: url(../img/parallax/wall_8.jpg);*/
   min-height: 100%;
 }
@@ -489,6 +491,37 @@
     }
 }
 
+/*Custom scroll wheel*/
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Piece */
+::-webkit-scrollbar-track-piece:start {
+    background: #3b3b3b;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: #3b3b3b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.4); 
+}
 .caption-block {
 	width: 100%;
 	height: 100%;
@@ -653,7 +686,9 @@ body {
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
 }
-/* Timetable */
+/* -------------
+------Timetable 
+----------------*/
 
 th {
 	color: black;
@@ -702,7 +737,10 @@ a.session-box:hover {
 	display:block;
     margin:auto;
 }
-
+#contact {
+    text-decoration: none;
+    color: #fff;
+}
 .dont-break-out {
 
 	/* These are technically the same, but use both */
@@ -766,18 +804,14 @@ a.session-box:hover {
   line-height: 4.4vh;
   color: #ffffff;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  background-color: #15B1D4;
-}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   -webkit-transition: all 0.6s;
    -moz-transition: all 0.6s;
   transition: all 0.6s;
-  color: #ffffff;
-  background-color: #06182d;
+  color: #57C2E6;
 }
 .navbar-brand {
   padding: 0px;
