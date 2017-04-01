@@ -232,9 +232,9 @@
     margin-top: 120px;
   }
 }
-
+/*
 @media (min-width: 1370px) {
-  /* Bump up size of carousel content */
+  /* Bump up size of carousel content 
   .header {
     margin-top: 120px;
   }
@@ -254,7 +254,7 @@
   .header {
     font-size: 50px;
   }
-}
+}*/
 
 
 .first-slide, .second-slide, .third-slide {
@@ -273,7 +273,7 @@
 .carousel-control {
   opacity: 0.8;
 }
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
 
   .third-slide{
     content:url(../img/carousel-slides/third_wide.jpg);
