@@ -381,9 +381,6 @@ PARALLAX WINDOWS IF NEEDED
       padding-top: 15%;
       padding-bottom: 15%;
     }
-    .divider {
-      display: !important;
-    }
 }
 
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
@@ -417,9 +414,6 @@ PARALLAX WINDOWS IF NEEDED
       height: 180px;
       padding-top: 15%;
       padding-bottom: 15%;
-    }
-    .divider {
-      display: none !important;
     }
 }
 
@@ -476,9 +470,6 @@ PARALLAX WINDOWS IF NEEDED
     }
     .header {
       margin-bottom: 90px;
-    }
-    .divider {
-      display: inline-block;
     }
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       width: 100%;
@@ -824,11 +815,6 @@ a.session-box:hover {
 .sponsors > .col-md-4 {
     padding-left: 5%;
     padding-right: 5%;
-}
-.divider{
-  text-decoration: none;
-  font-size: 15px;
-  color: #ffffff;
 }
 .col-md-12 {
   padding: 5%;
