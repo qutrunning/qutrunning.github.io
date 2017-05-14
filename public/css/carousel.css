@@ -215,7 +215,7 @@
   .carousel-inner > .item > img {
     height: 100%;
     min-width: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
   .header {
@@ -278,8 +278,8 @@
   .third-slide{
     content:url(../img/carousel-slides/third_wide.jpg);
   }
-  .first-slide{
-    content:url(../img/carousel-slides/first_wide.jpg);
-  }
+ /* .second-slide{
+    content:url(../img/carousel-slides/second_wide.jpg);
+  }*/
 
 }
