@@ -79,16 +79,16 @@
 	/*opacity: 0;*/
 }
 
-.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+.second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
   text-align: center;
   background: rgba(0, 0, 0, 0.6); 
   color: #ffffff;
   border: solid white;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 85%;
   font-family: 'Lato', sans-serif;
 }
+
 
 .third-block:before, .fourth-block:before, .fifth-block:before, .sixth-block:before, .seventh-block:before {
   display: inline-block;
@@ -142,12 +142,12 @@
   border-radius: 10px;
 }
 
-.encapsulate {
+/*.encapsulate {
 	max-width: 85%;
-	height: 100%;
+	height: %;
 	margin: 0 auto;
   overflow: none;
-}
+}*/
 /*---------------------------
 PARALLAX WINDOWS IF NEEDED
 ----------------------------*/
@@ -319,6 +319,12 @@ PARALLAX WINDOWS IF NEEDED
       height: 4px;
       margin-left: -2px;
     }*/
+    .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
+      width: 79%;
+    }
+    .second-block, .third-block {
+      width: 85%;
+    }
 }
 
 /* RESPONSIVE DIVS */
@@ -363,6 +369,16 @@ PARALLAX WINDOWS IF NEEDED
       padding-top: 15%;
       padding-bottom: 15%;
     }
+    .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
+      width: 79%;
+    }
+    .second-block, .third-block {
+      width: 85%;
+    }
+    .caption span.border,
+    .caption span.border {
+      font-size: 20px;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -382,15 +398,17 @@ PARALLAX WINDOWS IF NEEDED
       padding-top: 8%;
       padding-bottom: 6%;
     }
+
 }
 
 @media ( min-width: 768px ) and (min-height: 1024px) { /*for iPad screens*/
     .navbar-default .navbar-nav > li > a {
-      font-size: 9px;
+      font-size: 10.5px;
     }
     .logo{
       margin-right: 0px;
       margin-left: 0px;
+      width: 100px;
     }
 
 }
@@ -424,6 +442,13 @@ PARALLAX WINDOWS IF NEEDED
     }
     .table-responsive {
         overflow-x: hidden !important;
+    }
+    .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
+      width: 85%;
+    }
+    .caption span.border,
+    .caption span.border {
+      font-size: 25px;
     }
 }
 
@@ -495,7 +520,6 @@ PARALLAX WINDOWS IF NEEDED
     background: #363636;
     color: #fff;
     padding: 18px;
-    font-size: 25px;
     letter-spacing: 5px;
 }
 

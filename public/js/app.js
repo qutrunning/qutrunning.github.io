@@ -93,7 +93,7 @@ $(document).ready(function() {
 //for the text div fade
 $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
-    if($(window).width() > 758) {
+    if($(window).width() > 768) {
         /* Every time the window is scrolled ... */
       $('.bgimg-initial').addClass('bgfix');
       $('.bgimg-1').addClass('bgfix');
@@ -110,7 +110,7 @@ $(document).ready(function() {
 	            var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
 	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.94)){
+	            if( bottom_of_window > (bottom_of_object * 0.85)){
 
 	                $(this).animate({'opacity':'1'},400);             
 	            }            
