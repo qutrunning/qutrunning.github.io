@@ -25,7 +25,7 @@ $(document).ready(function (){
         });
     });
      $("#go-home2").click(function (){
-        $("#home").velocity("scroll", { 
+        $("#banner").velocity("scroll", { 
             duration: 1000,
         });
     });
@@ -95,12 +95,12 @@ $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
     if($(window).width() > 768) {
         /* Every time the window is scrolled ... */
-      $('.bgimg-initial').addClass('bgfix');
-      $('.bgimg-1').addClass('bgfix');
-      $('.bgimg-4').addClass('bgfix');
-      $('.bgimg-6').addClass('bgfix');
-      $('.bgimg-7').addClass('bgfix');
-      $('.bgimg-8').addClass('bgfix');
+      // $('.bgimg-initial').addClass('bgfix');
+      // $('.bgimg-1').addClass('bgfix');
+      // $('.bgimg-4').addClass('bgfix');
+      // $('.bgimg-6').addClass('bgfix');
+      // $('.bgimg-7').addClass('bgfix');
+      // $('.bgimg-8').addClass('bgfix');
 	    $(window).scroll( function(){
 	       
 	        /* Check the location of each desired element */
@@ -321,111 +321,111 @@ $(document).ready(function() {
   }
 });
 
-//change the colour of the navbar to match the colour of the div currently in view
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#home');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#06182d');
-       }
-   });
-    }
-});	
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#about');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#06182d');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#get-started');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#1F2C38');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#timetablehead');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#752119');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#overview');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#0F594B');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#map');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#1B4B6B');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#executives');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#1F2C38');
-       }
-   });
-    }
-});
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#contact');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#00070F');
-       }
-   });
-}
-});
+// //change the colour of the navbar to match the colour of the div currently in view
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#home');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#06182d');
+//        }
+//    });
+//     }
+// });	
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#about');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#06182d');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#get-started');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#1F2C38');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#timetablehead');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#752119');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#overview');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#0F594B');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#map');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#1B4B6B');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#executives');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#1F2C38');
+//        }
+//    });
+//     }
+// });
+// $(document).ready(function(){       
+//    var scroll_start = 0;
+//    var startchange = $('#contact');
+//    var offset = startchange.offset();
+//     if (startchange.length){
+//    $(document).scroll(function() { 
+//       scroll_start = $(this).scrollTop();
+//       if(scroll_start > offset.top) {
+//           $(".navbar-default").css('background-color', '#00070F');
+//        }
+//    });
+// }
+// });
 
 //collapse the navbar upon selection from hamburger menu
 $(document).on('click','.navbar-collapse.in',function(e) {

@@ -326,7 +326,7 @@ PARALLAX WINDOWS IF NEEDED
     }
 
     .carousel-caption {
-      bottom: 20%;
+      bottom: 15%;
     }
 }
 
@@ -335,6 +335,9 @@ PARALLAX WINDOWS IF NEEDED
     .logo{
       margin-left: 0px !important;
       margin-right: 0px !important;
+    }
+    .carousel-caption {
+      bottom: 20%;
     }
 }
 
