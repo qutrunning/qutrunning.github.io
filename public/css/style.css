@@ -13,6 +13,7 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
+  background: #3b3b3b;
   padding-top: 5%;
 	z-index: 11;
   text-align: center;
@@ -98,23 +99,36 @@
   */
 }
 
+video {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.video {
+  height: 100vh;
+  position: relative;
+}
+.caption {
+  top: 30%;
+}
 .fixed {
   width: 100vw;
-  height: 100%;
   border-radius: 25px 25px 0px 0px;
-  background-color: #3b3b3b !important;
 	z-index: 10;
+  background: #3b3b3b;
 }
-.spacer{
-  height: 0vh;
-}
+
 .centered {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
   width: 85%;
   opacity: 0;
-
 }
 
 .centered-overview, .centered-about, .centered-executives, .centered-map {
@@ -223,75 +237,6 @@ PARALLAX WINDOWS IF NEEDED
     min-height: 100% !important;
 }
 
-/*
-.bgimg-initial:before, .bgimg-1:before, .bgimg-2:before, .bgimg-3:before, .bgimg-4:before, .bgimg-5:before, .bgimg-6:before, .bgimg-7:before, .bgimg-8:before{
-
-  position: relative;
-  opacity: 1;
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-overflow-scrolling: touch;
-  -webkit-backface-visibility: hidden;
-  background-attachment: fixed;
-  z-index: 10;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  overflow-x: hidden; 
-}
-*/
-.bgimg-initial {
-  background: transparent; 
-  /*background-image: url(../img/parallax/wall_initial.jpg);*/
-  /*background: #74767F;*/
-}
-
-.bgimg-1 {
-  background: transparent; 
-  /*background-image: url(../img/parallax/wall_1.jpg);*/
-  /*background: #9CAAFF;*/
-}
-
-/*.bgimg-2 {
-  background-image: url(../img/wall_2.jpg);
-  min-height: 100%;
-  width: 75%;
-}*/
-
-.bgimg-4 {
-  background: transparent; 
-  /*background-image: url(../img/parallax/wall_4.jpg);*/
-  min-height: 100%;
-}
-
-/*.bgimg-5 {
-  background-image: url(../img/wall_5.jpg);
-  min-height: 100%;
-  border-radius: 80px 40px 0px 0px;
-  width: 86.25%;
-}*/
-
-.bgimg-6 {
-  background: transparent; 
-  /*background-image: url(../img/parallax/wall_5.jpg);*/
-  min-height: 100%;
-}
-
-.bgimg-7 {
-  background: transparent; 
-  /*background-image: url(../img/parallax/wall_7.jpg);*/
-  min-height: 100%;
-}
-
-.bgimg-8 {
-  background: transparent;
-  /*background-image: url(../img/parallax/wall_8.jpg);*/
-  min-height: 100%;
-}
-
 /* RESPONSIVE DIVS */
 
 @media screen and ( max-width: 398px ) { /*for iPhone 5 and 5S*/
@@ -379,6 +324,10 @@ PARALLAX WINDOWS IF NEEDED
     .caption span.border {
       font-size: 20px;
     }
+
+    .carousel-caption {
+      bottom: 20%;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -429,7 +378,7 @@ PARALLAX WINDOWS IF NEEDED
       width: 20px;
       height: 35px;
       margin-left: -10px;
-      top: 95%;
+      top: 90%;
       margin-top: -35px;
       box-shadow: inset 0 0 0 1px #fff;
       border-radius: 25px;
@@ -458,37 +407,20 @@ PARALLAX WINDOWS IF NEEDED
     }
 }
 
-/*Custom scroll wheel*/
-/* Let's get this party started */
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
- 
-/* Piece */
-::-webkit-scrollbar-track-piece:start {
-    background: #3b3b3b;
+@media screen and ( min-width: 1280px ) {
+    video {
+      -webkit-transform: scaleX(1.2); 
+      -moz-transform: scaleX(1.2);
+    }
 }
 
-::-webkit-scrollbar-track-piece:end {
-    background: #3b3b3b;
+@media screen and ( min-width: 2000px ) {
+    video {
+      -webkit-transform: scaleX(1.6); 
+      -moz-transform: scaleX(1.6);
+    }
 }
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(10, 104, 255, 0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(10, 104, 255, 0.4); 
-}
+
 .caption-block {
 	width: 100%;
 	height: 100%;
