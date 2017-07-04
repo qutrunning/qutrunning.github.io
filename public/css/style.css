@@ -166,7 +166,21 @@ video {
   color: #fff;
   border: 1px solid white !important;
   padding: 10px 30px 10px 30px;
-  font-size: 25px;
+}
+
+.select:hover, 
+.select:focus, 
+.select:active, 
+.select.active, 
+.open .dropdown-toggle.select {
+  color: #000; 
+  background-color: #fff; 
+  border-color: #000; 
+  text-decoration: none;
+  transition:all 0.5s ease-in-out; 
+  -o-transition:all 0.5s ease-in-out; 
+  -moz-transition:all 0.5s ease-in-out; 
+  -webkit-transition:all 0.5s ease-in-out;
 }
 
 /*---------------------------
@@ -335,6 +349,13 @@ PARALLAX WINDOWS IF NEEDED
     .carousel-caption {
       bottom: 15%;
     }
+    .select {
+      font-size: 15px;
+      font-weight: 800;
+    }
+    p, dl {
+      font-size: 15px;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -409,6 +430,16 @@ PARALLAX WINDOWS IF NEEDED
     .caption span.border {
       font-size: 25px;
     }
+    .select {
+      font-size: 25px;
+      font-weight: 400;
+    }
+    p, dl {
+      font-size: 17px;
+    }
+    .dl-horizontal dt {
+     white-space: normal !important; 
+    }
 }
 
 @media screen and ( min-width: 960px ) {
@@ -463,6 +494,12 @@ PARALLAX WINDOWS IF NEEDED
     color: #fff;
     padding: 18px;
     letter-spacing: 5px;
+}
+
+dt > a,
+.centered-contact > .col-md-12 > .row > p > a {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .race-table {
@@ -671,7 +708,8 @@ a.session-box:hover {
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-
+  text-decoration: underline;
+  color: #fff;
 }
 
 /* Navbar */
