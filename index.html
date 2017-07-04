@@ -24,15 +24,7 @@
 	<link href="./public/css/carousel.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=2.0" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="./public/js/app.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxhseafkxBSK3KH8NyCwp6BDsOMNWubFM&callback=initMap"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./public/js/jquery.touchSwipe.min.js"></script>
-	<script src="./public/js/jquery.mobile.custom.min.js"></script>
-	<script src="./public/js/velocity.min.js"></script>
+	<link href="./public/css/style.css?v=2.1" rel="stylesheet">
 </head>
 <body>
 		
@@ -227,9 +219,9 @@
 					</dl>					
 
 				</div>
-				<div class="col-md-3 text-center">
+				<div class="col-md-4 text-center">
 					<br>
-					<img id="timetablehead" class="img-responsive" src="./public/img/banana.jpg" alt="Eamon">
+					<img id="timetablehead" class="img-responsive" width="320px" height="424px" src="./public/img/banana.jpg" alt="Eamon">
 					<br>
 					<br>
 					<br>
@@ -492,46 +484,58 @@
 					<div class="row executives-1">
 						<br>
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/eamon.jpg" alt="President">
-							<h2>President</h2>
-							<h3>Eamon Burke</h3>
+							<a id="contact" href="https://www.facebook.com/hello.yes.eapm.here" target="_blank">
+								<img class="img-circle" src="./public/img/executives/eamon.jpg" alt="President">
+								<h2>President</h2>
+								<h3>Eamon Burke</h3>
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/nadine.jpg" alt="Secretary">
-							<h2>Secretary</h2>
-							<h3>Nadine Haas</h3>
+							<a id="contact" href="https://www.facebook.com/nadine.haas.925" target="_blank">
+								<img class="img-circle" src="./public/img/executives/nadine.jpg" alt="Secretary">
+								<h2>Secretary</h2>
+								<h3>Nadine Haas</h3>
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/alex.jpg" alt="Treasurer">
-							<h2>Treasurer</h2>
-							<h3>Alex Jenkins</h3>							
+							<a id="contact" href="https://www.facebook.com/alex.jenkins.967" target="_blank">
+								<img class="img-circle" src="./public/img/executives/alex.jpg" alt="Treasurer">
+								<h2>Treasurer</h2>
+								<h3>Alex Jenkins</h3>							
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 					</div><!-- /.row -->
 
 					<div class="row executives-2">
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/cheryl.jpg" alt="Sessions">
-							<h2>Session Coordinator</h2>
-							<h3>Cheryl Lam</h3>
+							<a id="contact" href="https://www.facebook.com/cheryl.lam01" target="_blank">
+								<img class="img-circle" src="./public/img/executives/cheryl.jpg" alt="Sessions">
+								<h2>Session Coordinator</h2>
+								<h3>Cheryl Lam</h3>
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/joe.jpg" alt="Workout">
-							<h2>Gym/Swim/Boot Camp</h2>
-							<h3>Joe Murphy</h3>
+							<a id="contact" href="https://www.facebook.com/joe.murphy.334491" target="_blank">
+								<img class="img-circle" src="./public/img/executives/joe.jpg" alt="Workout">
+								<h2>Gym/Swim/Boot Camp</h2>
+								<h3>Joe Murphy</h3>
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 
 						<div class="col-lg-4">
-							<img class="img-circle" src="./public/img/ben.jpg" alt="Social">
-							<h2>Social Coordinator</h2>
-							<h3>Ben Vickery</h3>
+							<a id="contact" href="https://www.facebook.com/ben.vickery.90" target="_blank">
+								<img class="img-circle" src="./public/img/executives/ben.jpg" alt="Social">
+								<h2>Social Coordinator</h2>
+								<h3>Ben Vickery</h3>
+							</a>
 							<br>
 						</div><!-- /.col-lg-4 -->
 					</div><!-- /.row -->
@@ -539,7 +543,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center">		
 							<a id="contact" href="https://www.facebook.com/tim.jones.3348" target="_blank">
-								<img class="img-circle" src="./public/img/tim.jpg" alt="IT">
+								<img class="img-circle" src="./public/img/executives/tim.jpg" alt="IT">
 								<h2>Website and IT</h2>
 								<h3>Tim Jones</h3>
 							</a>
@@ -684,8 +688,12 @@
 	    if($(window).width() < 758) {
 	      $('#topnav').addClass('navbar-fixed-top');
 	   	}
-});
-
+	});
 </script>
+<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script async defertype="text/javascript" src="./public/js/app.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxhseafkxBSK3KH8NyCwp6BDsOMNWubFM&callback=initMap"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>	
