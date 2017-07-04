@@ -104,72 +104,72 @@ $(document).ready(function() {
 	    $(window).scroll( function(){
 	       
 	        /* Check the location of each desired element */
-	        $('.centered').each( function(i){
+	        // $('.centered').each( function(i){
 	            
-	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	        //     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	        //     var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.85)){
+	        //     /* If the object is completely visible in the window, fade it in */
+	        //     if( bottom_of_window > (bottom_of_object * 0.85)){
 
-	                $(this).animate({'opacity':'1'},400);             
-	            }            
-	        });
-	        $('.centered-about').each( function(i){
+	        //         $(this).animate({'opacity':'1'},400);             
+	        //     }            
+	        // });
+	        // $('.centered-about').each( function(i){
 	            
-	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	        //     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	        //     var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.5)){
+	        //     /* If the object is completely visible in the window, fade it in */
+	        //     if( bottom_of_window > (bottom_of_object * 0.5)){
 
-	                $(this).animate({'opacity':'1'},400);             
-	            }            
-	        }); 
-          	$('.centered-executives').each( function(i){
+	        //         $(this).animate({'opacity':'1'},400);             
+	        //     }            
+	        // }); 
+         //  	$('.centered-executives').each( function(i){
               
-              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              	var bottom_of_window = $(window).scrollTop() + $(window).height();
+         //      	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         //      	var bottom_of_window = $(window).scrollTop() + $(window).height();
               
-              	/* If the object is completely visible in the window, fade it in */
-              	if( bottom_of_window > (bottom_of_object * 0.9)){
+         //      	/* If the object is completely visible in the window, fade it in */
+         //      	if( bottom_of_window > (bottom_of_object * 0.9)){
 
-              		$(this).animate({'opacity':'1'},400);             
-              }            
-          	});     
-          	$('.centered-map').each( function(i){
+         //      		$(this).animate({'opacity':'1'},400);             
+         //      }            
+         //  	});     
+         //  	$('.centered-map').each( function(i){
               
-              	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              	var bottom_of_window = $(window).scrollTop() + $(window).height();
+         //      	var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         //      	var bottom_of_window = $(window).scrollTop() + $(window).height();
               
-              	/* If the object is completely visible in the window, fade it in */
-              	if( bottom_of_window > (bottom_of_object * 0.95)){
+         //      	/* If the object is completely visible in the window, fade it in */
+         //      	if( bottom_of_window > (bottom_of_object * 0.95)){
 
-              		$(this).animate({'opacity':'1'},400);             
-              }            
-          	});      
-          	$('.centered-overview').each( function(i){
+         //      		$(this).animate({'opacity':'1'},400);             
+         //      }            
+         //  	});      
+         //  	$('.centered-overview').each( function(i){
               
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
+         //        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         //        var bottom_of_window = $(window).scrollTop() + $(window).height();
               
-                /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 1)){
+         //        /* If the object is completely visible in the window, fade it in */
+         //        if( bottom_of_window > (bottom_of_object * 1)){
 
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-            });      
-	        $('.centered-contact').each( function(i){
+         //          $(this).animate({'opacity':'1'},400);             
+         //      }            
+         //    });      
+	        // $('.centered-contact').each( function(i){
 	            
-	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	        //     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	        //     var bottom_of_window = $(window).scrollTop() + $(window).height();
 	            
-	            /* If the object is completely visible in the window, fade it in */
-	            if( bottom_of_window > (bottom_of_object * 0.9)){
+	        //     /* If the object is completely visible in the window, fade it in */
+	        //     if( bottom_of_window > (bottom_of_object * 0.9)){
 
-	                $(this).animate({'opacity':'1'},400);             
-	            }            
-	        });
+	        //         $(this).animate({'opacity':'1'},400);             
+	        //     }            
+	        // });
           // $(document).ready(function(){
           //     $('.parallax').parallax();
           // });     

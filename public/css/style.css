@@ -128,7 +128,6 @@ video {
   vertical-align: middle;
   color: #ffffff;
   width: 85%;
-  opacity: 0;
 }
 
 .centered-overview, .centered-about, .centered-executives, .centered-map {
@@ -136,7 +135,6 @@ video {
   vertical-align: middle;
   color: #ffffff;
   width: 85%;
-  opacity: 0;
 
 }
 
@@ -145,7 +143,6 @@ video {
   vertical-align: middle;
   color: #ffffff;
   width: 85%;
-  opacity: 0;
 }
 
 .centered-carousel {
