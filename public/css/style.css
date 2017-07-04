@@ -82,7 +82,7 @@
 
 .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(73, 118, 133, 0.7); 
   color: #ffffff;
   border: solid white;
   padding-top: 2%;
@@ -156,12 +156,22 @@ video {
   border-radius: 10px;
 }
 
-/*.encapsulate {
-	max-width: 85%;
-	height: %;
-	margin: 0 auto;
-  overflow: none;
-}*/
+.select {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: .1em;
+  transition:all 0.5s ease-in-out; 
+  -o-transition:all 0.5s ease-in-out; 
+  -moz-transition:all 0.5s ease-in-out; 
+  -webkit-transition:all 0.5s ease-in-out;
+  color: #fff;
+  border: 1px solid white !important;
+  padding: 10px 30px 10px 30px;
+  font-size: 25px;
+}
+
 /*---------------------------
 PARALLAX WINDOWS IF NEEDED
 ----------------------------*/
@@ -452,7 +462,7 @@ PARALLAX WINDOWS IF NEEDED
 
 .caption span.border,
 .caption span.border {
-    background: #363636;
+    background: #09203D;
     color: #fff;
     padding: 18px;
     letter-spacing: 5px;
@@ -674,7 +684,7 @@ a.session-box:hover {
   transition: all 0.6s; 
   transition: background 0.2s, padding 0.2s;
   opacity: 0.95;
-  background-color: #000 !important;
+  background-color: #0C2D56 !important;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
   margin-bottom: 0px;
