@@ -112,13 +112,7 @@ video {
 .video {
   height: 100vh;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-overflow-scrolling: touch;
-  -webkit-backface-visibility: hidden;
+  background: rgba(12, 45, 86, 0.4);
 }
 .caption {
   top: 30%;
@@ -447,9 +441,9 @@ PARALLAX WINDOWS IF NEEDED
     .dl-horizontal dt {
      white-space: normal !important; 
     }
-    .video {
+/*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');
-    }
+    }*/
 }
 
 @media screen and ( min-width: 960px ) {
@@ -470,9 +464,9 @@ PARALLAX WINDOWS IF NEEDED
       -webkit-transform: scaleX(1.6); 
       -moz-transform: scaleX(1.6);
     }
-    .video {
+/*    .video {
       background-image: url('../img/carousel-slides/first_wide.jpg');
-    }
+    }*/
 }
 
 .caption-block {
