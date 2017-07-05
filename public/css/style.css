@@ -167,6 +167,9 @@ video {
   color: #fff;
   border: 1px solid white !important;
   padding: 10px 30px 10px 30px;
+  color: #000; 
+  background-color: #fff; 
+  border-color: #000; 
 }
 
 .select:hover, 
@@ -174,8 +177,8 @@ video {
 .select:active, 
 .select.active, 
 .open .dropdown-toggle.select {
-  color: #000; 
-  background-color: #fff; 
+  color: #fff; 
+  background-color: transparent; 
   border-color: #000; 
   text-decoration: none;
   transition:all 0.5s ease-in-out; 
