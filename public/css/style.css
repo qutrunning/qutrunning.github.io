@@ -302,24 +302,9 @@ PARALLAX WINDOWS IF NEEDED
 
 /* RESPONSIVE DIVS */
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
- /* .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
-      width: 92.8%;
+    .strava {
+      width: 240px;
     }
-
-    
-
-    .bgimg-initial {
-      width: 94.4%;
-    }
-    .navbar-default, .navbar-fixed {
-      width: 95%;
-    }
-    .first-block {
-      width: 95%;
-    }
-    .second-block{
-       width: 86.6%;
-    }*/
     .caption-block {
       padding-top: 20px;
     }
@@ -366,6 +351,9 @@ PARALLAX WINDOWS IF NEEDED
     .carousel-caption {
       top: 9%;
     }
+    .strava {
+      width: 240px;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -376,6 +364,9 @@ PARALLAX WINDOWS IF NEEDED
     }
     .carousel-caption {
       bottom: 20%;
+    }
+     .strava {
+      width: 280px;
     }
 }
 
