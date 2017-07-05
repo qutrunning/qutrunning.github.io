@@ -69,7 +69,11 @@ $(document).ready(function (){
             duration: 1000,
         });
     });
-
+    $("#go-top").click(function (){
+        $("#banner").velocity("scroll", { 
+            duration: 1000,
+        });
+    });
     // ----  Popover settings  -----
     $('a.session-box').click(function(e){
         // Prevents scrolling to the top of the page when clicking a tag with href="#"
@@ -281,7 +285,12 @@ $(document).ready(function() {
 
                   $(this).animate({'opacity':'1'},400);             
               }            
-          });     
+          });   
+          if ($(this).scrollTop()) {
+              $('#go-top:hidden').stop(true, true).fadeIn();
+          } else {
+              $('#go-top').stop(true, true).fadeOut();
+          }  
       });
     
     }

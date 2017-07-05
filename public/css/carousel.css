@@ -18,7 +18,8 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+  user-select: none;
+  top: 9%;
   font-family: 'Lato', sans-serif;
 }
 .carousel-indicators li { 
