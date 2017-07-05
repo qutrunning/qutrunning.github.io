@@ -798,3 +798,8 @@ a.session-box:hover {
 .navbar-default-home .navbar-toggle .icon-bar{
   background-color: #ffffff; /* Changes regular toggle color */
 }
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}

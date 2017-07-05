@@ -79,17 +79,6 @@ $(document).ready(function (){
     $("[rel='tooltip']").tooltip();
 });
 
-
-//Allow touch-based interaction with the carousel
-$(document).ready(function() {
-		   $("#myCarousel").swiperight(function() {
-		      $(this).carousel('prev');
-		    });
-		   $("#myCarousel").swipeleft(function() {
-		      $(this).carousel('next');
-		   });
-});	 
-
 //for the text div fade
 $(document).ready(function() {
 	//if the user agent is not mobile, run the scripts
@@ -316,7 +305,6 @@ $(document).ready(function() {
       $('.centered-about').css({
         'opacity': 1
       });
-      $('#topnav').addClass('navbar-fixed-top');
       $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
   }
 });
