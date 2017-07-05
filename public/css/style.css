@@ -24,7 +24,6 @@
 	height: 100%;
  	margin: 0 auto;
 	position: relative;
-  border: solid white;
 	z-index: 11;
   text-align: center;
 	/*opacity: 0;*/
@@ -296,6 +295,9 @@ PARALLAX WINDOWS IF NEEDED
     .second-block, .third-block {
       width: 85%;
     }
+    .carousel-caption {
+      top: 9%;
+    }
 }
 
 /* RESPONSIVE DIVS */
@@ -360,6 +362,9 @@ PARALLAX WINDOWS IF NEEDED
     }
     p, dl {
       font-size: 15px;
+    }
+    .carousel-caption {
+      top: 9%;
     }
 }
 
@@ -444,6 +449,9 @@ PARALLAX WINDOWS IF NEEDED
     }
     .dl-horizontal dt {
      white-space: normal !important; 
+    }
+    .carousel-caption {
+      top: 30%;
     }
 /*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');
@@ -768,6 +776,12 @@ a.session-box:hover {
     right: 2%;
     display: none;
 }
+
+.links {
+  text-decoration: underline;
+  color: white;
+}
+
 .navbar-default .navbar-text {
   color: #000000;
 }
