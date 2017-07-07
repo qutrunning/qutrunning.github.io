@@ -446,12 +446,19 @@ $(document).ready(function() {
   });
 });
 
-video = jQuery('#video').get()[0];
+$(document).ready(function() {
+    //if the user agent is not mobile, run the scripts
+    if($(window).width() < 758) {
+      $('#topnav').addClass('navbar-fixed-top');
+    }
+    video = jQuery('#video').get()[0];
 
-video.addEventListener('loadeddata', function() {
-    video.play();
+    video.addEventListener('loadeddata', function() {
+        video.play();
+    });
+
+    video.addEventListener('pause', function() {
+        video.play();
+    });
 });
 
-video.addEventListener('pause', function() {
-    video.play();
-});
