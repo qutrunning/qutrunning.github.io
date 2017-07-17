@@ -270,29 +270,7 @@ PARALLAX WINDOWS IF NEEDED
       padding-top: 15%;
       padding-bottom: 15%;
     }
-/*    .icon-scroll,
-    .icon-scroll:before {
-      position: absolute;
-      left: 50%;
-    }
-    .icon-scroll {
-      width: 20px;
-      height: 35px;
-      margin-left: -10px;
-      top: 103%;
-      margin-top: -35px;
-      box-shadow: inset 0 0 0 1px #fff;
-      border-radius: 25px;
-    }
-    .icon-scroll:before {
-      width: 4px;
-      height: 4px;
-      margin-left: -2px;
-    }*/
-    .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
-      width: 79%;
-    }
-    .second-block, .third-block {
+    .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
       width: 85%;
     }
     .carousel-caption {
@@ -308,13 +286,13 @@ PARALLAX WINDOWS IF NEEDED
     .caption-block {
       padding-top: 20px;
     }
-/*    .navbar-fixed{
-      left: 2.5%;
-    }*/
     .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
       height: 180px;
       padding-top: 15%;
       padding-bottom: 15%;
+    }
+    .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
+      width: 85%;
     }
 }
 
@@ -326,12 +304,6 @@ PARALLAX WINDOWS IF NEEDED
       height: 180px;
       padding-top: 15%;
       padding-bottom: 15%;
-    }
-    .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
-      width: 79%;
-    }
-    .second-block, .third-block {
-      width: 85%;
     }
     .caption span.border,
     .caption span.border {
@@ -353,6 +325,9 @@ PARALLAX WINDOWS IF NEEDED
     }
     .strava {
       width: 240px;
+    }
+    .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
+      width: 85%;
     }
 }
 
@@ -436,7 +411,7 @@ PARALLAX WINDOWS IF NEEDED
       font-weight: 400;
     }
     p, dl {
-      font-size: 17px;
+      font-size: 15px;
     }
     .dl-horizontal dt {
      white-space: normal !important; 
@@ -650,7 +625,7 @@ body {
 ----------------*/
 
 th {
-	color: black;
+	color: #3b3b3b;
 	background-color: #607D8B;
 }
 

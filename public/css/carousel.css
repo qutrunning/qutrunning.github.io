@@ -10,7 +10,7 @@
 .carousel-caption {
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
-  text-shadow: 2px 2px #3b3b3b;
+  text-shadow: 1px 1px #3b3b3b;
   z-index: 10;
   /* Make text unselectable on carousel when swiping with mouse cursor click and drag */
   -webkit-touch-callout: none;
