@@ -96,7 +96,7 @@
 
 @media (max-width: 479px) {
 .video_contain{
-    content: url(../img/carousel-slides/first-slide-mobile.jpg) !important;
+    width: 100%;
   }
 }
 
@@ -180,17 +180,30 @@
   opacity: 0.7;
 }
 
-
+.mobileFallback {
+  height: 100vh;
+  width: auto;
+}
 /*Don't show the video if the screen width is less than 1280px*/
 
 @media (max-width: 1024px) {
+  .video_contain > .mobileFallback {
+    display: inline-block;
+  }
+  video {
+    display: none;
+  }
 
-  .video_contain{
-    content: url(../img/carousel-slides/first-slide.jpg);
+}
+
+@media (min-width: 1025px) {
+
+  .video_contain > .mobileFallback {
+    display: none;
   }
 
   video {
-    display: none;
+    display: inline-block;
   }
 
 }

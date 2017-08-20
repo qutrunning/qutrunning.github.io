@@ -9,13 +9,13 @@
     text-align: center;
 }
 .blue-block {
-  background: rgba(23, 59, 104, 0.81); 
+  background: rgba(23, 59, 104, 0.7); 
 }
 
 .black-block {
   background: rgba(10, 10, 10, 0.5); 
 }
-h2, h3, h4, h5 {
+ h2, h3, h4, h5 {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
 }
@@ -40,7 +40,7 @@ h2, h3, h4, h5 {
 #map-canvas {
   border: solid white;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 #video {
@@ -49,7 +49,6 @@ h2, h3, h4, h5 {
   right: 0;
   top: 0;
   bottom: 0;
-  overflow-x: hidden !important;
 }
 .caption {
   top: 30%;
@@ -62,16 +61,30 @@ h2, h3, h4, h5 {
 }
 
 .centered {
+  height: 100%;
+  display: table-cell;
+  padding: 1% 5% 5% 5%;
+  vertical-align: middle;
+  width: 100%;
+}
+.centered-timetable {
   position: absolute;
   height: 100%;
   display: table-cell;
+  padding: 1% 5% 5% 5%;
   vertical-align: middle;
-  padding: 5% 5% 5% 1%;
+  width: 100%;
+}
+
+.centered-executives, .centered-social {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
 }
 
 #fp-nav.right {
-  width: 30px;;
+  width: 30px;
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -214,21 +227,37 @@ PARALLAX WINDOWS IF NEEDED
       height: 75px;
     }
     #fp-nav.right {
-      left: 1.5% !important;
+      left: 2% !important;
     }
     .col-md-12 {
-      margin-top: 5%;
+      margin-top: 2%;
     }
     .blue-block, .black-block {
       margin-bottom: 3vh;
       margin-top: 2vh;
-      width: 96vw;
-      height: 96vh;
+      width: 95vw;
+      height: 93vh;
+    }
+    .container-fluid {
+      padding-top: 15px;
+    }
+    .col-md-12 {
+      padding: 2%, 4%, 0, 4%;
+    }
+    .logo {
+      width: 70px;
+      margin: 2%;
+    }
+    .centered-social {
+      padding: 1% 3% 3% 5%;
+    }
+    h1 {
+      font-size: 30px;
     }
 }
 
 @media screen and ( min-width: 600px ) {
-     .strava {
+    .strava {
       width: 280px;
     }
 }
@@ -247,7 +276,7 @@ PARALLAX WINDOWS IF NEEDED
       height: 100px;
     }
     #fp-nav.right {
-      left: 1.5% !important;
+      left: 4% !important;
     }
     .col-md-12 {
       margin-top: 0%;
@@ -255,16 +284,33 @@ PARALLAX WINDOWS IF NEEDED
     .blue-block, .black-block {
       margin-bottom: 1vh;
       margin-top: 1vh;
-      width: 98vw;
-      height: 98vh;
+      width: 94vw;
+      height: 94vh;
+    }
+    .navbar-default .navbar-nav > li > a {
+      font-size: 18px;
+    }
+    .container-fluid {
+      padding-top: 40px;
+    }
+    .col-md-12 {
+      padding: 4%;
+    }
+    .logo {
+      width: 100px;
+      margin: 0%;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    .centered-social {
+      padding: 1% 5% 5% 5%;
+    }
+    .centered-executives {
+      padding: 0% 0% 0% 0%;
     }
 }
 
-@media ( min-width: 768px ) and (min-height: 1024px) { /*for iPad screens*/
-    .navbar-default .navbar-nav > li > a {
-      font-size: 10.5px;
-    }
-}
 @media screen and ( max-width: 799px ) {
 
   #go-home {
@@ -275,7 +321,7 @@ PARALLAX WINDOWS IF NEEDED
 @media screen and ( min-width: 800px ) {
 
     .navbar-default .navbar-nav > li > a {
-      font-size: 8px;
+      font-size: 18px;
     }
     .icon-scroll,
     .icon-scroll:before {
@@ -318,12 +364,6 @@ PARALLAX WINDOWS IF NEEDED
 /*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');
     }*/
-}
-
-@media screen and ( min-width: 960px ) {
-    .navbar-default .navbar-nav > li > a {
-      font-size: 18px;
-    }
 }
 
 @media screen and ( min-width: 1280px ) {
@@ -514,7 +554,7 @@ body {
 
 th {
 	color: #fff;
-	background-color: #3b3b3b;
+	background-color: #242f3e;
 }
 
 td {
@@ -616,7 +656,6 @@ a.session-box:hover {
 }
 
 .logo {
-  width: 100px;
   z-index: 20;
   position: fixed;
   height: auto;
@@ -660,9 +699,6 @@ a.session-box:hover {
     padding-left: 5%;
     padding-right: 5%;
 }
-.col-md-12 {
-  padding: 4%;
-}
 .navbar-default .navbar-toggle,
 .navbar-default-home .navbar-toggle {
   border-color: transparent; /* Removes border color */
@@ -691,6 +727,7 @@ a.session-box:hover {
     float: none !important;
     margin: 7.5px -15px;
     padding-top: 150px;
+    padding-right: 1.5%;
 }
 
 #topnav .navbar-nav .open .dropdown-menu {
@@ -721,9 +758,8 @@ a.session-box:hover {
     height: 100% !important;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    transition: background 0.5s, padding 0.5s;
-    background-image: -webkit-linear-gradient(0deg,rgba(34,34,34,0),rgba(12,45,86,.75) 35%,#0c2d56 57%,#0c2d56);
-    background-image: linear-gradient(90deg,rgba(34,34,34,0),rgba(12,45,86,.75) 35%,#0c2d56 57%,#0c2d56);
+    background-image: -webkit-linear-gradient(0deg,rgba(34,34,34,0),rgba(12,45,86,.75) 0%,#0c2d56 70%,#0c2d56);
+    background-image: linear-gradient(90deg,rgba(34,34,34,0),rgba(12,45,86,.75) 0%,#0c2d56 70%,#0c2d56);
     transition: right 0.5s ease;
 }
 .nav>li>a {
@@ -736,7 +772,7 @@ a.session-box:hover {
 }
 .container-fluid {
     width: 100% !important;
-    padding: 3%;
+    padding-right: 4%;
     padding-left: 6%;
 }
 #topnav .navbar-collapse.in {

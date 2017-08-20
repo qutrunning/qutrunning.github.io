@@ -536,7 +536,10 @@ $(document).ready(function() {
     if($(window).width() < 758) {
       $('#topnav').addClass('navbar-fixed-top');
     }
-    $('#fullpage').fullpage({
+    
+});
+
+$('#fullpage').fullpage({
         fixedElements: '#banner',
         fitToSection: true,
         navigation: true,
@@ -544,6 +547,17 @@ $(document).ready(function() {
         scrollingSpeed: 1000,
         loopTop: true
     }); 
+
+$(window).resize(function () {
+  $('#fullpage').fullpage.destroy('all');
+  $('#fullpage').fullpage({
+      fixedElements: '#banner',
+      fitToSection: true,
+      navigation: true,
+      animateAnchors: true,
+      scrollingSpeed: 1000,
+      loopTop: true
+  }); 
 });
 
 (function ($) {
