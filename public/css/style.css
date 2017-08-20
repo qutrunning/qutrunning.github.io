@@ -722,7 +722,7 @@ a.session-box:hover {
 }
 .container-fluid {
     width: 100% !important;
-    padding: 5%;
+    padding: 3%;
     padding-left: 6%;
 }
 #topnav .navbar-collapse.in {
