@@ -5,7 +5,87 @@ function initMap() {
           zoom: 17,
           center: lawn,
           gestureHandling: 'cooperative',
-          scrollwheel:  false
+          scrollwheel:  false,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
         });
         var marker = new google.maps.Marker({
           position: lawn,
@@ -20,52 +100,57 @@ function initMap() {
 // Enables the click and scroll functionality
 $(document).ready(function (){
     $("#go-home").click(function (){
-        $("#home").velocity("scroll", { 
+        $("#section0").velocity("scroll", { 
             duration: 1000,
         });
     });
      $("#go-home2").click(function (){
-        $("#banner").velocity("scroll", { 
+        $("#section0").velocity("scroll", { 
             duration: 1000,
         });
     });
     $("#go-about").click(function (){
-        $("#about").velocity("scroll", { 
+        $("#section1").velocity("scroll", { 
             duration: 1000,
         });
     });
     $("#go-get-started").click(function (){
-        $("#get-started2").velocity("scroll", { 
+        $("#section2").velocity("scroll", { 
+            duration: 1000,
+        });
+    });
+     $("#go-social").click(function (){
+        $("#section3").velocity("scroll", { 
             duration: 1000,
         });
     });
     $("#go-timetable").click(function (){
-        $("#timetablehead2").velocity("scroll", { 
+        $("#section4").velocity("scroll", { 
             duration: 1000,
         });
     });
     $("#go-timetable-2").click(function (){
-        $("#timetablehead2").velocity("scroll", { 
+        $("#section4").velocity("scroll", { 
             duration: 1000,
         });
     });
-    $("#go-overview").click(function (){
-        $("#overview2").velocity("scroll", { 
-            duration: 1000,
-        });
-    });
-    $("#go-map").click(function (){
-        $("#map2").velocity("scroll", { 
-            duration: 1000,
-        });
-    });
+    // $("#go-overview").click(function (){
+    //     $("#section5").velocity("scroll", { 
+    //         duration: 1000,
+    //     });
+    // });
+    // $("#go-map").click(function (){
+    //     $("#map2").velocity("scroll", { 
+    //         duration: 1000,
+    //     });
+    // });
     $("#go-executives").click(function (){
-        $("#executives2").velocity("scroll", { 
+        $("#section5").velocity("scroll", { 
             duration: 1000,
         });
     });
     $("#go-contact").click(function (){
-        $("#contact2").velocity("scroll", { 
+        $("#section6").velocity("scroll", { 
             duration: 1000,
         });
     });
@@ -451,5 +536,33 @@ $(document).ready(function() {
     if($(window).width() < 758) {
       $('#topnav').addClass('navbar-fixed-top');
     }
+    $('#fullpage').fullpage({
+        fixedElements: '#banner',
+        fitToSection: true,
+        navigation: true,
+        animateAnchors: true,
+        scrollingSpeed: 1000,
+        loopTop: true
+    }); 
 });
 
+(function ($) {
+
+    'use strict';
+
+    // Toggle classes in body for syncing sliding animation with other elements
+    $('#bs-example-navbar-collapse-2')
+        .on('show.bs.collapse', function (e) {
+            $('body').addClass('menu-slider');
+        })
+        .on('shown.bs.collapse', function (e) {
+            $('body').addClass('in');
+        })
+        .on('hide.bs.collapse', function (e) {
+            $('body').removeClass('menu-slider');
+        })
+        .on('hidden.bs.collapse', function (e) {
+            $('body').removeClass('in');
+        });
+
+})(jQuery);
