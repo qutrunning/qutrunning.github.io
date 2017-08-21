@@ -262,6 +262,13 @@ PARALLAX WINDOWS IF NEEDED
       padding-top: 18vh;
       position: absolute;
     }
+    .mobileFallback {
+      height: 93vh !important;
+      width: auto !important;
+    }
+    .video_contain {
+      height: 93%;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -413,6 +420,9 @@ and (orientation : landscape){
     }
     .centered-timetable {
       position: relative;
+    }
+    .video_contain {
+        height: 100%;
     }
 /*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');
