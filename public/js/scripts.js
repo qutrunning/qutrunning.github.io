@@ -545,7 +545,7 @@ $('#fullpage').fullpage({
         navigation: true,
         animateAnchors: true,
         scrollingSpeed: 1000,
-        loopTop: true
+        loopBottom: true
     }); 
 
 $(window).resize(function () {
@@ -556,7 +556,7 @@ $(window).resize(function () {
       navigation: true,
       animateAnchors: true,
       scrollingSpeed: 1000,
-      loopTop: true
+      loopBottom: true
   }); 
 });
 
