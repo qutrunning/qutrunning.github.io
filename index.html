@@ -410,7 +410,7 @@ $(document).ready(function (){
 	 * @returns  {null}
 	 */
 	function onWindowResizeChangePadding() {
-	    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+	    if ($(window).width() < 767 ) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
