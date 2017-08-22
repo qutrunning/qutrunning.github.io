@@ -13,11 +13,11 @@
 }
 
 .black-block {
-  background: rgba(10, 10, 10, 0.5); 
+  background: rgba(10, 10, 10, 0.7); 
 }
 
 .purple-block {
-  background: rgba(63, 55, 92, 0.55);
+  background: rgba(63, 55, 92, 0.7);
 }
  h2, h3, h4, h5 {
     margin-top: 5px !important;
@@ -32,6 +32,8 @@
   background: #808080; width: 5px;
   */
 }
+
+/*------------------BANNER VIDEO------------------*/
 .video_contain {
     position: absolute;
     width: 100%;
@@ -42,12 +44,6 @@
     z-index: 5;
     background-image: url(../img/pattern.png);
 }
-#map-canvas {
-  border: solid white;
-  width: 100%;
-  height: 300px;
-}
-
 #video {
   height: 100vh;
   left: 0;
@@ -62,13 +58,18 @@
 .caption {
   top: 30%;
 }
-.fixed {
-  margin: 0 auto;
+
+/*--------------GOOGLE MAP BOTTOM----------------*/
+#map-canvas {
+  border: solid white;
   width: 100%;
-  border-radius: 25px 25px 0px 0px;
-	z-index: 10;
+  height: 300px;
+}
+.firstHeading, #bodyContent {
+  color: black;
 }
 
+/*-------------TEXT BLOCK CONTAINERS-------------*/
 .centered {
   height: 100%;
   display: table-cell;
@@ -83,7 +84,20 @@
   vertical-align: middle;
   width: 100%;
 }
-
+.centered-membership {
+  height: 100%;
+  display: table-cell;
+  padding: 1% 12% 1% 12%;
+  vertical-align: middle;
+  width: 100%;
+}
+.centered-events {
+  height: 100%;
+  display: table-cell;
+  padding: 5% 12% 3% 12%;
+  vertical-align: middle;
+  width: 100%;
+}
 .centered-executives, .centered-social {
   height: 100%;
   display: table-cell;
@@ -105,6 +119,7 @@ p {
 dt {
     font-weight: 100 !important;
 }
+
 .select {
   display: inline-block;
   text-decoration: none;
@@ -142,14 +157,27 @@ dt {
 }
 
 /* RESPONSIVE DIVS */
-
-@media screen and ( max-width: 398px ) { /*for iPhone 5 and 5S*/
-}
-
-/* RESPONSIVE DIVS */
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
     .strava {
       width: 240px;
+    }
+    .logo {
+      width: 70px;
+      margin: 2%;
+    }
+    .container-fluid {
+      margin-top: 15px;
+    }
+    #fp-nav.right {
+      left: 3% !important;
+    }
+    .img-circle {
+      width: 50px;
+      height: 50px;
+    }
+    .centered-timetable {
+      padding-top: 18vh;
+      padding-left: 2%;
     }
 }
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
@@ -175,7 +203,7 @@ dt {
     .strava {
       width: 240px;
     }
-    .icon-scroll {
+    .arrow {
       display: none;
     }
     .img-circle {
@@ -211,6 +239,7 @@ dt {
     }
     .centered-timetable {
       padding-top: 18vh;
+      padding-left: 6%;
       position: absolute;
     }
     .mobileFallback {
@@ -219,6 +248,10 @@ dt {
     }
     .video_contain {
       height: 93%;
+    }
+    .carousel-caption {
+      top: 15%;
+      padding: 0% 10% 0% 10%;
     }
 }
 
@@ -264,13 +297,24 @@ dt {
       padding: 1% 5% 5% 5%;
     }
     .centered-executives {
-      padding: 0% 0% 0% 0%;
+      padding: 0% 5% 0% 5%;
     }
     dd {
       margin-bottom: 30px;
     }
     .centered-timetable {
       padding-top: 0vh;
+      padding: 1% 12% 1% 12%;
+    }
+    .mobileFallback {
+      height: 100vh !important;
+      width: 100% !important;
+    }
+    .arrow {
+      display: inline-block;
+    }
+    .carousel-caption {
+      top: 30%;
     }
 }
 
@@ -303,20 +347,11 @@ and (orientation : landscape){
     display: table-cell;
     padding: 1% 5% 2% 5%;
   }
-  .carousel-caption{
-    padding: 7% !important;
-    left: 50% !important;
-    top: 35% !important;
-  }
   p, dl {
       font-size: 13px !important;
   }
   dd {
     margin-bottom: 2px;
-  }
-  .mobileFallback {
-    height: 100vh !important;
-    width: 100% !important;
   }
 }
 @media screen and ( min-width: 800px ) {
@@ -347,21 +382,8 @@ and (orientation : landscape){
     .dl-horizontal dt {
      white-space: normal !important; 
     }
-        .icon-scroll,
-    .icon-scroll:before {
-      position: absolute;
-      z-index: 10;
-      left: 50%;
-    }
-    .icon-scroll {
-      display: inline-block;
-      width: 20px;
-      height: 35px;
-      margin-left: -10px;
-      top: 85%;
-      margin-top: -35px;
-      box-shadow: inset 0 0 0 1px #fff;
-      border-radius: 25px;
+    .arrow {
+      top: 80%;
     }
     #video {
       width: auto;
@@ -500,7 +522,31 @@ dt > a,
   border-radius: 25px;
 }*/
 
-.icon-scroll:before {
+.arrow {
+    position: absolute;
+    left: 50%;
+    z-index: 200;
+    margin-left: -8px;
+    margin-top: 40px;
+    /*-webkit-animation: bounceArrow 2.4s cubic-bezier(.7,0,.3,1) infinite;
+    animation: bounceArrow 2.4s cubic-bezier(.7,0,.3,1) infinite;*/
+/*    -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;*/
+    pointer-events: none;
+    opacity: 1;
+
+}
+.arrow svg>* {
+  width: 15px;
+  height: auto;
+  fill: #fff;
+}
+
+/*.icon-scroll:before {
   content: '';
   width: 4px;
   height: 4px;
@@ -520,23 +566,33 @@ dt > a,
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
 }
 @keyframes scroll {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
 }
-
+*/
 body:before {
   content: " ";
   display: block;
@@ -544,7 +600,7 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: auto;
-  background: url(../img/web.jpg) no-repeat center center;
+  background: url(../img/wall.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -20,11 +20,9 @@
   user-select: none;
   font-family: 'Ubuntu', sans-serif;
   width: 100%;
-  position: absolute;
-  padding: 5%;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  left: 0;
+  right: 0;
+  top: 35%;
 }
 .carousel-indicators li { 
   visibility: hidden; 
