@@ -55,6 +55,10 @@
   top: 0;
   bottom: 0;
 }
+
+#section0 {
+  padding: 0 !important;
+}
 .caption {
   top: 30%;
 }
@@ -137,66 +141,15 @@ dt {
   -webkit-transition:all 0.5s ease-in-out;
 }
 
-/*---------------------------
-PARALLAX WINDOWS IF NEEDED
-----------------------------*/
-.bgimg-initial, 
-.bgimg-1, 
-.bgimg-2, 
-.bgimg-3, 
-.bgimg-4, 
-.bgimg-5, 
-.bgimg-6, 
-.bgimg-7, 
-.bgimg-8{
-  position: relative;
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-overflow-scrolling: touch;
-  -webkit-backface-visibility: hidden;
-  z-index: 10;
-  height: 100%;
-}
-.bgimg-initial.bgfix, 
-.bgimg-1.bgfix, 
-.bgimg-2.bgfix, 
-.bgimg-3.bgfix, 
-.bgimg-4.bgfix, 
-.bgimg-5.bgfix, 
-.bgimg-6.bgfix, 
-.bgimg-7.bgfix, 
-.bgimg-8.bgfix {
-  background-attachment: fixed;
-}
 /* RESPONSIVE DIVS */
 
 @media screen and ( max-width: 398px ) { /*for iPhone 5 and 5S*/
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 180px;
-      padding-top: 15%;
-      padding-bottom: 15%;
-    }
-    .second-block, .third-block, .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block {
-      width: 98%;
-    }
 }
 
 /* RESPONSIVE DIVS */
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
     .strava {
       width: 240px;
-    }
-    .caption-block {
-      padding-top: 20px;
-    }
-    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
-      height: 180px;
-      padding-top: 15%;
-      padding-bottom: 15%;
     }
 }
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
@@ -236,10 +189,8 @@ PARALLAX WINDOWS IF NEEDED
       margin-top: 2%;
     }
     .blue-block, .black-block, .purple-block {
-      margin-bottom: 3vh;
-      margin-top: 2vh;
-      width: 95vw;
-      height: 93vh;
+      width: 100%;
+      height: 100%;
     }
     .container-fluid {
       padding-top: 15px;
@@ -292,17 +243,11 @@ PARALLAX WINDOWS IF NEEDED
     .col-md-12 {
       margin-top: 0%;
     }
-    .blue-block, .black-block, .purple-block {
-      margin-bottom: 1vh;
-      margin-top: 1vh;
-      width: 94vw;
-      height: 94vh;
-    }
     .navbar-default .navbar-nav > li > a {
       font-size: 18px;
     }
     .container-fluid {
-      padding-top: 40px;
+      padding-top: 5%;
     }
     .col-md-12 {
       padding: 4%;
@@ -323,6 +268,9 @@ PARALLAX WINDOWS IF NEEDED
     }
     dd {
       margin-bottom: 30px;
+    }
+    .centered-timetable {
+      padding-top: 0vh;
     }
 }
 

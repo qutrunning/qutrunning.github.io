@@ -536,28 +536,44 @@ $(document).ready(function() {
     if($(window).width() < 758) {
       $('#topnav').addClass('navbar-fixed-top');
     }
-    
 });
-
-$('#fullpage').fullpage({
-        fixedElements: '#banner',
-        fitToSection: true,
-        navigation: true,
-        animateAnchors: true,
-        scrollingSpeed: 1000,
-        loopBottom: true
-    }); 
+var paddingSize = "40px";
+var mobilePaddingSize = "10px";
+var userInteraction = false;
+/**
+ * Initialize fullPage Slider
+ */
+var options = {
+    continuousVertical: true,
+    fixedElements: '#banner',
+    fitToSection: true,
+    navigation: true,
+    animateAnchors: true,
+    loopBottom: true,
+    paddingTop: paddingSize,
+    paddingBottom: paddingSize,
+    paddingLeft: paddingSize,
+    paddingRight: paddingSize,
+    scrollingSpeed: 1000,
+    afterResize: function () {
+        onWindowResizeChangePadding($(this));
+    }
+};
+$('#fullpage').fullpage(options);
+$(window).on('hashchange', function () {
+    userInteraction = true;
+});
+$('#fullpage').bind('DOMMouseScroll mousewheel wheel', function (e) {
+    userInteraction = true;
+});
+$(document).on("touchstart", "fullpage", function (e) {
+    userInteraction = true;
+});
 
 $(window).resize(function () {
   $('#fullpage').fullpage.destroy('all');
-  $('#fullpage').fullpage({
-      fixedElements: '#banner',
-      fitToSection: true,
-      navigation: true,
-      animateAnchors: true,
-      scrollingSpeed: 1000,
-      loopBottom: true
-  }); 
+  $('#fullpage').fullpage(options);
+
 });
 
 (function ($) {
@@ -580,3 +596,18 @@ $(window).resize(function () {
         });
 
 })(jQuery);
+
+/**
+ * Set/Remove the padding for the fullpage slider responsively
+ * @param  {object} slider The slider container
+ * @returns  {null}
+ */
+function onWindowResizeChangePadding(slider) {
+    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 401)) {
+        slider.children(".section").css("padding", mobilePaddingSize);
+        slider.fullpage.reBuild();
+    } else {
+        slider.children(".section").css("padding", paddingSize);
+    }
+    slider.fullpage.reBuild();
+}
