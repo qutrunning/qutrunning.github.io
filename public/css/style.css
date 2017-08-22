@@ -246,8 +246,8 @@ dt {
       display: none;
     }
     .img-circle {
-      width: 75px;
-      height: 75px;
+      width: 60px;
+      height: 60px;
     }
     #fp-nav.right {
       left: 2% !important;
@@ -273,8 +273,9 @@ dt {
       padding: 1% 3% 3% 5%;
     }
     h1 {
-      font-size: 30px;
-      margin-bottom: 20px
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-top: 0px;
     }
     .centered-timetable {
       padding-top: 18vh;
@@ -294,6 +295,12 @@ dt {
     }
     #topnav .navbar-nav {
       padding-top: 70px;
+    }
+    .centered-executives {
+      padding-top: 20px;
+    }
+    .col-xs-4 > a > p {
+        margin-bottom: 0;
     }
 }
 

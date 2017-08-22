@@ -98,7 +98,7 @@ function initMap() {
             '</div>'+
             '<h5 id="firstHeading" class="firstHeading"><b>QUT Running Session Meeting Point</b></h5>'+
             '<div id="bodyContent">'+
-            '<p style="text-align: center;">Kidney Lawn, Garden\'s Point</p>'+
+            '<p style="text-align: center;">Kidney Lawn, Gardens Point</p>'+
             '</div>'+
             '</div>';
          var infowindow = new google.maps.InfoWindow({
