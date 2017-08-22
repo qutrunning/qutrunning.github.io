@@ -68,12 +68,7 @@
 				<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.
 				</p>
 			</div>
-			<div class="arrow text-center">
-				<a href="#about">
-			        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="62" viewBox="0 0 22.76 62.58">
-			          <polygon points="21.84 50.28 12.03 60.1 12.03 0 10.73 0 10.73 60.1 0.92 50.28 0 51.2 11.38 62.58 22.76 51.2 21.84 50.28"/>
-			        </svg>			     
-				</a>
+			<div class="icon-scroll text-center">
 			</div>
 			<div class="video_contain">
 				<img src="./public/img/carousel-slides/first-slide.jpg" class="mobileFallback">
@@ -103,31 +98,31 @@
 		<div class="section" data-anchor="membership" id="section2">
 			<div class="black-block">
 				<div class="centered-membership">
-						<h1>Annual fee</h1>
-						<dl class="text-center">
-							<dt>Full</dt>
-							<dd>
-								Includes complimentary singlet and access to gym, swim and all running sessions.
-								<br>
-								<u>$40.00</u>
-							</dd>
-							<dt>Basic</dt>
-							<dd>
-								Access to all sessions excluding gym and swimming sessions
-								<br>
-								<u>$10.00</u>
-							</dd>
-							<dt>Social Soccer</dt>
-							<dd>
-								Join a six-a-side team for Semester 2! (Requires QUT Running membership)
-								<br>
-								<u>$40.00 (usually $90)</u> 
-							</dd>
-						</dl>
-								<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
-								<a class="btn select" href="https://qnectapp.com/~qutrunningsoccer" target="_blank" role="button">Join Social Soccer</a><br><br>							
-						<p>Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a>
-						</p>
+					<h1>Annual fee</h1>
+					<dl class="text-center">
+						<dt>Full</dt>
+						<dd>
+							Includes complimentary singlet and access to gym, swim and all running sessions.
+							<br>
+							<u>$40.00</u>
+						</dd>
+						<dt>Basic</dt>
+						<dd>
+							Access to all sessions excluding gym and swimming sessions
+							<br>
+							<u>$10.00</u>
+						</dd>
+						<dt>Social Soccer</dt>
+						<dd>
+							Join a six-a-side team for Semester 2! (Requires QUT Running membership)
+							<br>
+							<u>$40.00 (usually $90)</u> 
+						</dd>
+					</dl>
+							<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
+							<a class="btn select" href="https://qnectapp.com/~qutrunningsoccer" target="_blank" role="button">Join Social Soccer</a><br><br>							
+					<p>Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -363,6 +358,7 @@
 		</div>
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./public/js/scrolloverflow.js"></script>
 <script src="./public/js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="./public/js/scripts.js?v=1.2"></script>
 <script async defer type="text/javascript" src="./public/js/velocity.min.js"></script>
@@ -392,9 +388,9 @@
 	 * Initialize fullPage Slider
 	 */
 	var options = {
-		anchors:['#banner', '#about', '#membership','#social', '#timetable', '#executives', '#contact'],
 	    loopBottom: true,
 	    fixedElements: '#banner',
+	    normalScrollElements: '.table-responsive, .nav-menu',
 	    fitToSection: true,
 	    navigation: true,
 	    animateAnchors: true,
@@ -402,8 +398,9 @@
 	    paddingBottom: paddingSize,
 	    paddingLeft: paddingSize,
 	    paddingRight: paddingSize,
-	    scrollingSpeed: 1000,
+	    scrollingSpeed: 1000
 	};
+    $(".section").css("height", window.innerHeight);
 	$('#fullpage').fullpage(options);
 	$(document).ready(function (){
 		onWindowResizeChangePadding();
@@ -411,13 +408,13 @@
 	$(window).resize(function () {
 	  		onWindowResizeChangePadding();
 	});
-
 	/**
 	 * Set/Remove the padding for the fullpage slider responsively
 	 * @param  {object} slider The slider container
 	 * @returns  {null}
 	 */
 	function onWindowResizeChangePadding() {
+        $(".section").css("height", window.innerHeight);
 	    if ($(window).width() < 767 ) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
@@ -427,6 +424,6 @@
 	    $('#fullpage').fullpage.reBuild();
 	}
 </script>
-<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>	
