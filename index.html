@@ -376,7 +376,6 @@
 				vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
 			} 
 		} 
-		onWindowResizeChangePadding();
 	}
 	window.onload = init;
 
@@ -400,6 +399,11 @@
 	    scrollingSpeed: 1000,
 	};
 	$('#fullpage').fullpage(options);
+$(document).ready(function (){
+	onWindowResizeChangePadding();
+});
+
+	
 	/**
 	 * Set/Remove the padding for the fullpage slider responsively
 	 * @param  {object} slider The slider container
