@@ -43,13 +43,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
-				<li><a href="../#banner">HOME</a></li>
-				<li><a href="../#about">ABOUT</a></li>
-				<li><a href="../#membership">MEMBERSHIP</a></li>
-				<li><a href="../#social">SOCIAL</a></li>
-				<li><a href="../#timetable">TIMETABLE</a></li>
-				<li><a href="../#executives">EXECUTIVES</a></li>
-				<li><a href="../#contact">CONTACT</a></li>
+				<li><a href="../index.html#banner">HOME</a></li>
+				<li><a href="../index.html#about">ABOUT</a></li>
+				<li><a href="../index.html#membership">MEMBERSHIP</a></li>
+				<li><a href="../index.html#social">SOCIAL</a></li>
+				<li><a href="../index.html#timetable">TIMETABLE</a></li>
+				<li><a href="../index.html#executives">EXECUTIVES</a></li>
+				<li><a href="../index.html#contact">CONTACT</a></li>
 				<li><a href="#topnav">EVENTS</a></li>
 				<li><a href="../sessions/">SESSION INFO</a></li>
 			</ul>
@@ -126,32 +126,46 @@
 	}
 	window.onload = init;
 
-	var paddingSize = "40px";
+	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
-	var userInteraction = false;
+
+    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+		paddingSize = "10px";
+    }
+    else {
+		paddingSize = "40px";
+    }
 	/**
 	 * Initialize fullPage Slider
 	 */
 	var options = {
-	    fitToSection: false,
-	    navigation: false,
-	    hybrid: true,
+		anchors:['#banner', '#about', '#membership','#social', '#timetable', '#executives', '#contact'],
+	    loopBottom: true,
+	    fixedElements: '#banner',
+	    fitToSection: true,
+	    navigation: true,
+	    animateAnchors: true,
 	    paddingTop: paddingSize,
 	    paddingBottom: paddingSize,
 	    paddingLeft: paddingSize,
 	    paddingRight: paddingSize,
 	    scrollingSpeed: 1000,
-	    afterResize: function () {
-	    }
 	};
 	$('#fullpage').fullpage(options);
+	$(document).ready(function (){
+		onWindowResizeChangePadding();
+	});
+	$(window).resize(function () {
+	  		onWindowResizeChangePadding();
+	});
+
 	/**
 	 * Set/Remove the padding for the fullpage slider responsively
 	 * @param  {object} slider The slider container
 	 * @returns  {null}
 	 */
 	function onWindowResizeChangePadding() {
-	    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 401)) {
+	    if ($(window).width() < 767 ) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
@@ -159,10 +173,6 @@
 	    }
 	    $('#fullpage').fullpage.reBuild();
 	}
-	$(window).resize(function () {
-  		onWindowResizeChangePadding();
-	});
-
 </script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

@@ -87,9 +87,9 @@
 					<br>
 					<h1>About</h1>
 					<p>
-						QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT.<br>
-						Join our group on Facebook -
-						<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a><br>
+						QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT.<br><br>
+						Join our group on Facebook - 
+						<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
 					</p>
 					<h1>Signing up</h1>
 					<p>
@@ -378,10 +378,15 @@
 		} 
 	}
 	window.onload = init;
-
-	var paddingSize = "40px";
+	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
-	var userInteraction = false;
+
+    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+		paddingSize = "10px";
+    }
+    else {
+		paddingSize = "40px";
+    }
 	/**
 	 * Initialize fullPage Slider
 	 */
@@ -399,11 +404,13 @@
 	    scrollingSpeed: 1000,
 	};
 	$('#fullpage').fullpage(options);
-$(document).ready(function (){
-	onWindowResizeChangePadding();
-});
+	$(document).ready(function (){
+		onWindowResizeChangePadding();
+	});
+	$(window).resize(function () {
+	  		onWindowResizeChangePadding();
+	});
 
-	
 	/**
 	 * Set/Remove the padding for the fullpage slider responsively
 	 * @param  {object} slider The slider container
@@ -418,10 +425,6 @@ $(document).ready(function (){
 	    }
 	    $('#fullpage').fullpage.reBuild();
 	}
-	$(window).resize(function () {
-  		onWindowResizeChangePadding();
-	});
-
 </script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

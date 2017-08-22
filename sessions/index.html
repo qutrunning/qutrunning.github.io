@@ -128,31 +128,46 @@
 		} 
 	}
 	window.onload = init;
-
-	var paddingSize = "40px";
+var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
-	var userInteraction = false;
+
+    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+		paddingSize = "10px";
+    }
+    else {
+		paddingSize = "40px";
+    }
 	/**
 	 * Initialize fullPage Slider
 	 */
 	var options = {
-	    fitToSection: false,
-	    navigation: false,
-	    hybrid: true,
+		anchors:['#banner', '#about', '#membership','#social', '#timetable', '#executives', '#contact'],
+	    loopBottom: true,
+	    fixedElements: '#banner',
+	    fitToSection: true,
+	    navigation: true,
+	    animateAnchors: true,
 	    paddingTop: paddingSize,
 	    paddingBottom: paddingSize,
 	    paddingLeft: paddingSize,
 	    paddingRight: paddingSize,
-	    scrollingSpeed: 1000
+	    scrollingSpeed: 1000,
 	};
 	$('#fullpage').fullpage(options);
+	$(document).ready(function (){
+		onWindowResizeChangePadding();
+	});
+	$(window).resize(function () {
+	  		onWindowResizeChangePadding();
+	});
+
 	/**
 	 * Set/Remove the padding for the fullpage slider responsively
 	 * @param  {object} slider The slider container
 	 * @returns  {null}
 	 */
 	function onWindowResizeChangePadding() {
-	    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+	    if ($(window).width() < 767 ) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
@@ -160,10 +175,6 @@
 	    }
 	    $('#fullpage').fullpage.reBuild();
 	}
-	$(window).resize(function () {
-  		onWindowResizeChangePadding();
-	});
-
 </script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
