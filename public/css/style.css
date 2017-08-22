@@ -71,7 +71,6 @@
 
 /*-------------TEXT BLOCK CONTAINERS-------------*/
 .centered {
-  height: 100%;
   display: table-cell;
   padding: 1% 5% 5% 5%;
   vertical-align: middle;
@@ -168,7 +167,7 @@ dt {
     }
     .logo {
       width: 70px;
-      margin: 2%;
+      margin: 0 0 0 2%;
     }
     .container-fluid {
       margin-top: 15px;
