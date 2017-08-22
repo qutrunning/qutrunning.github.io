@@ -52,6 +52,7 @@
 				<li><a href="../index.html#contact">CONTACT</a></li>
 				<li><a href="../events/">EVENTS</a></li>
 				<li><a href="#topnav">SESSION INFO</a></li>
+				<li><a href="../sponsors/">SPONSORS</a></li>
 			</ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -141,17 +142,12 @@ var paddingSize = "10px";
 	 * Initialize fullPage Slider
 	 */
 	var options = {
-		anchors:['#banner', '#about', '#membership','#social', '#timetable', '#executives', '#contact'],
-	    loopBottom: true,
-	    fixedElements: '#banner',
-	    fitToSection: true,
-	    navigation: true,
-	    animateAnchors: true,
 	    paddingTop: paddingSize,
 	    paddingBottom: paddingSize,
 	    paddingLeft: paddingSize,
 	    paddingRight: paddingSize,
-	    scrollingSpeed: 1000,
+	    hybrid: true,
+	    fitToSection: false
 	};
 	$('#fullpage').fullpage(options);
 	$(document).ready(function (){

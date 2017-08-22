@@ -52,6 +52,7 @@
 				<li><a href="../index.html#contact">CONTACT</a></li>
 				<li><a href="#topnav">EVENTS</a></li>
 				<li><a href="../sessions/">SESSION INFO</a></li>
+				<li><a href="../sponsors/">SPONSORS</a></li>
 			</ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -116,16 +117,6 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
-	function init() {
-		var vidDefer = document.getElementsByTagName('iframe');
-		for (var i=0; i<vidDefer.length; i++) {
-			if(vidDefer[i].getAttribute('data-src')) {
-				vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-			} 
-		} 
-	}
-	window.onload = init;
-
 	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
 
@@ -139,17 +130,12 @@
 	 * Initialize fullPage Slider
 	 */
 	var options = {
-		anchors:['#banner', '#about', '#membership','#social', '#timetable', '#executives', '#contact'],
-	    loopBottom: true,
-	    fixedElements: '#banner',
-	    fitToSection: true,
-	    navigation: true,
-	    animateAnchors: true,
 	    paddingTop: paddingSize,
 	    paddingBottom: paddingSize,
 	    paddingLeft: paddingSize,
 	    paddingRight: paddingSize,
-	    scrollingSpeed: 1000,
+	    hybrid: true,
+	    fitToSection: false
 	};
 	$('#fullpage').fullpage(options);
 	$(document).ready(function (){

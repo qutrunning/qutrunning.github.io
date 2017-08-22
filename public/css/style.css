@@ -105,6 +105,9 @@
   width: 100%;
 }
 
+.img-responsive {
+  width: 100%;
+}
 #fp-nav.right {
   width: 30px;
 }
@@ -253,6 +256,9 @@ dt {
       top: 15%;
       padding: 0% 10% 0% 10%;
     }
+    #topnav .navbar-nav {
+      padding-top: 70px;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -315,6 +321,9 @@ dt {
     }
     .carousel-caption {
       top: 30%;
+    }
+    #topnav .navbar-nav {
+      padding-top: 150px;
     }
 }
 
@@ -807,7 +816,6 @@ a.session-box:hover {
 #topnav .navbar-nav {
     float: none !important;
     margin: 7.5px -15px;
-    padding-top: 150px;
     padding-right: 1.5%;
 }
 
