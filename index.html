@@ -379,7 +379,6 @@
 	window.onload = init;
 	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
-	$(".mobileFallback").css("height", window.innerHeight);
 	
     if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
 		paddingSize = "10px";
@@ -387,6 +386,7 @@
     }
     else {
 		paddingSize = "40px";
+    	$(".mobileFallback").css("height", "100vh");
     }
 	/**
 	 * Initialize fullPage Slider
@@ -420,6 +420,7 @@
 	 */
 	function onWindowResizeChangePadding() {
         $(".section").css("height", window.innerHeight);
+		$(".mobileFallback").css("height", window.innerHeight);
 	    if ($(window).width() < 767 ) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();

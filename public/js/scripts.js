@@ -101,7 +101,7 @@ function initMap() {
             '<p style="text-align: center;">Session Meeting Point</p>'+
             '</div>'+
             '</div>';
-         var infowindow = new google.maps.InfoWindow({
+        var infowindow = new google.maps.InfoWindow({
           content: contentString
         });
         infowindow.open(map, marker);
