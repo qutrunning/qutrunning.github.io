@@ -192,7 +192,7 @@ dt {
       margin-top: 15px;
     }
     #fp-nav.right {
-      left: 3% !important;
+      left: 1.7% !important;
     }
     .img-circle {
       width: 50px;
@@ -241,7 +241,7 @@ dt {
       padding: 45px 20px;
     }
     #map-canvas {
-      height: 250px;
+      height: 280px;
     }
     body:before {
       background-image: url(../img/wall.jpg);
