@@ -20,9 +20,18 @@
   user-select: none;
   font-family: 'Ubuntu', sans-serif;
   width: 100%;
-  left: 0;
-  right: 0;
-  top: 35%;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .carousel-indicators li { 
   visibility: hidden; 
@@ -184,7 +193,7 @@
 }
 /*Don't show the video if the screen width is less than 1280px*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .video_contain > .mobileFallback {
     display: inline-block;
   }
@@ -194,7 +203,7 @@
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1001px) {
 
   .video_contain > .mobileFallback {
     display: none;

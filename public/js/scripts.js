@@ -4,7 +4,6 @@ function initMap() {
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
           zoom: 17,
           center: lawn,
-          gestureHandling: 'cooperative',
           scrollwheel:  false,
           styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},

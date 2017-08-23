@@ -21,11 +21,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="./public/css/carousel.css" rel="stylesheet">
+	<link href="../public/css/carousel.css?v=1.0" rel="stylesheet">
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=3.4" rel="stylesheet">
+	<link href="./public/css/style.css?v=3.5" rel="stylesheet">
 </head>
 <body>
 	<nav id="topnav" class="navbar navbar-default" role="navigation">
@@ -89,8 +89,7 @@
 					</p>
 					<h1>Signing up</h1>
 					<p>
-						Just show up either at our O-Week stall or at one of our sessions throughout the semester and talk to a member of our Exec Team. We're happy to answer any questions you may have.
-						We are also putting together two social soccer teams this semester for QUT Running! A QUT Running membership (any) prior to sign-up is required to get the heavily discounted membership price.
+						Sign up online <a class="links" href="#membership">here</a>, come to our O-Week stall or find us at one of our sessions throughout the semester and talk to a member of our Exec Team. We're happy to answer any questions you may have.
 					</p>
 				</div>
 			</div>
@@ -130,15 +129,15 @@
 			<div class="purple-block">
 				<div class="centered-social">
 						<br>
-						<h1>QUT Running Social</h1>
+						<h1>Social</h1>
 						<p>
 							QUT Running has a big social aspect. Following Monday's session, we unwind with dinner and drinks at Beach House in the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner we kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
 						</p>
 						<p>
-							We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet people from outside QUT Running in an a relaxed environment!
+							We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
 						</p>
 						<p>
-							Now that you have all the info, come and join us on Monday evening after our running session! We look forward to seeing you! Don't forget to join the Facebook group for more information.
+							Now that you have all the info, come and join us on Monday evening after our running session! We look forward to seeing you!
 						</p>
 <!-- 					<div class="col-md-4 text-center">
 						<img class="img-responsive" src="./public/img/qut_running_social.png" alt="Second slide">
@@ -379,6 +378,7 @@
 
     if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
 		paddingSize = "10px";
+    	$(".mobileFallback").css("height", window.innerHeight);
     }
     else {
 		paddingSize = "40px";
@@ -389,7 +389,7 @@
 	var options = {
 	    loopBottom: true,
 	    fixedElements: '#banner',
-	    normalScrollElements: '.table-responsive, .nav-menu',
+	    normalScrollElements: '.table-responsive, .nav-menu, #map-canvas',
 	    navigation: true,
 	    animateAnchors: true,
 	    paddingTop: paddingSize,
@@ -419,11 +419,11 @@
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
-	        $(".section").css("padding", paddingSize);
+	        $(".section").css("padding", "40px");
 	    }
 	    $('#fullpage').fullpage.reBuild();
 	}
 </script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
 </html>	

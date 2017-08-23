@@ -66,7 +66,7 @@
 }
 .firstHeading, #bodyContent {
   color: black;
-  font-size: normal;
+  font-size: 100%;
 }
 
 /*-------------TEXT BLOCK CONTAINERS-------------*/
@@ -116,7 +116,6 @@
 }
 p {
   font-weight: 200;
-  font-size: normal !important;
 }
 dt {
     font-weight: 100 !important;
@@ -218,6 +217,18 @@ dt {
       top: 20%;
       padding: 0% 5% 0% 5%;
     }
+    #topnav .navbar-nav {
+      padding: 45px 20px;
+    }
+}
+@media screen and ( min-width: 375px ) and ( min-height: 559px) { /*for iPhone 4.7 inch*/
+    h1 {
+      margin-bottom: 10px !important;
+      margin-top: 7px !important;
+    }
+    .centered-social {
+      padding: 0% 3% 0% 5%;
+    }
 }
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
     .caption-block {
@@ -273,7 +284,7 @@ dt {
       padding: 1% 3% 3% 5%;
     }
     h1 {
-      font-size: 25px;
+      font-size: 30px;
       margin-bottom: 20px;
       margin-top: 0px;
     }
@@ -283,18 +294,17 @@ dt {
       position: absolute;
     }
     .mobileFallback {
-      height: 93vh !important;
       width: auto !important;
     }
     .video_contain {
       height: 93%;
     }
     .carousel-caption {
-      top: 15%;
+      top: 45%;
       padding: 0% 10% 0% 10%;
     }
     #topnav .navbar-nav {
-      padding-top: 70px;
+      padding-top: 50px;
     }
     .centered-executives {
       padding-top: 20px;
@@ -340,7 +350,8 @@ dt {
     }
     h1 {
       font-size: 36px;
-      margin-bottom: 40px
+      margin-bottom: 20px !important;
+      margin-top: 20px !important;
     }
     .centered-social {
       padding: 1% 5% 5% 5%;
@@ -362,11 +373,11 @@ dt {
     .icon-scroll {
       display: inline-block;
     }
-    .carousel-caption {
-      top: 30%;
-    }
     #topnav .navbar-nav {
       padding-top: 150px;
+    }
+    .carousel-caption {
+      top: 55%;
     }
 }
 
@@ -651,10 +662,10 @@ body:before {
 }
 
 body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, .col-lg-4 {
-  transition:all 1s ease-in-out; 
-    -o-transition:all 1s ease-in-out; 
-    -moz-transition:all 1s ease-in-out; 
-    -webkit-transition:all 1s ease-in-out;
+/*  transition:all 0.2s ease-in-out; 
+    -o-transition:all 0.2s ease-in-out; 
+    -moz-transition:all 0.2s ease-in-out; 
+    -webkit-transition:all 0.2s ease-in-out;*/
 }
 html {
     overflow-x: hidden;
@@ -705,12 +716,15 @@ td {
       color: #0C2D56;
 }
 a.session-box {
-    color: #3b3b3b;
+    color: #fff;
     text-decoration: none;
+    -webkit-transition: all 1s;
+   -moz-transition: all 1s;
+  transition: all 1s
 }
 a.session-box:hover {
 	text-decoration: none;
-	color: #3b3b3b;
+	color: black;
 }
 
 .img-responsive {
@@ -787,7 +801,7 @@ a.session-box:hover {
   color: #000000;
 }
 .navbar-default .navbar-nav > li > a {
-  line-height: 4.4vh;
+  line-height: 20px;
   color: #fff;
 } 
 
