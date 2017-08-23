@@ -240,6 +240,19 @@ dt {
     #topnav .navbar-nav {
       padding: 45px 20px;
     }
+    #map-canvas {
+      height: 250px;
+    }
+    body:before {
+      background-image: url(../img/wall.jpg);
+      background-position: -225px 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-caption {
+      top: 45%;
+      padding: 0% 10% 0% 10%;
+    }
 }
 @media screen and ( min-width: 375px ) and ( min-height: 559px) { /*for iPhone 4.7 inch*/
     h1 {
@@ -333,7 +346,7 @@ dt {
         margin-bottom: 0;
     }
     #map-canvas {
-      height: 300px;
+      height: 250px;
     }
     .centered-sponsors {
       padding: 13% 5% 5% 5%;
