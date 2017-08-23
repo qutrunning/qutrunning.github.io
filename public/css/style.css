@@ -263,6 +263,14 @@ dt {
       padding: 0% 3% 0% 5%;
     }
 }
+@media screen and ( min-width: 400px ) and ( min-height: 650px) { /*for iPhone 4.7 inch*/
+    .centered, .centered-timetable,
+    .centered-membership, .centered-events,
+    .centered-executives, .centered-social {
+      overflow: hidden;
+      padding: 0% 8% 0% 8% !important;
+    }
+}
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
     .caption-block {
       padding-top: 20px;
