@@ -379,7 +379,8 @@
 	window.onload = init;
 	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
-
+	$(".mobileFallback").css("height", window.innerHeight);
+	
     if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
 		paddingSize = "10px";
     	$(".mobileFallback").css("height", window.innerHeight);
