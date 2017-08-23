@@ -16,7 +16,7 @@
 }
 
 .purple-block {
-  background: rgba(63, 55, 92, 0.7);
+  background: rgba(63, 55, 92, 0.8);
 }
  h2, h3, h4, h5 {
     margin-top: 5px !important;
@@ -62,17 +62,37 @@
 #map-canvas {
   border: solid white;
   width: 100%;
-  height: 300px;
 }
-.firstHeading, #bodyContent {
-  color: black;
+.gm-style-iw {
+   height: 100%;
+   /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.firstHeading, #bodyContent > p {
+  color: white;
   font-size: 100%;
+  margin-bottom: 0px;
 }
+#bodyContent {
+  padding-bottom: 10px;
+}
+
 
 /*-------------TEXT BLOCK CONTAINERS-------------*/
 .centered {
   display: table-cell;
   padding: 1% 5% 5% 5%;
+  vertical-align: middle;
+  width: 100%;
+}
+.centered-contact {
+  display: table-cell;
+  padding: 1% 5% 5% 5%;
+  vertical-align: middle;
+  width: 100%;
+}
+.centered-sponsors {
+  display: table-cell;
   vertical-align: middle;
   width: 100%;
 }
@@ -312,6 +332,22 @@ dt {
     .col-xs-4 > a > p {
         margin-bottom: 0;
     }
+    #map-canvas {
+      height: 300px;
+    }
+    .centered-sponsors {
+      padding: 13% 5% 5% 5%;
+    }
+    body:before {
+      background-image: url(../img/wall.jpg);
+      background-position: -225px 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .centered-social > .col-md-8 {
+      padding-right: 0% !important;
+      padding-left: 0% !important;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -379,6 +415,28 @@ dt {
     .carousel-caption {
       top: 55%;
     }
+    #map-canvas {
+      height: 300px;
+    }
+    .centered-sponsors {
+      padding: 2% 10% 5% 10%;
+    }
+    body:before {
+      background: url(../img/wall.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .col-xs-4 {
+      margin-bottom: 20px;
+    }
+    .social-text {
+      margin-bottom: 20px;
+    }
 }
 
 @media screen and ( max-width: 799px ) {
@@ -393,7 +451,7 @@ and (orientation : landscape){
   #map-canvas {
     border: solid white;
     width: 100%;
-    height: 120px;
+    height: 150px;
   }
   .img-circle {
     width: 50px;
@@ -647,14 +705,6 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: auto;
-  background: url(../img/wall.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  right: 0;
 /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -726,7 +776,10 @@ a.session-box:hover {
 	text-decoration: none;
 	color: black;
 }
-
+a:focus, a:hover {
+    color: white;
+    text-decoration: underline;
+}
 .img-responsive {
 	display:block;
     margin:auto;

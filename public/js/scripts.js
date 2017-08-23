@@ -2,9 +2,10 @@
 function initMap() {
         var lawn = {lat: -27.477400, lng: 153.029349};
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
-          zoom: 17,
+          zoom: 15,
           center: lawn,
           scrollwheel:  false,
+          disableDefaultUI: true,
           styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -95,15 +96,37 @@ function initMap() {
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h5 id="firstHeading" class="firstHeading"><b>QUT Running Session Meeting Point</b></h5>'+
+            '<h5 id="firstHeading" class="firstHeading"><b>QUT Running</b></h5>'+
             '<div id="bodyContent">'+
-            '<p style="text-align: center;">Kidney Lawn, Gardens Point</p>'+
+            '<p style="text-align: center;">Session Meeting Point</p>'+
             '</div>'+
             '</div>';
          var infowindow = new google.maps.InfoWindow({
           content: contentString
         });
-        infowindow.open(map, marker)
+        infowindow.open(map, marker);
+        map.panBy(0,-40);
+        google.maps.event.addListener(infowindow, 'domready', function() {
+
+        // Reference to the DIV which receives the contents of the infowindow using jQuery
+        var iwOuter = $('.gm-style-iw');
+
+         /* The DIV we want to change is above the .gm-style-iw DIV.
+          * So, we use jQuery and create a iwBackground variable,
+          * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+          */
+         var iwBackground = iwOuter.prev();
+         var iwClose = iwOuter.next();
+         iwClose.css({'display' : 'none'});
+         iwBackground.children(':nth-child(3)').children(':nth-child(1)').children(':nth-child(1)').css({'background-color' : 'rgba(23, 59, 104, 0.7)'});
+         iwBackground.children(':nth-child(3)').children(':nth-child(2)').children(':nth-child(1)').css({'background-color' : 'rgba(23, 59, 104, 0.7)'});
+         // Remove the background shadow DIV
+         iwBackground.children(':nth-child(2)').css({'background-color' : 'rgba(23, 59, 104, 0.7)'});
+
+         // Remove the white background DIV
+         iwBackground.children(':nth-child(4)').css({'background-color' : 'rgba(23, 59, 104, 0.7)'});
+
+      });
 }
 
 

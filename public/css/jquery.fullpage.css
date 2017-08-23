@@ -157,15 +157,15 @@ html.fp-enabled,
     cursor: pointer;
     text-decoration: none;
 }
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
-    margin: -6px 0 0 -6px;
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    height: 8px;
+    width: 8px;
+    margin: -4px 0 0 -4px;
     border-radius: 100%;
- }
+}
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
