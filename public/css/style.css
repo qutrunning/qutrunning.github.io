@@ -263,10 +263,10 @@ dt {
       padding: 0% 3% 0% 5%;
     }
 }
-@media screen and ( min-width: 400px ) and ( min-height: 650px) { /*for iPhone 4.7 inch*/
+@media screen and ( min-width: 400px ) and ( min-height: 650px) { /*for larger screen phones inch*/
     .centered, .centered-timetable,
-    .centered-membership, .centered-events,
-    .centered-executives, .centered-social {
+    .centered-membership, .centered-executives,
+    .centered-social {
       overflow: hidden;
       padding: 0% 8% 0% 8% !important;
     }
@@ -357,7 +357,7 @@ dt {
       height: 250px;
     }
     .centered-sponsors {
-      padding: 13% 5% 5% 5%;
+      padding: 10% 6% 5% 7%;
     }
     body:before {
       background-image: url(../img/wall.jpg);
@@ -368,6 +368,13 @@ dt {
     .centered-social > .col-md-8 {
       padding-right: 0% !important;
       padding-left: 0% !important;
+    }
+    .centered-events {
+      padding: 5% 15% 3% 20%;
+    }
+    .centered-events > .col-md-6,
+    .centered-events > .col-md-4 {
+      padding: 0% 0% 0% 0%;
     }
 }
 
