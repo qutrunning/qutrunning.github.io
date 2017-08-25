@@ -268,7 +268,7 @@ dt {
     .centered-membership, .centered-executives,
     .centered-social {
       overflow: hidden;
-      padding: 0% 8% 0% 8% !important;
+      padding: 18vh 10% 0% 8% !important;
     }
 }
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
