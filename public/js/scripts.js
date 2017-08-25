@@ -105,7 +105,7 @@ function initMap() {
           content: contentString
         });
         infowindow.open(map, marker);
-        map.panBy(0,-40);
+        map.panBy(0,-60);
         google.maps.event.addListener(infowindow, 'domready', function() {
 
         // Reference to the DIV which receives the contents of the infowindow using jQuery

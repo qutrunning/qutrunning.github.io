@@ -264,12 +264,20 @@ dt {
     }
 }
 @media screen and ( min-width: 400px ) and ( min-height: 650px) { /*for larger screen phones inch*/
-    .centered, .centered-timetable,
-    .centered-membership, .centered-executives,
+    .centered, .centered-membership, 
+    .centered-executives,
     .centered-social {
       overflow: hidden;
+      padding: 0% 8% 0% 8% !important;
+    }
+    .centered-timetable {
       padding: 18vh 10% 0% 8% !important;
     }
+    .img-circle {
+      width: 75px !important;
+      height: 75px !important;
+    }
+
 }
 @media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
     .caption-block {
