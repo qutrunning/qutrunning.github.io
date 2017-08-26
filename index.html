@@ -73,9 +73,11 @@
 			<div class="video_contain">
 				<img src="./public/img/carousel-slides/first-slide.jpg" class="mobileFallback">
 			</div>
-			<video data-keepplaying id="video" loop="loop" autoplay>
-			    <source data-src="./public/img/qut_running_promo.webm" type="video/mp4"></source>
-			</video>
+			<div id="video">
+				<video data-keepplaying loop="loop" autoplay>
+				    <source data-src="./public/img/qut_running_promo.webm" type="video/mp4"></source>
+				</video>
+			</div>
 		</div>
 		<div class="section" data-anchor="about" id="section1">
 			<div class="blue-block">
@@ -393,7 +395,6 @@
 	 */
 	var options = {
 	    loopBottom: true,
-	    fixedElements: '#banner',
 	    normalScrollElements: '.table-responsive, .nav-menu, #map-canvas',
 	    navigation: true,
 	    animateAnchors: true,
