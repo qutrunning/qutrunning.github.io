@@ -447,9 +447,6 @@ and (orientation : landscape){
     .mobileFallback {
       width: auto;
     }
-    .video_contain {
-      height: 93%;
-    }
     .carousel-caption {
       top: 45%;
       padding: 0% 10% 0% 10%;
@@ -726,6 +723,24 @@ and (orientation : portrait) {
     }
     #fp-nav.right {
       left: 3.5% !important;
+    }
+    .icon-scroll {
+      display: none;
+    }
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+    .img-circle {
+      width: 100px;
+      height: 100px;
+    }
+    #fp-nav.right {
+      left: 3.5% !important;
+    }
+    .icon-scroll {
+      display: inline-block;
     }
 }
 @media screen and ( min-width: 1280px ) {
