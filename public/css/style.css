@@ -548,9 +548,6 @@ and (orientation : landscape){
       height: 100vh !important;
       width: auto !important;
     }
-    .icon-scroll {
-      display: inline-block;
-    }
     #topnav .navbar-nav {
       padding-top: 150px;
     }
@@ -655,6 +652,9 @@ and (orientation : landscape){
   .centered-events {
     padding: 2% 12% 5% 17%;
   }
+  .mobileFallback {
+    width: 100vw !important;
+  }
 } 
 @media screen and ( min-width: 800px ) {
     .navbar-default .navbar-nav > li > a {
@@ -708,6 +708,12 @@ and (orientation : landscape){
       margin-top: -35px;
       box-shadow: inset 0 0 0 1px #fff;
       border-radius: 25px;
+    }
+    .mobileFallback {
+      width: 100vw !important;
+    }
+    .icon-scroll {
+      display: inline-block;
     }
 /*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');
