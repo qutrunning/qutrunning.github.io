@@ -33,6 +33,7 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .carousel-indicators li { 
   visibility: hidden; 
 }
@@ -46,7 +47,11 @@
   background-color: #000 !important;
   /*border-radius: 25px 25px 0px 0px;*/
 }
-
+.new {
+  margin-bottom: 20px;
+  height: 30px;
+  width: 30px;
+}
 .btn-white {
   color: #ffffff;
   border-color: #ffffff;

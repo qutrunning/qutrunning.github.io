@@ -44,6 +44,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <ul class="nav navbar-nav">
 				<li><a href="#banner">HOME</a></li>
+				<li><a href="#updates">UPDATES</a></li>
 				<li><a href="#about">ABOUT</a></li>
 				<li><a href="#membership">MEMBERSHIP</a></li>
 				<li><a href="#social">SOCIAL</a></li>
@@ -62,21 +63,40 @@
 		<!-- ============== Carousel ====================== -->	
 		
 		<div data-anchor="banner" class="section" id="section0">
-			<div class="carousel-caption">
-				<h1>Welcome to QUT Running 2017</h1><br>
-				<p>
-				<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.
-				</p>
+			<div class="empty-block">
+				<div class="carousel-caption">
+					<h1>Welcome to QUT Running 2017</h1><br>
+					<p>
+					<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.<br><br>
+					<img src="./public/img/new.png" class="new" alt="New Club Updates!">
+					Scroll down to see new club updates!
+					</p>
+				</div>
+				<div class="icon-scroll text-center">
+				</div>
+				<div class="video_contain">
+					<img src="./public/img/carousel-slides/first-slide.jpg" class="mobileFallback">
+				</div>
+				<div>
+					<video data-keepplaying loop="loop" autoplay>
+					    <source data-src="./public/img/qut_running_promo.webm" type="video/mp4"></source>
+					</video>
+				</div>
 			</div>
-			<div class="icon-scroll text-center">
-			</div>
-			<div class="video_contain">
-				<img src="./public/img/carousel-slides/first-slide.jpg" class="mobileFallback">
-			</div>
-			<div id="video">
-				<video data-keepplaying loop="loop" autoplay>
-				    <source data-src="./public/img/qut_running_promo.webm" type="video/mp4"></source>
-				</video>
+		</div>
+		<div class="section" data-anchor="updates">
+			<div class="promo-block">
+				<div class="centered">
+					<div class="col-md-8 col-md-offset-2">
+						<h1>Logan Running Festival</h1>
+						<br>
+						<br>
+						<p>
+							It's not too late to sign up for the Logan Marathon! Described as Queensland's most affordable Marathon, the event caters for all levels with 7km, 14km, 21km and 42km races. We are hoping to get a group of QUT Running members to compete, so join the events for all the updates!<br><br>
+							<a class="btn select" href="https://www.facebook.com/events/1461105687283845/" target="_blank" role="button">Join the Event</a>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="about" id="section1">
@@ -115,16 +135,10 @@
 							<br>
 							<u>$10.00</u>
 						</dd>
-						<dt>Social Soccer</dt>
-						<dd>
-							Join a six-a-side team for Semester 2! (Requires QUT Running membership)
-							<br>
-							<p><u>$40.00</u> (usually $90)</p>
-						</dd>
 					</dl>
-							<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
-							<a class="btn select" href="https://qnectapp.com/~qutrunningsoccer" target="_blank" role="button">Join Social Soccer</a><br><br class="mobileHide">
-					<p>Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
+					<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
+					<p>
+						<br>Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
 					</p>
 				</div>
 			</div>
@@ -431,5 +445,6 @@
 	    $('#fullpage').fullpage.reBuild();
 	}
 </script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>	
