@@ -129,7 +129,6 @@ function initMap() {
       });
 }
 
-
 // ------ Scroll ------
 // Enables the click and scroll functionality
 $(document).ready(function (){
@@ -203,112 +202,6 @@ $(document).ready(function (){
 });
 
 
-//Make a separate fade in to offest for mobile url bar
-//for the text div fade
-$(document).ready(function() {
-  //if the user agent is not mobile, run the scripts
-    if($(window).width() > 758) {
-        /* Every time the window is scrolled ... */
-      $(window).scroll( function(){
-      
-          /* Check the location of each desired element */
-          $('.centered').each( function(i){
-              
-              var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-              /* If the object is completely visible in the window, fade it in */
-              if( bottom_of_window > (bottom_of_object * 0.94)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-          });
-          $('.centered-about').each( function(i){
-              
-              var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-              /* If the object is completely visible in the window, fade it in */
-              if( bottom_of_window > (bottom_of_object * 0.7)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-          }); 
-            $('.centered-executives').each( function(i){
-              
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-                /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 0.925)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-            });     
-            $('.centered-map').each( function(i){
-              
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-                /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 0.9)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-            });      
-            $('.centered-overview').each( function(i){
-              
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-                /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > (bottom_of_object * 0.8)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-            });   
-          $('.centered-contact').each( function(i){
-              
-              var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-              /* If the object is completely visible in the window, fade it in */
-              if( bottom_of_window > (bottom_of_object * 0.87)){
-
-                  $(this).animate({'opacity':'1'},400);             
-              }            
-          });   
-          if ($(this).scrollTop()) {
-              $('#go-top:hidden').stop(true, true).fadeIn();
-          } else {
-              $('#go-top').stop(true, true).fadeOut();
-          }  
-      });
-    
-    }
-    //if mobile screen width detected, don't run fade in scripts
-    else{
-      $('.centered').css({
-        'opacity': 1
-      });
-      $('.centered-contact').css({
-        'opacity': 1
-      });
-      $('.centered-overview').css({
-        'opacity': 1
-      });
-      $('.centered-map').css({
-        'opacity': 1
-      });
-      $('.centered-executives').css({
-        'opacity': 1
-      });
-      $('.centered-about').css({
-        'opacity': 1
-      });
-      $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
-  }
-});
 
 //collapse the navbar upon selection from hamburger menu
 $(document).on('click','.navbar-collapse.in',function(e) {

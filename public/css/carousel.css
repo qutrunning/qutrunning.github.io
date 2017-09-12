@@ -193,8 +193,9 @@
 }
 
 .mobileFallback {
-  height: 100vh;
+  height: auto;
   width: auto;
+  z-index: 2;
 }
 /*Don't show the video if the screen width is less than 1280px*/
 

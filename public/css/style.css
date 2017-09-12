@@ -39,12 +39,10 @@
 
 /*Add pattern overlay to video for better text readability and to hide video flaws*/
 .video_contain {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: rgba(17,51,90,.2);
-    z-index: 5;
-    background-image: url(../img/pattern.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
 
 /* Pull video under overlay */
@@ -53,6 +51,7 @@ video{
   width: 100%;
   margin-top: -100%;
   bottom: 0;
+  z-index: 4;
   position: relative;
 }
 
@@ -256,7 +255,7 @@ and (orientation : landscape){
     font-size: 10px;
   }
   .mobileFallback {
-    width: 100vw !important;
+    width: 100% !important;
     height: 100%;
   }
   .carousel-caption {
@@ -491,6 +490,15 @@ and (orientation : landscape){
       padding-right: 0%;
       padding-left: 0%;
     }
+    .empty-block {
+      background: url(../img/carousel-slides/first-slide.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .video_contain {
+      opacity: 1;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -546,7 +554,7 @@ and (orientation : landscape){
       padding: 1% 12% 1% 12%;
     }
     .mobileFallback {
-      height: 100vh !important;
+      height: 100% !important;
       width: auto !important;
     }
     #topnav .navbar-nav {
@@ -654,7 +662,7 @@ and (orientation : landscape){
     padding: 2% 12% 5% 17%;
   }
   .mobileFallback {
-    width: 100vw !important;
+    width: 100% !important;
   }
 } 
 @media screen and ( min-width: 800px ) {
@@ -711,10 +719,16 @@ and (orientation : landscape){
       border-radius: 25px;
     }
     .mobileFallback {
-      width: 100vw !important;
+      width: 100% !important;
     }
     .icon-scroll {
       display: inline-block;
+    }
+    .empty-block {
+      background: transparent;
+    }
+    .video_contain {
+      opacity: 1;
     }
 /*    .video {
       background-image: url('../img/carousel-slides/first-slide.jpg');

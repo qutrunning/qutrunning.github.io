@@ -75,11 +75,10 @@
 				<div class="icon-scroll text-center">
 				</div>
 				<div class="video_contain">
-					<img src="./public/img/carousel-slides/first-slide.jpg" class="mobileFallback">
 				</div>
 				<div>
-					<video data-keepplaying loop="loop" autoplay>
-					    <source data-src="./public/img/qut_running_promo.webm" type="video/mp4"></source>
+					<video data-keepplaying loop="loop" autoplay playsinline>
+					    <source data-src="./public/img/qut_running_promo.webm" type="video/webm"></source>
 					</video>
 				</div>
 			</div>
@@ -445,6 +444,6 @@
 	    $('#fullpage').fullpage.reBuild();
 	}
 </script>
-<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>	
