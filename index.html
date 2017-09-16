@@ -99,10 +99,10 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="about" id="section1">
-			<div class="blue-block">
-				<div class="centered">
+			<div class="blue-block about">
+				<div class="centered blue">
 					<div class="col-md-8 col-md-offset-2">
-						<br>
+						<br class="mobileHideLandscape">
 						<h1>About</h1>
 						<p>
 							QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT.<br><br>
@@ -137,7 +137,7 @@
 					</dl>
 					<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
 					<p>
-						<br>Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
+						<br class="mobileHideLandscape">Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
 					</p>
 				</div>
 			</div>
@@ -146,7 +146,7 @@
 			<div class="purple-block">
 				<div class="centered-social">
 					<div class="col-md-8 col-md-offset-2">
-							<br>
+							<br class="mobileHideLandscape">
 							<h1>Social</h1>
 							<p class="social-text">
 								QUT Running has a big social aspect. Following Monday's session, we unwind with dinner and drinks at Beach House in the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner we kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
@@ -395,7 +395,7 @@
 	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
 	
-    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 479)) {
+    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 500)) {
 		paddingSize = "10px";
     	$(".mobileFallback").css("height", window.innerHeight);
     }
