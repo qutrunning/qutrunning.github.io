@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.blue {
+.blue, .blue-block {
   background: rgba(23, 59, 104, 0.7); 
 }
 .about {
