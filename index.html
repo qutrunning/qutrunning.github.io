@@ -456,6 +456,7 @@
         $(".section").css("height", window.innerHeight);
 		$(".mobileFallback").css("height", window.innerHeight);
 	    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
+    		$(".section").css("height", window.innerHeight);
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
