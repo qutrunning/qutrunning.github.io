@@ -301,10 +301,10 @@ and (orientation : landscape){
     }
     .logo {
       width: 70px;
-      margin: 0 0 0 2%;
+      margin: 2% 0 0 3%;
     }
     .container-fluid {
-      margin-top: 15px;
+      margin-top: 5px;
     }
     #fp-nav.right {
       left: 1.7% !important;
@@ -353,7 +353,8 @@ and (orientation : landscape){
       padding: 0% 5% 0% 5%;
     }
     #topnav .navbar-nav {
-      padding: 45px 20px;
+      padding-top: 45px;
+      padding-right: 3% !important;
     }
     #map-canvas {
       height: 280px;
@@ -365,8 +366,26 @@ and (orientation : landscape){
       background-repeat: no-repeat;
     }
     .carousel-caption {
-      top: 45%;
+      top: 40%;
       padding: 0% 10% 0% 10%;
+    }
+    .empty-block {
+      background: url(../img/carousel-slides/first-slide.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .about, .membership,
+    .social, .executives,
+    .promo {
+      background-position: -225px 50%;
+    }
+    .new {
+      margin-bottom: 0px; 
+      display: block;
+    }
+    .table-responsive {
+      font-size: 13px;
     }
 }
 @media screen and ( min-width: 375px ) and ( min-height: 559px) { /*for iPhone 4.7 inch*/
@@ -400,7 +419,7 @@ and (orientation : landscape){
       font-size: 50px !important;
     }
     .carousel-caption {
-      top: 50% !important;
+      top: 45% !important;
     }
     dd {
       margin-bottom: 20px;
@@ -479,7 +498,7 @@ and (orientation : landscape){
     }
     .carousel-caption {
       top: 45%;
-      padding: 0% 10% 0% 10%;
+      padding: 0% 15% 0% 15%;
     }
     #topnav .navbar-nav {
       padding-top: 50px;
