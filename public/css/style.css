@@ -19,6 +19,9 @@
   background: rgba(0, 0, 0, 0.44);
 }
 .black-darker {
+  background: rgba(0, 0, 0, 0.64);
+}
+.black-darkest {
   background: rgba(0, 0, 0, 0.8);
 }
 .about, .membership,
