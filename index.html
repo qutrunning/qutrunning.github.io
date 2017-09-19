@@ -84,23 +84,31 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="updates">
-			<div class="promo-block">
-				<div class="centered">
+			<div class="block promo">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered black">
 					<div class="col-md-8 col-md-offset-2">
-						<h1>Logan Running Festival</h1>
+						<h1>Oktoberfest is Coming!</h1>
 						<br>
 						<br>
 						<p>
-							It's not too late to sign up for the Logan Marathon! Described as Queensland's most affordable Marathon, the event caters for all levels with 7km, 14km, 21km and 42km races. We are hoping to get a group of QUT Running members to compete, so join the events for all the updates!<br><br>
-							<a class="btn select" href="https://www.facebook.com/events/1461105687283845/" target="_blank" role="button">Join the Event</a>
+							We have an exciting big event planned for this! Stay tuned...<br><br>
+							<!-- <a class="btn select" href="https://www.facebook.com/events/1461105687283845/" target="_blank" role="button">Join the Event</a> -->
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="about" id="section1">
-			<div class="blue-block about">
-				<div class="centered blue">
+			<div class="block about">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered black">
 					<div class="col-md-8 col-md-offset-2">
 						<br class="mobileHideLandscape">
 						<h1>About</h1>
@@ -118,8 +126,12 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="membership" id="section2">
-			<div class="black-block">
-				<div class="centered-membership">
+			<div class="block membership">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered-membership noise black">
 					<h1>Annual fee</h1>
 					<dl class="text-center">
 						<dt>Full</dt>
@@ -143,8 +155,12 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="social" id="section3">
-			<div class="purple-block">
-				<div class="centered-social">
+			<div class="block social">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered-social noise black">
 					<div class="col-md-8 col-md-offset-2">
 							<br class="mobileHideLandscape">
 							<h1>Social</h1>
@@ -209,7 +225,7 @@
 										">Casual Session</a>
 									</td>
 									<td></td>
-									<td class="social">
+									<td class="social-table">
 										<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">Occasional Social Sessions</a>
 									</td>
 								</tr>
@@ -271,7 +287,7 @@
 								</tr>
 								<tr>
 									<th scope="row">5pm - late</th>
-									<td class="social">
+									<td class="social-table">
 										<a href="#" class="session-box" rel="tooltip" title="
 										Everyone welcome.
 										A relaxed, low-key way to meet people outside the sessions.
@@ -294,8 +310,12 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="executives" id="section6">
-			<div class="black-block">
-				<div class="centered-executives">
+			<div class="block executives">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered-executives noise black-darker">
 						<h1>Executives</h1>
 						<br>
 				        <div class="col-xs-4">
@@ -361,15 +381,15 @@
 			<div class="purple-block">
 				<div class="centered-contact">
 					<br>
-						<h1>Contact Us</h1>
-							<p>
+					<h1>Contact Us</h1>
+						<p>
+						<br>
+							To contact QUT Running, join our Facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com" class="links">email</a>.
 							<br>
-								To contact QUT Running, join our Facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com" class="links">email</a>.
-								<br>
-								Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
-							</p>
-						<br class="mobileHide">
-						<div id="map-canvas"></div> 
+							Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
+						</p>
+					<br class="mobileHide">
+					<div id="map-canvas"></div> 
 				</div>
 			</div>
 		</div>
@@ -395,7 +415,7 @@
 	var paddingSize = "10px";
 	var mobilePaddingSize = "10px";
 	
-    if ($(window).width() < 767 || ($(window).width() >= 768 && $(window).height() < 500)) {
+    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
 		paddingSize = "10px";
     	$(".mobileFallback").css("height", window.innerHeight);
     }
@@ -435,7 +455,7 @@
 	function onWindowResizeChangePadding() {
         $(".section").css("height", window.innerHeight);
 		$(".mobileFallback").css("height", window.innerHeight);
-	    if ($(window).width() < 767 ) {
+	    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
 	        $(".section").css("padding", mobilePaddingSize);
 	        $('#fullpage').fullpage.reBuild();
 	    } else {
