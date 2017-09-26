@@ -422,7 +422,7 @@ and (orientation : landscape){
       font-size: 50px !important;
     }
     .carousel-caption {
-      top: 45% !important;
+      top: 45%;
     }
     dd {
       margin-bottom: 20px;
@@ -607,7 +607,7 @@ and (orientation : landscape){
     }
     .centered-timetable {
       padding-top: 0vh;
-      padding: 1% 12% 1% 12%;
+      /*padding: 1% 12% 1% 12%;*/
     }
     .mobileFallback {
       height: 100% !important;
@@ -746,7 +746,7 @@ and (orientation : landscape){
     font-size: 11px;
   }
   .logo {
-    margin: 0%;
+    margin: 1% 0 0 2%;
   }
   .centered-contact {
     padding: 1% 5% 0% 5%;
@@ -883,6 +883,9 @@ and (orientation : portrait) {
     }
     .icon-scroll {
       display: inline-block;
+    }
+    .centered-timetable {
+      padding: 0% 8% 1% 8%;
     }
 }
 @media screen and ( min-width: 1280px ) {
