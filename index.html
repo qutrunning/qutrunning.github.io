@@ -21,11 +21,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="./public/css/carousel.css?v=1.0" rel="stylesheet">
+	<link href="./public/css/carousel.css?v=1.1" rel="stylesheet">
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=5.0" rel="stylesheet">
+	<link href="./public/css/style.css?v=5.1" rel="stylesheet">
 </head>
 <body>
 	<nav id="topnav" class="navbar navbar-default" role="navigation">
@@ -89,15 +89,9 @@
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered black">
+				<div class="bottom">
 					<div class="col-md-8 col-md-offset-2">
-						<h1>Oktoberfest is Coming!</h1>
-						<br>
-						<br>
-						<p>
-							We have an exciting big event planned for this! Stay tuned...<br><br>
-							<!-- <a class="btn select" href="https://www.facebook.com/events/1461105687283845/" target="_blank" role="button">Join the Event</a> -->
-						</p>
+						<a class="btn select-promo" href="https://www.facebook.com/events/1461105687283845/" target="_blank" role="button">Join the Event</a>
 					</div>
 				</div>
 			</div>
@@ -131,26 +125,28 @@
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-membership noise black-darker">
-					<h1>Annual fee</h1>
-					<dl class="text-center">
-						<dt>Full</dt>
-						<dd>
-							Includes complimentary singlet and access to gym, swim and all running sessions.
-							<br>
-							<u>$40.00</u>
-						</dd>
-						<dt>Basic</dt>
-						<dd>
-							Access to all sessions excluding gym and swimming sessions
-							<br>
-							<u>$10.00</u>
-						</dd>
-					</dl>
-					<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
-					<p>
-						<br class="mobileHideLandscape">Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
-					</p>
+				<div class="centered-membership black-darker">
+					<div class="col-md-8 col-md-offset-2">
+						<h1>Annual fee</h1>
+						<dl class="text-center">
+							<dt>Full</dt>
+							<dd>
+								Includes complimentary singlet and access to gym, swim and all running sessions.
+								<br>
+								<u>$40.00</u>
+							</dd>
+							<dt>Basic</dt>
+							<dd>
+								Access to all sessions excluding gym and swimming sessions
+								<br>
+								<u>$10.00</u>
+							</dd>
+						</dl>
+						<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
+						<p>
+							<br class="mobileHideLandscape">Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -183,128 +179,130 @@
 		<div class="section" data-anchor="timetable" id="section5">
 			<div class="blue-block">
 				<div class="centered-timetable">
-					<br>
-					<h1>Our Timetable</h1>
-					<p class="color-white">Click or hover over a session to read more about it.</p>
-					<div class="visible-xs color-white">To see the rest of the table, scroll sideways.</div>
-					<br>
-					<div class="table-responsive">   
-						<table class="table color-blue">
-							<thead>
-								<tr>
-									<th>Time</th>
-									<th>Monday</th>
-									<th>Tuesday</th>
-									<th>Wednesday</th>
-									<th>Thursday</th>
-									<th>Friday</th>
-									<th>Saturday</th>
-									<th>Sunday</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">8:30am-9:30am</th>
-									<td class="swim">
-										<a href="#" class="session-box" rel="tooltip" title="
-										Full membership required.
-										All swimming levels welcome.
-										2 lanes provided by Healthstream Gardens Point.
-										Mixture of casual swimming and tailored exercises.
-										Supervised by the QUT Running Exec Team.
-										">Swimming Session</a>
-									</td>										
-									<td></td>
-									<td></td>
-									<td></td>
-									<td class="run">
-										<a href="#" class="session-box" rel="tooltip" title="
-										All running levels welcome.
-										Casual floating session through Botanic Garden or along the Brisbane River.
-										Supervised by Alex.
-										">Casual Session</a>
-									</td>
-									<td></td>
-									<td class="social-table">
-										<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">Occasional Social Sessions</a>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3pm - 4pm</th>
-									<td></td>
-									<td></td>
-									<td class="workout">
-										<a href="#" class="session-box" rel="tooltip" title="
-										Full membership only.
-										Healthstream Gym access at Gardens Point.
-										Be your own boss.
-										Supervised by Joe.
-										">Gym Session</a>
-									</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">4pm - 5pm</th>
-									<td class="run">
-										<a href="#" class="session-box" rel="tooltip" title="
-										All running levels welcome.
-										Mixture of interval exercises throughout the Botanic Garden.
-										Improving agility, acceleration, endurance and speed.
-										Great opportunity to meet fellow runners.
-										Supervised by the QUT Running Exec Team.
-										">Running Session</a>
-									</td>
-									<td class="workout">
-										<a href="#" class="session-box" rel="tooltip" title="
-										Full membership only.
-										Improve stamina, stability and strength.
-										Different exercises for all levels.
-										Supervised by Joe.
-										">Boot Camp</a>
-									</td>
-									<td class="run">
-										<a href="#" class="session-box" rel="tooltip" title="
-										All running levels welcome.
-										Mixture of interval exercises throughout the Botanic Garden.
-										Improving agility, acceleration, endurance and speed.
-										Great opportunity to meet fellow runners.
-										Supervised by Joe.
-										">Running Session</a>
-									</td>
-									<td class="run">
-										<a href="#" class="session-box" rel="tooltip" title="
-										Ideal for beginners.
-										Short and casual exercises to motivate and improve.
-										Supervised by Cheryl.
-										">Beginner/Casual Session</a>
-									</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">5pm - late</th>
-									<td class="social-table">
-										<a href="#" class="session-box" rel="tooltip" title="
-										Everyone welcome.
-										A relaxed, low-key way to meet people outside the sessions.
-										We go to a variety of venues so you won’t get bored.
-										We leave after the running session is complete.
-										Non-runners, friends and guests are encouraged to attend!
-										">QUT Social</a>
-									</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>						
+					<div class="col-md-8 col-md-offset-2">
+						<br>
+						<h1>Our Timetable</h1>
+						<p class="color-white">Click or hover over a session to read more about it.</p>
+						<div class="visible-xs color-white">To see the rest of the table, scroll sideways.</div>
+						<br>
+						<div class="table-responsive">   
+							<table class="table color-blue">
+								<thead>
+									<tr>
+										<th>Time</th>
+										<th>Monday</th>
+										<th>Tuesday</th>
+										<th>Wednesday</th>
+										<th>Thursday</th>
+										<th>Friday</th>
+										<th>Saturday</th>
+										<th>Sunday</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">8:30am-9:30am</th>
+										<td class="swim">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership required.
+											All swimming levels welcome.
+											2 lanes provided by Healthstream Gardens Point.
+											Mixture of casual swimming and tailored exercises.
+											Supervised by the QUT Running Exec Team.
+											">Swimming Session</a>
+										</td>										
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Casual floating session through Botanic Garden or along the Brisbane River.
+											Supervised by Alex.
+											">Casual Session</a>
+										</td>
+										<td></td>
+										<td class="social-table">
+											<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">Occasional Social Sessions</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3pm - 4pm</th>
+										<td></td>
+										<td></td>
+										<td class="workout">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership only.
+											Healthstream Gym access at Gardens Point.
+											Be your own boss.
+											Supervised by Joe.
+											">Gym Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">4pm - 5pm</th>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by the QUT Running Exec Team.
+											">Running Session</a>
+										</td>
+										<td class="workout">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership only.
+											Improve stamina, stability and strength.
+											Different exercises for all levels.
+											Supervised by Joe.
+											">Boot Camp</a>
+										</td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by Joe.
+											">Running Session</a>
+										</td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Ideal for beginners.
+											Short and casual exercises to motivate and improve.
+											Supervised by Cheryl.
+											">Beginner/Casual Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">5pm - late</th>
+										<td class="social-table">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Everyone welcome.
+											A relaxed, low-key way to meet people outside the sessions.
+											We go to a variety of venues so you won’t get bored.
+											We leave after the running session is complete.
+											Non-runners, friends and guests are encouraged to attend!
+											">QUT Social</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>						
+						</div>
 					</div>
 				</div>
 			</div>
@@ -315,7 +313,7 @@
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-executives noise black-darkest">
+				<div class="centered-executives noise black-darker">
 						<h1>Executives</h1>
 						<br class="mobileHideLandscape">
 				        <div class="col-xs-4">
@@ -378,7 +376,7 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
-			<div class="purple-block">
+			<div class="black-block">
 				<div class="centered-contact">
 					<br>
 					<h1>Contact Us</h1>

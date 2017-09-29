@@ -107,8 +107,11 @@
 }
 
 @media (max-width: 479px) {
-.video_contain{
+  .video_contain{
     width: 100%;
+  }
+  .promo {
+    background-image: url(../img/promo_mobile.jpg) !important;
   }
 }
 

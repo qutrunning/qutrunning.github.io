@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "New Rocker";
+    src: url("../fonts/NewRocker-Regular.otf");
+}
 .blue-block, .black-block, .purple-block, .block, .empty-block, .block {
   text-align: center;
   border: solid white;
@@ -19,7 +23,7 @@
   background: rgba(0, 0, 0, 0.44);
 }
 .black-darker {
-  background: rgba(0, 0, 0, 0.64);
+  background: rgba(0, 0, 0, 0.51);
 }
 .black-darkest {
   background: rgba(0, 0, 0, 0.8);
@@ -44,12 +48,18 @@
   background-image: url(../img/executives.jpg);
 }
 .promo {
-  background-image: url(../img/oktoberfest.jpg);
+  background-image: url(../img/promo.jpg);
 }
 .black-block {
   background: rgba(10, 10, 10, 0.7); 
 }
-
+.bottom {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+  z-index: 10;
+  padding-bottom: 30px;
+}
 .purple-block {
   background: rgba(63, 55, 92, 0.8);
 }
@@ -188,7 +198,7 @@ dt > h3 > a {
   width: 100%;
   height: 100%;
 }
-.select {
+.select, .select-promo {
   display: inline-block;
   text-decoration: none;
   border-radius: 50px;
@@ -198,21 +208,40 @@ dt > h3 > a {
   -o-transition:all 0.5s ease-in-out; 
   -moz-transition:all 0.5s ease-in-out; 
   -webkit-transition:all 0.5s ease-in-out;
-  color: #fff;
-  border: 1px solid white !important;
   padding: 10px 30px 10px 30px;
-  color: #fff; 
   background-color: transparent; 
-  border-color: #000; 
 }
 
+.select {
+  color: #fff; 
+  font-family: 'Lato', sans-serif; 
+  border: 1px solid white;
+}
+
+.select-promo {
+  color: #08325b;
+  font-family: 'New Rocker', sans-serif;
+  background: #fa9004;
+  border: 1px solid #08325b;
+}
 .select:hover, 
 .select:focus, 
-.select:active, 
-.select.active, 
-.open .dropdown-toggle.select {
+.select:active {
   background-color: #fff; 
   border-color: #000; 
+  text-decoration: none;
+  transition:all 0.5s ease-in-out; 
+  -o-transition:all 0.5s ease-in-out; 
+  -moz-transition:all 0.5s ease-in-out; 
+  -webkit-transition:all 0.5s ease-in-out;
+}
+
+.select-promo:hover, 
+.select-promo:focus, 
+.select-promo:active {
+  background-color: #08325b; 
+  color: #fa9004;
+  border-color: #fa9004; 
   text-decoration: none;
   transition:all 0.5s ease-in-out; 
   -o-transition:all 0.5s ease-in-out; 
@@ -272,7 +301,7 @@ and (orientation : landscape){
   .centered-membership > p {
     margin-bottom: 0px !important;
   }
-  .select {
+  .select, .select-promo {
     margin-right: 2px !important;
     margin-bottom: 5px !important;
   }
@@ -379,8 +408,7 @@ and (orientation : landscape){
       background-repeat: no-repeat;
     }
     .about, .membership,
-    .social, .executives,
-    .promo {
+    .social, .executives {
       background-position: -225px 50%;
     }
     .new {
@@ -428,8 +456,7 @@ and (orientation : landscape){
       margin-bottom: 20px;
     }
     .about, .membership,
-    .social, .executives,
-    .promo {
+    .social, .executives {
       background-position: -225px 50%;
     }
 }
@@ -446,7 +473,7 @@ and (orientation : landscape){
     .caption span.border {
       font-size: 20px;
     }
-    .select {
+    .select, .select-promo {
       font-size: 15px;
       font-weight: 800;
     }
@@ -474,7 +501,7 @@ and (orientation : landscape){
       height: 100%;
     }
     .container-fluid {
-      padding-top: 15px;
+      margin-top: 15px;
     }
     .col-md-12 {
       padding: 2%, 4%, 0, 4%;
@@ -582,7 +609,7 @@ and (orientation : landscape){
       font-size: 18px;
     }
     .container-fluid {
-      padding-top: 5%;
+      margin-top: 5%;
     }
     .col-md-12 {
       padding: 4%;
@@ -733,7 +760,7 @@ and (orientation : landscape){
   .carousel-caption {
     top: 105px;
   }
-  .select {
+  .select, .select-promo {
     margin-bottom: 10px;
   }
   dl {
@@ -787,7 +814,7 @@ and (orientation : landscape){
     .caption span.border {
       font-size: 25px;
     }
-    .select {
+    .select, .select-promo {
       font-size: 20px;
       font-weight: 400;
     }
@@ -838,8 +865,7 @@ and (orientation : landscape){
       transform: scale(1.9, 1.9);
     }
     .about, .membership,
-    .social, .executives,
-    .promo {
+    .social, .executives {
       background-position: -225px 50%;
     }
     .dl-horizontal > dt {
@@ -1090,7 +1116,23 @@ td {
   background-color: #ffffff;
     border: 1px solid #607D8B !important;
 }
-
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+  text-align: center;
+  vertical-align: middle;
+}
+.table>caption+thead>tr:first-child>td, 
+.table>caption+thead>tr:first-child>th, 
+.table>colgroup+thead>tr:first-child>td, 
+.table>colgroup+thead>tr:first-child>th, 
+.table>thead:first-child>tr:first-child>td, 
+.table>thead:first-child>tr:first-child>th {
+  text-align: center;
+}
 .run {
   background-color: #009688;
 }
@@ -1358,6 +1400,7 @@ body.menu-slider.in {
 .noise_contain {
   overflow: hidden;
   height: 100%;
+  z-index: 0;
   left: 0;
   position: absolute;
   top: 0;
