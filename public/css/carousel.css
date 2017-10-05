@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 500px) {
   .video_contain{
     width: 100%;
   }
