@@ -437,7 +437,7 @@ and (orientation : landscape){
     }
     .centered-timetable {
       padding: 18vh 7% 0% 8%;
-      padding-left: 7% !important;
+      padding-left: 7%;
     }
     .img-circle {
       width: 75px !important;
@@ -866,13 +866,16 @@ and (orientation : landscape){
     }
     .about, .membership,
     .social, .executives {
-      background-position: -225px 50%;
+      background-position: 50% 50%;
     }
     .dl-horizontal > dt {
       white-space: nowrap;
     }
     .table-responsive {
       font-size: 18px;
+    }
+    .centered-timetable {
+      padding: 0% 0% 1% 0%;
     }
 }
 @media only screen 
@@ -1096,6 +1099,7 @@ body, .img-circle, .img-responsive, p, dd, h1, h2, h3, h4, .text-center, .col-lg
 html {
     overflow-x: hidden;
 }
+
 body {
     overflow-x: hidden;
     width: 100%;

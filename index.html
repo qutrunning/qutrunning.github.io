@@ -22,6 +22,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="./public/css/carousel.css?v=1.1" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" rel="stylesheet">
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
@@ -51,8 +52,6 @@
 				<li><a href="#timetable">TIMETABLE</a></li>
 				<li><a href="#executives">EXECUTIVES</a></li>
 				<li><a href="#contact">CONTACT</a></li>
-				<li><a href="./events/">EVENTS</a></li>
-				<li><a href="./sessions/">SESSION INFO</a></li>
 				<li><a href="./sponsors/">SPONSORS</a></li>
 			</ul>
         </div><!-- /.navbar-collapse -->
@@ -245,6 +244,16 @@
 									</tr>
 									<tr>
 										<th scope="row">4pm - 5pm</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">5pm - 6pm</th>
 										<td class="run">
 											<a href="#" class="session-box" rel="tooltip" title="
 											All running levels welcome.
@@ -283,7 +292,7 @@
 										<td></td>
 									</tr>
 									<tr>
-										<th scope="row">5pm - late</th>
+										<th scope="row">6pm - late</th>
 										<td class="social-table">
 											<a href="#" class="session-box" rel="tooltip" title="
 											Everyone welcome.
@@ -388,18 +397,81 @@
 						</p>
 					<br class="mobileHide">
 					<div id="map-canvas"></div> 
+					<!-- Root element of PhotoSwipe. Must have class pswp. -->
+					<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+					    <!-- Background of PhotoSwipe. 
+					         It's a separate element as animating opacity is faster than rgba(). -->
+					    <div class="pswp__bg"></div>
+
+					    <!-- Slides wrapper with overflow:hidden. -->
+					    <div class="pswp__scroll-wrap">
+
+					        <!-- Container that holds slides. 
+					            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+					            Don't modify these 3 pswp__item elements, data is added later on. -->
+					        <div class="pswp__container">
+					            <div class="pswp__item"></div>
+					        </div>
+
+					        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					        <div class="pswp__ui pswp__ui--hidden">
+
+					            <div class="pswp__top-bar">
+
+					                <!--  Controls are self-explanatory. Order can be changed. -->
+
+					                <div class="pswp__counter"></div>
+
+					                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+					                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					                <!-- element will get class pswp__preloader--active when preloader is running -->
+					                <div class="pswp__preloader">
+					                    <div class="pswp__preloader__icn">
+					                      <div class="pswp__preloader__cut">
+					                        <div class="pswp__preloader__donut"></div>
+					                      </div>
+					                    </div>
+					                </div>
+					            </div>
+
+					            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					                <div class="pswp__share-tooltip"></div> 
+					            </div>
+
+					            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					            </button>
+
+					            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					            </button>
+
+					            <div class="pswp__caption">
+					                <div class="pswp__caption__center"></div>
+					            </div>
+
+					        </div>
+
+					    </div>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="./public/js/scrolloverflow.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
 <script type="text/javascript" src="./public/js/scripts.js?v=1.3"></script>
-<script async defer type="text/javascript" src="./public/js/velocity.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxhseafkxBSK3KH8NyCwp6BDsOMNWubFM&callback=initMap"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
 	function init() {
 		var vidDefer = document.getElementsByTagName('iframe');
@@ -462,6 +534,32 @@
 	    }
 	    $('#fullpage').fullpage.reBuild();
 	}
+	var pswpElement = document.querySelectorAll('.pswp')[0];
+
+	// build items array
+	var items = [
+	    {
+	        src: 'https://placekitten.com/600/400',
+	        w: 600,
+	        h: 400
+	    },
+	    {
+	        src: 'https://placekitten.com/1200/900',
+	        w: 1200,
+	        h: 900
+	    }
+	];
+
+	// define options (if needed)
+	var options = {
+	    // optionName: 'option value'
+	    // for example:
+	    index: 0 // start at first slide
+	};
+
+	// Initializes and opens PhotoSwipe
+	var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
 </script>
 <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
