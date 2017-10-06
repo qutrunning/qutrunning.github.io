@@ -917,20 +917,29 @@ and (orientation : portrait) {
       padding: 0% 8% 1% 8%;
     }
 }
-@media screen and ( min-width: 1280px ) {
+@media screen and ( width: 1280px ) {
     video {
-      -webkit-transform: scale(1.7, 1.7); 
-      -moz-transform: scale(1.7, 1.7);
-      transform: scale(1.7, 1.7);
-      transform: scale(1.7, 1.7);
+      -webkit-transform: scale(1.0, 1.0); 
+      -moz-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+}
+@media screen and ( min-width: 1281px ) {
+    video {
+      -webkit-transform: scale(1.65, 1.65); 
+      -moz-transform: scale(1.65, 1.65));
+      transform: scale(1.65, 1.65);
+      transform: scale(1.65, 1.65);
     }
 }
 
 @media screen and ( min-width: 1400px ) {
     video {
-      -webkit-transform: scale(1.0, 1.0); 
-      -moz-transform: scale(1.0, 1.0);
-      transform: scale(1.0, 1.0);
+      -webkit-transform: scale(1.6, 1.6); 
+      -moz-transform: scale(1.6, 1.6);
+      transform: scale(1.6, 1.6);
+      transform: scale(1.6, 1.6);
     }
     .about, .membership,
     .social, .executives,
@@ -942,6 +951,14 @@ and (orientation : portrait) {
     }
     #topnav .navbar-nav {
       padding-right: 0.7% !important;
+    }
+}
+@media screen and ( min-width: 1800px ) {
+    video {
+      -webkit-transform: scale(1.2, 1.2); 
+      -moz-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2);
     }
 }
 .caption-block {
