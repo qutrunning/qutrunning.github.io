@@ -65,7 +65,7 @@
 				<div class="carousel-caption">
 					<h1>Welcome to QUT Running 2017</h1><br>
 					<p>
-						<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.<br><br>
+					<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.<br><br>
 					<!-- <img src="./public/img/new.png" class="new" alt="New Club Updates!">
 					Scroll down to see new club updates! -->
 					</p>
@@ -176,6 +176,10 @@
 		</div>
 		<div class="section" data-anchor="timetable" id="section5">
 			<div class="blue-block timetable-bg">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
 				<div class="centered-timetable black">
 					<div class="col-md-10 col-md-offset-1">
 						<br>
@@ -385,7 +389,11 @@
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
 			<div class="blue-block contact-bg">
-				<div class="centered-contact black">
+				<div class="noise_contain">
+					<div class="noise">
+					</div>
+				</div>
+				<div class="centered-contact">
 					<br>
 					<h1>Contact Us</h1>
 						<p>
@@ -431,6 +439,7 @@
 		 * Initialize fullPage Slider
 		 */
 		var options = {
+		    loopTop: true,
 		    loopBottom: true,
 		    normalScrollElements: '.table-responsive, .nav-menu, #map-canvas',
 		    navigation: true,

@@ -951,10 +951,10 @@ and (orientation : portrait) {
 
 @media screen and ( min-width: 1400px ) {
     video {
-      -webkit-transform: scale(1.6, 1.6); 
-      -moz-transform: scale(1.6, 1.6);
-      transform: scale(1.6, 1.6);
-      transform: scale(1.6, 1.6);
+      -webkit-transform: scale(1.2, 1.2); 
+      -moz-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2);
     }
     .about, .membership,
     .social, .executives,
