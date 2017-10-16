@@ -52,7 +52,6 @@
   background-image: url(../img/promo.jpg);
 }
 .timetable-bg {
-  background: rgba(23, 59, 104, 0.5);
   background-image: url(../img/timetable.jpeg);
 }
 .contact-bg {
@@ -592,6 +591,9 @@ and (orientation : landscape){
       margin-bottom: 10px;
       margin-top: 20px;
     }
+    .timetable-bg {
+      background-position: 20% 0%;
+    }
 }
 
 @media screen and ( min-width: 600px ) {
@@ -886,6 +888,9 @@ and (orientation : landscape){
     }
     .centered-timetable {
       padding: 0% 0% 1% 0%;
+    }
+    .timetable-bg {
+      background-position: 0% 0%;
     }
 }
 @media only screen 
