@@ -25,7 +25,7 @@
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=5.3" rel="stylesheet">
+	<link href="./public/css/style.css?v=5.4" rel="stylesheet">
 </head>
 <body>
 	<nav id="topnav" class="navbar navbar-default">
@@ -66,8 +66,8 @@
 					<h1>Welcome to QUT Running 2017</h1><br>
 					<p>
 						<br>QUT Running is a social &amp; fitness group for anyone <br>interested in improving their health,<br> fitness and well-being.<br><br>
-					<img src="./public/img/new.png" class="new" alt="New Club Updates!">
-					Scroll down to see new club updates!
+					<!-- <img src="./public/img/new.png" class="new" alt="New Club Updates!">
+					Scroll down to see new club updates! -->
 					</p>
 				</div>
 				<div class="icon-scroll text-center">
@@ -81,7 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" data-anchor="updates">
+		<!-- <div class="section" data-anchor="updates">
 			<div class="block promo">
 				<div class="noise_contain">
 					<div class="noise">
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="section" data-anchor="about" id="section1">
 			<div class="block about">
 				<div class="noise_contain">
@@ -175,7 +175,7 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="timetable" id="section5">
-			<div class="blue-block">
+			<div class="blue-block timetable-bg">
 				<div class="centered-timetable">
 					<div class="col-md-10 col-md-offset-1">
 						<br>
@@ -327,56 +327,56 @@
 				        <div class="col-xs-4">
 				            <a class="contact" href="https://www.facebook.com/hello.yes.eapm.here" target="_blank">
 								<img class="img-circle" src="./public/img/executives/eamon.jpg" alt="President">
-								<p><b>President</b></p>
-								<p>Eamon Burke</p>
+								<p><b>President</b><br>
+								Eamon Burke</p>
 							</a>
 							<br class="mobileHide">
 				        </div>
 				        <div class="col-xs-4">
 				            <a class="contact" href="https://www.facebook.com/nadine.haas.925" target="_blank">
 								<img class="img-circle" src="./public/img/executives/nadine.jpg" alt="Secretary">
-								<p><b>Secretary</b></p>
-								<p>Nadine Haas</p>
+								<p><b>Secretary</b><br>
+								Nadine Haas</p>
 							</a>
 							<br class="mobileHide">
 				        </div>
 				        <div class="col-xs-4">
 							<a class="contact" href="https://www.facebook.com/joe.murphy.334491" target="_blank">
 								<img class="img-circle" src="./public/img/executives/joe.jpg" alt="Workout">
-								<p><b>Gym/Swim and Boot Camp</b></p>
-								<p>Joe Murphy</p>
+								<p><b>Gym/Swim and Boot Camp</b><br>
+								Joe Murphy</p>
 							</a>
 							<br class="mobileHide">
 						</div>
 						<div class="col-xs-4">
 							<a class="contact" href="https://www.facebook.com/alex.jenkins.967" target="_blank">
 								<img class="img-circle" src="./public/img/executives/alex.jpg" alt="Treasurer">
-								<p><b>Treasurer</b></p>
-								<p>Alex Jenkins</p>							
+								<p><b>Treasurer</b><br>
+								Alex Jenkins</p>							
 							</a>
 							<br class="mobileHide">
 						</div>
 				        <div class="col-xs-4">
 							<a class="contact" href="https://www.facebook.com/ben.vickery.90" target="_blank">
 								<img class="img-circle" src="./public/img/executives/ben.jpg" alt="Social">
-								<p><b>Social Coordinator</b></p>
-								<p>Ben Vickery</p>
+								<p><b>Social Coordinator</b><br>
+								Ben Vickery</p>
 							</a>
 							<br class="mobileHide">
 						</div>
 						<div class="col-xs-4">
 							<a class="contact" href="https://www.facebook.com/cheryl.lam01" target="_blank">
 								<img class="img-circle" src="./public/img/executives/cheryl.jpg" alt="Sessions">
-								<p><b>Session Coordinator</b></p>
-								<p>Cheryl Lam</p>
+								<p><b>Session Coordinator</b><br>
+								Cheryl Lam</p>
 							</a>
 							<br>
 						</div>
 				        <div class="col-xs-12">
 							<a class="contact" href="https://www.facebook.com/tim.jones.3348" target="_blank">
 								<img class="img-circle" src="./public/img/executives/tim.jpg" alt="IT">
-								<p><b>Website and IT</b></p>
-								<p>Tim Jones</p>
+								<p><b>IT</b><br>
+								Tim Jones</p>
 							</a>
 							<br class="mobileHide">
 						</div>
@@ -384,13 +384,13 @@
 			</div>
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
-			<div class="black-block">
+			<div class="blue-block contact-bg">
 				<div class="centered-contact">
 					<br>
 					<h1>Contact Us</h1>
 						<p>
 						<br>
-							To contact QUT Running, join our Facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com" class="links">email</a>.
+							To contact QUT Running, join our Facebook group or contact any of the executives.
 							<br>
 							Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
 						</p>
@@ -439,8 +439,7 @@
 		    paddingBottom: paddingSize,
 		    paddingLeft: paddingSize,
 		    paddingRight: paddingSize,
-		    // responsiveHeight: 1000,
-		    // responsiveWidth: 479,
+		    responsiveWidth: 500,
 		    scrollingSpeed: 1000
 		};
 	    $(".section").css("height", window.innerHeight);
