@@ -855,7 +855,7 @@ a:focus, a:hover {
 .noise_contain {
   overflow: hidden;
   height: 100%;
-  z-index: 20;
+  z-index: 30;
   left: 0;
   position: absolute;
   top: 0;
