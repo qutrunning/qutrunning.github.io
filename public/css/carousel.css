@@ -8,29 +8,10 @@
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-    -webkit-text-size-adjust: 100%;
-  text-shadow: 2px 2px #3b3b3b;
   z-index: 20;
-  /* Make text unselectable on carousel when swiping with mouse cursor click and drag */
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-  user-select: none;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
-  position: absolute;
-  left: 50%;
   text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 

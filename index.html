@@ -17,8 +17,8 @@
 	<meta name="theme-color" content="#0C2D56">
 	<link rel="icon" sizes="192x192" href="./public/img/favicon.ico">
 	<title>QUT Running</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="./public/css/carousel.css?v=1.1" rel="stylesheet">
@@ -28,40 +28,35 @@
 	<link href="./public/css/style.css?v=5.6" rel="stylesheet">
 </head>
 <body>
-	<nav id="topnav" class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		  <a href="#banner" class="navbar-left"><img class="logo" src="./public/img/transparent.svg" alt="QUT Running Logo"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-          <ul class="nav navbar-nav">
-				<li><a href="#banner">HOME</a></li>
-				<!-- <li><a href="#updates">UPDATES</a></li> -->
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#membership">MEMBERSHIP</a></li>
-				<li><a href="#social">SOCIAL</a></li>
-				<li><a href="#timetable">TIMETABLE</a></li>
-				<li><a href="#executives">EXECUTIVES</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-				<!-- <li><a href="./sponsors/">SPONSORS</a></li> -->
-			</ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+    <nav class="navbar navbar-default">
+	    <div class="container-nav">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle minus collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#top">TIM J. JONES</a> -->
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-minus">
+				<ul class="nav navbar-nav navbar-right">
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#banner">HOME</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div><!-- .navbar-collapse -->
+		</div>
+	</nav>
 	<div id="fullpage">
 		<!-- ============== First block =================== -->
 		<!-- ============== Carousel ====================== -->	
 		
 		<div data-anchor="banner" class="section" id="section0">
-			<div class="empty-block">
+			<div class="empty-block black">
 				<div class="carousel-caption">
 					<h1>Welcome to QUT Running 2017</h1><br>
 					<p>
@@ -69,8 +64,6 @@
 					<!-- <img src="./public/img/new.png" class="new" alt="New Club Updates!">
 					Scroll down to see new club updates! -->
 					</p>
-				</div>
-				<div class="icon-scroll text-center">
 				</div>
 				<div class="video_contain">
 				</div>
@@ -95,14 +88,13 @@
 			</div>
 		</div> -->
 		<div class="section" data-anchor="about" id="section1">
-			<div class="block about">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered black">
-					<div class="col-md-8 col-md-offset-2">
-						<br class="mobileHideLandscape">
+				<div class="centered black-darkest">
+					<div class="text-centered">
 						<h1>About</h1>
 						<p>
 							QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT.<br><br>
@@ -115,18 +107,20 @@
 						</p>
 					</div>
 				</div>
+				<div class="about">
+				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="membership" id="section2">
-			<div class="block membership">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-membership black-darker">
-					<div class="col-md-8 col-md-offset-2">
-						<h1>Annual fee</h1>
-						<dl class="text-center">
+				<div class="centered black-darker">
+					<div class="text-centered">
+						<h1>Membership</h1>
+						<dl>
 							<dt>Full</dt>
 							<dd>
 								Includes complimentary singlet and access to gym, swim and all running sessions.
@@ -141,48 +135,46 @@
 							</dd>
 						</dl>
 						<a class="btn select" href="https://qnectapp.com/~qutrunning" target="_blank" role="button">Join QUT Running</a>
-						<p>
-							<br class="mobileHideLandscape">Or see an exec in person to pay. Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message QUT Running</a>
-						</p>
+						<p>Or see an exec in person to pay.</p>
+						<p> Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a>
 					</div>
+				</div>
+				<div class="membership">
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="social" id="section3">
-			<div class="block social">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
-				</div>
-				<div class="centered-social noise black">
-					<div class="col-md-8 col-md-offset-2">
-							<br class="mobileHideLandscape">
-							<h1>Social</h1>
-							<p class="social-text">
-								QUT Running has a big social aspect. Following Monday's session, we unwind with dinner and drinks at Beach House in the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner we kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
-							</p>
-							<p class="social-text">
-								We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
-							</p>
-							<p class="social-text">
-								Now that you have all the info, come and join us on Monday evening after our running session! We look forward to seeing you!
-							</p>
-	<!-- 					<div class="col-md-4 text-center">
-							<img class="img-responsive" src="./public/img/qut_running_social.png" alt="Second slide">
-						</div> -->
+				</div>				
+				<div class="centered black-darkest">
+					<div class="text-centered">
+						<h1>Social</h1>
+						<p class="social-text">
+							QUT Running has a big social aspect. Following Monday's session, we unwind with dinner and drinks at Beach House in the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner we kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
+						</p>
+						<p class="social-text">
+							We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
+						</p>
+	<!-- 					<p class="social-text">
+							Now that you have all the info, come and join us on Monday evening after our running session! We look forward to seeing you!
+						</p> -->
 					</div>
+				</div>
+				<div class="social">
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="timetable" id="section5">
-			<div class="blue-block timetable-bg">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-timetable black">
-					<div class="col-md-10 col-md-offset-1">
-						<br>
+				<div class="centered black">
+					<div class="text-centered timetable-custom">
 						<h1>Our Timetable</h1>
 						<p class="color-white">Click or hover over a session to read more about it.</p>
 						<div class="visible-xs color-white">To see the rest of the table, scroll sideways.</div>
@@ -317,17 +309,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="timetable-bg">
+				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="executives" id="section6">
-			<div class="block executives">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-executives noise black-darker">
+				<div class="centered black-darker">
+					<div class="text-centered no-padding">
 						<h1>Executives</h1>
-						<br class="mobileHideLandscape">
+						<br>
 				        <div class="col-xs-4">
 				            <a class="contact" href="https://www.facebook.com/hello.yes.eapm.here" target="_blank">
 								<img class="img-circle" src="./public/img/executives/eamon.jpg" alt="President">
@@ -376,7 +371,7 @@
 							</a>
 							<br>
 						</div>
-				        <div class="col-xs-12">
+				        <div class="col-xs-4 col-md-offset-4">
 							<a class="contact" href="https://www.facebook.com/tim.jones.3348" target="_blank">
 								<img class="img-circle" src="./public/img/executives/tim.jpg" alt="IT">
 								<p><b>IT</b><br>
@@ -384,26 +379,34 @@
 							</a>
 							<br class="mobileHide">
 						</div>
+					</div>
+				</div>
+				<div class="executives">
 				</div>
 			</div>
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
-			<div class="blue-block contact-bg">
+			<div class="block">
 				<div class="noise_contain">
 					<div class="noise">
 					</div>
 				</div>
-				<div class="centered-contact">
+				<div class="centered black-lighter">
 					<br>
-					<h1>Contact Us</h1>
-						<p>
-						<br>
-							To contact QUT Running, join our Facebook group or contact any of the executives.
+					<div class="text-centered">
+						<h1>Contact Us</h1>
+							<p>
 							<br>
-							Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
-						</p>
-					<br class="mobileHide">
-					<div id="map-canvas"></div> 
+								To contact QUT Running, join our Facebook group or contact any of the executives.
+								<br>
+								Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
+							</p>
+						<br class="mobileHide">
+						<div id="map-canvas">
+						</div> 
+					</div>
+				</div>
+				<div class="contact-bg">
 				</div>
 			</div>
 		</div>
@@ -424,11 +427,11 @@
 			} 
 		}
 		window.onload = init;
-		var paddingSize = "10px";
-		var mobilePaddingSize = "10px";
+		var paddingSize = "15px";
+		var mobilePaddingSize = "15px";
 		
 	    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
-			paddingSize = "10px";
+			paddingSize = "15px";
 	    	$(".mobileFallback").css("height", window.innerHeight);
 	    }
 	    else {
