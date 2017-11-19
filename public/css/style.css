@@ -194,7 +194,7 @@ video {
   background: #fff;
 }
 dt {
-    line-height: 40px;
+  line-height: 40px;
 }
 dt > h3 {
   margin: 0px 0px 0px 0px !important;
@@ -1064,6 +1064,9 @@ a:focus, a:hover {
   }
   .carousel-caption {
     top: 4vh;
+  }
+  dt {
+    line-height: 20px;
   }
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
