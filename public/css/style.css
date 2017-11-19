@@ -173,7 +173,7 @@ video {
   vertical-align: middle;
   width: 100%;
   box-sizing: border-box;
-  z-index: 25;
+  z-index: 100;
   position: relative;
 }
 .text-centered {
@@ -221,7 +221,7 @@ dt > h3 > a {
   -o-transition:all 0.5s ease-in-out; 
   -moz-transition:all 0.5s ease-in-out; 
   -webkit-transition:all 0.5s ease-in-out;
-  padding: 8px 18px 8px 18px;
+  padding: 8px 18px 8px 25px;
   background-color: rgba(0, 0, 0, 0.2); 
 }
 
@@ -229,7 +229,9 @@ dt > h3 > a {
   color: #fff; 
   font-family: 'Open Sans', sans-serif; 
   border: 1px solid white;
+  background: rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .select-promo {
@@ -269,7 +271,7 @@ dt > h3 > a {
   font-size: 8px;
 }
 #fp-nav.right {
-  left: 50px !important;
+  left: 6px !important;
 }
 .col-md-12 {
   margin-top: 0%;
@@ -297,7 +299,7 @@ h1 {
   padding: 0% 5% 0% 5%;
 }
 dd {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .mobileFallback {
   height: 100% !important;
@@ -684,7 +686,6 @@ a:focus, a:hover {
   text-decoration: none;
   color: #fff;
 }
-
 .col-xs-4, .col-xs-12 {
   transition: all 0.4s ease;
 }
@@ -1009,23 +1010,8 @@ a:focus, a:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .centered-social > .col-md-8 {
-    padding-right: 0% !important;
-    padding-left: 0% !important;
-  }
-  .centered-events {
-    padding: 5% 15% 3% 20%;
-  }
-  .centered-events > .col-md-6,
-  .centered-events > .col-md-4 {
-    padding: 0% 0% 0% 0%;
-  }
   .mobileHide {
     display: block;
-  }
-  .centered-events > .col-md-12 {
-    padding-right: 0%;
-    padding-left: 0%;
   }
   .video_contain {
     opacity: 1;
@@ -1068,9 +1054,16 @@ a:focus, a:hover {
   }
   .col-xs-4, .col-xs-12 {
     padding-left: 0px; 
+    padding-right: 0px; 
   }
   .carousel-caption {
     bottom: 0px;
+  }
+  .select {
+    margin-right: 0px;
+  }
+  .carousel-caption {
+    top: 4vh;
   }
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
@@ -1088,21 +1081,11 @@ a:focus, a:hover {
       width: 50px;
       height: 50px;
     }
-    .centered-timetable {
-      padding-top: 18vh;
-      padding-left: 2%;
-    }
     .nav-menu {
       padding-top: 45px;
     }
     .navbar-default .navbar-nav > li > a {
      line-height: 0vh; 
-    }
-    .centered, .centered-timetable,
-    .centered-membership, .centered-events,
-    .centered-executives, .centered-social {
-      overflow: hidden;
-      padding: 0% 5% 0% 5%;
     }
     h1 {
       font-size: 30px;
