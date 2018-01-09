@@ -17,6 +17,7 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  border-radius: 25px;
 }
 .blue, .blue-block {
   background: rgba(23, 59, 104, 0.7); 
@@ -33,7 +34,7 @@
 .black-darkest {
   background: rgba(0, 0, 0, 0.6);
 }
-.about, .membership,
+/*.about, .membership,
 .social, .executives,
 .promo, .timetable-bg,
 .contact-bg {
@@ -55,7 +56,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-}
+}*/
 .about {
   color: #fff;
   background-image: url(../img/about.jpg);
@@ -82,6 +83,16 @@
 .black-block {
   background: rgba(10, 10, 10, 0.7); 
 }
+.club-image {
+  border-radius: 16px;  
+  position: relative;
+  left: 40%;
+  transform: translate(-50%,40%);
+}
+
+.club-membership {
+  max-width: 310px !important;
+} 
 .bottom {
   display: table-cell;
   vertical-align: bottom;
