@@ -19,11 +19,23 @@
   position: relative;
   border-radius: 25px;
 }
-.blue, .blue-block {
-  background: rgba(23, 59, 104, 0.7); 
+.blue-dark {
+  background: rgba(0, 16, 36, 0.7); 
 }
-.black-lighter {
-  background: rgba(0, 0, 0, 0.2);
+.blue-lighter {
+  background: rgba(2, 38, 57, 0.7);
+}
+.pink {
+  background: rgba(40, 3, 12, 0.56);
+}
+.purple {
+  background: rgba(26, 2, 46, 0.4);
+}
+.purple-darker {
+  background: rgba(20, 1, 36, 0.64);
+}
+.purple-darkest {
+  background: rgba(4, 2, 49, 0.58); 
 }
 .black {
   background: rgba(0, 0, 0, 0.44);
@@ -89,7 +101,6 @@
   left: 40%;
   transform: translate(-50%,40%);
 }
-
 .club-membership {
   max-width: 310px !important;
 } 
@@ -116,7 +127,7 @@
   height: 75px;
   margin-bottom: 10px;
 }
-.no-padding {
+.no-padding, .no-padding-sides {
   padding: 0 !important; 
 }
 .no-padding .col-xs-4 {
@@ -160,6 +171,7 @@ video {
 #map-canvas {
   border: solid white;
   width: 100%;
+  border-radius: 16px;
 }
 .gm-style-iw {
    height: 100%;
@@ -214,7 +226,11 @@ dt > h3 > a {
   line-height: 33px;
 }
 .table-responsive {
-    overflow-x: scroll;
+  overflow-x: scroll;
+  border-radius: 16px;
+}
+.table {
+  margin-bottom: 0px !important;
 }
 .fp-scrollable {
   overflow: visible;
@@ -824,9 +840,7 @@ a:focus, a:hover {
   margin: 0px -15px 0px -15px;
   height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-image: -webkit-linear-gradient(360deg,rgba(12,45,86,.8) 10%,rgba(12,45,86,.9) 0%,#0c2d56);
-  background-image: linear-gradient(0deg,rgba(12,45,86,.8) 10%,rgba(12,45,86,.9) 0%,#0c2d56);
+  background: #000a24fc;
 }
 .navbar-nav > li {
   top: 25vh;
@@ -959,6 +973,14 @@ a:focus, a:hover {
   .carousel-caption {
     bottom: 250px;
   }
+  .club-image {
+    left: 30px;
+    margin-top: 10px;
+    transform: none;
+  }
+  .club-image-block {
+    margin-top: 50px;
+  }
 }
 
 @media screen and ( max-width: 479px ) { 
@@ -1078,6 +1100,9 @@ a:focus, a:hover {
   }
   dt {
     line-height: 20px;
+  }
+  .club-image {
+    display: none;
   }
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
