@@ -1058,7 +1058,7 @@ a:focus, a:hover {
   }
   .text-centered {
     max-width: 100%;
-    padding: 20px 40px 0 15px;
+    padding: 20px 40px 0 32px;
   }
   .timetable-custom {
     position: absolute;
@@ -1103,6 +1103,9 @@ a:focus, a:hover {
   }
   .club-image {
     display: none;
+  }
+  .about-text {
+    padding: 0 !important;
   }
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
