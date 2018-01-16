@@ -15,7 +15,7 @@
   color: #fff;
   display: table;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
   border-radius: 25px;
 }
@@ -95,12 +95,13 @@ section {
 .executives {
   background-image: url(../img/executives.jpg);
 }
-.promo {
-  /*background-image: url(../img/promo.jpg);*/
- /* background-position: center;
+/*.promo-bg {
+  background-image: url(../img/promo.jpg);
+  background-position: center;
+
   background-repeat: no-repeat;
-  background-size: cover;*/
-}
+  background-size: cover;
+}*/
 .timetable-bg {
   background-image: url(../img/timetable.jpeg);
 }
@@ -172,6 +173,9 @@ and (orientation : landscape){
 .no-padding, .no-padding-sides, .no-padding-promo {
   padding: 0 !important; 
 }
+.no-padding-promo {
+  margin-top: 25px;
+}
 .no-padding .col-xs-4 {
   margin-bottom: 0;
 }
@@ -236,9 +240,10 @@ video {
   width: 100%;
   margin-top: -100%;
   bottom: 0;
-  z-index: 4;
+  z-index: 0;
   position: relative;
   transform: scale(1.7, 1.7);
+  object-fit: cover;
 }
 
 /* Push caption to center */
@@ -249,6 +254,7 @@ video {
 /*--------------GOOGLE MAP BOTTOM----------------*/
 #map-canvas {
   border: solid white;
+  overflow: hidden;
   width: 100%;
   border-radius: 16px;
 }
@@ -928,7 +934,7 @@ a:focus, a:hover {
   margin: 0px -15px 0px -15px;
   height: 100vh;
   background-size: cover;
-  background: #000a24fc;
+  background: rgba(0, 10, 36, 0.98);
 }
 .navbar-nav > li {
   top: 25vh;
@@ -1069,6 +1075,21 @@ a:focus, a:hover {
   .club-image-block {
     margin-top: 50px;
   }
+  .club-promo {
+    left: 67px;
+    float: left;
+  }
+  .club-banana {
+    float: left;
+    left: -16px;
+  }
+  .club-membership {
+    left: 1px;
+    float: left;
+  }
+  .promo {
+    overflow: hidden;
+  }
 }
 
 @media screen and ( max-width: 479px ) { 
@@ -1208,6 +1229,12 @@ a:focus, a:hover {
   }
   .bottom {
     padding-left: 0;
+  }
+  .no-padding-promo {
+    margin-top: 25px;
+  }
+  .club-promo {
+    left: 50px;
   }
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
