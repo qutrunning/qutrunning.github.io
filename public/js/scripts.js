@@ -225,6 +225,9 @@ $(document).ready(function() {
   });
 });
 
+function changeBackground(img) {
+    $('body').css('background-image', 'url(./public/img/' + img + ')');
+}
 // FOR LATER
 
 // var moveForce = 50; // max popup movement in pixels

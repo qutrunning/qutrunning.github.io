@@ -24,34 +24,14 @@ section {
   width: 100%;
   overflow: hidden;
 }
-.blue-dark,
-.blue-lighter,
-.pink,
-.purple,
-.purple-darker,
-.purple-darkest {
+
+.blue {
+  background: rgba(0, 16, 36, 0.85); 
   border-radius: 6px;
-}
-.blue-dark {
-  background: rgba(0, 16, 36, 0.7); 
-}
-.blue-lighter {
-  background: rgba(4, 25, 36, 0.67);
-}
-.pink {
-  background: rgba(40, 3, 12, 0.56);
-}
-.purple {
-  background: rgba(26, 2, 46, 0.4);
-}
-.purple-darker {
-  background: rgba(20, 1, 36, 0.64);
-}
-.purple-darkest {
-  background: rgba(4, 2, 49, 0.58); 
 }
 .black {
   background: rgba(0, 0, 0, 0.44);
+  border-radius: 6px;
 }
 /*.black-darker {
   background: rgba(0, 0, 0, 0.51);
@@ -336,7 +316,7 @@ dt > h3 > a {
 
 .select-promo {
   float: right;
-  margin-top: 82px;
+  margin-top: 30px;
 }
 /*.select-promo {
   color: #08325b;
@@ -411,8 +391,7 @@ dd {
 #map-canvas {
   height: 300px;
 }
-body:before {
-  background-image: url(../img/wall.jpg);
+body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -421,6 +400,7 @@ body:before {
   left: 0;
   right: 0;
 }
+
 #interactive-anim {
   width: 100vw;
   height: 100vh;
@@ -729,7 +709,11 @@ body {
     width: 100%;
     -webkit-text-size-adjust: 100%;
     font-weight: 100 !important;
+    transition: background-image 0.4s ease;
 }
+
+
+
 /* -------------
 ------Timetable 
 ----------------*/
@@ -1056,9 +1040,6 @@ a:focus, a:hover {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
   }
-  .video_contain {
-    opacity: 0;
-  }
   .carousel-caption {
     padding: 40px; 
   }
@@ -1106,6 +1087,15 @@ a:focus, a:hover {
   }
   .col-xs-4 {
     margin-top: 0px !important;
+  }
+  video {
+    display: inline-block;
+    height: 100vh;
+  }
+  body {
+    background-position: -300px 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1163,8 +1153,8 @@ a:focus, a:hover {
   #map-canvas {
     height: 250px;
   }
-  body:before {
-    background-image: url(../img/wall.jpg);
+  body {
+    /*background-image: url(../img/wall.jpg);*/
     background-position: -225px 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1201,9 +1191,6 @@ a:focus, a:hover {
   }
   .navbar-nav > li {
     top: 15vh;
-  }
-  .video_contain {
-    opacity: 0;
   }
   .empty-block {
     background-position: 23% 50%;
@@ -1309,8 +1296,7 @@ a:focus, a:hover {
     #map-canvas {
       height: 210px;
     }
-    body:before {
-      background-image: url(../img/wall.jpg);
+    body {
       background-position: -225px 50%;
       background-size: cover;
       background-repeat: no-repeat;

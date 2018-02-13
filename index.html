@@ -25,7 +25,7 @@
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=7.1" rel="stylesheet">
+	<link href="./public/css/style.css?v=7.2" rel="stylesheet">
 </head>
 <body>
 	<div class="landscape-message">
@@ -84,7 +84,7 @@
 					<div class="noise">
 					</div>
 				</div> -->
-				<div class="centered blue-dark">
+				<div class="centered blue">
 					<div class="text-centered">
 						<section>
 							<h1>QUT Classic!</h1>
@@ -95,13 +95,8 @@
 								Races will kick off from 7.30am from the "Lumpy Lawn" QUT Gardens Point campus (adjacent P Block, facing the Goodwill Bridge). Due to the Queen's Wharf redevelopment, this year's routes are currently being developed and will be available soon!
 							</p>
 						</section>
-						<div class="col-md-12 no-padding-promo">
-							<div class="col-md-4 no-padding-promo club-image-block promo">
-								<img src="./public/img/promo.jpg" class="img-responsive club-image club-promo">
-							</div>	
-							<div class="bottom col-md-6">
-								<a class="btn select-promo" href="https://www.facebook.com/events/1190382491071519/" target="_blank" role="button">Join the Event</a>
-							</div>
+						<div class="bottom">
+							<a class="btn select-promo" href="https://www.facebook.com/events/1190382491071519/" target="_blank" role="button">Join the Event</a>
 						</div>
 					</div>
 				</div>
@@ -109,7 +104,7 @@
 		</div>
 		<div class="section" data-anchor="about" id="section1">
 			<div class="block">
-				<div class="centered blue-dark">
+				<div class="centered blue">
 					<div class="text-centered">
 						<div class="col-md-8 about-text no-padding-sides">
 							<h1>About</h1>
@@ -136,7 +131,7 @@
 		</div>
 		<div class="section" data-anchor="membership" id="section2">
 			<div class="block">
-				<div class="centered blue-lighter">
+				<div class="centered blue">
 					<div class="text-centered">
 						<h1>Membership</h1>
 						<dl>
@@ -167,9 +162,6 @@
 							<p>Or see an exec in person to pay.</p>
 							<p> Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a>
 						</div>						
-						<div class="col-md-4 no-padding-sides club-image-block">
-							<img src="./public/img/membership.jpg" class="img-responsive club-image club-membership">
-						</div>	
 					</div>						
 				</div>
 			</div>
@@ -180,7 +172,7 @@
 		</div>
 		<div class="section" data-anchor="social" id="section3">
 			<div class="block">			
-				<div class="centered pink">
+				<div class="centered blue">
 					<div class="text-centered">
 						<h1>Social</h1>
 						<p class="social-text">
@@ -204,7 +196,7 @@
 		</div>
 		<div class="section" data-anchor="timetable" id="section5">
 			<div class="block">
-				<div class="centered purple">
+				<div class="centered blue">
 					<div class="text-centered timetable-custom">
 						<h1>Our Timetable</h1>
 						<p class="color-white">Click or hover over a session to read more about it.</p>
@@ -230,7 +222,7 @@
 										<td></td>
 										<td></td>
 										<td></td>
-										<td class="run" id="lift1" id="tooltip-box" >
+										<td class="run">
 											<a href="#" class="session-box" rel="tooltip" title="
 											All running levels welcome.
 											Casual floating session through Botanic Garden or along the Brisbane River.
@@ -353,7 +345,7 @@
 		</div>
 		<div class="section" data-anchor="executives" id="section6">
 			<div class="block">
-				<div class="centered purple-darker">
+				<div class="centered blue">
 					<div class="text-centered no-padding contacts">
 						<h1 class="no-margin-bottom">Executives</h1>
 						<br>
@@ -432,7 +424,7 @@
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
 			<div class="block">
-				<div class="centered purple-darkest">
+				<div class="centered blue">
 					<br>
 					<div class="text-centered">
 						<h1>Contact Us</h1>
@@ -486,12 +478,19 @@
 		/**
 		 * Initialize fullPage Slider
 		 */
+	    var backgrounds = [ 'wall.jpg',  'promo.jpg',  'about.jpg',  'membership.jpg',  'social_party.jpg', 'goodwill.jpg', 'executives.jpg', 'qut_gp.jpg'];
+        changeBackground(backgrounds[0]);
 		var options = {
 		    loopTop: true,
 		    loopBottom: true,
 		    normalScrollElements: '.table-responsive, .nav-menu, #map-canvas',
 		    navigation: true,
 		    animateAnchors: true,
+		    onLeave: function (index, nextIndex, direction) {
+                    setTimeout(function(){
+                        changeBackground(backgrounds[nextIndex - 1]);
+                    }, 500);
+                },
 		    paddingTop: paddingSize,
 		    paddingBottom: paddingSize,
 		    paddingLeft: paddingSize,
