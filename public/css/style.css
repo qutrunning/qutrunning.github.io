@@ -33,6 +33,9 @@ section {
   background: rgba(0, 0, 0, 0.44);
   border-radius: 6px;
 }
+.load-hidden {
+  display: none;
+}
 /*.black-darker {
   background: rgba(0, 0, 0, 0.51);
 }
