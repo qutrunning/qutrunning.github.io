@@ -82,19 +82,7 @@ section {
   top: 0;
   width: 100%;
 }*/
-.about {
-  color: #fff;
-  background-image: url(../img/about.jpg);
-}
-.membership {
-  background-image: url(../img/membership.jpg);
-}
-.social {
-  background-image: url(../img/social.jpg);
-}
-.executives {
-  background-image: url(../img/executives.jpg);
-}
+
 /*.promo-bg {
   background-image: url(../img/promo.jpg);
   background-position: center;
@@ -102,13 +90,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }*/
-.timetable-bg {
-  background-image: url(../img/timetable.jpeg);
-}
-.contact-bg {
-  background-position: 50% 0%;
-  background-image: url(../img/contact.jpg);
-}
+
 .black-block {
   background: rgba(10, 10, 10, 0.7); 
 }
@@ -760,7 +742,6 @@ th {
 td {
   color: black;
   background-color: #ffffff;
-    border: 1px solid #607D8B !important;
 }
 .table>tbody>tr>td, 
 .table>tbody>tr>th, 
@@ -779,6 +760,13 @@ td {
 .table>thead:first-child>tr:first-child>th {
   text-align: center;
 }
+.run, .intermediate-run, .workout, .swim, .social, .parkrun {
+  border-right: 1px solid #eaeaea !important;
+}
+.run:hover, .intermediate-run:hover, .workout:hover, .swim:hover, .social:hover, .parkrun:hover {
+  overflow: auto;
+  transition: 0.2s ease;
+}
 .run {
   background-color: #43A047;
 }
@@ -791,10 +779,17 @@ td {
 .swim {
   background-color: #03A9F4;
 }
-.social-table {
+.social {
   background-color: #FF9800;
 }
-
+.parkrun {
+  background-color: #82c9cf;
+}
+#lift1 {
+  transform: perspective( 1200px ) translate3d( 0, 0px, 285px );
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: perspective(600px) translate3d(0, 0, 0);
+}
 .tooltip.top .tooltip-inner {
     background-color: #ffffff;
     color: #000033;
@@ -1323,10 +1318,6 @@ a:focus, a:hover {
     .empty-block {
       background-image: url(../img/first.jpg);
       background-position: 20% 0%;
-    }
-    .about, .membership,
-    .social, .executives {
-      background-position: -225px 50%;
     }
     .new {
       margin-bottom: 0px; 

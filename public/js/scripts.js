@@ -193,7 +193,7 @@ $(document).ready(function (){
         });
     });
     // ----  Popover settings  -----
-    $('a.session-box').click(function(e){
+    $('a.tooltip-box').click(function(e){
         // Prevents scrolling to the top of the page when clicking a tag with href="#"
         e.preventDefault();
     });
@@ -225,10 +225,31 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-    //if the user agent is not mobile, run the scripts
-    if($(window).width() < 758) {
-      $('#topnav').addClass('navbar-fixed-top');
-    }
-});
+// FOR LATER
 
+// var moveForce = 50; // max popup movement in pixels
+// var rotateForce = 40; // max popup rotation in deg
+
+// (function() {
+//   $( document )
+//     .on( "mousemove", "#tooltip-box", function( e ) {
+
+//     var docX = $(document).width() * 1.1;
+//     var docY = $(document).height();
+    
+//     var moveX = (e.pageX - docX/2) / (docX*2) * -moveForce;
+//     var moveY = (e.pageY - docY/2) / (docY*2) * -moveForce;
+    
+//     var rotateY = (e.pageX / docX * rotateForce*1.7) - rotateForce;
+//     var rotateX = -((e.pageY / docY * rotateForce*2) - rotateForce);
+    
+//     $('#tooltip-box')
+//         .css('left', moveX+'px')
+//         .css('top', moveY+'px')
+//         .css('transform', 'scale(1.2, 1.2)')
+//         .css('overflow', 'auto !important');
+//   } )
+//     .on( "mouseout", "#tooltip-box", function() {
+//     $('#tooltip-box').removeAttr( 'style' )
+//   } );
+// })();
