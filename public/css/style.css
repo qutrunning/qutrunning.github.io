@@ -26,7 +26,7 @@ section {
 }
 
 .blue {
-  background: rgba(0, 16, 36, 0.85); 
+  background: rgba(0, 16, 36, 0.75); 
   border-radius: 6px;
 }
 .black {
@@ -200,7 +200,7 @@ and (orientation : landscape){
   background: rgba(17,51,90,.2);
   background-image: url(../img/pattern2.png);
   z-index: 5;
-  border-radius: 25px;
+  border-radius: 6px;
 }
 
 /* Pull video under overlay */
@@ -712,7 +712,7 @@ body {
     width: 100%;
     -webkit-text-size-adjust: 100%;
     font-weight: 100 !important;
-    transition: background-image 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 
