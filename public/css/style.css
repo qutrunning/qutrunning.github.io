@@ -708,6 +708,8 @@ html {
 }
 
 body {
+  background: url('../img/wall.jpg');
+  background-size: cover;
     overflow-x: hidden;
     width: 100%;
     -webkit-text-size-adjust: 100%;
