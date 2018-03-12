@@ -24,24 +24,39 @@ section {
   width: 100%;
   overflow: hidden;
 }
-
-.blue {
-  background: rgba(0, 16, 36, 0.75); 
-  border-radius: 6px;
-}
-.black {
-  background: rgba(0, 0, 0, 0.44);
-  border-radius: 6px;
-}
 .load-hidden {
   display: none;
 }
-/*.black-darker {
-  background: rgba(0, 0, 0, 0.51);
+
+.blue-dark,
+.blue-lighter,
+.pink,
+.purple,
+.purple-darker,
+.purple-darkest {
+  border-radius: 6px;
 }
-.black-darkest {
-  background: rgba(0, 0, 0, 0.6);
-}*/
+.blue-dark {
+  background: rgba(0, 16, 36, 0.7); 
+}
+.blue-lighter {
+  background: rgba(4, 25, 36, 0.67);
+}
+.pink {
+  background: rgba(40, 3, 12, 0.56);
+}
+.purple {
+  background: rgba(26, 2, 46, 0.4);
+}
+.purple-darker {
+  background: rgba(20, 1, 36, 0.64);
+}
+.purple-darkest {
+  background: rgba(4, 2, 49, 0.58); 
+}
+.black {
+  background: rgba(0, 0, 0, 0.44);
+}
 /*.about, .membership,
 .social, .executives,
 .promo, .timetable-bg,
@@ -708,6 +723,8 @@ html {
 }
 
 body {
+  background: url('../img/wall.jpg');
+  background-size: cover;
     overflow-x: hidden;
     width: 100%;
     -webkit-text-size-adjust: 100%;
