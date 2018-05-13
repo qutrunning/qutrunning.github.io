@@ -256,3 +256,13 @@ function changeBackground(img) {
 //     $('#tooltip-box').removeAttr( 'style' )
 //   } );
 // })();
+
+
+Pace.on("done", function(){
+    $('.loading').slideUp(200);
+    // Make sure that the header animation doesn't start until page load finishes
+});
+
+particlesJS.load('particles-js', './particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
