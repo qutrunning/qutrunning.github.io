@@ -522,6 +522,33 @@ video {
 .table-responsive table tbody tr th {
   font-weight: 300;
 }
+
+table {
+  border-collapse: separate !important;
+  border-color: none !important;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border: none; 
+}
+
+td { border: none; }
+
+/*tr:first-child th:first-child, 
+tr:nth-child(2) th,
+tr:nth-child(3) th,
+tr:nth-child(4) th, 
+tr:nth-child(5) th,
+tr:nth-child(6) th { 
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+}*/
+/*thead:first-child th:last-child { 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}*/
+/*tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
+
 .timetable-bg {
   background-position: 0% 0%;
 }

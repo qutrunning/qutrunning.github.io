@@ -26,7 +26,7 @@
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=7.6" rel="stylesheet">
+	<link href="./public/css/style.css?v=7.7" rel="stylesheet">
 </head>
 <body>
 	<div class="landscape-message">
@@ -81,7 +81,7 @@
 				<div class="video_contain">
 				</div>
 				<div>
-					<video data-keepplaying loop="loop" autoplay playsinline poster="./public/img/first.jpg">
+					<video id="promo" data-keepplaying loop="loop" autoplay playsinline poster="./public/img/first.jpg">
 					    <source data-src="./public/img/qut_running_promo.webm" type="video/webm">
 					    <source data-src="./public/img/qut_running_promo.mp4" type="video/mp4">
 					</video>
@@ -235,7 +235,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<th scope="row">6:30am-7:30am</th>
+										<th scope="row">6:45am-7:30am</th>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -286,9 +286,25 @@
 									</tr>
 									<tr>
 										<th scope="row">4:30pm - 5:30pm</th>
+										<td class="run" id="lift">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by the QUT Running Exec Team.
+											">Running</a>
+										</td>
 										<td></td>
-										<td></td>
-										<td></td>
+										<td class="run" id="lift">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by Joe.
+											">Running</a>
+										</td>	
 										<td class="workout" id="lift">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											Full membership only.
@@ -301,16 +317,8 @@
 										<td></td>
 									</tr>
 									<tr>
-										<th scope="row">5pm - 6pm</th>
-										<td class="run" id="lift">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Mixture of interval exercises throughout the Botanic Garden.
-											Improving agility, acceleration, endurance and speed.
-											Great opportunity to meet fellow runners.
-											Supervised by the QUT Running Exec Team.
-											">Running</a>
-										</td>
+										<th scope="row">5pm - 6pm</th>										
+										<td></td>
 										</td>
 										<td class="run" id="lift">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
@@ -318,16 +326,8 @@
 											Short and casual exercises to motivate and improve.
 											Supervised by Cheryl.
 											">Beginner/Casual Running</a>
-										</td>
-										<td class="run" id="lift">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Mixture of interval exercises throughout the Botanic Garden.
-											Improving agility, acceleration, endurance and speed.
-											Great opportunity to meet fellow runners.
-											Supervised by Joe.
-											">Running</a>
-										</td>											
+										</td>										
+										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -543,6 +543,7 @@
 		    }
 		    $('#fullpage').fullpage.reBuild();
 		}
+    	document.getElementById('promo').play(); 
 	</script>
 	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
