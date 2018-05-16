@@ -257,7 +257,8 @@ function changeBackground(img) {
 //   } );
 // })();
 
-
+Pace.options.elements.selectors = ["video"];
+Pace.restart();
 Pace.on("done", function(){
     $('.loading').slideUp(200);
     // Make sure that the header animation doesn't start until page load finishes
