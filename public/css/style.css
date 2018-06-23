@@ -93,7 +93,7 @@ section {
   background: rgba(10, 10, 10, 0.7); 
 }
 .promo .centered .text-centered .col-md-12 {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
 .club-image {
   border-radius: 16px;  
@@ -103,7 +103,7 @@ section {
   transition: 0.4s;
 }
 .club-image:hover {
-  transform: translate(-40%,30%) scale(1.3, 1.3) !important;
+  transform: translate(-40%,15%) scale(1.15, 1.15) !important;
 }
 .club-banana {
   float: right;
@@ -112,6 +112,7 @@ section {
 .club-promo {
   transform: translate(-20%,0%) !important;
   float: right;
+  width: 80%;
 }
 .club-membership {
   /*transform: translate(-50%,22%);*/
@@ -158,7 +159,7 @@ section {
   padding: 0 !important; 
 }
 .no-padding-promo {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .no-padding .col-xs-4 {
   margin-bottom: 0;
