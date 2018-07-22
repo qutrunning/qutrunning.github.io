@@ -12,7 +12,7 @@
 
 	<meta property="og:title" content="QUT Running">
 	<meta property="og:description" content="QUT Running is the running club of Queensland University of Technology in Brisbane. We do several runs a week designed for all levels.">
-	<meta name="description" content="QUT Running is the running club of Queensland University of Technology in Brisbane. We do several runs a week designed for all levels.">
+	<meta name="description" content="QUT Running is the running club of Queensland University of Technology in Brisbane. We do six runs a week designed for all levels.">
 	<meta name="author" content="Tim Jones">
 	<meta name="theme-color" content="#0C2D56">
 	<link rel="icon" sizes="192x192" href="./public/img/favicon.ico">
@@ -26,7 +26,7 @@
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=7.8" rel="stylesheet">
+	<link href="./public/css/style.css?v=7.9" rel="stylesheet">
 </head>
 <body>
 	<div class="landscape-message">
@@ -69,7 +69,7 @@
 		<!-- ============== Carousel ====================== -->	
 		
 		<div data-anchor="banner" class="section" id="section0">
-			<div class="empty-block black">
+			<div class="empty-block">
 				<div class="carousel-caption">
 					<h1>Welcome to QUT Running 2018</h1><br>
 					<p>
@@ -90,7 +90,7 @@
 		</div>
 		<div class="section" data-anchor="updates">
 			<div class="block">
-				<div class="centered purple-darkest">
+				<div class="centered first">
 					<div class="text-centered">
 						<section>
 							<h1>QUT Running does Bridge to Brisbane!</h1>
@@ -119,7 +119,7 @@
 		</div>
 		<div class="section" data-anchor="about" id="section1">
 			<div class="block">
-				<div class="centered blue-dark">
+				<div class="centered second">
 					<div class="text-centered">
 						<div class="col-md-8 about-text no-padding-sides">
 							<h1>About</h1>
@@ -142,7 +142,7 @@
 		</div>
 		<div class="section" data-anchor="membership" id="section2">
 			<div class="block">
-				<div class="centered blue-lighter">
+				<div class="centered third">
 					<div class="text-centered">
 						<h1>Membership</h1>
 						<dl>
@@ -186,7 +186,7 @@
 		</div>
 		<div class="section" data-anchor="social" id="section3">
 			<div class="block">			
-				<div class="centered pink">
+				<div class="centered fourth">
 					<div class="text-centered">
 						<h1>Social</h1>
 						<p class="social-text">
@@ -210,13 +210,14 @@
 		</div>
 		<div class="section" data-anchor="timetable" id="section5">
 			<div class="block">
-				<div class="centered purple">
+				<div class="centered fifth">
 					<div class="text-centered timetable-custom">
 						<h1>Our Timetable</h1>
 						<p class="color-white">Click or hover over a session to read more about it.</p>
+						<p class="color-white">Sessions with multiple skill levels ( A, B, C ) will have multiple groups.</p>
 						<div class="visible-xs color-white"><p>To see the rest of the table, scroll sideways.</p></div>
-						<br>
-						<div class="table-responsive">   
+						<!-- <br> -->
+						<div class="table-responsive timetable">   
 							<table class="table color-blue">
 								<thead>
 									<tr>
@@ -227,28 +228,26 @@
 										<th>Thursday</th>
 										<th>Friday</th>
 										<th>Saturday</th>
+										<th>Sunday</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<th scope="row">6:45am-7:30am</th>
+										<th scope="row">6:45am - 7:30am</th>
 										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
-										<td class="run">
-											<a href="#" class="session-box" rel="tooltip" title="
-											All running levels welcome.
-											Casual floating session through Botanic Garden or along the Brisbane River.
-											Supervised by Alex.
-											">Early Bird Running</a>
+										<td></td>										
+										<td class="parkrun typeB">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning. Supervised by Parkrun community.">Parkrun<br>(&nbsp;B&nbsp;)</a>
 										</td>
-										<td class="parkrun">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning. Supervised by Parkrun community.">Parkrun (various locations)</a>
+										<td class="run typeC">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="A long distance run held in the morning at the Botanic Gardens by QUT Gardens Point campus.">Run<br>(&nbsp;C&nbsp;)</a>
 										</td>
 									</tr>
 									<tr>
-										<th scope="row">8:30am-9:30am</th>
+										<th scope="row">8:30am - 9:30am</th>
 										<td class="swim" id="lift" id="tooltip-box">
 											<a href="#" class="session-box"  rel="tooltip" title="
 											Full membership required.
@@ -263,52 +262,65 @@
 										<td></td>
 										<td></td>
 										<td></td>
+										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">3pm - 4pm</th>
 										<td></td>
 										<td></td>
-										<td class="workout" id="lift">
+										<td class="workout">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											Full membership only.
 											Healthstream Gym access at Gardens Point.
 											Be your own boss.
-											Supervised by Joe.
 											">Gym</a>
 										</td>
 										<td></td>
 										<td></td>
 										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">4pm - 5pm</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="run typeA typeB typeC">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Casual floating session through Botanic Garden or along the Brisbane River.
+											">Run<br><span>(&nbsp;A&nbsp;,&nbsp;B&nbsp;,&nbsp;C&nbsp;)</span></a>
+										</td>
+										<td></td>
+										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">4:30pm - 5:30pm</th>
-										<td class="run" id="lift">
+										<td class="run typeA typeB typeC">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											All running levels welcome.
 											Mixture of interval exercises throughout the Botanic Garden.
 											Improving agility, acceleration, endurance and speed.
 											Great opportunity to meet fellow runners.
 											Supervised by the QUT Running Exec Team.
-											">Running</a>
+											">Run <br>(&nbsp;A&nbsp;,&nbsp;B&nbsp;,&nbsp;C )</a>
 										</td>
-										<td></td>
-										<td class="run" id="lift">
+										<td></td>										
+										<td class="run typeA typeC">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Mixture of interval exercises throughout the Botanic Garden.
-											Improving agility, acceleration, endurance and speed.
-											Great opportunity to meet fellow runners.
-											Supervised by Joe.
-											">Running</a>
-										</td>	
-										<td class="workout" id="lift">
+											Ideal for beginners.
+											Short and casual exercises to motivate and improve.
+											">Beginner Run<br>(&nbsp;A&nbsp;,&nbsp;C&nbsp;)</a>
+										</td>										
+										<td class="workout">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											Full membership only.
 											Improve stamina, stability and strength.
 											Different exercises for all levels.
-											Supervised by Joe.
 											">Boot Camp</a>
 										</td>
+										<td></td>
 										<td></td>
 										<td></td>
 									</tr>
@@ -316,13 +328,15 @@
 										<th scope="row">5pm - 6pm</th>										
 										<td></td>
 										</td>
-										<td class="run" id="lift">
+										<td class="run typeB typeC">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											Ideal for beginners.
-											Short and casual exercises to motivate and improve.
-											Supervised by Cheryl.
-											">Beginner/Casual Running</a>
-										</td>										
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											">Run<br>(&nbsp;B&nbsp;,&nbsp;C&nbsp;)</a>
+										</td>	
+										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -344,9 +358,46 @@
 										<td></td>
 										<td></td>
 										<td></td>
+										<td></td>
 									</tr>
 								</tbody>
 							</table>						
+						</div>
+						<div class="visible-xs color-white centered"><a class="links guideOpener" id="showSkillInfo">Tap here for skill group info.</a></div>						
+						<div class="table-responsive guide">   
+							<table class="table color-blue">
+
+								<thead>
+									<th>Run Level Guide</th>
+								</thead>
+								<tr class="typeRow">
+									<td id="typeA">
+										<b>Type A</b><br>
+										<u>Beginner</u>
+										<p>Slow to average pace, aiming to train for 5km distances</p>
+									</td>
+								</tr>
+								<tr class="typeRow">
+									<td id="typeB">
+										<b>Type B</b><br>
+										<u>Intermediate</u>
+										<p>Average to fast pace, aiming to train for 10km distances</p>
+									</td>
+								</tr>
+								<tr class="typeRow">
+									<td id="typeC">
+										<b>Type C</b><br>
+										<u>Long Distance</u>
+										<p>Average pace, aiming to train for 21km/42km distances</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="closeDiv color-white centered">
+							<a id="closeGuide" class="links">
+								<!-- <img class="closeIcon" src="./public/img/close.png" alt="Close guide."> -->
+								Tap here to go back to timetable.
+							</a>
 						</div>
 					</div>
 				</div>
@@ -360,7 +411,7 @@
 		</div>
 		<div class="section" data-anchor="executives" id="section6">
 			<div class="block">
-				<div class="centered purple-darker">
+				<div class="centered sixth">
 					<div class="text-centered no-padding contacts">
 						<h1 class="no-margin-bottom">Executives</h1>
 						<br>
@@ -439,10 +490,10 @@
 		</div>
 		<div class="section" data-anchor="contact" id="section7">
 			<div class="block">
-				<div class="centered purple-darkest	">
+				<div class="centered seventh">
 					<br>
 					<div class="text-centered">
-						<h1>Contact Us</h1>
+						<h1>Contact</h1>
 							<p>
 							<br>
 								To contact QUT Running, join our Facebook group or contact any of the executives.

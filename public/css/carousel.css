@@ -193,6 +193,59 @@
   }
 
 }
+@media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  .video_contain > .mobileFallback {
+    display: none;
+  }
+  video {
+    display: block;
+    -webkit-transform: scale(4.0, 4.0) !important;
+    -moz-transform: scale(4.0, 4.0) !important;
+    transform: scale(4.0, 4.0) !important;
+  }
+  .text-centered {
+    max-width: 768px !important;
+  }
+  .club-image-block {
+    margin-left: 10px;
+  }
+  .club-membership {
+    margin-left: 0px !important;
+    transform: translate(-33%,37%) !important;
+  }
+  .timetable, .guide {
+    float: none;
+    width: 100% !important;
+    position: relative;
+  } 
+  .typeRow {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 33.33333%;
+  }
+  .table>tbody>tr>td, .table>tbody>tr>th, 
+  .table>tfoot>tr>td, .table>tfoot>tr>th, 
+  .table>thead>tr>td, .table>thead>tr>th {
+    padding: 5px;
+  }
+  .guide {
+     margin-left: 0px !important; 
+     margin-top: 30px; 
+  }
+  .table-responsive>.table>tbody>tr>td, 
+  .table-responsive>.table>tbody>tr>th, 
+  .table-responsive>.table>tfoot>tr>td, 
+  .table-responsive>.table>tfoot>tr>th, 
+  .table-responsive>.table>thead>tr>td, 
+  .table-responsive>.table>thead>tr>th {
+     white-space: normal;
+  } 
+}
 
 @media (min-width: 1025px) {
 

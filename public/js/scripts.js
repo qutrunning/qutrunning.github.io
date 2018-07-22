@@ -1,6 +1,6 @@
 // ----- Google Maps -------
 function initMap() {
-        var lawn = {lat: -27.477400, lng: 153.029349};
+        var lawn = {lat: -27.477600, lng: 153.029349};
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
           zoom: 15,
           center: lawn,
@@ -233,30 +233,53 @@ function changeBackground(img) {
 // var moveForce = 50; // max popup movement in pixels
 // var rotateForce = 40; // max popup rotation in deg
 
-// (function() {
-//   $( document )
-//     .on( "mousemove", "#tooltip-box", function( e ) {
+(function() {
+  $( document )
+    .on( "mousemove", "#typeA", function( e ) {
 
-//     var docX = $(document).width() * 1.1;
-//     var docY = $(document).height();
-    
-//     var moveX = (e.pageX - docX/2) / (docX*2) * -moveForce;
-//     var moveY = (e.pageY - docY/2) / (docY*2) * -moveForce;
-    
-//     var rotateY = (e.pageX / docX * rotateForce*1.7) - rotateForce;
-//     var rotateX = -((e.pageY / docY * rotateForce*2) - rotateForce);
-    
-//     $('#tooltip-box')
-//         .css('left', moveX+'px')
-//         .css('top', moveY+'px')
-//         .css('transform', 'scale(1.2, 1.2)')
-//         .css('overflow', 'auto !important');
-//   } )
-//     .on( "mouseout", "#tooltip-box", function() {
-//     $('#tooltip-box').removeAttr( 'style' )
-//   } );
-// })();
+    $('.typeA')
+        .css('background-color', '#3b3b3b')
+    } )
+    .on( "mouseout", "#typeA", function() {
+    $('.typeA').removeAttr( 'style' )
 
+  } );
+})();
+
+(function() {
+  $( document )
+    .on( "mousemove", "#typeB", function( e ) {
+
+    $('.typeB')
+        .css('background-color', '#3b3b3b')
+    } )
+    .on( "mouseout", "#typeB", function() {
+    $('.typeB').removeAttr( 'style' )
+  } );
+})();
+(function() {
+  $( document )
+    .on( "mousemove", "#typeC", function( e ) {
+
+    $('.typeC')
+        .css('background-color', '#3b3b3b')
+    } )
+    .on( "mouseout", "#typeC", function() {
+    $('.typeC').removeAttr( 'style' )
+  } );
+})();
+$("#showSkillInfo").click(function(){
+    $(".timetable").hide(600);
+    $(".guideOpener").hide(600);
+    $(".closeDiv").show(600);
+    $(".guide").show(0);
+});
+$("#closeGuide").click(function(){
+    $(".guide").hide(600);
+    $(".closeDiv").hide(600);
+    $(".timetable").show(600);
+    $(".guideOpener").show(600);
+});
 Pace.options.elements.selectors = ["video"];
 Pace.restart();
 Pace.on("done", function(){
