@@ -26,7 +26,7 @@
 	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
 	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
 	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
-	<link href="./public/css/style.css?v=8.0" rel="stylesheet">
+	<link href="./public/css/style.css?v=8.2" rel="stylesheet">
 </head>
 <body>
 	<div class="landscape-message">
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" data-anchor="updates">
+<!-- 		<div class="section" data-anchor="updates">
 			<div class="block">
 				<div class="centered first">
 					<div class="text-centered">
@@ -116,7 +116,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="section" data-anchor="about" id="section1">
 			<div class="block">
 				<div class="centered second">
@@ -128,12 +128,14 @@
 								Join our group on Facebook - 
 								<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
 							</p>
+						</div>
+						<div class="col-md-8 about-text-2 no-padding-sides">
 							<h1>Signing up</h1>
 							<p>
 								Sign up online <a class="links" href="#membership">here</a>, come to our O-Week stall or find us at one of our sessions throughout the semester and talk to a member of our Exec Team. We're happy to answer any questions you may have.
 							</p>
 						</div>
-						<div class="col-md-4 club-image-block">
+						<div class="col-md-4 club-image-block-banana">
 							<img src="./public/img/banana.jpg" class="img-responsive club-image club-banana">
 						</div>
 					</div>
@@ -214,7 +216,6 @@
 					<div class="text-centered timetable-custom">
 						<h1>Our Timetable</h1>
 						<p class="color-white">Click or hover over a session to read more about it.</p>
-						<p class="color-white">Sessions with multiple skill levels ( A, B, C ) will have multiple groups.</p>
 						<div class="visible-xs color-white"><p>To see the rest of the table, scroll sideways.</p></div>
 						<!-- <br> -->
 						<div class="table-responsive timetable">   
@@ -239,11 +240,11 @@
 										<td></td>
 										<td></td>
 										<td></td>										
-										<td class="parkrun typeB">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning. Supervised by Parkrun community.">Parkrun<br>(&nbsp;B&nbsp;)</a>
+										<td class="parkrun">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning. Supervised by Parkrun community.">Parkrun</a>
 										</td>
-										<td class="run typeC">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="A long distance run held in the morning at the Botanic Gardens by QUT Gardens Point campus.">Run<br>(&nbsp;C&nbsp;)</a>
+										<td class="run">
+											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="A long distance run held in the morning at the Botanic Gardens by QUT Gardens Point campus.">Run</a>
 										</td>
 									</tr>
 									<tr>
@@ -286,32 +287,32 @@
 										<td></td>
 										<td></td>
 										<td></td>
-										<td class="run typeA typeB typeC">
+										<td class="run">
 											<a href="#" class="session-box" rel="tooltip" title="
 											All running levels welcome.
 											Casual floating session through Botanic Garden or along the Brisbane River.
-											">Run<br><span>(&nbsp;A&nbsp;,&nbsp;B&nbsp;,&nbsp;C&nbsp;)</span></a>
+											">Run</a>
 										</td>
 										<td></td>
 										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">4:30pm - 5:30pm</th>
-										<td class="run typeA typeB typeC">
+										<td class="run">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											All running levels welcome.
 											Mixture of interval exercises throughout the Botanic Garden.
 											Improving agility, acceleration, endurance and speed.
 											Great opportunity to meet fellow runners.
 											Supervised by the QUT Running Exec Team.
-											">Run <br>(&nbsp;A&nbsp;,&nbsp;B&nbsp;,&nbsp;C )</a>
+											">Run</a>
 										</td>
 										<td></td>										
-										<td class="run typeA typeC">
+										<td class="run">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											Ideal for beginners.
 											Short and casual exercises to motivate and improve.
-											">Beginner Run<br>(&nbsp;A&nbsp;,&nbsp;C&nbsp;)</a>
+											">Beginner Run</a>
 										</td>										
 										<td class="workout">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
@@ -328,13 +329,13 @@
 										<th scope="row">5pm - 6pm</th>										
 										<td></td>
 										</td>
-										<td class="run typeB typeC">
+										<td class="run">
 											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
 											All running levels welcome.
 											Mixture of interval exercises throughout the Botanic Garden.
 											Improving agility, acceleration, endurance and speed.
 											Great opportunity to meet fellow runners.
-											">Run<br>(&nbsp;B&nbsp;,&nbsp;C&nbsp;)</a>
+											">Run</a>
 										</td>	
 										<td></td>
 										<td></td>
@@ -363,7 +364,7 @@
 								</tbody>
 							</table>						
 						</div>
-						<div class="visible-xs color-white centered"><a class="links guideOpener" id="showSkillInfo">Tap here for skill group info.</a></div>						
+						<!-- <div class="visible-xs color-white centered"><a class="links guideOpener" id="showSkillInfo">Tap here for skill group info.</a></div>						 
 						<div class="table-responsive guide">   
 							<table class="table color-blue">
 
@@ -395,16 +396,12 @@
 						</div>
 						<div class="closeDiv color-white centered">
 							<a id="closeGuide" class="links">
-								<!-- <img class="closeIcon" src="./public/img/close.png" alt="Close guide."> -->
+								 <img class="closeIcon" src="./public/img/close.png" alt="Close guide.">
 								Tap here to go back to timetable.
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
-		<!-- 		<div class="noise_contain">
-					<div class="noise">
-					</div>
-				</div> -->
 				<!-- <div class="timetable-bg">
 				</div> -->
 			</div>
@@ -500,7 +497,6 @@
 								<br>
 								Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank" class="links">QUT Running</a>
 							</p>
-						<br class="mobileHide">
 						<div id="map-canvas">
 						</div> 
 					</div>

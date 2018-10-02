@@ -40,31 +40,31 @@ section {
   border-radius: 6px;
 }*/
 .first {
-  background-color: #2d596b;
+  background-color: #233d5d;
 }
 
 .second {
-  background-color: #336b87;
+  background-color: #252323;
 }
 
 .third {
-  background-color: #2a3132;
+  background-color: #233d5d;
 }
 
 .fourth {
-  background-color: #763626;
+  background-color: #252323;
 }
 
 .fifth {
-  background-color: #2d596b;
+  background-color: #233d5d;
 }
 
 .sixth {
-  background-color: #336b87;
+  background-color: #252323;
 }
 
 .seventh {
-  background-color: #2a3132;
+  background-color: #233d5d;
 }
 
 /*.about, .membership,
@@ -108,16 +108,17 @@ section {
 .club-image {
   border-radius: 16px;  
   position: relative;
-  left: 40%;
-  transform: translate(-50%,37%);
+  /*left: 40%;*/
+  /*transform: translate(-50%,37%);*/
   transition: 0.4s;
 }
 .club-image:hover {
-  transform: translate(-40%,15%) scale(1.15, 1.15) !important;
+    transform: translate(-40%,-45%) scale(1.7, 1.8) ;
 }
 .club-banana {
   float: right;
-  max-width: 227px !important;
+  max-width: 100px !important;
+  transform: translate(-10%,-15%) scale(1.4, 1.4);
 }
 .club-promo {
   transform: translate(-20%,0%) !important;
@@ -127,9 +128,12 @@ section {
 .club-membership {
   /*transform: translate(-50%,22%);*/
 }
-.club-membership, .club-promo {
-  max-width: 332px !important;
+.club-membership {
+  max-width: 320px !important;
 } 
+.club-membership:hover {
+  transform: translate(-10%,-25%) scale(1.2, 1.2);
+}
 .bottom {
   display: table-cell;
   vertical-align: bottom;
@@ -264,10 +268,10 @@ video {
   color: white;
   font-size: 100%;
   margin-top: -2px;
-  margin-bottom: 8px;
+  margin-bottom: 28px;
 }
 #bodyContent {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -284,9 +288,8 @@ video {
 .text-centered {
   max-width: 960px;
   margin: 0 auto;
-  /*overflow: auto;*/
+  overflow: hidden;
   text-align: left;
-  /*padding: 40px;*/
 }
 .img-responsive {
   max-width: 200px;
@@ -297,9 +300,6 @@ video {
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #3b3b3b;
-}
-dt {
-  line-height: 40px;
 }
 dt > h3 {
   margin: 0px 0px 0px 0px !important;
@@ -535,9 +535,9 @@ video {
   margin-bottom: 0px;
 }
 .timetable {
-  width: 70%;
+  width: 100%;
   margin-top: 30px;
-}
+}/*
 .guide {
   margin-top: 30px;
   width: 20%;
@@ -552,7 +552,7 @@ video {
 }
 .guide .table tr td {
   padding: 10px;
-}
+}*/
 .table-responsive table thead tr th,
 .table-responsive table tbody tr th {
   font-weight: 300;
@@ -588,12 +588,41 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
   background-position: 0% 0%;
 }
 
-@media screen and ( width: 1280px ) {
+@media screen and ( max-width: 1280px ) {
     video {
       -webkit-transform: scale(1.0, 1.0); 
       -moz-transform: scale(1.0, 1.0);
       transform: scale(1.0, 1.0);
       transform: scale(1.0, 1.0);
+    }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px !important;
+      margin-top: 10px !important;
+      font-family: 'Raleway', sans-serif;
+    }
+    .select, .select-promo {
+      font-size: 14px;
+      margin-bottom: 9px;
+      margin-top: -8px;
+    }
+    dt {
+      line-height: 21px;
+    }
+    p, dl {
+      font-size: 17px;
+    }
+    .img-circle {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 5px;
+    }
+    #map-canvas {
+      margin-top: 15px;
+      height: 250px;
+    }
+    .navbar-nav > li {
+      top: 15vh;
     }
 }
 @media screen and ( min-width: 1281px ) {
@@ -602,6 +631,34 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
       -moz-transform: scale(1.65, 1.65));
       transform: scale(1.65, 1.65);
       transform: scale(1.65, 1.65);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px !important;
+      margin-top: 20px !important;
+      font-family: 'Raleway', sans-serif;
+    }
+    .select, .select-promo {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    dt {
+      line-height: 40px;
+    }
+    p, dl {
+      font-size: 20px;
+    }
+    .img-circle {
+      width: 85px;
+      height: 85px;
+      margin-bottom: 10px;
+    }
+    #map-canvas {
+      margin-top: 15px;
+      height: 300px;
+    }
+    .navbar-nav > li {
+      top: 25vh;
     }
 }
 
@@ -1003,11 +1060,10 @@ a:focus, a:hover {
   margin: 0px -15px 0px -15px;
   height: 100vh;
   background-size: cover;
-  /*background: rgba(0, 10, 36, 0.98);*/
-  background: #114f67;
+  background: rgba(0, 10, 36, 0.98);
+  /*background: #10113e;*/
 }
 .navbar-nav > li {
-  top: 25vh;
   float: none;
   text-align: center;
 }
@@ -1309,17 +1365,26 @@ a:focus, a:hover {
     line-height: 20px;
   }
   .club-image {
-    display: none;
+    display: block;
+    width: 100%;
   }
   .about-text {
     padding: 0 !important;
+  }
+  .about-text-2 {
+    width: 60%;
+    float: left;
   }
   .club-promo {
     display: block;
     max-width: 195px !important;
   }
-  .club-image-block {
-    margin-top: 0px;
+  .club-image-block-banana {
+    float: right;
+    width: 35%;
+    padding-left: 5%;
+    padding-right: 0;
+    margin-top: 69px;
   }
   .select-promo {
     float: left;
