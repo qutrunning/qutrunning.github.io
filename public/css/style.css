@@ -128,11 +128,8 @@ section {
 .club-membership {
   /*transform: translate(-50%,22%);*/
 }
-.club-membership {
-  max-width: 320px !important;
-} 
 .club-membership:hover {
-  transform: translate(-10%,-25%) scale(1.2, 1.2);
+  transform: translate(-10%,-20%) scale(1.2, 1.2);
 }
 .bottom {
   display: table-cell;
@@ -168,6 +165,7 @@ section {
   width: 85px;
   height: 85px;
   margin-bottom: 10px;
+  border: 2px solid white;
 }
 .no-padding, .no-padding-sides, .no-padding-promo {
   padding: 0 !important; 
@@ -275,6 +273,12 @@ video {
    height: 100%;
    /*background-color: rgba(255, 255, 255, 0.5);*/
 }
+
+.gm-style-iw :first-child {
+  overflow: hidden !important;
+}
+
+
 .gm-style-cc {
   display: none !important;
 }
@@ -302,7 +306,6 @@ video {
 .text-centered {
   max-width: 960px;
   margin: 0 auto;
-  overflow: hidden;
   text-align: left;
 }
 .img-responsive {
@@ -315,6 +318,11 @@ video {
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #3b3b3b;
 }
+
+#fp-nav ul li a .fp-sr-only {
+  display: none;  
+}
+
 dt > h3 {
   margin: 0px 0px 0px 0px !important;
 }
@@ -323,6 +331,7 @@ dt > h3 > a {
 }
 .table-responsive {
   overflow-x: scroll;
+  border: 2px solid white;
   border-radius: 16px;
 }
 .table {
@@ -609,8 +618,33 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
 .timetable-bg {
   background-position: 0% 0%;
 }
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .text-centered {
+      width: 785px;
+    }
+    video {
+        -webkit-transform: scale(4.0, 4.0); 
+        -moz-transform: scale(4.0, 4.0));
+        transform: scale(4.0, 4.0);
+    }
+    .club-banana {
+      transform: translate(-10%,-15%) scale(1.3, 1.3);
+    }
+    .navbar-nav > li {
+      top: 15vh;
+    }
+    .carousel-caption {
+      bottom: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+      font-size: 32px;
+    }
+}
 
-@media screen and ( min-width: 1281px ) {
+@media screen and ( min-width: 1280px ) and ( min-height: 561px ){
     video {
       -webkit-transform: scale(1.65, 1.65); 
       -moz-transform: scale(1.65, 1.65));
@@ -647,6 +681,9 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
     .carousel-caption {
       bottom: 0px;
     }
+    .club-membership {
+      max-width: 220px !important;
+    }
 }
 
 @media screen and ( min-width: 1400px ) {
@@ -660,6 +697,12 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
     .promo {
       background-position: center;
     }
+    .club-membership {
+      max-width: 320px !important;
+    } 
+    .club-banana {
+      max-width: 120px !important;
+    }
 }
 @media screen and ( min-width: 1800px ) {
     video {
@@ -669,28 +712,7 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
     }
 }
 
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .text-centered {
-      width: 785px;
-    }
-    video {
-        -webkit-transform: scale(4.0, 4.0); 
-        -moz-transform: scale(4.0, 4.0));
-        transform: scale(4.0, 4.0);
-    }
-    .club-banana {
-      transform: translate(-10%,-15%) scale(1.3, 1.3);
-    }
-    .navbar-nav > li {
-      top: 15vh;
-    }
-    .carousel-caption {
-      bottom: 0px;
-    }
-}
+
 
 @media (min-width: 1025px) {
 
@@ -740,12 +762,12 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }*/
     }
     .carousel-caption {
       bottom: 10px;
+    }   
+    .text-centered .col-xs-4 .contact p {
+      margin-bottom: 2px;
     }
     .club-membership {
       max-width: 220px !important;
-    }
-    .text-centered .col-xs-4 .contact p {
-      margin-bottom: 2px;
     }
 }
 
@@ -918,7 +940,7 @@ th {
 
 td {
   color: black;
-  background-color: #ffffff;
+  background-color: #242f3e;
 }
 .table>tbody>tr>td, 
 .table>tbody>tr>th, 
@@ -941,7 +963,8 @@ td {
   transition: 0.4s ease;
 }
 .run, .intermediate-run, .workout, .swim, .social, .parkrun {
-  border-right: 1px solid #eaeaea !important;
+  /*border-right: 1px solid #eaeaea !important;*/
+  border-radius: 6px;
 }
 .run:hover, .intermediate-run:hover, .workout:hover, .swim:hover, .social:hover, .parkrun:hover {
   overflow: auto;
@@ -1600,23 +1623,13 @@ a:focus, a:hover {
     .navbar-default .navbar-nav > li > a {
      line-height: 0vh; 
     }
-    h1 {
-      font-size: 30px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
     p, dl {
-      font-size: 13px;
-      line-height: 17px;
+      font-size: 12px;
+      line-height: 16px;
     }
     .blue-block, .black-block, .purple-block {
       width: 100%;
       height: 100%;
-    }
-    .carousel-caption {
-      top: 10vh;
-      padding: 20px;
-      bottom: 0;
     }
     #topnav .navbar-nav {
       padding-top: 45px;
@@ -1643,8 +1656,8 @@ a:focus, a:hover {
       padding: 20px;
     }
     h1 {
-      font-size: 25px;
-      margin-bottom: 10px !important;
+      font-size: 18px;
+      margin-bottom: 5px !important;
     }
     .timetable-custom {
       position: absolute;
@@ -1654,11 +1667,39 @@ a:focus, a:hover {
     .no-padding {
       padding: 3px 5px 0 5px !important;
     }
-}
-@media screen and ( min-width: 600px ) {
-  .strava {
-    width: 280px;
-  }
+    .carousel-caption h1 {
+      font-size: 36px;
+      padding: 4px;
+    }
+    .carousel-caption {
+      width: 100%;
+      bottom: -9px;
+      left: 0px;
+      text-align: center;
+    }
+    .running_logo {
+      width: 60px;
+      top: 18px;
+      left: 36px;
+    }
+    .navbar-toggle {
+      top: 9px;
+      right: 10px;
+    }
+    .navbar-toggle .icon-bar {
+      width: 28px;
+    }
+    dt {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .select, .select-promo {
+      font-size: 9px;
+    }
+    .navbar-nav > li {
+      left: 26px;
+      top: 22vh;
+    }
 }
 
 /*-----PAGE LOAD BAR-----*/
