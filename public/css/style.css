@@ -1259,13 +1259,13 @@ a:focus, a:hover {
     position: absolute;
     top: 25vh;
   } 
-  .empty-block {
+/*  .empty-block {
     background-image: url(../img/first.jpg);
     background-position: 3% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-  }
+  }*/
   .text-centered {
     max-width: 100%;
     padding: 0 100px 0 50px;
@@ -1374,6 +1374,9 @@ a:focus, a:hover {
   }
   .navbar-nav > li {
     left: 45px;
+  }
+  #fp-nav {
+    display: none;
   }
 }
 
@@ -1599,7 +1602,15 @@ a:focus, a:hover {
   }
   .club-image {
     margin-top: 5px;
+  }/*
+  #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 6px;
+    width: 6px;
+    margin: -3px 0 0 -3px;
   }
+  .fp-right {
+    left: -7px;
+  }*/
 }
 @media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
     .strava {
