@@ -210,7 +210,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 	}
 });
 $(document).ready(function() {
-  
   $(window).scroll(function () {
       // Get the height of the banner,
       // and then set your menu.
@@ -268,18 +267,7 @@ function changeBackground(img) {
     $('.typeC').removeAttr( 'style' )
   } );
 })();
-$("#showSkillInfo").click(function(){
-    $(".timetable").hide(600);
-    $(".guideOpener").hide(600);
-    $(".closeDiv").show(600);
-    $(".guide").show(0);
-});
-$("#closeGuide").click(function(){
-    $(".guide").hide(600);
-    $(".closeDiv").hide(600);
-    $(".timetable").show(600);
-    $(".guideOpener").show(600);
-});
+
 Pace.options.elements.selectors = ["video"];
 Pace.restart();
 Pace.on("done", function(){
