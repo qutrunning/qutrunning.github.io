@@ -1359,7 +1359,7 @@ a:focus, a:hover {
   margin: 0px -15px 0px -15px;
   height: 100vh;
   background-size: cover;
-  background: rgba(0, 10, 36);
+  background: #000a24;
   /*background: #10113e;*/
 }
 .navbar-nav > li {
