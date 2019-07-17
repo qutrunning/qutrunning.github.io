@@ -136,7 +136,7 @@ Pace.on("done", function(){
 });
 
 function navbarScrollFix(){
-  if($(window).scrollTop() > $(".main").height() - 57){
+  if($(window).scrollTop() > $(".main").height() - 53){
     $(".navbar-default").css("position", "fixed");
     $(".navbar-default").css("top", "0");
     // $(".navbar-default").css("max-width", "90%");
@@ -146,7 +146,7 @@ function navbarScrollFix(){
     $(".navbar-default").css("top", "auto");
   }
   $(window).scroll(function(){
-    if($(window).scrollTop() > $(".main").height() - 57){
+    if($(window).scrollTop() > $(".main").height() - 53){
       $(".navbar-default").css("position", "fixed");
       $(".navbar-default").css("top", "0");
       // $(".navbar-default").css("max-width", "90%");

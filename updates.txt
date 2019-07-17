@@ -1,0 +1,4 @@
+have main title move in from left, then slowly move left after anim
+have caption move in from right, then slowly move right after anim
+
+possible faded out background on behind each div
