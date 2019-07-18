@@ -19,544 +19,306 @@
 	<title>QUT Running</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./public/css/pace.simple.css"/>
-	<link href="./public/css/jquery.fullpage.css" rel="stylesheet">
-	<!-- Remove the ?v1.1 or add it to the end of app.css href depending on which is current to force user browser cache refresh -->
-	<!-- <link href="./public/css/app.css?v=1.1" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:700i|800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
 	<link href="./public/css/style.css?v=9.1" rel="stylesheet">
 </head>
 <body>
-	<div class="landscape-message">
-		<h1>Please rotate your device.</h1>
+	<div class="body-background-fix">
 	</div>
-	<div class="loading">
-	  <!-- <div class="percentage" id="percent"></div> -->
-	    <div class="bullet-container">
-		  	<div class="bullet"></div>
-			<div class='bullet'></div>
-		  	<div class='bullet'></div>
-		  	<div class='bullet'></div>
-		</div>
-	</div>
-    <nav class="navbar navbar-default">
-	    <div class="container-nav">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle minus collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- <a class="navbar-brand" href="#top">TIM J. JONES</a> -->
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse-minus">
-				<ul class="nav navbar-nav navbar-right">
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#banner">HOME</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
-					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
-				</ul>
-			</div><!-- .navbar-collapse -->
-	    	<a class="navbar-brand" href="#banner"><img class="running_logo" src="./public/img/transparent.svg"></a>
-		</div>
-	</nav>
-	<div id="fullpage">
-		<!-- ============== First block =================== -->
-		<!-- ============== Carousel ====================== -->	
-		
-		<div data-anchor="banner" class="section" id="section0">
-			<div class="empty-block">
-				<div class="carousel-caption">
-					<h1>QUT RUNNING</h1>
-				</div>
-				<div class="video_contain">
-				</div>
-				<video id="promo" muted data-keepplaying loop="loop" autoplay playsinline poster="./public/img/first.jpg">
-				    <source data-src="./public/img/qut_running_promo.webm" type="video/webm">
-				    <source data-src="./public/img/qut_running_promo.mp4" type="video/mp4">
-				</video>
-			</div>
-		</div>
-<!-- 		<div class="section" data-anchor="updates">
-			<div class="block">
-				<div class="centered first">
-					<div class="text-centered">
-						<section>
-							<h1>QUT Running does Bridge to Brisbane!</h1>
-							<p>
-								One of Brisbane's biggest running races is almost upon us! Bridge to Brisbane is back in August and it will again see its competitors going through the city, over bridges and along the river till finally ending up at South Bank. QUT Running will of course have a team competing so be sure to join us. 
-							</p>
-							<p>
-								Early bird prices close at the end of June so get in quick if you want to save a few extra dollars. 
-								Free public transport on buses and trains on race day until 3 pm for runners.
-							</p>
-							<p>
-								We will also be doing the traditional breakfast afterwards which will most likely be at the usual post-run restaurant Pancake Manor.
-							</p>
-						</section>
-						<div class="col-md-12 no-padding-promo">
-							<div class="col-md-4 no-padding-promo club-image-block promo">
-								<img src="./public/img/promo.jpg" class="img-responsive club-image club-promo">
-							</div>	
-							<div class="bottom col-md-6">
-								<a class="btn select-promo" href="https://www.facebook.com/events/233407980770569/" target="_blank" role="button">Join the Event</a>
-							</div>
-						</div>
+	<div class="body-container">
+		<section class="main" id="main">
+			<header>
+				<h1>QUT RUNNING</h1>
+				<h4 class="caption">Get fit. Get social.</h4>
+			</header>
+			<nav class="navbar navbar-default">
+			    <div class="container-nav">
+					<div class="navbar-header">
+						<button type="button" id="nav-icon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse-minus">
+						<ul class="nav navbar-nav">
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
+						</ul>
+					</div>
+			    	<a class="navbar-brand" href="#banner"><img class="running_logo" src="./public/img/transparent.svg"></a>
+				</div>
+			</nav>
+		</section>
+		<section class="about" id="about">
+			<header>
+				<h1>About</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<p>
+					QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT!<br><br>
+					Join our group on Facebook - 
+					<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
+				</p>
+			</div>
+			<div class="jarallax">
+				<picture class="jarallax-img">
+					<source srcset="./public/img/about_image.jpg">
+					<img draggable="false" src="./public/img/about_image.jpg" alt="QUT Running Partying!">
+				</picture>
+			</div>
+			<hr class="section-divider">
+		</section>
+		<section class="social" id="social">
+			<header>
+				<h1>Social</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<p>
+					QUT Running has a big social aspect. Following Monday's session, we unwind with dinner or drinks at a venue located within the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner sometimes we kick on at Music City for karaoke or head to the Down Under bar. On Monday's Down Under Bar host games called Bar Wars which is always massive fun. Every few weeks we spice things up by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
+				</p>
+				<p>
+					We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
+				</p>
+			</div>
+			<div class="jarallax">
+				<picture class="jarallax-img">
+					<source srcset="./public/img/social.jpg">
+					<img draggable="false" src="./public/img/social.jpg" alt="QUT Running Partying!">
+				</picture>
+			</div>
+			<hr class="section-divider">
+		</section>
+		<section class="membership" id="membership">
+			<header>
+				<h1>Membership</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<a href="https://qutrunning.getqpay.com" target="_blank">
+					<dl>
+						<dt>Full year</dt>
+						<dd>
+							Access to all sessions excluding gym and swimming sessions
+						</dd>
+						<dd>
+							$15.00
+						</dd>
+					</dl>
+				</a>
+				<p> 
+					Problems? 
+					<a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a> 
+				</p>
+			</div>
+			<hr class="section-divider">
+		</section>
+		<section class="timetable" id="timetable">
+			<header>
+				<h1>Timetable</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<div class="table-responsive">   
+					<table class="table color-blue">
+						<thead>
+							<tr>
+								<th class="click">Time</th>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+								<th>Saturday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">7:00 - 8:00am</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>										
+								<td class="parkrun-session">
+									<a href="#" class="session-box one" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning at Southbank. Supervised by Parkrun community. Contact the Facebook page for more info!">Parkrun</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">4:30 - 5:30pm</th>
+								<td class="run-session">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									All running levels welcome.
+									Mixture of interval exercises throughout the Botanic Garden.
+									Improving agility, acceleration, endurance and speed.
+									Great opportunity to meet fellow runners.
+									Supervised by the QUT Running Exec Team.
+									">Run</a>
+								</td>
+								<td class="run-session">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									All running levels welcome.
+									Mixture of interval exercises throughout the Botanic Garden.
+									Improving agility, acceleration, endurance and speed.
+									Great opportunity to meet fellow runners.
+									">Run</a>
+								</td>										
+								<td class="run-session">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									Ideal for beginners.
+									Short and casual exercises to motivate and improve.
+									">Run</a>
+								</td>	
+								<td class="workout-session">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									Full membership only.
+									Improve stamina, stability and strength.
+									Different exercises for all levels.
+									">Boot Camp</a>
+								</td>								
+								<td class="run-session">
+									<a href="#" class="session-box" rel="tooltip" title="
+									All running levels welcome.
+									Casual session through Botanic Garden or along the Brisbane River.
+									">Run</a>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">6pm-7pm</th>			
+								<td></td>
+								<td></td>									
+								<td></td>
+								<td class="run-session">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									All running levels welcome.
+									Casual session through Botanic Garden or along the Brisbane River.
+									">Run</a>
+								</td>	
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">Late</th>
+								<td class="social-session" id="lift">
+									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
+									Everyone welcome.
+									A relaxed, low-key way to meet people outside the sessions.
+									We go to a variety of venues so you won’t get bored.
+									We leave after the running session is complete.
+									Non-runners, friends and guests are encouraged to attend!
+									">QUT Social</a>
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>						
+				</div>
+				<p>Tap or hover over a session to read more about it.</p>
+				<div class="visible-xs">
+					<p>
+						To see the rest of the table, scroll sideways.
+					</p>
 				</div>
 			</div>
-		</div> -->
-		<div class="section" data-anchor="about" id="section1">
-			<div class="block">
-				<div class="centered second">
-					<div class="text-centered">
-						<div class="col-md-8 about-text no-padding-sides">
-							<h1>About</h1>
-							<p>
-								QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT.<br><br>
-								Join our group on Facebook - 
-								<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
-							</p>
-						</div>
-						<div class="col-md-8 about-text-2 no-padding-sides">
-							<h1>Signing up</h1>
-							<p>
-								Sign up online <a class="links" href="#membership">here</a>, come to our O-Week stall or find us at one of our sessions throughout the semester and talk to a member of our Exec Team. We're happy to answer any questions you may have.
-							</p>
-						</div>
-						<div class="col-md-4 club-image-block-banana">
-							<img src="./public/img/banana.jpg" class="img-responsive club-image club-banana">
-						</div>
-					</div>
+			<hr class="section-divider">
+		</section>
+		<section class="executives" id="executives">
+			<header>
+				<h1>Executives</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<div class="executive-member">
+		            <a href="https://www.facebook.com/georgia.robertson.980" target="_blank">
+						<img class="img-circle" src="./public/img/executives/georgia.jpg" alt="President">
+						<p><b>President</b><br>
+						Georgia Robertson</p>
+					</a>
+		        </div>
+		        <div class="executive-member">
+		            <a href="https://www.facebook.com/harrison.pie" target="_blank">
+						<img class="img-circle" src="./public/img/executives/harrison.jpg" alt="Vice President">
+						<p><b>Vice President</b><br>
+						Harrison Pie</p>
+					</a>
+		        </div>
+		        <div class="executive-member">
+		            <a href="https://www.facebook.com/profile.php?id=100003496163676" target="_blank">
+						<img class="img-circle" src="./public/img/executives/phoebe.jpg" alt="Social Coordinator">
+						<p><b>Social Coordinator</b><br>
+						Phoebe Heart</p>
+					</a>
+		        </div>
+		        <div class="executive-member">
+					<a href="https://www.facebook.com/andrew.crawshaw.1" target="_blank">
+						<img class="img-circle" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
+						<p><b>Bootcamp Supervisor</b><br>
+						Andrew Crawshaw</p>
+					</a>
 				</div>
-			</div>
-		</div>
-		<div class="section" data-anchor="membership" id="section2">
-			<div class="block">
-				<div class="centered third">
-					<div class="text-centered">
-						<h1>Membership</h1>
-						<!-- <dl>
-							<dt>Full</dt>
-							<dd>
-								Includes complimentary singlet and access to gym, swim and all running sessions.
-								<br>
-								<u>$40.00</u>
-							</dd>
-						</dl> -->
-						<dl>
-							<dt>Full year</dt>
-							<dd>
-								Access to all sessions excluding gym and swimming sessions
-								<br>
-								<u>$15.00</u>
-							</dd>
-						</dl>
-						<div class="col-md-8 no-padding-sides">
-							<!-- <dl>
-								<dt>Social Soccer</dt>
-								<dd>
-									Access to Summer Social Soccer!
-									<br>
-									<u>$60.00</u>
-								</dd>
-							</dl> -->
-							<a class="btn select" href="https://qutrunning.getqpay.com" target="_blank" role="button">Join QUT Running</a>
-							<!-- <a class="btn select" href="https://qutrunning.getqpay.com" target="_blank" role="button">Join Social Soccer</a> -->
-							<p>Or see an exec in person to pay.</p>
-							<p> Problems? <a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a>
-						</div>
-						<div class="col-md-4 no-padding-sides club-image-block">
-							<img src="./public/img/membership.jpg" class="img-responsive club-image club-membership">
-						</div>							
-					</div>						
+				<div class="executive-member">
+					<a href="https://www.facebook.com/cailum.roberts" target="_blank">
+						<img class="img-circle" src="./public/img/executives/cailum.jpg" alt="Treasurer">
+						<p><b>Treasurer</b><br>
+						Cailum Roberts</p>							
+					</a>
 				</div>
-			</div>
-			<!-- 	<div class="noise_contain">
-					<div class="noise">
-					</div>
-				</div> -->						
-		</div>
-		<div class="section" data-anchor="social" id="section3">
-			<div class="block">			
-				<div class="centered fourth">
-					<div class="text-centered">
-						<h1>Social</h1>
-						<p class="social-text">
-							QUT Running has a big social aspect. Following Monday's session, we unwind with dinner and drinks at Beach House in the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner we kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
-						</p>
-						<p class="social-text">
-							We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
-						</p>
-	<!-- 					<p class="social-text">
-							Now that you have all the info, come and join us on Monday evening after our running session! We look forward to seeing you!
-						</p> -->
-					</div>
-				</div>
-				<!-- <div class="noise_contain">
-					<div class="noise">
-					</div>
-				</div>	 -->
-			<!-- 	<div class="social">
-				</div> -->
-			</div>
-		</div>
-		<div class="section" data-anchor="timetable" id="section5">
-			<div class="block">
-				<div class="centered fifth">
-					<div class="text-centered timetable-custom">
-						<h1>Our Timetable</h1>
-						<p class="color-white">Click or hover over a session to read more about it.</p>
-						<div class="visible-xs color-white"><p>To see the rest of the table, scroll sideways.</p></div>
-						<!-- <br> -->
-						<div class="table-responsive timetable">   
-							<table class="table color-blue">
-								<thead>
-									<tr>
-										<th class="click">Time</th>
-										<th>Monday</th>
-										<th>Tuesday</th>
-										<th>Wednesday</th>
-										<th>Thursday</th>
-										<th>Friday</th>
-										<th>Saturday</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">7:00 - 8:00am</th>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>										
-										<td class="parkrun">
-											<a href="#" class="session-box one" id="tooltip-box" rel="tooltip" title="Free timed 5km run bright and early in the morning at Southbank. Supervised by Parkrun community. Contact the Facebook page for more info!">Parkrun</a>
-										</td>
-									</tr>
-									<!-- <tr>
-										<th scope="row">8:30 - 9:30am</th>
-										<td class="swim" id="lift" id="tooltip-box">
-											<a href="#" class="session-box"  rel="tooltip" title="
-											Full membership required.
-											All swimming levels welcome.
-											2 lanes provided by Healthstream Gardens Point.
-											Mixture of casual swimming and tailored exercises.
-											Supervised by the QUT Running Exec Team.
-											">Swimming</a>
-										</td>										
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr> 
-									<tr>
-										<th scope="row">3 - 4pm</th>
-										<td></td>
-										<td></td>
-										<td class="workout">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											Full membership only.
-											Healthstream Gym access at Gardens Point.
-											Be your own boss.
-											">Gym</a>
-										</td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr> -->
-									<tr>
-										<th scope="row">4:30 - 5:30pm</th>
-										<td class="run">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Mixture of interval exercises throughout the Botanic Garden.
-											Improving agility, acceleration, endurance and speed.
-											Great opportunity to meet fellow runners.
-											Supervised by the QUT Running Exec Team.
-											">Run</a>
-										</td>
-										<td class="run">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Mixture of interval exercises throughout the Botanic Garden.
-											Improving agility, acceleration, endurance and speed.
-											Great opportunity to meet fellow runners.
-											">Run</a>
-										</td>										
-										<td class="run">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											Ideal for beginners.
-											Short and casual exercises to motivate and improve.
-											">Run</a>
-										</td>	
-										<td class="workout">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											Full membership only.
-											Improve stamina, stability and strength.
-											Different exercises for all levels.
-											">Boot Camp</a>
-										</td>								
-										<td class="run">
-											<a href="#" class="session-box" rel="tooltip" title="
-											All running levels welcome.
-											Casual session through Botanic Garden or along the Brisbane River.
-											">Run</a>
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<th scope="row">6pm-7pm</th>			
-										<td></td>
-										<td></td>									
-										<td></td>
-										<td class="run">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											All running levels welcome.
-											Casual session through Botanic Garden or along the Brisbane River.
-											">Run</a>
-										</td>	
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<th scope="row">Late</th>
-										<td class="social" id="lift">
-											<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-											Everyone welcome.
-											A relaxed, low-key way to meet people outside the sessions.
-											We go to a variety of venues so you won’t get bored.
-											We leave after the running session is complete.
-											Non-runners, friends and guests are encouraged to attend!
-											">QUT Social</a>
-										</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr>
-								</tbody>
-							</table>						
-						</div>
-						<!-- <div class="visible-xs color-white centered"><a class="links guideOpener" id="showSkillInfo">Tap here for skill group info.</a></div>						 
-						<div class="table-responsive guide">   
-							<table class="table color-blue">
-
-								<thead>
-									<th>Run Level Guide</th>
-								</thead>
-								<tr class="typeRow">
-									<td id="typeA">
-										<b>Type A</b><br>
-										<u>Beginner</u>
-										<p>Slow to average pace, aiming to train for 5km distances</p>
-									</td>
-								</tr>
-								<tr class="typeRow">
-									<td id="typeB">
-										<b>Type B</b><br>
-										<u>Intermediate</u>
-										<p>Average to fast pace, aiming to train for 10km distances</p>
-									</td>
-								</tr>
-								<tr class="typeRow">
-									<td id="typeC">
-										<b>Type C</b><br>
-										<u>Long Distance</u>
-										<p>Average pace, aiming to train for 21km/42km distances</p>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<div class="closeDiv color-white centered">
-							<a id="closeGuide" class="links">
-								 <img class="closeIcon" src="./public/img/close.png" alt="Close guide.">
-								Tap here to go back to timetable.
-							</a>
-						</div> -->
-					</div>
-				</div>
-				<!-- <div class="timetable-bg">
-				</div> -->
-			</div>
-		</div>
-		<div class="section" data-anchor="executives" id="section6">
-			<div class="block">
-				<div class="centered sixth">
-					<div class="text-centered contacts">
-						<h1 class="no-margin-bottom">Executives</h1>
-						<br>
-				        <div class="col-xs-4">
-				            <a class="contact" href="https://www.facebook.com/georgia.robertson.980" target="_blank">
-								<img class="img-circle" src="./public/img/executives/georgia.jpg" alt="President">
-								<p><b>President</b><br>
-								Georgia Robertson</p>
-							</a>
-							<br class="mobileHide">
-				        </div>
-				        <div class="col-xs-4">
-				            <a class="contact" href="https://www.facebook.com/harrison.pie" target="_blank">
-								<img class="img-circle" src="./public/img/executives/harrison.jpg" alt="Vice President">
-								<p><b>Vice President</b><br>
-								Harrison Pie</p>
-							</a>
-							<br class="mobileHide">
-				        </div>
-				        <div class="col-xs-4">
-				            <a class="contact" href="https://www.facebook.com/profile.php?id=100003496163676" target="_blank">
-								<img class="img-circle" src="./public/img/executives/phoebe.jpg" alt="Social Coordinator">
-								<p><b>Social Coordinator</b><br>
-								Phoebe Heart</p>
-							</a>
-							<br class="mobileHide">
-				        </div>
-				        <div class="col-xs-4">
-							<a class="contact" href="https://www.facebook.com/andrew.crawshaw.1" target="_blank">
-								<img class="img-circle" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
-								<p><b>Bootcamp Supervisor</b><br>
-								Andrew Crawshaw</p>
-							</a>
-							<br class="mobileHide">
-						</div>
-						<div class="col-xs-4">
-							<a class="contact" href="https://www.facebook.com/cailum.roberts" target="_blank">
-								<img class="img-circle" src="./public/img/executives/cailum.jpg" alt="Treasurer">
-								<p><b>Treasurer</b><br>
-								Cailum Roberts</p>							
-							</a>
-							<br class="mobileHide">
-						</div>
-						<div class="col-xs-4">
-							<a class="contact" href="https://www.facebook.com/cooper.redhead" target="_blank">
-								<img class="img-circle" src="./public/img/executives/cooper.jpg" alt="Sessions">
-								<p><b>Session Coordinator</b><br>
-								Cooper Redhead</p>
-							</a>
-							<br>
-						</div>
-				        <div class="col-xs-4">
-							<a class="contact" href="https://www.facebook.com/tim.jones.3348" target="_blank">
-								<img class="img-circle" src="./public/img/executives/tim.jpg" alt="IT">
-								<p><b>IT</b><br>
-								Tim Jones</p>
-							</a>
-							<br class="mobileHide">
-						</div>
-					</div>
-				</div>
-				<!-- <div class="executives">
-				</div> -->
-			<!-- 	<div class="noise_contain">
-					<div class="noise">
-					</div>
-				</div> -->
-			</div>
-		</div>
-		<div class="section" data-anchor="contact" id="section7">
-			<div class="block">
-				<div class="centered seventh">
+				<div class="executive-member">
+					<a href="https://www.facebook.com/cooper.redhead" target="_blank">
+						<img class="img-circle" src="./public/img/executives/cooper.jpg" alt="Sessions">
+						<p><b>Session Coordinator</b><br>
+						Cooper Redhead</p>
+					</a>
 					<br>
-					<div class="text-centered">
-						<h1>Contact</h1>
-						<p><img class="icon" src="./public/img/icons/fb.png"><a class="links no-decoration" target="_blank" href="https://www.facebook.com/qutrunning/">Like the page&nbsp;</a></p>
-						<p><img class="icon" src="./public/img/icons/fb.png"><a class="links no-decoration" target="_blank" href="https://www.facebook.com/groups/qutrunning/">Join the group&nbsp;</a></p>
-						<p><img class="icon" src="./public/img/icons/instagram.png"><a class="links no-decoration" target="_blank" href="https://www.facebook.com/qutrunning/">Follow us on Instagram</a></p>
-						<p><img class="icon" src="./public/img/icons/email.png"><a class="links no-decoration" href="mailto:qutrunning@gmail.com">Send us an email</a></p>
-						<div id="map-canvas">
-						</div> 
-					</div>
 				</div>
-				<!-- <div class="noise_contain">
-					<div class="noise">
-					</div>
-				</div> -->
-			<!-- 	<div class="contact-bg">
-				</div> -->
+		        <div class="executive-member">
+					<a href="https://www.facebook.com/tim.jones.3348" target="_blank">
+						<img class="img-circle" src="./public/img/executives/tim.jpg" alt="IT">
+						<p><b>IT</b><br>
+						Tim Jones</p>
+					</a>
+				</div>					
 			</div>
-		</div>
+			<hr class="section-divider">
+		</section>
+		<section class="contact" id="contact">
+			<header>
+				<h1>Contact</h1>
+			</header>
+			<hr>
+			<div class="container">
+				<p><img class="icon" src="./public/img/icons/fb.png"><a class="links" target="_blank" href="https://www.facebook.com/qutrunning/">Like the page&nbsp;</a></p>
+				<p><img class="icon" src="./public/img/icons/fb.png"><a class="links" target="_blank" href="https://www.facebook.com/groups/qutrunning/">Join the group&nbsp;</a></p>
+				<p><img class="icon" src="./public/img/icons/instagram.png"><a class="links no-decoration" target="_blank" href="https://www.facebook.com/qutrunning/">Follow us on Instagram</a></p>
+				<p><img class="icon" src="./public/img/icons/email.png"><a class="links no-decoration" href="mailto:qutrunning@gmail.com">Send us an email</a></p>
+				<div id="map-canvas">
+				</div>
+				<div class="go-top">
+					<a href="#main" class="go-top">Go to top</a>
+				</div>
+			</div>
+		</section>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="./public/js/scrolloverflow.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-	<script type="text/javascript" src="./public/js/scripts.js?v=1.4"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.7/jarallax.min.js" integrity="sha256-qek09qsaRc8OTLAaYHrXErveAFc7ghcO7lZQqvUDiRU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js" integrity="sha256-1HqoI76JGKA17K0C0s9K8L/iy8PAC43KVLt1hRD/Ojc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./public/js/scripts.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxhseafkxBSK3KH8NyCwp6BDsOMNWubFM&callback=initMap"></script>
-	<script>
-		function init() {
-			var vidDefer = document.getElementsByTagName('iframe');
-			for (var i=0; i<vidDefer.length; i++) {
-				if(vidDefer[i].getAttribute('data-src')) {
-					vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-				} 
-			} 
-		}
-		window.onload = init;
-		var paddingSize = "15px";
-		var mobilePaddingSize = "15px";
-		
-	    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
-			paddingSize = "15px";
-	    	$(".mobileFallback").css("height", window.innerHeight);
-	    }
-	    else {
-			paddingSize = "40px";
-	    	$(".mobileFallback").css("height", "100vh");
-	    }
-		/**
-		 * Initialize fullPage Slider
-		 */
-	    var backgrounds = [ 'wall.jpg',  'promo.jpg',  'about.jpg',  'membership.jpg',  'social_party.jpg', 'goodwill.jpg', 'executives.jpg', 'qut_gp.jpg'];
-        // changeBackground(backgrounds[0]);
-		var options = {
-		    loopTop: true,
-		    loopBottom: true,
-		    normalScrollElements: '.table-responsive, .nav-menu, #map-canvas',
-		    navigation: true,
-		    animateAnchors: true,
-		    // onLeave: function (index, nextIndex, direction) {
-      //               setTimeout(function(){
-      //                   changeBackground(backgrounds[nextIndex - 1]);
-      //               }, 500);
-      //           },
-		    paddingTop: paddingSize,
-		    paddingBottom: paddingSize,
-		    paddingLeft: paddingSize,
-		    paddingRight: paddingSize,
-		    // responsiveWidth: 500,
-		    scrollingSpeed: 1000
-		};
-	    $(".section").css("height", window.innerHeight);
-		$('#fullpage').fullpage(options);
-		$(document).ready(function (){
-			onWindowResizeChangePadding();
-		});
-		$(window).resize(function () {
-	  		onWindowResizeChangePadding();
-		});
-		/**
-		 * Set/Remove the padding for the fullpage slider responsively
-		 * @param  {object} slider The slider container
-		 * @returns  {null}
-		 */
-		function onWindowResizeChangePadding() {
-	        $(".section").css("height", window.innerHeight);
-			$(".mobileFallback").css("height", window.innerHeight);
-		    if ($(window).width() < 800 || ($(window).width() >= 768 && $(window).height() < 500)) {
-	    		$(".section").css("height", window.innerHeight);
-		        $(".section").css("padding", mobilePaddingSize);
-		        $('#fullpage').fullpage.reBuild();
-		    } else {
-		        $(".section").css("padding", "40px");
-		    }
-		    $('#fullpage').fullpage.reBuild();
-		}
-    	document.getElementById('promo').play(); 
-	</script>
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </body>
 </html>	
