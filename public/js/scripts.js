@@ -186,10 +186,10 @@ function initMap() {
         map.panBy(0,-60);
 }
 
-Pace.options.elements.selectors = ["video"];
 Pace.restart();
 Pace.on("done", function(){
-    $('.loading').slideUp(200);
+  $(".body-container").fadeIn(800);
+  animateHeader();
 });
 
 function bindVelocity(){
@@ -200,10 +200,19 @@ function bindVelocity(){
       e.stopPropagation();
       // set target to anchor's "href" attribute
       var target = $(this).attr('href');
-      $('.navbar-collapse.in').collapse('hide');
       if($(window).width() < 767){
-          document.getElementById('nav-icon').classList.toggle('open')
+        if(target == "#main2"){
+          target = "#main";
+        }
+        else {
+          $('.navbar-collapse.in').collapse('hide');
+          document.getElementById('nav-icon').classList.toggle('open');
+        }
       }
+      //Idea for later:
+      //Have a separate nav element that is not within the main section, 
+      //for mobile to stop it from detaching when velocity activated 
+
       $(target).velocity("scroll", { duration: 1000, offset: -52.5 });
   });
 }
@@ -255,7 +264,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 });
 $(document).ready(function(){
   navbarScrollFix();
-  animateHeader();
   bindVelocity();
   $('.jarallax').jarallax({
     speed: 0

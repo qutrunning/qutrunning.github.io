@@ -37,6 +37,8 @@ hr {
   background-size: cover;
 }
 .body-container {
+  display: none;
+  transition: all 0.7s ease;
   width: 100%;
   position: relative;
   max-width: 600px;
@@ -526,19 +528,16 @@ a:focus, a:hover {
   color: inherit;
 }
 .navbar-brand {
-  opacity: 0;
   position: fixed;
-  top: 3px;
-  left: 5px;
-  transform: none !important;
+  top: 12px;
+  left: 40px;
   display: inline-block;
   padding: 0;
   z-index: 999;
   transition: all 0.4s ease;
 }
 .navbar-brand img {
-  width: 50px;
-  height: 50px;
+  width: 55px;
 }
 .navbar-toggle {
   top: 5px;
@@ -703,6 +702,22 @@ a:focus, a:hover {
   }
   .navbar-default .navbar-nav li a {
     color: #fff;
+  }
+  .navbar-toggle {
+    margin-right: 20px;
+  }
+  .main header {
+    top: 60%;
+  }
+  .main header h1 {
+    transition: all 0.8s ease-in-out;
+    -webkit-animation-delay: 0.95s;
+    animation-delay: 0.95s;
+  }
+  .caption {
+    transition: all 0.8s ease-in-out;
+    -webkit-animation-delay: 0.95s;
+    animation-delay: 0.95ss;
   }
 }
 
