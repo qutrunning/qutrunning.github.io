@@ -158,17 +158,48 @@ function navbarScrollFix(){
   }); 
 }
 function animateHeader(){
-  $(".main header h1").css("right", "-20%");
-  $(".caption").css("margin-left", "-10%");
-  setTimeout(function(){
-    $(".main header h1").css("right", "0%");
-    $(".caption").css("margin-left", "10%");
-  }, 1000);
+  if($(window).width() < 479){
+    $(".main header h1").css("right", "-5%");
+    $(".caption").css("margin-left", "-5%");
+    if($(window).scrollTop() > 479){
+      $(".navbar-default").css("background", "#004b9c");
+    }
+    else {
+      $(".navbar-default").css("background", "transparent");
+      
+    }
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 479){
+        $(".navbar-default").css("background", "#004b9c");
+      }
+      else {
+        $(".navbar-default").css("background", "transparent");        
+      }
+    });
+
+    setTimeout(function(){
+      $(".main header h1").css("right", "0%");
+      $(".caption").css("margin-left", "10%");
+    }, 1000);
+  }
+  else {
+    $(".main header h1").css("right", "-20%");
+    $(".caption").css("margin-left", "-10%");
+    $(".navbar-default").css("background", "#004b9c");
+    setTimeout(function(){
+      $(".main header h1").css("right", "0%");
+      $(".caption").css("margin-left", "10%");
+    }, 1000);
+  }
 }
 $(document).ready(function(){
   navbarScrollFix();
   animateHeader();
   $('.jarallax').jarallax({
     speed: 0
+  });
+  $('#nav-icon').click(function(){
+    $(this).toggleClass('open');
+    $(".navbar-default").css("background", "#004b9c");
   });
 });
