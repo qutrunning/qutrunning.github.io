@@ -157,6 +157,18 @@ function navbarScrollFix(){
     }
   }); 
 }
+function animateHeader(){
+  $(".main header h1").css("right", "-20%");
+  $(".caption").css("margin-left", "-10%");
+  setTimeout(function(){
+    $(".main header h1").css("right", "0%");
+    $(".caption").css("margin-left", "10%");
+  }, 1000);
+}
 $(document).ready(function(){
   navbarScrollFix();
+  animateHeader();
+  $('.jarallax').jarallax({
+    speed: 0
+  });
 });
