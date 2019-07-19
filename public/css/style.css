@@ -374,7 +374,7 @@ a.session-box:hover {
   color: black;
 }
 a:focus, a:hover {
-  color: white;
+  color: #333;
   text-decoration: underline;
 }
 
@@ -664,7 +664,6 @@ a:focus, a:hover {
     width: 90vw;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .navbar-brand {
     display: block;
@@ -704,8 +703,11 @@ a:focus, a:hover {
     background: #414d9a;
   }
   .jarallax .jarallax-img img {
-    margin-left: -65%;
+    margin-left: 0%;
+    height: auto;
+    width: 100%;
   }
+  
   .navbar-default .navbar-nav li a {
     color: #fff;
   }
@@ -724,6 +726,9 @@ a:focus, a:hover {
     transition: all 0.8s ease-in-out;
     -webkit-animation-delay: 0.95s;
     animation-delay: 0.95ss;
+  }
+  .body-background-fix {
+    background-position: 45% 0%;
   }
 }
 
@@ -758,5 +763,8 @@ a:focus, a:hover {
     width: 79vw;
     margin: 0 auto;
     margin-top: 30px;
+  }
+  .jarallax .jarallax-img img {
+    margin-left: -65%;
   }
 }
