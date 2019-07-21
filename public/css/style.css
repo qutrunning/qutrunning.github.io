@@ -166,7 +166,7 @@ hr {
   font-family: 'Poppins', sans-serif;
   max-width: 520px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
   padding: 20px;
 }
 .about {
@@ -185,6 +185,17 @@ hr {
   background-size: cover;
   font-weight: 700;
   border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.about header:hover, 
+.social header:hover,
+.membership header:hover,
+.timetable header:hover,
+.executives header:hover,
+.contact header:hover {
+  transform: scale(1.05);
+  box-shadow: 4px -1px 37px -9px rgba(0,0,0,0.75);
 }
 .about header h1,
 .social header h1, 
@@ -196,6 +207,7 @@ hr {
   margin: 0;
   padding: 20px;
   letter-spacing: -1px;
+  user-select: none;
 }
 .about p {
   margin: 0 auto;
