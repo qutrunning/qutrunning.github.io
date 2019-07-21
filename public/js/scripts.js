@@ -228,9 +228,9 @@ function navbarScrollFix(){
   else {
     $(".navbar-default").css("position", "absolute");
     $(".navbar-default").css("top", "auto");
-    $(".navbar-default").css("-webkit-box-shadow", "none");
-    $(".navbar-default").css("-moz-box-shadow", "none");
-    $(".navbar-default").css("box-shadow", "none");
+    $(".navbar-default").css("-webkit-box-shadow", "unset");
+    $(".navbar-default").css("-moz-box-shadow", "unset");
+    $(".navbar-default").css("box-shadow", "unset");
   }
   $(window).scroll(function(){
     if($(window).scrollTop() > $(".main").height() - 53){
@@ -244,9 +244,9 @@ function navbarScrollFix(){
     else {
       $(".navbar-default").css("position", "absolute");
       $(".navbar-default").css("top", "auto");
-      $(".navbar-default").css("-webkit-box-shadow", "none");
-      $(".navbar-default").css("-moz-box-shadow", "none");
-      $(".navbar-default").css("box-shadow", "none");
+      $(".navbar-default").css("-webkit-box-shadow", "unset");
+      $(".navbar-default").css("-moz-box-shadow", "unset");
+      $(".navbar-default").css("box-shadow", "unset");
     }
   }); 
 }
@@ -278,7 +278,7 @@ $(document).ready(function(){
   navbarScrollFix();
   bindVelocity();
   $('.jarallax').jarallax({
-    speed: 0
+    speed: 0.05
   });
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');

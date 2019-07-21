@@ -55,7 +55,7 @@ hr {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  border-collapse: separate; 
+  border-collapse: separate;
 }
 .jarallax {
   width: 100%;
@@ -68,7 +68,6 @@ hr {
 .jarallax .jarallax-img {
   position: absolute;
   object-fit: cover;
-  /* support for plugin https://github.com/bfred-it/object-fit-images */
   font-family: 'object-fit: cover;';
   top: 0;
   left: 0;
@@ -76,16 +75,15 @@ hr {
   height: 100%;
   z-index: -1;
   border-radius: 6px;
-  transform: translateZ(0) !important;
 }
-.jarallax .jarallax-img img {
-  height: 100vh;
-  margin-left: -20%;
+#jarallax-container-0,
+#jarallax-container-1 {
+  z-index: 0 !important;
 }
-/*picture img {
-  max-width: 500px;
-  object-fit: cover;
-}*/
+.pace .pace-progress {
+  background: #fff;
+  /*top: 50%;*/
+}
 .section-divider {
   border-top: 1px solid #cbcbcb;
   width: 100%;
@@ -96,17 +94,14 @@ hr {
   0%   { margin-left: -10%; }
   100%   { margin-left: 10%; }
 }
-
 @keyframes slideInLeft {
   0%   { margin-left: -10%; }
   100%   { margin-left: 10%; }
 }
-
 @-webkit-keyframes slideInRight {
   0%   { right: -20%; }
   100% { right: 0%; }
 }
-
 @keyframes slideInRight {
   0%   { right: -20%; }
   100% { right: 0%; }
@@ -482,6 +477,12 @@ a:focus, a:hover {
   width: 100%;
   position: absolute;
   max-width: 600px;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+}
+.mobile {
+  display: none; 
 }
 .navbar {
   border-radius: 0px 0px 0px 0px;
@@ -667,6 +668,9 @@ a:focus, a:hover {
   .body-container {
     width: 90vw;
   }
+  .main {
+    height: 90vh;
+  }
 }
 @media only screen and (max-width: 767px) {
   .navbar-brand {
@@ -733,6 +737,12 @@ a:focus, a:hover {
   .body-background-fix {
     background-position: 45% 0%;
   }
+  .mobile {
+    display: block; 
+  }
+  .desktop {
+    display: none; 
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -780,5 +790,8 @@ a:focus, a:hover {
   }
   .right {
     margin-left: 50%;
+  }
+  .executives .container .executive-member {
+    margin-bottom: 5px;
   }
 }
