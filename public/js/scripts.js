@@ -210,6 +210,11 @@ function bindVelocity(){
           document.getElementById('nav-icon').classList.toggle('open');
         }
       }
+      else {
+        if(target == "#main2"){
+          target = "#main";
+        }
+      }
       //Idea for later:
       //Have a separate nav element that is not within the main section, 
       //for mobile to stop it from detaching when velocity activated 
