@@ -80,6 +80,11 @@ hr {
 #jarallax-container-1 {
   z-index: 0 !important;
 }
+.jarallax .jarallax-img img {
+  margin-left: 0%;
+  height: 100vh;
+  width: auto;
+}
 .pace .pace-progress {
   background: #fff;
   /*top: 50%;*/
