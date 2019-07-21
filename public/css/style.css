@@ -761,6 +761,12 @@ a:focus, a:hover {
   .desktop {
     display: none; 
   }
+  .navbar-default {
+    transition: unset;
+  }
+  .navbar-brand {
+    left: 92px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -811,5 +817,8 @@ a:focus, a:hover {
   }
   .executives .container .executive-member {
     margin-bottom: 5px;
+  }
+  .navbar-brand {
+    left: 40px;
   }
 }
