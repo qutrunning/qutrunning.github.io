@@ -257,7 +257,7 @@ function animateHeader(){
     setTimeout(function(){
       $(".main header h1").css("right", "0%");
       $(".caption").css("margin-left", "10%");
-    }, 1000);
+    }, 2000);
   }
   else {
     $(".main header h1").css("right", "-20%");
@@ -265,7 +265,7 @@ function animateHeader(){
     setTimeout(function(){
       $(".main header h1").css("right", "0%");
       $(".caption").css("margin-left", "10%");
-    }, 1000);
+    }, 2000);
   }
 }
 //collapse the navbar upon selection from hamburger menu
