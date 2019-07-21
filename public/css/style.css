@@ -480,6 +480,7 @@ a:focus, a:hover {
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
   box-shadow: unset;
+  transition: all 0.3s ease;
 }
 .mobile {
   display: none; 
