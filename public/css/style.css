@@ -34,6 +34,7 @@ hr {
   width: 100%;
   position: fixed;
   background: url('../img/body.jpeg');
+  background-position: 0% 50%;
   background-size: cover;
 }
 .body-container {
@@ -261,7 +262,7 @@ hr {
   font-size: 16px; 
 }
 .social .container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /*----------------------------------------------
@@ -423,8 +424,9 @@ a:focus, a:hover {
 .executives .container .executive-member a:hover {
   text-decoration: none;
 }
-.img-circle {
+.img-cube {
   width: 90px;
+  border-radius: 6px;
 }
 .executives .container .executive-member {
   width: 33.33%;
@@ -433,10 +435,12 @@ a:focus, a:hover {
   padding-right: 30px;
   margin-bottom: 30px;
   transition: all 0.3s ease;
+  text-align: left;
 }
 .executives .container .executive-member:hover {
   transform: scale(1.1);
 }
+.img-circle
 
 /*----------------------------------------------
 ------------------CONTACT BLOCK-----------------
@@ -769,9 +773,6 @@ a:focus, a:hover {
   }
   .navbar-brand {
     left: 92px;
-  }
-  .img-circle {
-    margin-right: 20px;
   }
 }
 
