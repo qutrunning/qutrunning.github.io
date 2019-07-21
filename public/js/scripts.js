@@ -258,7 +258,7 @@ function animateHeader(){
     setTimeout(function(){
       $(".main header h1").css("right", "0%");
       $(".caption").css("margin-left", "10%");
-    }, 3000);
+    }, 4000);
   }
   else {
     $(".main header h1").css("right", "-20%");
@@ -266,7 +266,7 @@ function animateHeader(){
     setTimeout(function(){
       $(".main header h1").css("right", "0%");
       $(".caption").css("margin-left", "10%");
-    }, 3000);
+    }, 4000);
   }
   setTimeout(function(){
     $(".pace").css("display", "none");

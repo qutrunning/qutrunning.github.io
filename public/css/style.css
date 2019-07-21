@@ -718,10 +718,6 @@ a:focus, a:hover {
   .navbar-collapse {
     width: 100%;
   }
-  .executives .container .executive-member {
-    width: 50%;
-    padding-right: 20px;
-  }
   .executives .container {
     margin-top: 50px;
   }
@@ -774,9 +770,25 @@ a:focus, a:hover {
   .navbar-brand {
     left: 92px;
   }
+  .body-container {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+4 */
+    background: rgb(38,52,140); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 4%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 4%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  }
+  .img-cube {
+    width: 120px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
+  .executives .container .executive-member {
+    width: 50%;
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
   .jarallax .jarallax-img img {
     margin-left: 0%;
     height: 100vh;
@@ -822,11 +834,13 @@ a:focus, a:hover {
   .right {
     margin-left: 50%;
   }
-  .executives .container .executive-member {
-    margin-bottom: 5px;
-    padding-right: 0;
-  } 
   .navbar-brand {
     left: 40px;
+  }
+  .h1, h1 {
+    font-size: 33px;
+  }
+  .img-cube {
+    width: 130px;
   }
 }
