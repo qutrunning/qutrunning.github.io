@@ -217,6 +217,7 @@ hr {
   padding: 20px;
   letter-spacing: -1px;
   user-select: none;
+  border-radius: 6px;
 }
 .about p {
   margin: 0 auto;
