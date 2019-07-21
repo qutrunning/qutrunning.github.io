@@ -220,21 +220,33 @@ function navbarScrollFix(){
   if($(window).scrollTop() > $(".main").height() - 53){
     $(".navbar-default").css("position", "fixed");
     $(".navbar-default").css("top", "0");
+    $(".navbar-default").css("-webkit-box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
+    $(".navbar-default").css("-moz-box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
+    $(".navbar-default").css("box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
     // $(".navbar-default").css("max-width", "90%");
   }      
   else {
     $(".navbar-default").css("position", "absolute");
     $(".navbar-default").css("top", "auto");
+    $(".navbar-default").css("-webkit-box-shadow", "none");
+    $(".navbar-default").css("-moz-box-shadow", "none");
+    $(".navbar-default").css("box-shadow", "none");
   }
   $(window).scroll(function(){
     if($(window).scrollTop() > $(".main").height() - 53){
       $(".navbar-default").css("position", "fixed");
       $(".navbar-default").css("top", "0");
+      $(".navbar-default").css("-webkit-box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
+      $(".navbar-default").css("-moz-box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
+      $(".navbar-default").css("box-shadow", "4px -1px 37px -9px rgba(0,0,0,0.75)");
       // $(".navbar-default").css("max-width", "90%");
     }      
     else {
       $(".navbar-default").css("position", "absolute");
       $(".navbar-default").css("top", "auto");
+      $(".navbar-default").css("-webkit-box-shadow", "none");
+      $(".navbar-default").css("-moz-box-shadow", "none");
+      $(".navbar-default").css("box-shadow", "none");
     }
   }); 
 }

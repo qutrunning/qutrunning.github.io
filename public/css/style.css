@@ -52,8 +52,10 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .jarallax-container {
+  width: 100%;
   border-radius: 6px;
   overflow: hidden;
+  border-collapse: separate; 
 }
 .jarallax {
   width: 100%;
@@ -74,6 +76,7 @@ hr {
   height: 100%;
   z-index: -1;
   border-radius: 6px;
+  transform: translateZ(0) !important;
 }
 .jarallax .jarallax-img img {
   height: 100vh;
@@ -186,6 +189,7 @@ hr {
   background: url('../img/about_bg.jpg');
   background-size: cover;
   font-weight: 700;
+  border-radius: 6px;
 }
 .about header h1,
 .social header h1, 
