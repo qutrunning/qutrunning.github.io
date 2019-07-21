@@ -200,6 +200,9 @@ function bindVelocity(){
       e.stopPropagation();
       // set target to anchor's "href" attribute
       var target = $(this).attr('href');
+      if(target == "#main2"){
+        target = "#main";
+      }
       if($(window).width() < 767){
         if(target == "#main2"){
           target = "#main";

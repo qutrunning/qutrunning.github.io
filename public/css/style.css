@@ -56,6 +56,8 @@ hr {
   border-radius: 6px;
   overflow: hidden;
   border-collapse: separate;
+  margin-right: 10px;
+  margin-bottom: 1px;
 }
 .jarallax {
   width: 100%;
@@ -192,6 +194,7 @@ hr {
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: default;
+  box-shadow: 4px -1px 37px -9px rgba(0,0,0,0.75);
 }
 .about header:hover, 
 .social header:hover,
@@ -200,7 +203,6 @@ hr {
 .executives header:hover,
 .contact header:hover {
   transform: scale(1.05);
-  box-shadow: 4px -1px 37px -9px rgba(0,0,0,0.75);
 }
 .about header h1,
 .social header h1, 
@@ -297,7 +299,7 @@ dt, dd {
   margin-bottom: 3px;
 }
 dl:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 
 /*----------------------------------------------
@@ -432,7 +434,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .executives .container .executive-member:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 
 /*----------------------------------------------
