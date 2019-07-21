@@ -44,11 +44,11 @@ hr {
   max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+9 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+7 */
   background: rgb(38,52,140); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 9%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 9%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 9%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 7%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 7%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 7%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .jarallax-container {
@@ -203,6 +203,7 @@ hr {
 .executives header:hover,
 .contact header:hover {
   transform: scale(1.05);
+  box-shadow: unset;
 }
 .about header h1,
 .social header h1, 
@@ -434,7 +435,7 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 .executives .container .executive-member:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /*----------------------------------------------
