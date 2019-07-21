@@ -200,9 +200,7 @@ function bindVelocity(){
       e.stopPropagation();
       // set target to anchor's "href" attribute
       var target = $(this).attr('href');
-      if(target == "#main2"){
-        target = "#main";
-      }
+      
       if($(window).width() < 767){
         if(target == "#main2"){
           target = "#main";
@@ -270,6 +268,9 @@ function animateHeader(){
       $(".caption").css("margin-left", "10%");
     }, 3000);
   }
+  setTimeout(function(){
+    $(".pace").css("display", "none");
+  }, 3000);
 }
 //collapse the navbar upon selection from hamburger menu
 $(document).on('click','.navbar-collapse.in',function(e) {
