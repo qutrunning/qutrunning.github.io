@@ -767,6 +767,9 @@ a:focus, a:hover {
   .navbar-brand {
     left: 92px;
   }
+  .img-circle {
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -817,7 +820,8 @@ a:focus, a:hover {
   }
   .executives .container .executive-member {
     margin-bottom: 5px;
-  }
+    padding-right: 0;
+  } 
   .navbar-brand {
     left: 40px;
   }
