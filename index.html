@@ -22,7 +22,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:700i|800i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-minimal.min.css" integrity="sha256-6JGNgkzJ/plvOfsg/ENvu2BYcOWSf6vxVc9nBrULVR4=" crossorigin="anonymous" />
-	<link href="./public/css/style.css?v=1.5" rel="stylesheet">
+	<link href="./public/css/style.css?v=1.6" rel="stylesheet">
 </head>
 <body>
 	<div class="body-background-fix">
@@ -41,14 +41,14 @@
 				<div class="collapse navbar-collapse" id="navbar-collapse-minus">
 					<ul class="nav navbar-nav">
 						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
 						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
+						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
 						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
 						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
 						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
-		    	<a class="navbar-brand" href="#banner"><img class="running_logo" src="./public/img/logo_white.png"></a>
+		    	<a class="navbar-brand" href="#main2"><img class="running_logo" src="./public/img/logo_white_sml.png"></a>
 			</div>
 		</nav>
 		<section class="main" id="main">
@@ -66,17 +66,17 @@
 							<span></span>
 						</button>
 					</div>
+			    	<a class="navbar-brand" href="#main2"><img class="running_logo" src="./public/img/logo_blue.png"></a>
 					<div class="collapse navbar-collapse" id="navbar-collapse-minus">
 						<ul class="nav navbar-nav">
 							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
 							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
+							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
 							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
 							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
 							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
 						</ul>
 					</div>
-			    	<a class="navbar-brand" href="#banner"><img class="running_logo" src="./public/img/logo_white.png"></a>
 				</div>
 			</nav>
 		</section>
@@ -291,24 +291,17 @@
 					</a>
 		        </div>
 		        <div class="executive-member right">
-		            <a href="https://www.facebook.com/trinity.chau.12" target="_blank">
-						<img class="img-cube" src="./public/img/executives/trinity.jpg" alt="Session Support">
-						<p><b>Session Support</b><br>
-						Trinity Chau</p>
-					</a>
-		        </div>
-		        <div class="executive-member left">
-					<a href="https://www.facebook.com/andrew.crawshaw.1" target="_blank">
-						<img class="img-cube" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
-						<p><b>Bootcamp Supervisor</b><br>
-						Andrew Crawshaw</p>
-					</a>
-				</div>
-				<div class="executive-member right">
 					<a href="https://www.facebook.com/cailum.roberts" target="_blank">
 						<img class="img-cube" src="./public/img/executives/cailum.jpg" alt="Treasurer">
 						<p><b>Treasurer</b><br>
 						Cailum Roberts</p>							
+					</a>
+				</div>
+				<div class="executive-member left">
+					<a href="https://www.facebook.com/andrew.crawshaw.1" target="_blank">
+						<img class="img-cube" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
+						<p><b>Bootcamp Supervisor</b><br>
+						Andrew Crawshaw</p>
 					</a>
 				</div>
 				<div class="executive-member left">
@@ -319,6 +312,13 @@
 					</a>
 					<br>
 				</div>
+		        <div class="executive-member right">
+		            <a href="https://www.facebook.com/trinity.chau.12" target="_blank">
+						<img class="img-cube" src="./public/img/executives/trinity.jpg" alt="Session Support">
+						<p><b>Session Support</b><br>
+						Trinity Chau</p>
+					</a>
+		        </div>
 		        <div class="executive-member right">
 					<a href="https://www.facebook.com/tim.jones.3348" target="_blank">
 						<img class="img-cube" src="./public/img/executives/tim.jpg" alt="IT">
@@ -342,7 +342,12 @@
 				<div id="map-canvas">
 				</div>
 				<div class="go-top">
-					<a href="#main2" class="go-top">Go to top</a>
+					<a href="#main2">
+						<picture>
+							<source srcset="./public/img/arrow_up.png">
+							<img draggable="false" src="./public/img/arrow_up.png" alt="Go to top">
+						</picture>
+					</a>
 				</div>
 			</div>
 		</section>

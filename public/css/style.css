@@ -475,12 +475,23 @@ a:focus, a:hover {
 }
 .go-top {
   width: 100%;
-  color: #333;
   text-align: left;
-  text-decoration: underline; 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  margin-top: 10px; 
+  margin-top: 15px; 
+  height: 35px;
+  width: 35px;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  margin-left: 1px;
+}
+.go-top picture img {
+  width: 22px;
+  height: auto;
+  margin-top: 4.5px;
+  margin-left: 5.5px;
+  transition: all 0.3s ease;
+}
+.go-top:hover picture img {
+  margin-top: 2px;
 }
 /*----------------------------------------------
 ------------------NAVBAR STYLES-----------------
@@ -492,7 +503,7 @@ a:focus, a:hover {
   color: white;
   margin: 0 auto;
   width: 100%;
-  height: 53px;
+  height: 110px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -504,7 +515,7 @@ a:focus, a:hover {
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
   box-shadow: unset;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .mobile {
   display: none; 
@@ -557,20 +568,22 @@ a:focus, a:hover {
   transition: all 0.4s;
   color: #6776d3 !important; 
 }
-.navbar-default .navbar-nav .active a:focus {
-  color: inherit;
+.navbar-default .navbar-nav li a:focus {
+  color: #333 !important;
 }
 .navbar-brand {
-  display: none;
-  position: fixed;
-  top: 12px;
-  left: 40px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
   padding: 0;
   z-index: 999;
   transition: all 0.4s ease;
+  padding-top: 15px;
+  margin-bottom: 11px;
 }
 .navbar-brand img {
-  width: 55px;
+  width: 70px;
+  margin: 0 auto;
 }
 .navbar-toggle {
   top: 5px;
@@ -699,7 +712,12 @@ a:focus, a:hover {
 }
 @media only screen and (max-width: 767px) {
   .navbar-brand {
-    display: block;
+    width: auto;
+    padding-top: unset;
+    margin-bottom: auto;
+    left: 15px;
+    top: 10px;
+    position: absolute;
   }
   .navbar-nav {
     height: 100vh;
@@ -767,9 +785,6 @@ a:focus, a:hover {
   .navbar-default {
     transition: unset;
   }
-  .navbar-brand {
-    left: 92px;
-  }
   .body-container {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+4 */
     background: rgb(38,52,140); /* Old browsers */
@@ -785,7 +800,13 @@ a:focus, a:hover {
     padding-bottom: 0px; 
   }
   .navbar-nav {
-    margin-left: 35px;
+    margin-left: -6px;
+  }
+  .navbar-brand img {
+   width: 55px;
+  }
+  .navbar-default {
+    height: 55px;
   }
 }
 
@@ -844,7 +865,7 @@ a:focus, a:hover {
     width: auto !important;
   }
   .navbar-brand {
-    left: 40px;
+    left: 18px;
   }
   .h1, h1 {
     font-size: 33px;
