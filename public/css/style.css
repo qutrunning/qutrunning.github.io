@@ -728,6 +728,7 @@ a:focus, a:hover {
     left: 15px;
     top: 10px;
     position: absolute;
+    opacity: 1 !important;
   }
   .navbar-nav {
     height: 100vh;
