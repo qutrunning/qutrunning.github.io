@@ -231,6 +231,7 @@ function navbarScrollFix(){
   else {
     scrollPxOffset = 110;
   }
+  console.log(scrollPxOffset);
   if($(window).scrollTop() > $(".main").height() - scrollPxOffset){
     $(".navbar-default").css("position", "fixed");
     $(".navbar-default").css("top", "0");

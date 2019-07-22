@@ -437,6 +437,7 @@ a:focus, a:hover {
   margin-bottom: 30px;
   transition: all 0.3s ease;
   text-align: left;
+  min-height: 140px;
 }
 .executives .container .executive-member:hover {
   transform: scale(1.1);
@@ -808,6 +809,9 @@ a:focus, a:hover {
   .navbar-default {
     height: 55px;
   }
+  .executives .container .executive-member {
+    min-height: 170px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -886,5 +890,8 @@ a:focus, a:hover {
   }
   .navbar-nav {
     margin-left: auto;
+  }
+  .executives .container .executive-member {
+    min-height: 150px;
   }
 }
