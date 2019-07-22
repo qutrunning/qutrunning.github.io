@@ -585,6 +585,7 @@ a:focus, a:hover {
   width: 100%;
   position: relative;
   padding: 0;
+  opacity: 0;
   z-index: 999;
   transition: all 0.4s ease;
   padding-top: 15px;
