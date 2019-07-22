@@ -132,6 +132,7 @@ hr {
   height: 100vh;
   text-align: center;
   font-weight: 800;
+  color: #000;
 }
 .main header {
   height: auto;
@@ -184,6 +185,7 @@ hr {
   margin: 0 auto;
   overflow: visible;
   padding: 20px;
+  color: #000;
 }
 .about {
   margin-top: 40px;
@@ -291,7 +293,7 @@ hr {
   margin-bottom: 0;
 }
 .membership .container a {
-  color: #333;
+  color: #000;
 }
 .membership .container a:hover {
   text-decoration: none;
@@ -524,7 +526,7 @@ a:focus, a:hover {
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
   box-shadow: unset;
-  transition: all 0.5s ease;
+  transition: box-shadow 0.5s ease;
 }
 .mobile {
   display: none; 
@@ -587,7 +589,7 @@ a:focus, a:hover {
   padding: 0;
   opacity: 0;
   z-index: 999;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease;
   padding-top: 15px;
   margin-bottom: 11px;
 }
