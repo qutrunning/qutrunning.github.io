@@ -28,11 +28,14 @@ hr {
   margin-top: 30px;
   margin-bottom: 20px;
   left: 0;
+  float: left;
+  display: inline-block;
 }
 .body-background-fix {
   height: 100vh;
   width: 100%;
   position: fixed;
+  z-index: -1;
   background: url('../img/body.jpeg');
   background-position: 0% 50%;
   background-size: cover;
@@ -97,6 +100,8 @@ hr {
   width: 100%;
   margin-top: 60px;
   margin-bottom: 20px;
+  float: none;
+  display: block;
 }
 @-webkit-keyframes slideInLeft {
   0%   { margin-left: -10%; }
@@ -113,6 +118,9 @@ hr {
 @keyframes slideInRight {
   0%   { right: -20%; }
   100% { right: 0%; }
+}
+.container {
+  display: inline-block;
 }
 /*----------------------------------------------
 -------------------MAIN BLOCK-------------------
