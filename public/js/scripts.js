@@ -310,7 +310,7 @@ $(document).ready(function(){
   navbarScrollFix();
   bindVelocity();
   $('.jarallax').jarallax({
-    speed: 0.01
+    speed: 0
   });
   $('#nav-icon').click(function(){
     $(this).toggleClass('open');
