@@ -199,9 +199,9 @@ hr {
   z-index: 6;
   height: 100%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+100,ffffff+100&1+23,0+100 */
-  background: -moz-linear-gradient(bottom,  rgba(255,255,255,1) 35%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(bottom,  rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to top,  rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(bottom,  rgba(255,255,255,1) 25%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom,  rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top,  rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .main .header-container header {
   height: auto;
