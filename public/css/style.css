@@ -646,9 +646,9 @@ a:focus, a:hover {
   padding: 0;
   opacity: 0;
   z-index: 999;
-  transition: opacity 0.4s ease;
   padding-top: 15px;
   margin-bottom: 11px;
+  transition: opacity 0.4s ease;
 }
 .navbar-brand img {
   width: 70px;

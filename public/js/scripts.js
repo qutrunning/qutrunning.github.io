@@ -190,6 +190,10 @@ function initMap() {
 
 Pace.restart();
 Pace.on("done", function(){
+  $(".navbar-brand").css("opacity", "1");
+  setTimeout(function(){
+    $(".navbar-brand").css("opacity", "0");
+  }, 200);
   $(".body-container").fadeIn(800);
   animateHeader();
 });
@@ -273,6 +277,7 @@ function navbarScrollFix(){
       $(".navbar-default").css("-webkit-box-shadow", "unset");
       $(".navbar-default").css("-moz-box-shadow", "unset");
       $(".navbar-default").css("box-shadow", "unset");
+      $(".running_logo").attr("src","./public/img/logo_blue.png");
     }
   }); 
 }
