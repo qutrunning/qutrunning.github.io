@@ -190,7 +190,7 @@ function initMap() {
 
 Pace.restart();
 Pace.on("done", function(){
-  $(".body-container").fadeIn(800);
+  $(".body-container").fadeIn(400);
   animateHeader();
 });
 

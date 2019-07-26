@@ -119,9 +119,8 @@ hr {
   overflow: hidden;
   margin-right: 10px;
   margin-bottom: 1px;
-  border: 1px solid #fff;
   border-radius: 6px;
-  border-collapse: collapse;
+  border-collapse: separate;
 }
 .jarallax {
   width: 100%;
@@ -495,7 +494,8 @@ a:focus, a:hover {
 }
 .executives .container {
   margin-top: 50px;
-  margin-bottom: -30px;
+  margin-bottom: -30px;    margin-top: 25px;
+    margin-bottom: -50px;
 }
 .executives .container .executive-member a {
   color: #333;
