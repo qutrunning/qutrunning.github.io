@@ -137,7 +137,7 @@ hr {
   height: 100%;
   width: 100%;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%);
   bottom: 0;
 }
@@ -147,11 +147,13 @@ hr {
   letter-spacing: -1px; 
   text-align: center;
   font-weight: 800;
+  font-style: italic;
   font-family: 'Poppins', sans-serif;
   display: inline-block;
 }
 .titleAnim {
   height: 110vh; 
+  padding-top: 10vh;
   overflow: hidden;
 }
 .desktopTitle,
@@ -695,7 +697,12 @@ a:focus, a:hover {
 .navbar-brand.mobile {
   display: none;
 }
-.navbar-brand img {
+
+.navbar-brand picture {
+  display: block;
+  width: 100px;
+}
+.navbar-brand picture img {
   width: 70px;
 }
 .navbar-default .navbar-toggle:focus, 
@@ -711,7 +718,8 @@ a:focus, a:hover {
   font-size: 12px;
   display: inherit;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-weight: 800;
+  font-style: italic;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 5px;
@@ -724,7 +732,7 @@ a:focus, a:hover {
   transition: all 0.4s;
   position: fixed;
   top: 5px;
-  right: 10px;
+  right: 20px;
   border: 0px solid transparent;
 }
 .navbar-default .navbar-collapse, 
@@ -765,10 +773,8 @@ a:focus, a:hover {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease;
+  transition: 0.5s ease;
 }
 #nav-icon span:nth-child(1) {
   top: 0px;
@@ -855,14 +861,19 @@ a:focus, a:hover {
 @media only screen and (max-width: 767px) {
   .navbar-brand.mobile {
     display: block !important;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     padding-top: unset;
     margin-bottom: auto;
-    left: 15px;
+    left: 17px;
     top: 10px;
     position: fixed;
     opacity: 1 !important;
+    overflow: visible;
+    z-index: 120;
+  }
+  .navbar-brand picture img {
+    width: 57px;
   }
   .navbar-brand {
     display: none !important;
@@ -891,7 +902,7 @@ a:focus, a:hover {
     color: #fff;
   }
   .main .header-container {
-    top: 40%;
+    top: 30%;
   }
   .main {
     height: 115vh;
@@ -913,10 +924,6 @@ a:focus, a:hover {
   }
   .navbar-nav {
     margin-left: -6px;
-  }
-  .navbar-brand img {
-    width: 55px;
-    margin-top: 0;
   }
   .navbar-default {
     height: 55px;
@@ -963,15 +970,6 @@ a:focus, a:hover {
   } 
   .caption {
     margin-top: 10px;
-  }
-  .left {
-    margin-right: 50%;
-  }
-  .right {
-    margin-left: 50%;
-    right: 0;
-    float: right !important;
-    width: auto !important;
   }
   .navbar-brand {
     left: 18px;
@@ -1053,13 +1051,19 @@ a:focus, a:hover {
   .membership,
   .timetable {
     width: 100%;
-    padding-right: 35px;
     min-height: auto;
     border-bottom: 1px solid #3b3b3b;
   }
+  .membership, .timetable,
+  .executives, .contact {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .executives, .contact {
+    padding-right: 0px;
+  }
   .timetable {
     width: 100%;
-    padding-left: 35px;
   }
   .executive-row {
     display: block;
