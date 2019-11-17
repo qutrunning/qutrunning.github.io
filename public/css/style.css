@@ -170,6 +170,7 @@ hr {
 .caption {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+	font-weight: 200;
   /*transition: all 0.4s ease-in-out;*/
 }
 /*----------------------------------------------
@@ -253,6 +254,7 @@ hr {
   margin: 0 auto;
   text-align: left;
   font-family: 'Raleway', sans-serif;
+	font-weight: 200;
   font-size: 17px; 
 }
 .about .section-container .left-container {
@@ -365,11 +367,16 @@ dl {
   text-align: left;
   color: #fff;
   font-family: 'Raleway', sans-serif;
+	font-weight: 200;
   transition: all 1s ease;
   backface-visibility: hidden;
 }
 dt, dd {
   margin-bottom: 3px;
+}
+dd.price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 dl:hover {
   transform: scale(1.05);
@@ -411,6 +418,7 @@ dl:hover {
 .table {
   margin-bottom: 0px !important;
   font-family: 'Raleway', sans-serif;
+	font-weight: 200;
   font-size: 12px;
 }
 th {
@@ -501,6 +509,10 @@ a:focus, a:hover {
 }
 .executives p {
   margin-bottom: 0;
+}
+.executives p b {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 .executives .text-container {
   margin-top: 25px;
