@@ -1,4 +1,17 @@
 /*----------------------------------------------
+--------------------FONT STYLES-----------------
+------------------------------------------------*/
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+      url('../fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*----------------------------------------------
 ----------------------GENERAL--------------------
 ------------------------------------------------*/
 
@@ -7,8 +20,8 @@ body {
   background: #fff;
 }
 *::selection { 
-  background: rgb(255, 149, 1);
-  color: white;
+  background: #d6ecff;
+  color: #3b3b3b;
 }
 
 img {
@@ -32,77 +45,9 @@ hr {
   float: left;
   display: inline-block;
 }
-.body-background-fix {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: -1;
-  background: url('../img/body.jpeg');
-  background-position: 0% 50%;
-  background-size: cover;
-}
-.body-container {
-  display: none;
-  transition: all 0.7s ease;
-  width: 100%;
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+7 */
-  background: rgb(38,52,140); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 6%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 6%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 6%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-}
-.jarallax-container {
-  width: 100%;
-  overflow: hidden;
-  margin-right: 10px;
-  margin-bottom: 1px;
-  border-radius: 6px;
-  border-collapse: separate;
-}
-.jarallax {
-  width: 100%;
-  height: 300px;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-}
-.jarallax .jarallax-img {
-  position: absolute;
-  object-fit: cover;
-  font-family: 'object-fit: cover;';
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 100%;
-  z-index: -1;
-  border-radius: 6px;
-}
-#jarallax-container-0,
-#jarallax-container-1 {
-  z-index: 0 !important;
-}
-.jarallax .jarallax-img img {
-  margin-left: 0%;
-  height: 100vh;
-  width: auto;
-}
 .pace .pace-progress {
   background: #fff;
   /*top: 50%;*/
-}
-.section-divider {
-  border-top: 1px solid #cbcbcb;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  float: none;
-  display: block;
 }
 @-webkit-keyframes slideInLeft {
   0%   { margin-left: -10%; }
@@ -120,14 +65,60 @@ hr {
   0%   { right: -20%; }
   100% { right: 0%; }
 }
-.container {
+.text-container {
   display: inline-block;
 }
-h1 {
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  font-style: italic;
+.parallax-wrapper {
+  z-index: 3;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
 }
+.parallax.fix {
+  background-attachment: scroll !important;
+  height: 60vh;
+  position: relative;
+  min-height: 300px;
+  background-size: cover !important;
+  background-color: unset !important;
+}
+.parallax .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 86, 205, 0.74);
+}
+.parallax__container {
+  clip: rect(0,auto,auto,0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform: translateZ(0px) !important;
+  width: 100%;
+  transition: height 0.7s ease;
+}
+
 /*----------------------------------------------
 -------------------MAIN BLOCK-------------------
 ------------------------------------------------*/
@@ -135,56 +126,50 @@ h1 {
 .main {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   text-align: center;
   font-weight: 800;
-  color: #000;
+  color: #fff;
 }
 .header-container {
-  position: relative;
+  position: absolute;
   z-index: 6;
   height: 100%;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+100,ffffff+100&1+23,0+100 */
-  background: -moz-linear-gradient(bottom,  rgba(255,255,255,1) 25%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(bottom,  rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to top,  rgba(255,255,255,1) 25%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-.main .header-container header {
-  height: auto;
-  margin: 0 auto;
-  position: absolute;
-  top: 60%;
+  width: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%);
+  bottom: 0;
 }
-.main .header-container header h1 {
-  position: relative;
+.main .header-container header .titleAnim .desktopTitle span,
+.main .header-container header .titleAnim .mobileTitle {
   font-size: 60px;
   letter-spacing: -1px; 
-  text-align: left;
+  text-align: center;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
-  white-space: nowrap;
-  right: -100%;
-  transition: all 0.6s ease-in-out;
-  -webkit-animation: slideInRight 15s linear;
-  animation: slideInRight 15s linear;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  display: inline-block;
+}
+.titleAnim {
+  height: 110vh; 
+  overflow: hidden;
+}
+.desktopTitle,
+.firstFade,
+.secondFade,
+.thirdFade {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.main .header-container header .titleAnim .mobileTitle {
+  display: none !important;
+  font-size: 40px;
 }
 .caption {
-  margin-top: 30px;
-  margin-left: -100%;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  transition: all 0.6s ease-in-out;
-  -webkit-animation: slideInRight 15s linear;
-  animation: slideInLeft 15s linear;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  /*transition: all 0.4s ease-in-out;*/
 }
-
 /*----------------------------------------------
 -------------------ABOUT BLOCK-------------------
 ------------------------------------------------*/
@@ -196,15 +181,22 @@ h1 {
   box-sizing: border-box; 
   height: 100%;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  max-width: 520px;
   margin: 0 auto;
-  overflow: visible;
+  overflow: hidden;
   padding: 20px;
   color: #333;
+  z-index: 20;
+  width: 100%;
+  margin-top: -35px;
+  margin-bottom: 70px;
+  border-top: 1px solid #3b3b3b;
 }
 .about {
-  margin-top: 40px;
+  background: #fff;
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0);
+  border-top: 1px solid #3b3b3b;
+  margin-bottom: 95px;
 }
 .about header, 
 .social header,
@@ -212,25 +204,13 @@ h1 {
 .timetable header,
 .executives header,
 .contact header {
-  padding: 20px;
-  max-width: 305px;
-  margin-bottom: 20px;
-  background: url('../img/about_bg.jpg');
+  margin-bottom: 10px;
   background-size: cover;
-  font-weight: 700;
-  border-radius: 6px;
+  font-family: 'Futura PT Bold';
+  font-weight: 800;
   transition: all 0.3s ease;
   cursor: default;
-  box-shadow: 4px -1px 37px -9px rgba(0,0,0,0.75);
-}
-.about header:hover, 
-.social header:hover,
-.membership header:hover,
-.timetable header:hover,
-.executives header:hover,
-.contact header:hover {
-  transform: scale(1.05);
-  box-shadow: unset;
+  text-align: left;
 }
 .about header h1,
 .social header h1, 
@@ -238,24 +218,64 @@ h1 {
 .timetable header h1,
 .executives header h1,
 .contact header h1 {
-  background: #fff;
   margin: 0;
-  padding: 20px;
   letter-spacing: -1px;
   user-select: none;
   border-radius: 6px;
 }
-.about p {
+.section-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.large-img {
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+.large-img img {
+  width: 100%;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+}
+.large-img img:hover {
+  transform: scale(1.1);
+}
+.about p,
+.social p,
+.membership p,
+.timetable p,
+.executives p,
+.contact p {
   margin: 0 auto;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px; 
 }
-.container {
+.about .section-container .left-container {
+  float: left;
+  width: 65%;
+  padding: 0px 15px 0px 15px;
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0);
+}
+.about .section-container .right-container {
+  float: right;
+  width: 35%;
+  padding: 70px 15px 0px 15px;
+  -webkit-transform: skewY(-2deg) translateZ(0);
+  transform: skewY(-2deg) translateZ(0);
+}
+.about .section-container .right-container .large-img {
+  border: 1px solid #1a4ca8;
+}
+.text-container {
   margin-top: 15px;
   padding: 0;
   width: 100%;
 }
-.about .container {
+.about .text-container {
   margin-bottom: 30px;
 }
 .vertical-line {
@@ -276,51 +296,81 @@ h1 {
 /*----------------------------------------------
 -------------------SOCIAL BLOCK-----------------
 ------------------------------------------------*/
-
-.social header {
-  background: url('../img/social_bg.jpg');
-  background-size: cover;
+.social {
+  background: #1a4ca8;
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0);
+  z-index: 21;
+  border-bottom: 1px solid #3b3b3b;
+  margin-bottom: 50px;
+  color: #fff;
 }
-.social p {
-  margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
+.social .section-container .left-container,
+.social .section-container .mobile-container {
+  float: left;
+  width: 40%;
+  padding: 75px 15px 0px 15px;
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0);
 }
-.social .container {
-  margin-bottom: 20px;
+.social .section-container .mobile-container {
+  display: none;
+}
+.social .section-container .right-container {
+  float: right;
+  width: 60%;
+  padding: 0px 15px 0px 15px;
+  -webkit-transform: skewY(2deg) translateZ(0);
+  transform: skewY(2deg) translateZ(0);
+}
+.social .section-container .left-container .large-img,
+.social .section-container .mobile-container .large-img {
+  border: 1px solid #fff;
+}
+.social .section-container .right-container hr {
+  border-top: 6px solid #d6ecff;
+}
+.social .text-container {
+  margin-bottom: 40px;
 }
 
 /*----------------------------------------------
 -----------------MEMBERSHIP BLOCK---------------
 ------------------------------------------------*/
-
-.membership header {
-  background: url('../img/membership_bg.jpg');
-  background-size: cover;
-  background-position: 0% 60%;
-}
-.membership p {
-  margin-top: 10px;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
+.membership {
+  width: 50%;
+  float: left;
+  background: #f4f7f6;
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0); 
+  margin-top: -60px;
+  min-height: 560px;
+  padding-left: 175px;
+  border-right: 1px solid #3b3b3b;
+  border-bottom: none;
+  border-top: none;
   margin-bottom: 0;
-  font-size: 12px;
 }
-.membership .container a {
+.membership .section-container {
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0); 
+}
+.membership .text-container a {
   color: #333;
 }
-.membership .container a:hover {
+.membership .text-container a:hover {
   text-decoration: none;
 }
 dl {
-  background: #fff;
+  background: #3b3b3b;
   padding: 10px;
   border: 1px solid #cbcbcb;
   max-width: 400px;
-  margin-top: 10px;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  transition: all 1s ease;
+  backface-visibility: hidden;
 }
 dt, dd {
   margin-bottom: 3px;
@@ -333,21 +383,30 @@ dl:hover {
 -----------------TIMETABLE BLOCK----------------
 ------------------------------------------------*/
 
-.timetable header {
-  background: url('../img/timetable_bg.jpg');
-  background-size: cover;
+.timetable {
+  width: 50%;
+  float: left;
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0); 
+  margin-top: -65px;
+  min-height: 560px;
+  padding-left: 50px;
+  padding-right: 120px;
+  border-top: none;
+  margin-bottom: 50px;
 }
 .timetable p {
-  margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: left;
   font-size: 12px;
+}
+.timetable .section-container {
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0); 
 }
 .timetable p:nth-child(2) {
   margin-bottom: 0px;
 }
-.timetable .container {
-  margin-top: 30px;
+.timetable .text-container {
+  margin-top: 15px;
 }
 .table-responsive {
   border: 1px solid #cbcbcb;
@@ -355,7 +414,7 @@ dl:hover {
 }
 .table {
   margin-bottom: 0px !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 12px;
 }
 th {
@@ -429,33 +488,34 @@ a:focus, a:hover {
 -----------------EXECUTIVES BLOCK---------------
 ------------------------------------------------*/
 
-.executives header {
-  background: url('../img/executives_bg.jpg');
-  background-size: cover;
-  background-position: 0% 60%;
+.executives {
+  background: #fff;
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0);
+  top: -100px;
+  margin-bottom: -265px;;
+  border-bottom: none;
+  background: white;
+  z-index: 21;
+  padding-left: 60px;
+}
+.executives .section-container {
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0); 
 }
 .executives p {
-  margin-top: 10px;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
 }
-.executives .container {
+.executives .text-container {
   margin-top: 25px;
-  margin-bottom: -50px;
-}
-.executives .container .executive-member a {
-  color: #333;
-}
-.executives .container .executive-member a:hover {
-  text-decoration: none;
+  margin-bottom: 0px;
 }
 .img-cube {
   width: 90px;
-  border-radius: 6px;
 }
-.executives .container .executive-member {
-  width: 33.33%;
+.executives .text-container 
+.executive-member {
+  min-width: 230px;
   float: left;
   padding-left: 0;
   padding-right: 30px;
@@ -466,65 +526,87 @@ a:focus, a:hover {
   z-index: 1;
   position: relative;
 }
-.executives .container .executive-member:hover {
-  transform: scale(1.1);
+.executive-row {
+  width: 100%;
+  display: inline-block;
 }
-.connecting-line-right,
-.connecting-line-left {
-  width: 260px;
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-  border-top: 1px solid #e1e1e1;
-  transition: all 0.4s ease;
+.executive-member p {
+  margin-top: 10px;
 }
-.connecting-line-right {
-  transform: rotate(50deg);
-  bottom: -7px;
-  left: 58px;
-}
-.connecting-line-left {
-  transform: rotate(130deg);
-  bottom: 0;
-  left: -210px;
+.executives .text-container .executive-member:hover {
+  /*transform: scale(1.1);*/
 }
 /*----------------------------------------------
 ------------------CONTACT BLOCK-----------------
 ------------------------------------------------*/
 
-.contact header {
-  background: url('../img/contact_bg.jpg');
-  background-size: cover;
-  background-position: 0% 40%;
+.contact {
+  background: #1a4ca8;
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
+  transform: perspective(1px) skewY(-2deg) translateZ(0);
+  top: 120px;
+  margin-bottom: -50px;
+  border-bottom: none;
+  z-index: 21;
+  color: #fff;
+  padding-left: 60px;
 }
-.contact p {
+.contact .section-container {
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
+  transform: perspective(1px) skewY(2deg) translateZ(0); 
+}
+.contact .section-container hr {
+  border-top: 6px solid #d6ecff;
+}
+.contact .section-container .text-container {
+  overflow: visible;
+}
+.contact .section-container .text-container a p {
   margin-top: 10px;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 0;
+  opacity: 0;
+  color: #fff;
+}
+.contact .section-container .text-container .links {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  float: left;
+}
+.fb-link, .insta-link, 
+.email-link {
+  transition: all 0.7s ease;
+}
+.fb-link:hover, .insta-link:hover, 
+.email-link:hover {
+  transform: rotate(10deg);
+}
+.fb-link:hover p,
+.insta-link:hover p,
+.email-link:hover p {
+  opacity: 1 !important;
+  transform: rotate(-10deg);
 }
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
+  float: left;
   margin-right: 15px;
-}
-#map-canvas {
-  margin-top: 30px;
-  width: 100%;
-  border: 1px solid #cbcbcb;
-  border-radius: 6px;
-  overflow: hidden;
-  height: 475px;
 }
 .go-top {
   width: 100%;
   text-align: left;
-  margin-top: 25px; 
   height: 35px;
   width: 35px;
+  background: #3b3b3b;
   border: 1px solid #cbcbcb;
-  border-radius: 6px;
+  margin-top: 155px; 
+}
+.go-top picture {
+  height: 35px;
+  width: 35px;
+  display: block;
 }
 .go-top picture img {
   width: 22px;
@@ -541,24 +623,24 @@ a:focus, a:hover {
 ------------------------------------------------*/
 
 .navbar-default {
-  background-color: #fff;
-  z-index: 5;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
   color: white;
   margin: 0 auto;
   width: 100%;
-  height: 110px;
+  height: 100px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  max-width: 600px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
   box-shadow: unset;
-  transition: box-shadow 0.5s ease;
+  transition: background 0.4s ease, color 0.2s ease, opacity 0.8s ease;
 }
 .mobile {
   display: none; 
@@ -569,10 +651,9 @@ a:focus, a:hover {
 }
 .navbar-nav {
   width: 100%;
+  display: block;
   text-align: center;
-  float: none;
   margin: 0 auto;
-  max-width: 540px;
 }
 .navbar-nav li {
   display: inline-block;
@@ -591,7 +672,9 @@ a:focus, a:hover {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 800;
+}
+.navbar-default .navbar-nav li a:focus {
   color: #333;
 }
 .navbar-default .navbar-nav li a:hover {
@@ -600,39 +683,26 @@ a:focus, a:hover {
   transition: all 0.4s;
   color: #6776d3 !important; 
 }
-.navbar-default .navbar-nav li a:focus {
-  color: #333 !important;
-}
 .navbar-brand {
-  display: block;
-  width: 100%;
+  display: inline-block;
   position: relative;
-  padding: 0;
-  padding-top: 15px;
-  margin-bottom: 11px;
+  float: unset; 
+  height: auto; 
+  padding: 25px 15px 0px 15px; 
+  font-size: unset; 
+  line-height: unset;
+}
+.navbar-brand.mobile {
+  display: none;
 }
 .navbar-brand img {
   width: 70px;
-  margin: 0 auto;
-  margin-top: -70px;
-  transition: all 0.3s ease;
-}
-.navbar-toggle {
-  top: 5px;
-  float: right;
-}
-.navbar-default .navbar-toggle,
-.navbar-default-home .navbar-toggle {
-  border-color: transparent; /* Removes border color */
-}
-.navbar-default .navbar-toggle .icon-bar, .navbar-default-home .navbar-toggle .icon-bar {
-    background-color: #5c6174;
 }
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
-.navbar-default > .container > .navbar-header > a > img {
+.navbar-default > .text-container > .navbar-header > a > img {
   height: 70px !important;
   padding: 4px 8px 22px 8px;
 }
@@ -640,20 +710,22 @@ a:focus, a:hover {
 .navbar-default .navbar-nav > li > a {
   font-size: 12px;
   display: inherit;
-  font-weight: 700;
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
+  font-weight: 300;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 5px;
   padding-left: 5px;
+  line-height: 40px;
 }
 .navbar-toggle {
   -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  border: 0px solid transparent;
 }
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {
@@ -686,8 +758,7 @@ a:focus, a:hover {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
-  /*background: #004b9c;*/
+  background: #0c88ff;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -736,23 +807,65 @@ a:focus, a:hover {
 ------------------MEDIA QUERIES-----------------
 ------------------------------------------------*/
 
-@media only screen and (max-width: 991px) {
-  .body-container {
-    width: 90vw;
+@media only screen and (min-width: 1800px) {
+  .about, .social, .membership, 
+  .timetable, .executives, .contact {
+    margin-top: -50px;
+    margin-bottom: 100px;
   }
+  .social {
+    margin-top: -20px;
+    margin-bottom: 70px;
+  }
+  .membership, .timetable {
+    margin-bottom: 30px;
+  }
+  .executives {
+    margin-bottom: -200px
+  }
+  .contact {
+    margin-bottom: -100px;
+  }
+}
+@media only screen and (max-width: 991px) {
   .main {
-    height: 90vh;
+    height: 110vh;
+  }
+  .membership, .timetable,
+  .contact, .executives {
+    padding-left: 50px;
+    padding-right: 50px;
+  } 
+  .contact, .executives {
+    padding-right: 0px;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+  .about .section-container .right-container {
+    padding-top: 75px;
+  }
+  .social .section-container .left-container {
+    padding-top: 78px;
+  }
+  .section-container {
+    max-width: 700px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .navbar-brand {
-    width: auto;
+  .navbar-brand.mobile {
+    display: block !important;
+    width: 50px;
+    height: 50px;
     padding-top: unset;
     margin-bottom: auto;
     left: 15px;
     top: 10px;
-    position: absolute;
+    position: fixed;
     opacity: 1 !important;
+  }
+  .navbar-brand {
+    display: none !important;
   }
   .navbar-nav {
     height: 100vh;
@@ -771,66 +884,29 @@ a:focus, a:hover {
   .navbar-collapse {
     width: 100%;
   }
-  .executives .container {
+  .executives .text-container {
     margin-top: 50px;
-  }
-  .section-divider {
-    margin-top: 40px;
-    margin-bottom: 0px;
-  }
-  .navbar-default {
-    position: fixed !important;
-    top: 0 !important;
-    width: 90vw;
-    background: #414d9a;
-  }
-  .jarallax .jarallax-img img {
-    margin-left: 0%;
-    height: auto;
-    width: 100%;
   }
   .navbar-default .navbar-nav li a {
     color: #fff;
   }
-  .navbar-toggle {
-    margin-right: 20px;
+  .main .header-container {
+    top: 40%;
   }
-  .main .header-container header {
-    top: 60%;
+  .main {
+    height: 115vh;
   }
   .main .header-container header h1 {
-    transition: all 0.8s ease-in-out;
+   /* transition: all 0.8s ease-in-out;
     -webkit-animation-delay: 0.95s;
-    animation-delay: 0.95s;
+    animation-delay: 0.95s;*/
     font-size: 50px;
-  }
-  .caption {
-    transition: all 0.8s ease-in-out;
-    -webkit-animation-delay: 0.95s;
-    animation-delay: 0.95ss;
-  }
-  .body-background-fix {
-    background-position: 45% 0%;
-  }
-  .mobile {
-    display: block; 
-  }
-  .desktop {
-    display: none; 
   }
   .navbar-default {
     transition: unset;
   }
-  .body-container {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+4 */
-    background: rgb(38,52,140); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 4%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 4%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 4%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  }
   .img-cube {
-    width: 120px;
+    width: 90px;
   }
   .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
     padding-bottom: 0px; 
@@ -846,54 +922,47 @@ a:focus, a:hover {
     height: 55px;
     z-index: 99;
   }
-  .executives .container .executive-member {
-    min-height: 220px;
+  .executives .text-container .executive-member {
+    min-height: 180px;
   }
   .header-container {
     background: none;
   }
+  .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 30px;
+  }
+  .about p, .social p, .membership p, .timetable p, .executives p, .contact p {
+    font-size: 15px;
+  }
+  .social .section-container .left-container {
+    padding-top: 80px;
+  }
+  .about .section-container .right-container {
+    padding-top: 50px;
+  }
+  .executives .text-container .executive-member {
+    min-width: 180px;
+  }
+  .executives .text-container .executive-member {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
-  .executives .container .executive-member {
+  .executives .text-container .executive-member {
     width: 50%;
-    margin-bottom: 15px;
-    padding-right: 0;
+    margin-bottom: 30px;
+    padding-right: 0px;
   }
-  .jarallax .jarallax-img img {
-    margin-left: 0%;
-    height: 100vh;
-    width: auto;
+  .executives .text-container .executive-member p {
+    margin-top: 10px;
   }
   .main .header-container header h1 {
     font-size: 40px;
   } 
-  @-webkit-keyframes slideInLeft {
-    0%   { margin-left: -5%; }
-    100%   { margin-left: 10%; }
-  }
-  @keyframes slideInLeft {
-    0%   { margin-left: -5%; }
-    100%   { margin-left: 10%; }
-  }
-  @-webkit-keyframes slideInRight {
-    0%   { right: -5%; }
-    100% { right: 0%; }
-  }
-  @keyframes slideInRight {
-    0%   { right: -5%; }
-    100% { right: 0%; }
-  }
   .caption {
     margin-top: 10px;
-  }
-  #map-canvas {
-    width: 79vw;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-  .jarallax .jarallax-img img {
-    margin-left: -65%;
   }
   .left {
     margin-right: 50%;
@@ -913,39 +982,31 @@ a:focus, a:hover {
   .img-cube {
     width: 100px;
   }
-  .body-container {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#26348c+0,ffffff+7 */
-    background: rgb(38,52,140); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(38,52,140,1) 0%, rgba(255,255,255,1) 7%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 7%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(38,52,140,1) 0%,rgba(255,255,255,1) 7%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26348c', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  }
   .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
     padding-bottom: 7px; 
   }
   .navbar-nav {
     margin-left: auto;
   }
-  .executives .container .executive-member {
+  .executives .text-container .executive-member {
     min-height: 180px;
   }
   .connecting-line-right,
   .connecting-line-left {
     opacity: 1;
   }
-  .executives .container .executive-member.left a p {
+  .executives .text-container .executive-member.left a p {
     margin-right: 20px;
   }
-  .executives .container .executive-member.right a p {
+  .executives .text-container .executive-member.right a p {
     margin-left: 20px;
   }
-  .executives .container .executive-member.left a .padding-container {
+  .executives .text-container .executive-member.left a .padding-container {
     padding-bottom: 20px;
     padding-right: 20px;
     padding-top: 20px;
   }
-  .executives .container .executive-member.right a .padding-container {
+  .executives .text-container .executive-member.right a .padding-container {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-top: 20px;
@@ -953,5 +1014,64 @@ a:focus, a:hover {
   .padding-container {
     background: #fff;
     width: 120px;
+  }
+  .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+  .desktopTitle {
+    display: none;
+  }
+  .main .header-container header .titleAnim .mobileTitle {
+    display: block !important;
+  }
+  .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
+    line-height: 25px;
+  }
+  .about, .social, .membership, .timetable, .executives, .contact {
+    margin-top: -50px;
+  }
+  .about .section-container .left-container,
+  .about .section-container .right-container {
+    width: 100%;
+  }
+  .about .section-container .right-container {
+    padding-top: 0;
+  }
+  .social .section-container .mobile-container,
+  .social .section-container .right-container {
+    width: 100%;
+  }
+  .social .section-container .left-container {
+    display: none;
+  }
+  .social .section-container .mobile-container {
+    padding-top: 0;
+    padding-bottom: 40px;
+    display: block;
+  }
+  .membership,
+  .timetable {
+    width: 100%;
+    padding-right: 35px;
+    min-height: auto;
+    border-bottom: 1px solid #3b3b3b;
+  }
+  .timetable {
+    width: 100%;
+    padding-left: 35px;
+  }
+  .executive-row {
+    display: block;
+  }
+  .executives .text-container .executive-member {
+    min-width: auto;
+  }
+  .executive-member p {
+    max-width: 60px;
+    margin: unset;
+  }
+  .executives .section-container {
+    padding-top: 0;
   }
 }

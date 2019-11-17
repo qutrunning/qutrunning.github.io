@@ -19,120 +19,119 @@
 	<title>QUT Running</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:700i,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-minimal.min.css" integrity="sha256-6JGNgkzJ/plvOfsg/ENvu2BYcOWSf6vxVc9nBrULVR4=" crossorigin="anonymous" />
-	<link href="./public/css/style.css?v=3.3" rel="stylesheet">
+	<link href="./public/css/style.css?v=1.0" rel="stylesheet">
 </head>
 <body>
-	<div class="body-background-fix">
+	<nav class="navbar navbar-default">
+	    <div class="container-nav">
+			<div class="navbar-header">
+				<button type="button" id="nav-icon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a class="navbar-brand mobile" href="#main2"><img class="running_logo" src="./public/img/logo_blue.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-minus">
+				<ul class="nav navbar-nav">
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
+	    			<a class="navbar-brand" href="#main2"><img class="running_logo" src="./public/img/logo_blue.png"></a>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
+					<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="main" id="main">
+		<div class="header-container">
+			<header>
+				<div id="scene">
+                </div>
+                <div class="titleAnim">
+                	<div class="desktopTitle">
+						<span id="animation1">Q</span><span id="animation2">U</span><span id="animation3">T</span><span>&nbsp;&nbsp;</span><span id="animation4">R</span><span id="animation5">U</span><span id="animation6">N</span><span id="animation7">N</span><span id="animation8">I</span><span id="animation1">N</span><span id="animation2">G</span>
+					</div>
+					<h1 class="mobileTitle"><span class="firstFade">QUT RUNNING</span></h1>
+					<h4 class="caption"><span class="secondFade">Get fit. <span class="thirdFade">Get social.</span></h4>
+				</div>
+			</header>
+		</div>
+	</section>
+	<div class="parallax-wrapper">
+		<div class="parallax" data-parallax-image="./public/img/background.jpg">
+			<div class="overlay">
+			</div>
+		</div>
 	</div>
-	<div class="body-container">
-		<nav class="navbar navbar-default mobile">
-		    <div class="container-nav">
-				<div class="navbar-header">
-					<button type="button" id="nav-icon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-collapse-minus">
-					<ul class="nav navbar-nav">
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
-						<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
-					</ul>
-				</div>
-		    	<a class="navbar-brand" href="#main2"><img class="running_logo" src="./public/img/logo_white_sml.png"></a>
-			</div>
-		</nav>
-		<section class="main" id="main">
-			<div class="header-container">
+	<section class="about" id="about">
+		<div class="section-container">
+			<div class="left-container">
 				<header>
-					<h1>QUT RUNNING</h1>
-					<h4 class="caption">Get fit. Get social.</h4>
+					<h1>About</h1>
 				</header>
-			</div>
-			<nav class="navbar navbar-default desktop">
-			    <div class="container-nav">
-					<div class="navbar-header">
-						<button type="button" id="nav-icon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-minus">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-					</div>
-			    	<a class="navbar-brand" href="#main2"><img class="running_logo" src="./public/img/logo_white_sml.png"></a>
-					<div class="collapse navbar-collapse" id="navbar-collapse-minus">
-						<ul class="nav navbar-nav">
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#about">ABOUT</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#social">SOCIAL</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#membership">MEMBERSHIP</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#timetable">TIMETABLE</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#executives">EXECUTIVES</a></li>
-							<li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#contact">CONTACT</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</section>
-		<section class="about" id="about">
-			<header>
-				<h1>About</h1>
-			</header>
-			<hr>
-			<div class="container">
-				<p>
-					QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT!<br><br>
-					Join our group on Facebook - 
-					<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
-				</p>
-			</div>
-			<div class="jarallax-container">
-				<div class="jarallax">
-					<picture class="jarallax-img">
-						<source srcset="./public/img/about_image.jpg">
-						<img draggable="false" src="./public/img/about_image.jpg" alt="QUT Running Partying!">
-					</picture>
+				<hr>
+				<div class="text-container">
+					<p>
+						QUT Running is a social &amp; fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT!<br><br>
+						Join our group on Facebook - 
+						<a class="links" href="https://www.facebook.com/groups/qutrunning/" target="_blank">QUT Running</a>
+					</p>
 				</div>
 			</div>
-			<hr class="section-divider">
-		</section>
-		<section class="social" id="social">
-			<header>
-				<h1>Social</h1>
-			</header>
-			<hr>
-			<div class="container">
-				<p>
-					QUT Running has a big social aspect. Following Monday's session, we unwind with dinner or drinks at a venue located within the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner sometimes we kick on at Music City for karaoke or head to the Down Under bar. On Monday's Down Under Bar host games called Bar Wars which is always massive fun. Every few weeks we spice things up by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
-				</p>
-				<p>
-					We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
-				</p>
+			<div class="right-container">
+				<picture class="large-img">
+					<source srcset="./public/img/about_image.jpg">
+					<img draggable="false" src="./public/img/about_image.jpg" alt="QUT Running Partying!">
+				</picture>
 			</div>
-			<div class="jarallax-container">
-				<div class="jarallax">
-					<picture class="jarallax-img">
-						<source srcset="./public/img/social.jpg">
-						<img draggable="false" src="./public/img/social.jpg" alt="QUT Running Partying!">
-					</picture>
+		</div>
+	</section>
+	<section class="social" id="social">
+		<div class="section-container">
+			<div class="left-container">
+				<picture class="large-img">
+					<source srcset="./public/img/about.jpg">
+					<img draggable="false" src="./public/img/about.jpg" alt="QUT Running Partying!">
+
+				</picture>
+			</div>
+			<div class="right-container">
+				<header>
+					<h1>Social</h1>
+				</header>
+				<hr>
+				<div class="text-container">
+					<p>
+						QUT Running has a big social aspect. Following Monday's session, we unwind with dinner or drinks at a venue located within the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner sometimes we kick on at Music City for karaoke or head to the Down Under bar. On Monday's Down Under Bar host games called Bar Wars which is always massive fun. Every few weeks we spice things up by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
+					</p>
+					<p>
+						We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet new friends in an a relaxed environment!
+					</p>
 				</div>
 			</div>
-			<hr class="section-divider">
-		</section>
-		<section class="membership" id="membership">
+			<div class="mobile-container">
+				<picture class="large-img">
+					<source srcset="./public/img/about.jpg">
+					<img draggable="false" src="./public/img/about.jpg" alt="QUT Running Partying!">
+
+				</picture>
+			</div>
+		</div>
+	</section>
+	<section class="membership" id="membership">
+		<div class="section-container">
 			<header>
 				<h1>Membership</h1>
 			</header>
 			<hr>
-			<div class="container">
+			<div class="text-container">
 				<a href="https://qutrunning.getqpay.com" target="_blank">
 					<dl>
 						<dt>Full year</dt>
@@ -144,19 +143,16 @@
 						</dd>
 					</dl>
 				</a>
-				<p> 
-					Problems? 
-					<a href="https://www.facebook.com/QUTRunning/" target="_blank" class="links">Message us</a> 
-				</p>
 			</div>
-			<hr class="section-divider">
-		</section>
-		<section class="timetable" id="timetable">
+		</div>
+	</section>
+	<section class="timetable" id="timetable">
+		<div class="section-container">
 			<header>
 				<h1>Timetable</h1>
 			</header>
 			<hr>
-			<div class="container">
+			<div class="text-container">
 				<div class="table-responsive">   
 					<table class="table color-blue">
 						<thead>
@@ -186,38 +182,27 @@
 								<th scope="row">4:30 - 5:30pm</th>
 								<td class="run-session">
 									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-									All running levels welcome.
-									Mixture of interval exercises throughout the Botanic Garden.
-									Improving agility, acceleration, endurance and speed.
-									Great opportunity to meet fellow runners.
-									Supervised by the QUT Running Exec Team.
+									All running levels welcome.&nbsp;Mixture of interval exercises throughout the Botanic Garden. Improving agility, acceleration, endurance and speed. Great opportunity to meet fellow runners. Supervised by the QUT Running Exec Team.
 									">Run</a>
 								</td>
 								<td class="run-session">
 									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-									All running levels welcome.
-									Mixture of interval exercises throughout the Botanic Garden.
-									Improving agility, acceleration, endurance and speed.
-									Great opportunity to meet fellow runners.
+									All running levels welcome. Mixture of interval exercises throughout the Botanic Garden. Improving agility, acceleration, endurance and speed. Great opportunity to meet fellow runners.
 									">Run</a>
 								</td>										
 								<td class="run-session">
 									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-									Ideal for beginners.
-									Short and casual exercises to motivate and improve.
+									Ideal for beginners. Short and casual exercises to motivate and improve.
 									">Run</a>
 								</td>	
 								<td class="workout-session">
 									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-									Full membership only.
-									Improve stamina, stability and strength.
-									Different exercises for all levels.
+									Full membership only. Improve stamina, stability and strength. Different exercises for all levels.
 									">Boot Camp</a>
 								</td>								
 								<td class="run-session">
 									<a href="#" class="session-box" rel="tooltip" title="
-									All running levels welcome.
-									Casual session through Botanic Garden or along the Brisbane River.
+									All running levels welcome. Casual session through Botanic Garden or along the Brisbane River.
 									">Run</a>
 								</td>
 								<td></td>
@@ -229,8 +214,7 @@
 								<td></td>
 								<td class="run-session">
 									<a href="#" class="session-box" id="tooltip-box" rel="tooltip" title="
-									All running levels welcome.
-									Casual session through Botanic Garden or along the Brisbane River.
+									All running levels welcome. Casual session through Botanic Garden or along the Brisbane River.
 									">Run</a>
 								</td>	
 								<td></td>
@@ -263,108 +247,83 @@
 					</p>
 				</div>
 			</div>
-			<hr class="section-divider">
-		</section>
-		<section class="executives" id="executives">
+		</div>
+	</section>
+	<section class="executives" id="executives">
+		<div class="section-container">
 			<header>
 				<h1>Executives</h1>
 			</header>
 			<hr>
-			<div class="container">
-				<div class="executive-member left">
-		            <a href="https://www.facebook.com/georgia.robertson.980" target="_blank">
+			<div class="text-container">
+				<div class="executive-row">
+					<div class="executive-member">
 						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/georgia.jpg" alt="President">
+							<img class="img-cube" src="./public/img/executives/cooper.jpg" alt="President">
 						</div>
 						<p><b>President</b><br>
-						Georgia Robertson</p>
-					</a>
-					<hr class="connecting-line-right">
-		        </div>
-		        <div class="executive-member right">
-		            <a href="https://www.facebook.com/harrison.pie" target="_blank">
+						Cooper Redhead</p>
+			        </div>
+			        <div class="executive-member">
 						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/harrison.jpg" alt="Vice President">
+							<img class="img-cube" src="./public/img/executives/cailum.jpg" alt="Vice President">
 						</div>
 						<p><b>Vice President</b><br>
-						Harrison Pie</p>
-					</a>
-					<hr class="connecting-line-left">
-		        </div>
-		        <div class="executive-member left">
-		            <a href="https://www.facebook.com/profile.php?id=100003496163676" target="_blank">
+						Cailum Roberts</p>							
+			        </div>
+			        <div class="executive-member">
 						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/phoebe.jpg" alt="Social Coordinator">
-						</div>
-						<p><b>Secretary</b><br>
-						Phoebe Heart</p>
-					</a>
-					<hr class="connecting-line-right">
-		        </div>
-		        <div class="executive-member right">
-					<a href="https://www.facebook.com/cailum.roberts" target="_blank">
-						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/cailum.jpg" alt="Treasurer">
+							<img class="img-cube" src="./public/img/executives/phedra.jpg" alt="Treasurer">
 						</div>
 						<p><b>Treasurer</b><br>
-						Cailum Roberts</p>							
-					</a>
-					<hr class="connecting-line-left">
+						Phedra Chew</p>							
+					</div>
 				</div>
-				<div class="executive-member left">
-					<a href="https://www.facebook.com/andrew.crawshaw.1" target="_blank">
+				<div class="executive-row">
+					<div class="executive-member">
 						<div class="padding-container">
 							<img class="img-cube" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
 						</div>
-						<p><b>Bootcamp<br>Supervisor</b><br>
+						<p><b>Bootcamp Supervisor</b><br>
 						Andrew Crawshaw</p>
-					</a>
-					<hr class="connecting-line-right">
-				</div>
-				<div class="executive-member right">
-		            <a href="https://www.facebook.com/trinity.chau.12" target="_blank">
+					</div>
+					<div class="executive-member">
 						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/trinity.jpg" alt="Session Support">
+							<img class="img-cube" src="./public/img/executives/louis.jpg" alt="Sessions">
 						</div>
-						<p><b>Session Support</b><br>
-						Trinity Chau</p>
-					</a>
-					<hr class="connecting-line-left">
-		        </div>
-				<div class="executive-member left">
-					<a href="https://www.facebook.com/cooper.redhead" target="_blank">
-						<div class="padding-container">
-							<img class="img-cube" src="./public/img/executives/cooper.jpg" alt="Sessions">
-						</div>
-						<p><b>Session<br>Coordinator</b><br>
-						Cooper Redhead</p>
-					</a>
-					<hr class="connecting-line-right">
-				</div>
-		        <div class="executive-member right">
-					<a href="https://www.facebook.com/tim.jones.3348" target="_blank">
+						<p><b>Session Coordinator</b><br>
+						Louis</p>
+					</div>
+			        <div class="executive-member">
 						<div class="padding-container">
 							<img class="img-cube" src="./public/img/executives/tim.jpg" alt="IT">
 						</div>
 						<p><b>IT</b><br>
 						Tim Jones</p>
-					</a>
-				</div>					
+					</div>					
+				</div>
 			</div>
-			<hr class="section-divider">
-		</section>
-		<section class="contact" id="contact">
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="section-container">
 			<header>
 				<h1>Contact</h1>
 			</header>
 			<hr>
-			<div class="container">
-				<p><img class="icon" src="./public/img/icons/fb.png"><a class="links" target="_blank" href="https://www.facebook.com/qutrunning/">Like the page&nbsp;</a></p>
-				<p><img class="icon" src="./public/img/icons/fb.png"><a class="links" target="_blank" href="https://www.facebook.com/groups/qutrunning/">Join the group&nbsp;</a></p>
-				<p><img class="icon" src="./public/img/icons/instagram.png"><a class="links no-decoration" target="_blank" href="https://www.instagram.com/qutrunning/">Follow us on Instagram</a></p>
-				<p><img class="icon" src="./public/img/icons/email.png"><a class="links no-decoration" href="mailto:qutrunning@gmail.com">Send us an email</a></p>
-				<div id="map-canvas">
-				</div>
+			<div class="text-container">
+				<a class="links fb-link" target="_blank" href="https://www.facebook.com/groups/qutrunning/">
+					<img class="icon" src="./public/img/icons/fb.png">
+					<p>Facebook</p>
+				</a>
+				<a class="links insta-link" target="_blank" href="https://www.instagram.com/qutrunning/">
+					<img class="icon" src="./public/img/icons/instagram.png">
+					<p>Instagram</p>
+				</a>
+				<a class="links email-link" href="mailto:qutrunning@gmail.com">
+					<img class="icon" src="./public/img/icons/email.png">
+					<p>Email</p>
+				</a>
 				<div class="go-top">
 					<a href="#main2">
 						<picture>
@@ -374,15 +333,18 @@
 					</a>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.7/jarallax.min.js" integrity="sha256-qek09qsaRc8OTLAaYHrXErveAFc7ghcO7lZQqvUDiRU=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" integrity="sha256-EPrkNjGEmCWyazb3A/Epj+W7Qm2pB9vnfXw+X6LImPM=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js" integrity="sha256-1HqoI76JGKA17K0C0s9K8L/iy8PAC43KVLt1hRD/Ojc=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./public/js/scripts.js?v=1.0"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxhseafkxBSK3KH8NyCwp6BDsOMNWubFM&callback=initMap"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  	<script src="./public/js/universal-parallax.js"></script>
+	<script type="text/javascript" src="./public/js/scripts.js"></script>
 </body>
 </html>	
