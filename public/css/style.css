@@ -191,13 +191,13 @@ hr {
   width: 100%;
   margin-top: -35px;
   margin-bottom: 70px;
-  border-top: 1px solid #3b3b3b;
+  border-top: 2px solid #3b3b3b;
 }
 .about {
   background: #fff;
   -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
   transform: perspective(1px) skewY(2deg) translateZ(0);
-  border-top: 1px solid #3b3b3b;
+  border-top: 2px solid #3b3b3b;
   margin-bottom: 95px;
 }
 .about header, 
@@ -303,7 +303,7 @@ hr {
   -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
   transform: perspective(1px) skewY(-2deg) translateZ(0);
   z-index: 21;
-  border-bottom: 1px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
   margin-bottom: 50px;
   color: #fff;
 }
@@ -999,18 +999,7 @@ a:focus, a:hover {
   .executives .text-container .executive-member.right a p {
     margin-left: 20px;
   }
-  .executives .text-container .executive-member.left a .padding-container {
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
-  .executives .text-container .executive-member.right a .padding-container {
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-  }
   .padding-container {
-    background: #fff;
     width: 120px;
   }
   .navbar-collapse {
@@ -1052,18 +1041,29 @@ a:focus, a:hover {
   .timetable {
     width: 100%;
     min-height: auto;
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 2px solid #3b3b3b;
   }
   .membership, .timetable,
   .executives, .contact {
     padding-right: 35px;
     padding-left: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .executives, .contact {
     padding-right: 0px;
   }
+  .membership {
+    border-right: unset;
+  }
+  .executives {
+    background: #f4f7f6;
+    padding-top: 60px;
+  }
   .timetable {
     width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .executive-row {
     display: block;
