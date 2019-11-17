@@ -397,6 +397,8 @@ dl:hover {
   padding-right: 120px;
   border-top: none;
   margin-bottom: 50px;
+  overflow: visible;
+  z-index: 24;
 }
 .timetable p {
   font-size: 12px;
@@ -412,6 +414,7 @@ dl:hover {
   margin-top: 15px;
 }
 .table-responsive {
+  position: relative;
   border: 1px solid #cbcbcb;
   margin-bottom: 15px;
 }
@@ -451,28 +454,17 @@ td {
   overflow: auto;
   transition: 0.2s ease;
 }
-.run-session {
+.run-session, .beginner-session {
   background-color: #43A047;
 }
 .workout-session {
   background-color: #f44336;
-}
-.swim-session {
-  background-color: #03A9F4;
 }
 .social-session {
   background-color: #FF9800;
 }
 .parkrun-session {
   background-color: #82c9cf;
-}
-.tooltip.top .tooltip-inner {
-    background-color: #ffffff;
-    color: #000033;
-}
-.tooltip.top .tooltip-arrow {
-      border-top-color: #ffffff;
-      color: #0C2D56;
 }
 a.session-box {
     color: #fff;
@@ -483,9 +475,39 @@ a.session-box:hover {
   text-decoration: none;
   color: black;
 }
-a:focus, a:hover {
-  color: #333;
-  text-decoration: underline;
+.info-icon {
+  height: 70px;
+  width: 30px;
+  float: left;
+  margin-right: 7px;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.info-icon picture {
+  display: block;
+  width: 20px;
+}
+.info-icon picture img {
+  width: 100%;
+}
+.parkrun-info, .run-info, .beginner-info,
+.bootcamp-info, .social-info {
+  opacity: 0;
+  position: absolute;
+  background: #fff;
+  top: 380px;
+  left: 0;
+  padding: 10px 10px 10px 0px;
+  border: 1px solid #acacac;
+  transition: opacity 0.4s ease;
+  max-width: 520px;
+  /*z-index: -1;*/
+}
+.parkrun-info p, .run-info p, .beginner-info p,
+.bootcamp-info p, .social-info p {
+  width: 90%;
+  font-size: 15px;
+  margin-top: 0;
 }
 
 /*----------------------------------------------
@@ -649,6 +671,7 @@ a:focus, a:hover {
   -moz-box-shadow: unset;
   box-shadow: unset;
   transition: background 0.4s ease, color 0.2s ease, opacity 0.8s ease;
+  padding-left: 35px;
 }
 .mobile {
   display: none; 
@@ -838,6 +861,10 @@ a:focus, a:hover {
   .contact {
     margin-bottom: -100px;
   }
+  .parkrun-info, .run-info, .beginner-info,
+  .bootcamp-info, .social-info {
+    top: 320px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .main {
@@ -852,6 +879,7 @@ a:focus, a:hover {
     padding-right: 0px;
   }
   .visible-xs {
+    margin-top: 10px;
     display: block !important;
   }
   .about .section-container .right-container {
@@ -862,6 +890,9 @@ a:focus, a:hover {
   }
   .section-container {
     max-width: 700px;
+  }
+  .info-icon {
+    height: 170px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -903,6 +934,9 @@ a:focus, a:hover {
   }
   .executives .text-container {
     margin-top: 50px;
+  }
+  .navbar-default {
+    padding-left: 0;
   }
   .navbar-default .navbar-nav li a {
     color: #fff;
@@ -959,6 +993,20 @@ a:focus, a:hover {
   }
   .executives .text-container .executive-member {
     margin-bottom: 0px;
+  }
+  .parkrun-info, .run-info, .beginner-info,
+  .bootcamp-info, .social-info {
+    top: 146px;
+    left: -300px;
+    max-width: 300px;
+
+  }
+  .parkrun-info p, .run-info p, .beginner-info p,
+  .bootcamp-info p, .social-info p {
+    font-size: 14px;
+  }
+  .info-icon {
+    height: 145px;
   }
 }
 
@@ -1060,6 +1108,7 @@ a:focus, a:hover {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+    z-index: 20;
   }
   .executive-row {
     display: block;
@@ -1081,5 +1130,19 @@ a:focus, a:hover {
     width: 100%;
     height: 30px;
     background-color: #1a4ca8;
+  }
+  .parkrun-info, .run-info, .beginner-info,
+  .bootcamp-info, .social-info {
+    top: 311px;
+    left: unset;
+    max-width: 350px;
+
+  }
+  .parkrun-info p, .run-info p, .beginner-info p,
+  .bootcamp-info p, .social-info p {
+    font-size: 14px;
+  }
+  .info-icon {
+    height: 120px;
   }
 }

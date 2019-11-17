@@ -33,8 +33,10 @@ function bindVelocity(){
           target = "#main";
         }
         else {
-          $('.navbar-collapse.in').collapse('hide');
-          document.getElementById('nav-icon').classList.toggle('open');
+          if(target != "#"){
+            $('.navbar-collapse.in').collapse('hide');
+            document.getElementById('nav-icon').classList.toggle('open');
+          }
         }
       }
       else {
@@ -48,6 +50,48 @@ function bindVelocity(){
 
       $(target).velocity("scroll", { duration: 1000, offset: -120 });
   });
+}
+function sessionInfoBoxes(){
+  $(".parkrun-session").hover(
+    function() {
+      $(".parkrun-info").css("opacity", "1");
+    },
+    function() {
+      $(".parkrun-info").css("opacity", "0");
+    }
+  );
+  $(".run-session").hover(
+    function() {
+      $(".run-info").css("opacity", "1");
+    },
+    function() {
+      $(".run-info").css("opacity", "0");
+    }
+  );
+  $(".beginner-session").hover(
+    function() {
+      $(".beginner-info").css("opacity", "1");
+    },
+    function() {
+      $(".beginner-info").css("opacity", "0");
+    }
+  );
+  $(".workout-session").hover(
+    function() {
+      $(".bootcamp-info").css("opacity", "1");
+    },
+    function() {
+      $(".bootcamp-info").css("opacity", "0");
+    }
+  );
+  $(".social-session").hover(
+    function() {
+      $(".social-info").css("opacity", "1");
+    },
+    function() {
+      $(".social-info").css("opacity", "0");
+    }
+  );
 }
 function initialiseMasonry(){
   $('.grid').masonry({
@@ -191,6 +235,7 @@ $(document).ready(function(){
   createScrollMagicTitleObjects();
   animateNavbar();
   fadeCaptionAndHeader();
+  sessionInfoBoxes();
   $(window).scroll(function(){
     animateNavbar();
     fadeCaptionAndHeader();
@@ -201,7 +246,7 @@ $(document).ready(function(){
   new universalParallax().init({
       speed: 2.0
     });
-  $('#nav-icon').click(function(){
+  $('.navbar-toggle').click(function(){
     $(this).toggleClass('open');
   });
   $(".header-container").css("height", ($(window).height() - 110) + "px")
