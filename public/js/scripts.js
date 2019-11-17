@@ -13,10 +13,10 @@ Pace.on("done", function(){
   },1000);
   setTimeout(function(){
     $(".secondFade").css('opacity', '1');
-  },1500);
+  },1700);
   setTimeout(function(){
     $(".thirdFade").css('opacity', '1');
-  },2400);
+  },2600);
 });
 
 function bindVelocity(){
