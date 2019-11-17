@@ -317,6 +317,9 @@ hr {
   margin-bottom: 50px;
   color: #fff;
 }
+.social p {
+  margin-bottom: 10px;
+}  
 .social .section-container .left-container,
 .social .section-container .mobile-container {
   float: left;
