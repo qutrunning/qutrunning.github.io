@@ -983,16 +983,6 @@ a:focus, a:hover {
   .executives .text-container .executive-member {
     min-height: 180px;
   }
-  .connecting-line-right,
-  .connecting-line-left {
-    opacity: 1;
-  }
-  .executives .text-container .executive-member.left a p {
-    margin-right: 20px;
-  }
-  .executives .text-container .executive-member.right a p {
-    margin-left: 20px;
-  }
   .padding-container {
     width: 120px;
   }
@@ -1071,5 +1061,13 @@ a:focus, a:hover {
   }
   .executives .section-container {
     padding-top: 0;
+  }
+  .mask {
+    position: relative;
+    z-index: 21;
+    margin-top: 150px;
+    width: 100%;
+    height: 30px;
+    background-color: #1a4ca8;
   }
 }
