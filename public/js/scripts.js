@@ -160,7 +160,7 @@ function fadeCaptionAndHeader(){
   }
   else {
     var height = ($(window).height() / 2);
-    $('.caption').css('margin-top', $(document).scrollTop() * 0.1);
+    $('.caption').css('margin-top', $(document).scrollTop() * 0.2);
   }
   $('.caption').css({
     'opacity': ((height - $(document).scrollTop()) / (height))
