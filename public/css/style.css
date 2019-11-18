@@ -179,7 +179,7 @@ hr {
   padding-top: 10vh;
   overflow: hidden;
 }
-.desktopTitle,
+.desktopFade,
 .firstFade,
 .secondFade,
 .thirdFade {
@@ -310,8 +310,8 @@ hr {
 ------------------------------------------------*/
 .social {
   background: #1a4ca8;
-  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
-  transform: perspective(1px) skewY(-2deg) translateZ(0);
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(-2deg) translateZ(0)  !important;
   z-index: 21;
   border-bottom: 2px solid #9b9b9b;
   margin-bottom: 50px;
@@ -325,8 +325,8 @@ hr {
   float: left;
   width: 40%;
   padding: 75px 15px 0px 15px;
-  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
-  transform: perspective(1px) skewY(2deg) translateZ(0);
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(2deg) translateZ(0) !important;
 }
 .social .section-container .mobile-container {
   display: none;
@@ -335,8 +335,8 @@ hr {
   float: right;
   width: 60%;
   padding: 0px 15px 0px 15px;
-  -webkit-transform: skewY(2deg) translateZ(0);
-  transform: skewY(2deg) translateZ(0);
+  -webkit-transform: skewY(2deg) translateZ(0) !important;
+  transform: skewY(2deg) translateZ(0) !important;
 }
 .social .section-container .right-container hr {
   border-top: 6px solid #d6ecff;
@@ -352,8 +352,8 @@ hr {
   width: 50%;
   float: left;
   background: #f4f7f6;
-  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
-  transform: perspective(1px) skewY(-2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(-2deg) translateZ(0) !important; 
   margin-top: -60px;
   min-height: 560px;
   padding-left: 175px;
@@ -363,8 +363,8 @@ hr {
   margin-bottom: 0;
 }
 .membership .section-container {
-  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
-  transform: perspective(1px) skewY(2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(2deg) translateZ(0) !important; 
 }
 .membership .text-container a {
   color: #333;
@@ -451,8 +451,8 @@ dd.price {
 .timetable {
   width: 50%;
   float: left;
-  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
-  transform: perspective(1px) skewY(-2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(-2deg) translateZ(0) !important; 
   margin-top: -65px;
   min-height: 560px;
   padding-left: 50px;
@@ -466,8 +466,8 @@ dd.price {
   font-size: 12px;
 }
 .timetable .section-container {
-  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
-  transform: perspective(1px) skewY(2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(2deg) translateZ(0) !important; 
 }
 .timetable p:nth-child(2) {
   margin-bottom: 0px;
@@ -580,8 +580,8 @@ a.session-box:hover {
 
 .executives {
   background: #fff;
-  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
-  transform: perspective(1px) skewY(2deg) translateZ(0);
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(2deg) translateZ(0) !important;
   top: -100px;
   margin-bottom: -265px;;
   border-bottom: none;
@@ -590,8 +590,8 @@ a.session-box:hover {
   padding-left: 60px;
 }
 .executives .section-container {
-  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
-  transform: perspective(1px) skewY(-2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(-2deg) translateZ(0) !important; 
 }
 .executives p {
   margin-bottom: 0;
@@ -636,8 +636,8 @@ a.session-box:hover {
 
 .contact {
   background: #1a4ca8;
-  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0);
-  transform: perspective(1px) skewY(-2deg) translateZ(0);
+  -webkit-transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(-2deg) translateZ(0) !important;
   top: 120px;
   margin-bottom: -50px;
   border-bottom: none;
@@ -646,8 +646,8 @@ a.session-box:hover {
   padding-left: 60px;
 }
 .contact .section-container {
-  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0);
-  transform: perspective(1px) skewY(2deg) translateZ(0); 
+  -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
+  transform: perspective(1px) skewY(2deg) translateZ(0) !important; 
 }
 .contact .section-container hr {
   border-top: 6px solid #d6ecff;

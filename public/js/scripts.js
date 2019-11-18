@@ -1,12 +1,10 @@
-var scrollPxOffset = 110;
-
 Pace.restart();
 Pace.on("done", function(){
   setTimeout(function(){
     $(".navbar-default").css('opacity', '1');
   },200);
   setTimeout(function(){
-    $(".desktopTitle").css('opacity', '1');
+    $(".desktopFade").css('opacity', '1');
   },1000);
   setTimeout(function(){
     $(".firstFade").css('opacity', '1');
@@ -48,7 +46,7 @@ function bindVelocity(){
       //Have a separate nav element that is not within the main section, 
       //for mobile to stop it from detaching when velocity activated 
 
-      $(target).velocity("scroll", { duration: 1000, offset: -120 });
+      $(target).velocity("scroll", { duration: 1000, offset: -85 });
   });
 }
 function sessionInfoBoxes(){
@@ -154,9 +152,10 @@ function animateNavbar(){
 }
 function fadeCaptionAndHeader(){
   var height = ($(window).height() / 2.7);
+  var heightHeader = ($(window).height() / 2);
   
   if($(window).width() > 479){
-    $('.caption').css('margin-top', $(document).scrollTop() * 1.2);
+    $('.caption').css('margin-top', $(document).scrollTop() * 1.1);
   }
   else {
     var height = ($(window).height() / 2);
@@ -165,6 +164,10 @@ function fadeCaptionAndHeader(){
   $('.caption').css({
     'opacity': ((height - $(document).scrollTop()) / (height))
   });
+  // $('.desktopTitle').css('margin-top', $(document).scrollTop() * 0.5);
+  // $('.desktopTitle').css({
+  //     'opacity': ((heightHeader - $(document).scrollTop()) / (heightHeader))
+  // });
   $('.mobileTitle').css('margin-top', $(document).scrollTop() * 1.1);
   $('.mobileTitle').css({
       'opacity': ((height - $(document).scrollTop()) / (height))
