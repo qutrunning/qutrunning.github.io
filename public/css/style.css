@@ -257,11 +257,15 @@ hr {
   display: block;
   width: auto;
   overflow: hidden;
+  transition: all 0.5s ease;
 }
 .large-img img {
   width: 100%;
   transition: all 1s ease;
   backface-visibility: hidden;
+}
+.large-img:hover {
+  border-radius: 24px;
 }
 .large-img img:hover {
   transform: scale(1.1);
@@ -624,8 +628,15 @@ a.session-box:hover {
   width: 100%;
   display: inline-block;
 }
-.executive-member p {
+.executive-member p,
+.executive-member b {
   margin-top: 10px;
+}
+.executive-member .padding-container img {
+  transition: all 0.6s ease;
+}
+.executive-member:hover .padding-container img {
+  border-radius: 12px;
 }
 .executives .text-container .executive-member:hover {
   /*transform: scale(1.1);*/
