@@ -393,7 +393,7 @@ hr {
 }
 .membership-card .logo-img {
   position: absolute; 
-  bottom: 67px;
+  bottom: 72px;
   left: 340px;
   width: 55px;
 } 
@@ -538,7 +538,7 @@ a.session-box:hover {
   color: black;
 }
 .info-icon {
-  height: 70px;
+  height: 90px;
   width: 30px;
   float: left;
   margin-right: 7px;
@@ -955,9 +955,6 @@ a.session-box:hover {
   .section-container {
     max-width: 700px;
   }
-  .info-icon {
-    height: 170px;
-  }
   .membership-card {
     height: 173px;
     width: 300px;
@@ -1085,9 +1082,6 @@ a.session-box:hover {
   .parkrun-info p, .run-info p, .beginner-info p,
   .bootcamp-info p, .social-info p {
     font-size: 14px;
-  }
-  .info-icon {
-    height: 145px;
   }
 }
 
@@ -1223,18 +1217,16 @@ a.session-box:hover {
   .bootcamp-info p, .social-info p {
     font-size: 14px;
   }
-  .info-icon {
-    height: 120px;
-  }
   .membership-card {
-    height: 196px;
-    width: 340px;
+    height: 198px;
+    width: 345px;
   }
   .membership-card .logo-img {
-    left: 283px;
+    left: 287px;
+    bottom: 69px;
   }
   dl {
-    margin-top: 75px;
+    margin-top: 77px;
     font-size: 14px;
   }
 }

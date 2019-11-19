@@ -104,6 +104,11 @@ $(document).on('click','.navbar-collapse.in',function(e) {
   }
 });
 $(window).resize(function(){
+  //For each info box, calculate the correct height of the box through
+  //info icon according to height of corresponding text
+  $( ".info-icon" ).each(function( index ) {
+    $(this).css('height', $(this).next().height() + 'px');
+  });
   $(".navbar-collapse").removeAttr("style");
   animateNavbar();
   setTimeout(function(){
@@ -243,8 +248,10 @@ $(document).ready(function(){
     animateNavbar();
     fadeCaptionAndHeader();
   });
-  $('.jarallax').jarallax({
-    speed: 1.2
+  //For each info box, calculate the correct height of the box through
+  //info icon according to height of corresponding text
+  $( ".info-icon" ).each(function( index ) {
+    $(this).css('height', $(this).next().height() + 'px');
   });
   new universalParallax().init({
       speed: 2.0
