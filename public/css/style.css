@@ -775,7 +775,7 @@ a.session-box:hover {
   bottom: -4px;
 }
 .navbar-default .navbar-nav li a {
-  color: white;
+  color: rgb(205, 230, 255);
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -787,7 +787,7 @@ a.session-box:hover {
   -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
   transition: all 0.4s;
-  color: #6776d3 !important; 
+  color: #fff !important; 
 }
 .navbar-brand {
   display: inline-block;
@@ -845,7 +845,6 @@ a.session-box:hover {
 }
 .navbar-collapse.in {
   overflow: hidden;
-  background: #414d9a;
 }
 .navbar-collapse.in  .navbar-nav {
   transition: all 0.3s ease-in-out;
@@ -870,7 +869,8 @@ a.session-box:hover {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #0c88ff;
+  /*background: #0c88ff;*/
+  background: #fff;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -1013,7 +1013,7 @@ a.session-box:hover {
     text-align: left;
   }
   .navbar-header {
-    height: 53px;
+    height: 54px;
   }
   .navbar-collapse.collapsing {
     background: #414d9a;
@@ -1027,9 +1027,9 @@ a.session-box:hover {
   .navbar-default {
     padding-left: 0;
   }
-  .navbar-default .navbar-nav li a {
+/*  .navbar-default .navbar-nav li a {
     color: #fff;
-  }
+  }*/
   .main .header-container {
     top: 30%;
   }

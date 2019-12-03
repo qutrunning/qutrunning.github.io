@@ -115,23 +115,23 @@ $(window).resize(function(){
     $(".header-container").css("height", ($(window).height() - 110) + "px")
   }, 200);
 });
-function addWhiteNav(){
-  $(".navbar-nav li a").css("color", "black");
-  $(".navbar-default").css("background", "rgba(255,255,255,1)");
+function addDarkNav(){
+  // $(".navbar-nav li a").css("color", "black");
+  $(".navbar-default").css("background", "rgba(0, 14, 53, 0.93)");
   $(".navbar-default").css("box-shadow", "2px 2px 22px -4px rgba(0,0,0,0.44)");
-  $(".navbar-collapse").css("background-color", "rgba(255,255,255,1)");
+  // $(".navbar-nav li a").css("color", "rgb(155, 204, 255)");
+  $(".navbar-collapse").css("background-color", "rgba(0, 14, 53, 0.87)");
+  $(".navbar-nav li a:hover ").css("color", "white");
 }
-function addWhiteNavDesktop(){
-  $(".navbar-default").css("background", "#fff");
+function addDarkNavDesktop(){
+  $(".navbar-default").css("background", "rgba(0, 14, 53, 0.93)");
   $(".navbar-default").css("box-shadow", "2px 2px 22px -4px rgba(0,0,0,0.44)");
-  $(".navbar-nav li a").css("color", "black");
   $(".navbar-collapse").css("background-color", "none");
 }
 function addTransparentNav(){
   //Make navbar transparent if scroll position is on main section
-  $(".navbar-default").css("background", "rgba(0,0,0,0.5)");
+  $(".navbar-default").css("background", "rgba(0,0,0,0.42)");
   $(".navbar-default").css("box-shadow", "none");
-  $(".navbar-nav li a").css("color", "white");
   $(".navbar-collapse").css("background-color", "none");
   // $(".navbar-nav li a:hover ").css("color", "#6776d3");
   $(".navbar-nav li a:focus ").css("color", "white");
@@ -140,13 +140,13 @@ function animateNavbar(){
   //If on mobile
   if($(window).width() < 767){
     $(".navbar-default").addClass("opaque");
-    addWhiteNav();
+    addDarkNav();
   }
   //If on desktop
   else {
     //Scroll position is in About section
     if($(document).scrollTop() > 10) {
-      addWhiteNavDesktop();
+      addDarkNavDesktop();
     }
     //Scroll position is in Main section
     else {
