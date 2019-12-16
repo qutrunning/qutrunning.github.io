@@ -91,12 +91,6 @@ function sessionInfoBoxes(){
     }
   );
 }
-function initialiseMasonry(){
-  $('.grid').masonry({
-    itemSelector: '.grid-item'
-    // columnWidth: 150
-  });
-}
 //collapse the navbar upon selection from hamburger menu
 $(document).on('click','.navbar-collapse.in',function(e) {
   if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {

@@ -561,7 +561,7 @@ a.session-box:hover {
   opacity: 0;
   position: absolute;
   background: #fff;
-  top: 380px;
+  top: 440px;
   left: 0;
   padding: 10px 10px 10px 0px;
   border: 1px solid #acacac;
@@ -938,7 +938,7 @@ a.session-box:hover {
   }
   .parkrun-info, .run-info, .beginner-info,
   .bootcamp-info, .social-info {
-    top: 320px;
+    top: 360px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1219,7 +1219,7 @@ a.session-box:hover {
   }
   .parkrun-info, .run-info, .beginner-info,
   .bootcamp-info, .social-info {
-    top: 311px;
+    top: 345px;
     left: unset;
     max-width: 350px;
 
