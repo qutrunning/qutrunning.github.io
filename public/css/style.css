@@ -409,7 +409,7 @@ hr {
   width: 100%;
 }
 dl {
-  margin-top: 100px;
+  margin-top: 124px;
   padding: 10px;
   text-align: left;
   color: #fff;
@@ -974,7 +974,7 @@ a.session-box:hover {
     font-size: 24px;
   }
   dl {
-    margin-top: 53px;
+    margin-top: 80px;
     font-size: 12px;
   }
   .membership-card .logo-img {
@@ -1237,7 +1237,7 @@ a.session-box:hover {
     bottom: 69px;
   }
   dl {
-    margin-top: 77px;
+    margin-top: 100px;
     font-size: 14px;
   }
 }
