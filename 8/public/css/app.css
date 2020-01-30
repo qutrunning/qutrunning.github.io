@@ -1,0 +1,182 @@
+.first-block {
+	width: 100%;
+	background-color: #ff9900;
+	padding-bottom: 0px;
+	color: #000033;
+}
+.second-block {
+	width: 100%;
+	float: left;
+	background-color: #000033;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #ff9900; 
+}
+.third-block {
+	width: 100%;
+	float: left;
+	background-color: #ff9900;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+    color: #000033;
+}
+.fourth-block {
+	width: 100%;
+	float: left;
+	background-color: #000033;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+.fifth-block {
+	width: 100%;
+	float: left;
+	background-color: #ff9900;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+    color: #000033;
+
+}
+.sixth-block {
+	width: 100%;
+	float: left;
+	background-color: #000033;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #ff9900;
+
+}
+.seventh-block {
+	width: 100%;
+	float: left;
+	background-color: #ff9900;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #000033;
+
+}
+
+.race-table {
+	border-color: #000033;
+}
+
+.sponsors {
+	padding-top: 50px;
+}
+
+
+
+#map-canvas {
+	height: 700px;
+	width: 100%;
+	display: block;
+}
+
+.color-orange {
+	color: #ff9900;
+}
+.color-blue {
+	color: #000033;
+}
+.timetable {
+	width: 90%;
+}
+.executives-1 {
+	padding-bottom: 100px;
+}
+
+
+
+/* Timetable */
+
+
+th {
+	color: white;
+}
+
+.run {
+	background-color: #84e184;
+}
+.workout {
+	background-color: #ff6666;
+}
+.swim {
+	background-color: #80ccff;
+}
+.social {
+	background-color: #ffff80;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color: #ff9900;
+    color: #000033;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #ff9900;
+      color: #000033;
+}
+
+a.session-box {
+    color: #000033;
+    text-decoration: underline;
+}
+a.session-box:hover {
+	text-decoration: underline;
+	color: #ff9900;
+}
+
+.dont-break-out {
+
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+
+}
+
+
+
+/* Navbar */
+
+.navbar-default {
+  background-color: #000033;
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ff9900;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ff9900;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ff9900;
+  background-color: transparent;
+}

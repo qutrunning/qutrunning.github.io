@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:image" content="http://www.qutrunning.com.au/public/img/qut_running.jpg" />
+	<meta property="og:image:width" content="960" />
+	<meta property="og:image:height" content="652" />
+	<meta property="og:url" content="http://qutrunning.com.au" />
+
+	<meta property="og:title" content="QUT Running">
+	<meta property="og:description" content="QUT Running is the running club of Queensland University of Technology. We do several runs a week designed for all levels.">
+	<meta name="description" content="QUT Running is the running club of Queensland University of Technology. We do several runs a week designed for all levels.">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#0C2D56">
+	<link rel="icon" sizes="192x192" href="./public/img/favicon.ico">
+
+	<title>QUT Running</title>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="./public/js/jquery-2.1.4.min.js"></script>
+		
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./public/js/app.js"></script>
+	<script type="text/javascript" src="./public/js/parallax.min.js"></script>
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74966886-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="./public/css/carousel.css" rel="stylesheet">
+	<link href="./public/css/app.css" rel="stylesheet">
+</head>
+
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	
+	
+	<!-- ============== First block =================== -->
+	<!-- ============== Carousel ====================== -->	
+	<div id="home2" class="fixed" role="toolbar">
+	
+		<div class="row">
+			<br>
+			<div class="first-block">
+						<!-- Carousel ================================================== -->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+							</ol>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class="first-slide" src="./public/img/b2brisbane.jpg" alt="First slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Welcome to QUT Running</h1><br>
+												<p>
+												<br>QUT Running is a social & fitness group, for anyone <br>interested in improving their health,<br> fitness and well-being. <br>We are by no means elite runners, <br>but cater to people at any level from beginner to<br> the very experienced.
+												
+												<br>
+												<br>
+													<!--<a class="btn btn-lg btn-orange" href="https://b2b.racetorun.com/enternow.aspx" target="_blank" role="button">Enter the race</a> //Button edit out for later-->
+												</p>
+
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<img class="second-slide" src="./public/img/social.jpg" alt="Second slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Get Social with QUT Running!</h1><br>
+												<p>The new timetable has been released. <br>Make sure you check the latest updates and don’t miss out on our sessions.<br> We've prepared some really fun stuff for you!</p>
+												<br>
+												<br>
+												<br>
+												<br>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<img class="third-slide" src="./public/img/fun.jpg" alt="Third slide">
+										<div class="container">
+											<div class="carousel-caption">
+												<h1>Perks of Membership</h1><br>
+												<p>
+													Sessions designed for <b>all levels</b><br>
+													<b>Bootcamp</b> session once a week<br>
+													Access to <b>Swimming</b> pool once a week<br>
+													<b>Gym access</b> every wednesday<br>
+													Complimentary <b>singlet</b><br>				
+												</p>
+												<a class="btn btn-lg btn-orange" href="#timetablehead" role="button" id="go-timetable-2">See the timetable</a>
+												<br>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div><!-- /.carousel -->
+							<div class="swipe">
+								<br>
+								<img class="img-responsive" src="./public/img/swipe.png" alt="Swipe" align=center width="35px" height="35px">
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="590">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="go-home" class="navbar-brand" href="#home2">
+						<img src="./public/img/transparent.png" alt="Dispute Bills">
+					</a>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a id="go-home2" href="#home2">Home</a></li>
+						<li><a id="go-about" href="#about">About</a></li>
+						<li><a id="go-get-started" href="#get-started">Events</a></li>
+						<li><a id="go-timetable" href="#timetablehead">Timetable</a></li>
+						<li><a id="go-overview" href="#overview">Sessions</a></li>
+						<li><a id="go-map" href="#map">Map</a></li>
+						<li><a id="go-executives" href="#executives">Executives</a></li>
+						<li><a id="go-contact" href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<!-- ============== Second block =================== -->
+		<!-- ============== About ========================== -->		
+		<div class="row">
+			<div id="about" class="second-block">
+			<div class="centered-about">
+			<br>
+			<div class="col-md-4 text-center col-md-offset-1">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<img class="img-responsive" src="./public/img/qut_running.jpg" alt="Second slide">
+					<br>
+					<img class="img-responsive" src="./public/img/qut_running_social.jpg" alt="Second slide">
+				</div>
+				<div class="col-md-6 text-center">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1> About QUT Running </h1>
+					<br>
+					<p>
+						QUT Running is a social & fitness group for anyone interested in improving their health, fitness and well-being. We are by no means elite runners, but cater to people at any level from beginner to the very experienced. Being a social club we also host a number of events throughout the year, and provide you with the opportunity to meet a variety of new people at QUT. We believe everyone can love running. So if you want to start up, pick up where you left off or just keep going this is the perfect group for you. We tailor our sessions to be fun, sociable, welcoming and at the same time be providing great fitness oportunities.
+					</p>
+					<p>
+						Join our group on Facebook - <br>
+						<a href="https://www.facebook.com/groups/qutrunning/">QUT Running</a>
+					</p>
+					<br>
+					<h4>Signing up</h4>
+					<p>
+						Do you want to become a member of QUT Running and QUT Running Social? Just show up either at our O-Week stall or at one of our sessions throughout the semester and talk to a member of our Exec Team. We are happy to answer any and all questions and sign you up on the spot. You can even try a running session before you join, free of charge. IMPORTANT: Please ensure that you come around early enough, so that we have time to talk to you without delaying our session. Within the first few weeks the Exec Team will always be at the Kidney Lawn 30 min prior to the start of the session.
+					</p>
+					<br>
+
+					<h4>Annual fee</h4>
+					<br>
+
+					<dl class="dl-horizontal">
+						<dt>Full</dt>
+						<dd class="text-left">
+							Includes complimentary singlet and access to gym, swim and all running session.
+							<br>
+							<u>$40.00</u>
+						</dd>
+						<br>
+						<dt>Basic</dt>
+						<dd class="text-left">
+							Access to all sessions excluding gym and swim
+							<br>
+							<u>$15.00</u>
+						</dd>
+					</dl>
+					<br>
+					<h1> QUT Running Social </h1>
+					<br>
+					<p>
+						QUT Running has a big social aspect. Following our running session on Monday we unwind with dinner and drinks at Beach House in the city. This is a great way to get to know your fellow runners, as it is a relaxed and friendly atmosphere. After dinner we usually kick on at Music City for karaoke and then head to the Down Under bar. We have a few drinks at both places and enter teams in Bar Wars, which is always massive fun. Every few weeks we spice things up, by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
+						<br>
+						<br>
+						We also attend events hosted by the QUT Guild and co-host events with other clubs, such as QUT Snowriders and QUT Cheer and Dance. These provide excellent opportunities to meet people from outside QUT Running in an a relaxed environment!
+						<br>
+						<br>
+						Now that you have a bit of a background on the social side of the club, come and join us on Monday evening after our running session! We look forward to seeing you! Don't forget to join the Facebook group for more information.
+						<br>
+						<br>
+						<br>
+					</p>
+				</div>
+			</div>
+		</div>		
+		<br>
+		<br>
+		<br>
+	</div>
+	<div class="footsteps" id="get-started">
+			<img class="img-responsive" src="./public/img/footstep.png" alt="yes" width="75px" height="75px">	
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="caption-block">
+				<div class="caption">
+					<span class="border">Events and races</span>
+				</div>
+			</div>
+	</div>
+	<div class="bgimg-initial" data-parallax="scroll" data-type="background" data-speed="100" data-image-src="./public/img/wall_initial.jpg">
+	<br>
+	</div>
+	<div class="encapsulate">
+		
+
+		<!-- ============== Third block =================== -->
+		<!-- ============== Get Started =================== -->
+		<div class="row">
+			<div class="third-block">
+				<div class="centered">
+					<div class="col-md-7 text-center col-md-offset-1">
+						<dl class="dl-horizontal">
+							<br>
+							<dt>Twillight Running Festival</dt>
+							<dd class="text-left">
+								QUT Running will be entering teams into various running, and obstacle, races throughout the year. One of the earliest races of the year is the Twilight running festival held at St Lucia on the 20th March. This is a festival with distances suiting everyone; 21.1km, 10km, 5km, 1km.
+								<br>
+								<a href="http://www.twilightrun.com.au/">Twillight Running Festival link</a>
+								<br>
+								<br>
+							</dd>
+
+							<dt>QUT Classic</dt>
+							<dd class="text-left">
+								QUT Classic is an event organised by the Guild and is set to 15. May. The distances covered are 10km, 5km and 1km.
+								<br>
+								<a href="http://www.qutclassic.com/">QUT Classic link</a>
+								<br>
+								<br>
+							</dd>
+
+							<dt>Brisbane Marathon</dt>
+							<dd class="text-left">
+								Brisbane Marathon Festival is one of Brisbane’s major sporting events. The distances covered are 42.2km, 21.1km, 10km, 5km and the courses are run through the CBD on the 7th of August.
+								<br>
+								<a href="http://www.brisbanemarathon.com/">Brisbane Marathon link</a>
+								<br>
+								<br>
+							</dd>
+
+							<dt>Bridge To Brisbane</dt>
+							<dd class="text-left">
+								Later on in August (28th), the annual Bridge to Brisbane event occurs. The race distances are 10km and 5km – with the 10km starting at the Gateway Bridge and finishing at the Brisbane RNA Showgrounds. QUT Running always has a strong presence in this event.
+								<br>
+								<a href="http://www.bridgetobrisbane.com.au/">Bridge to Brisbane link</a>
+								<br>
+								<br>
+							</dd>
+
+							<dt>Tough Mudder</dt>
+							<dd class="text-left">
+								As well as running events, QUT running usually enters teams in obstacle races such as Tough Mudder (7th & 8th May) and Spartan Race (27th Feb) also. These events are always a lot of fun and can be taken as seriously or laid-back as you wish.
+								<br>
+								<a href="https://toughmudder.com/">Tough Mudder link</a>
+								<br>
+								<br>
+							</dd>
+
+							<dt>Other Events</dt>
+							<dd class="text-left">
+								There are many other events happing through the year in Brisbane and we will aim to get involved in as many as possible. If you have any suggestions of events you’d like to participate in, let one of our executives know and we can organise a team!
+								<br>
+								<br>
+
+							</dd>
+						</dl>					
+
+					</div>
+					<div class="col-md-3 text-center">
+						<br>
+						<br>
+						<img class="img-responsive" src="./public/img/banana.jpg" alt="Eamon">
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+			</div>
+		</div>
+
+
+
+		<div class="bgimg-1" id="timetablehead">
+		</div>
+
+		<div class="row">
+			<div class="caption-block">
+				<div class="caption">
+					<span class="border">Timetable</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="bgimg-2">
+		</div>
+
+		<!-- ============== Fourth block =================== -->
+		<!-- ============== Timetable ====================== -->
+		<div class="row">
+			<div id="timetable" class="fourth-block">
+				<div class="centered">
+					<div class="col-md-12 text-center">
+						<p class="color-white">Click or hover over a session to read more about it.</p>
+						<div class="visible-xs color-white">To see the rest of the table, scroll sideways.</div>
+						<br>
+						<br>
+						<div class="table-responsive">
+							<table class="table table-bordered color-blue">
+								<thead>
+
+									<tr>
+										<th>Time</th>
+										<th>Monday</th>
+										<th>Tuesday</th>
+										<th>Wednesday</th>
+										<th>Thursday</th>
+										<th>Friday</th>
+										<th>Saturday</th>
+										<th>Sunday</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">08:00</th>
+										<td class="swim">
+											<a href="#" class="session-box" title="
+											Full membership required.
+											All swimming levels welcome.
+											2 lanes provided by Healthstream Gardens Point.
+											Mixture of casual swimming and tailored exercises.
+											Supervised by the QUT Running Exec Team.
+											">Swimming</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">08:30</th>
+										<td class="swim">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership required.
+											All swimming levels welcome.
+											2 lanes provided by Healthstream Gardens Point.
+											Mixture of casual swimming and tailored exercises.
+											Supervised by the QUT Running Exec Team.
+											">Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Casual floating session through Botanic Garden or along the Brisbane River.
+											Supervised by Alex.
+											">Casual</a>
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">09:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Casual floating session through Botanic Garden or along the Brisbane River.
+											Supervised by Alex.
+											">Running Session</a>
+										</td>
+										<td></td>
+										<td class="social">
+											<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">Occasional</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">09:30</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="social">
+											<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">sessions</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">10:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="social">
+											<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">to be</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">11:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="social">
+											<a href="#" class="session-box" rel="tooltip" title="This might be a run, an event or just arranging to get together.">announced</a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">12:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">13:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">14:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">15:00</th>
+										<td></td>
+										<td></td>
+										<td class="workout">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership only.
+											Healthstream Gym access at Gardens Point.
+											Be your own boss.
+											Supervised by Anthony.
+											">Gym Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">16:00</th>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by the QUT Running Exec Team.
+											">Running</a>
+										</td>
+										<td class="workout">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership only.
+											Improve stamina, stability and strength.
+											Different exercises for all levels.
+											Supervised by the QUT Running Exec Team.
+											">Boot</a>
+										</td>
+										<td></td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Ideal for beginners.
+											Short and casual exercises to motivate and improve.
+											Supervised by Declan (Secretary).
+											">Beginner/Casual</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">16:30</th>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											All running levels welcome.
+											Mixture of interval exercises throughout the Botanic Garden.
+											Improving agility, acceleration, endurance and speed.
+											Great opportunity to meet fellow runners.
+											Supervised by the QUT Running Exec Team.
+											">Session</a>
+										</td>
+										<td class="workout">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Full membership only.
+											Improve stamina, stability and strength.
+											Different exercises for all levels.
+											Supervised by the QUT Running Exec Team.
+											">Camp</a>
+										</td>
+										<td class="intermediate-run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											For experienced runners only.
+											Mixture of endurance, mountain, crescendo and fartlek sessions.
+											Ideal practice for Half-marathons and longer.
+											">Intermediate</a>
+										</td>
+										<td class="run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Ideal for beginners.
+											Short and casual exercises to motivate and improve.
+											Supervised by Declan (Secretary).
+											">Running Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">17:00</th>
+										<td></td>
+										<td></td>
+										<td class="intermediate-run">
+											<a href="#" class="session-box" rel="tooltip" title="
+											For experienced runners only.
+											Mixture of endurance, mountain, crescendo and fartlek sessions.
+											Ideal practice for Half-marathons and longer.
+											">Session</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">17:30</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">18:00</th>
+										<td class="social">
+											<a href="#" class="session-box" rel="tooltip" title="
+											Everyone welcome.
+											A relaxed, low-key way to meet people outside the sessions.
+											We go to a variety of venues so you won’t get bored.
+											We leave after the running session is complete.
+											Non-runners, friends and guests are encouraged to attend!
+											">QUT Social</a>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="overview" class="bgimg-3">
+		</div>
+
+		<div class="row">
+			<div class="caption-block">
+				<div class="caption">
+					<span class="border">Session Overview</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="bgimg-4">
+		</div>
+
+		<!-- ============== Fifth block =================== -->
+		<!-- ============== Session Overview ================ -->
+		<div class="row">
+			<div id="timetable" class="fifth-block">
+				<div class="centered-overview">										
+					<div class="col-md-4 col-md-offset-1 color-white">
+						<h3>Swimming</h3>
+						<br>
+						<p>
+							Is there any better motivation to start into a new week than to jump into a pool? Of course there isn’t. So come along to our Monday morning swimming session. Meeting point is right in front of the Healthstream entrance next to the food court on Gardens Point Campus. Please be there shortly before 8am, so that you don’t lose too much time getting changed. Using 2 different 50meter swimming lanes, we are providing good exercises and advices for your whole body, depending on your individual level. Full membership is required!
+						</p>
+						<br>
+						<br>
+
+						<h3>Running</h3>
+						<br>
+						<p>
+							This is our most popular running session. Non regard of your running skills, come along to a fun session through the Botanic Garden. Our running coordinator Eamon provides many different exercises to help you to improve agility, speed, acceleration and endurance. The sessions will usually have the form of an interval session with varying length and amount of the intervals. Furthermore this is a great opportunity to meet other fellow runners, to have a chat and make friends. If you are new to QUT Running, this is the session you should definitely attend. We are happy to answer questions, explain what’s going on or just introduce you to other people. Meeting point for this session is the Kidney Lawn. From there we head to X-Block to store our bags, before we start our run in the Botanic Garden.
+						</p>
+						<br>
+						<br>
+
+						<h3>Casual Running</h3>
+						<br>
+						<p>
+							You we’re not able to attend the Monday session? Or you need some extra workouts to stay fit? No worries! This casual running session is suitable for everybody. We’ll take it easier today after our Monday night with QUT Running Social! Starting at 5 pm from Kidney Lawn, we head of to either the Botanic Garden or to a nice paced track along the river.
+						</p>						
+						<br>
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+
+						<h3>Gym</h3>
+						<br>
+						<p>
+							Healthstream is providing the opportunity for us to use their gym facilities (including changing room and showers) on Wednesdays from 3pm to 4pm. Meeting point is right in front of the Healthstream entrance next to the food court on Gardens Point Campus. Please be there shortly before 3pm, so that you don’t lose too much time getting changed. During the gym session you are your own boss, we won’t tell you what to do. Create your own workout or take some advices from our experienced gym coordinator Anthony. Full membership is required!
+						</p>
+						<br>
+						<br>
+
+						<h3>Intermediate and Expert Running</h3>
+						<br>
+						<p>
+							Attention! For experienced runners only! If you’re unsure about being experienced enough; are you able to cover 10km in less than 55min? If the answer is yes, come along! We are trying to push you even harder. A mixture of endurance, mountain, speed or interval sessions is waiting for you. Meeting at Kidney Lawn at 5 pm, we head off to several different tracks throughout Brisbane. You are guided by the experienced runner Eamon Burke.
+						</p>
+						<br>
+						<br>
+
+						<h3>Beginner Running</h3>
+						<br>
+						<p>
+							Our Beginner session on Thursdays at 5pm is for all those who recently started to run or are just coming back from a longer break. All exercises are designed for beginners! We help you to get into this sport and to motivate you to run more often. We won’t cover a long distance or a high speed. Meeting point is the Kidney Lawn.
+						</p>
+						<br>
+						<br>
+
+						<h3>Bootcamp</h3>
+						<br>
+						<p>
+							Bootcamp is an excellent opportunity to work on your stamina and strength/stability at the same time. Our bootcamp coordinator Håvard is combining running and strength exercises for you in order to get your body fit for the beach! Every fitness level is welcome. Meeting point is the Kidney Lawn. Come and join us for a nice session in the Botanic Garden.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="map" class="bgimg-5">
+		</div>
+
+		<div class="row">
+			<div class="caption-block">
+				<div class="caption">
+					<span class="border">Location</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="bgimg-6">
+		</div>
+
+		<!-- ============== Sixth block =================== -->
+		<!-- ============== Map and Strava ================ -->
+		<div class="row">
+			<div class="sixth-block">
+				<div class="centered">
+					<div class="col-md-8 text-center">
+							<div id="map-canvas"></div> 
+					</div>
+					<br>
+					<br>
+					<div class="visible-xs color-white"><br></div>
+					<div class="col-md-4 text-center">
+						<iframe height='160' width='280' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/qutrunning/latest-rides/128a3994c022301ebb848cc884c082fef33038ed?show_rides=false'></iframe>
+						<br>
+						<iframe height='454' width='280' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/qutrunning/latest-rides/128a3994c022301ebb848cc884c082fef33038ed?show_rides=true'></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="executives" class="bgimg-7">
+			<div class="caption-block">
+				<div class="caption">
+						<span class="border">Executives</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- ============== Seventh block =================== -->
+		<!-- ============== Executives ==================== -->
+		<div class="row">
+			<div class="seventh-block">
+				<div class="centered">
+
+					<div class="col-md-12 text-center">
+						<div class="row executives-1">
+							<br>
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/eamon.jpg" alt="President" width="140" height="140">
+								<h2>President</h2>
+								<h3>Eamon Burke</h3>
+								<br>
+							</div><!-- /.col-lg-4 -->
+
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/nadine.jpg" alt="Secretary" width="140" height="140">
+								<h2>Secretary</h2>
+								<h3>Nadine Haas</h3>
+								<br>
+							</div><!-- /.col-lg-4 -->
+
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/alex.jpg" alt="Treasurer" width="140" height="140">
+								<h2>Treasurer</h2>
+								<h3>Alex Jenkins</h3>							
+								<br>
+							</div><!-- /.col-lg-4 -->
+						</div><!-- /.row -->
+
+						<div class="row executives-2">
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/cheryl.jpg" alt="Sessions" width="140" height="140">
+								<h2>Session Coordinator</h2>
+								<h3>Cheryl Lam</h3>
+								<br>
+							</div><!-- /.col-lg-4 -->
+
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/joe.jpg" alt="Workout" width="140" height="140">
+								<h2>Gym/Swim/Boot Camp</h2>
+								<h3>Joe Murphy</h3>
+								<br>
+							</div><!-- /.col-lg-4 -->
+
+							<div class="col-lg-4">
+								<img class="img-circle" src="./public/img/ben.jpg" alt="Social" width="140" height="140">
+								<h2>Social Coordinator</h2>
+								<h3>Ben Vickery</h3>
+								<br>
+							</div><!-- /.col-lg-4 -->
+						</div><!-- /.row -->
+
+						<div class="row">
+							<div class="col-md-12 text-center">		
+								<img class="img-circle" src="./public/img/tim.png" alt="IT" width="140" height="140">
+								<h2>Website and IT</h2>
+								<h3>Tim Jones</h3>
+								<br>
+							</div>
+						</div><!-- /.row -->
+
+					</div>
+				</div>
+			</div>
+		</div>	
+
+
+
+		<div id="contact" class="bgimg-8">
+			<div class="caption-block">
+				<div class="caption">
+						<span class="border">Contact</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- ============== Eighth block =================== -->
+		<!-- ============== Contact ========================= -->
+		<div class="row">
+			<div class="eighth-block">
+				<div class="centered-contact">
+					<div class="col-md-12 text-center">
+						<div class="row">
+							<p>
+								To contact QUT Running, join our Facebook group, contact any of the executives or send us an <a href="mailto:qutrunning@gmail.com">email</a>.
+								<br>
+								Facebook - <a href="https://www.facebook.com/groups/qutrunning/" target="_blank"> QUT Running</a>
+							</p>
+						</div>
+						<div class="row">
+							<br>
+							Follow QUT Running
+							<br>
+							<br>
+							<a href="https://www.strava.com/clubs/qutrunning" target="_blank">
+								<img src="./public/img/strava.png" alt="Strava" height="50" width="50">
+							</a>
+							<a href="https://www.facebook.com/QUTRunning/" target="_blank">
+								<img src="./public/img/facebook.png" alt="Facebook" height="50" width="50">
+							</a>
+							<a href="https://instagram.com/qutrunning/" target="_blank">
+								<img src="./public/img/instagram.png" alt="Instagram" height="50" width="50">
+							</a>
+							<br>
+							<br>
+						</div>
+
+						<div class="row sponsors">
+							<h1>Sponsors</h1>
+							<br>
+							<br>
+							<div class="col-md-4 col-md-offset-1">
+								<img class="img-responsive" align="middle" src="./public/img/logo-downunderbar.jpg" alt="Down Under Bar">
+								<p>
+									<br>
+									<a class="dont-break-out" href="http://www.stayatbase.com/" target="_blank">Base Backpacker Accomodation</a><br>
+									<a class="dont-break-out" href="https://www.facebook.com/downunderbarbrisbane/" target="_blank">Down Under Facebook Page</a><br>
+									<br>
+									Brisbane is the perfect place to party, with its superb weather, bars, clubs and pubs, and the Base Backpackers Brisbane Central youth hostel is located in the centre of all the action!
+									<br><br>
+									Base Backpackers Brisbane Central has everything a backpacker could want, with our five floors offering a wide variety of rooms to appeal to everyone from the newly-arrived to the newly-wed, including dormitory and private rooms. All rooms are secured via electronic keycards, while you can keep your valuables doubly secured with our supplied lockers. Linen is also provided so there's no need to bring your sleeping bag!
+									<br><br>
+									Downstairs the Down Under Bar is where you can go full on, flat out! Come on down to Brisbane's most famous backpacker bar where you can win great prizes, dance the night away: or even meet Mr/Mrs Right (or Mr/Mrs Right Now…). If you're after something a little quieter then our Zi Bar does great food and coffee, with regular functions to keep you entertained.
+								</p>
+								<br>
+								<br>
+								<br>
+								<img class="img-responsive" src="./public/img/logo-intraining.png" alt="intraining">
+								<p>
+									<br>
+									<a class="dont-break-out" href="http://intraining.com.au/" target="_blank">Intraining Website</a><br>
+									<a class="dont-break-out" href="https://www.facebook.com/intrainingshop/" target="_blank">Facebook Page</a><br>
+									<br>
+									Our goal at intraining is to share the joy of running with the community.  We are the one stop running shop where you can find the best advice for all your running needs.  We help people of all abilities find the best pair of running shoes to suit you.
+									<br><br>
+									Our sports injury clinic and rehab studio can help in assessing injuries and also offer comprehensive workshops focusing on running technique and core stability.
+									<br><br>
+									intraining has one of Australia’s biggest running and triathlon clubs with multiple coached sessions all over Brisbane.
+									<br><br>
+									intraining organise and manage many of Brisbane’s biggest events including the <a href="http://www.brisbanemarathon.com.au/" target="_blank">Brisbane Marathon Festival</a> and the Twilight Run Series in <a href="http://www.twilightrun.com.au/" target="_blank">March</a> and <a href="http://www.twilightbayrun.com.au/">September</a>.
+									<br><br>
+									Our two stores are located at 33 Park Road, Milton and Indooroopilly Shopping Centre.
+								</p>
+								<br>
+								
+							</div>
+							<div class="col-md-4 col-md-offset-2">
+								<img class="img-responsive" src="./public/img/logo-injinji.jpg" alt="Injinji">
+								<p>
+									<br>
+									<a class="dont-break-out" href="http://www.injinjiperformanceshop.com.au/" target="_blank">Injinji Website</a><br>
+									<a class="dont-break-out" href="https://www.facebook.com/InjinjiPP/" target="_blank">Facebook Page</a><br>
+									<br> 
+									Injinji - pronounced "In-gin-gee" - is a word used to described the reaching of one's peak of performance. The running apparel company is dedicated to helping athletes attain their personal best by offering a five-toe-sleeve-designed seamless, anti-fricion interface that allows the foot to perform naturally and efficiently inside any shoe. Injinji Performance Products is a proud distributor for leading high quality American athletic apparel and footwear brands in Australia.<br>
+									Their products include Injinji Performance Toesocks, Altra Zero Drop Footwear, Body Glide Anti-Chafe Balm, Ultimate Direction, Armpocket Armband, Yankz Surelace  and Zensah Compression.
+								</p>
+								<br>
+								<img class="img-responsive" src="./public/img/logo-tomtom.jpg" alt="TomTom">
+								<p>
+									<a class="dont-break-out" href="http://www.tomtom.com/en_au/sports/fitness-watches/" target="_blank">TomTom Website</a><br>
+									<a class="dont-break-out" href="https://www.facebook.com/TomTomAUNZ/">Facebook Page</a><br>
+									<br>
+									At TomTom our mission is to make technology so easy to use, that everyone can benefit from it.
+									<br>
+									Their sports watches offer a number of cool features including; over 500 songs of music storage, 24/7 activity tracking, built-in heart rate monitor, automatic sleep tracking, wireless syncing, water resistant, customizable straps.
+								</p>
+								<br>
+								<br>
+								<img class="img-responsive" src="./public/img/logo-healthstream.png" alt="Healthstream QUT">
+								<p>
+									<br>
+									<a class="dont-break-out" href="http://www.healthstreamqut.com.au/" target="_blank">Healthstream Website</a><br>
+									<a class="dont-break-out" href="https://www.facebook.com/HealthstreamQutGardensPoint/" target="_blank">Facebook Page</a><br>
+									<br>
+									Healthstream Fitness Club and Aquatics Centres are your complete health and fitness facility. We offer a wide variety of facilities at Kelvin Grove and Gardens Point QUT campuses including a state of the art Fitness club, full Olympic-sized heated swimming pool and sports stadium. They also offer a range of services including Personal Training, massage, and fitness certification in partnership with AIPT.
+									<br><br>
+									You don’t need to be a student or QUT staff to join the Healthstream QUT community. Healthstream QUT is open to the general public, and members from all over are welcome!
+								</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<script type="text/javascript" src="./public/js/jquery.touchSwipe.min.js"></script>
+	<script src="./public/js/jquery.mobile.custom.min.js"></script> 
+	<script>
+		$('.bgimg-initial').parallax({imageSrc: './public/img/wall_initial.jpg'});
+		</script>
+
+</body>
+</html>	

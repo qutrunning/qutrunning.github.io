@@ -1,0 +1,766 @@
+/*Carousel*/
+.first-block {
+    border-radius: 5px;
+    width: 97%;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    font-family: 'Lato', sans-serif;
+}
+
+/*About*/
+.second-block {
+	border-radius: 0px 0px 15px 15px;
+	width: 85%;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #0C2D56;
+	color: #ffffff; 
+	z-index: 11;
+	font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+/*Events*/
+.third-block {
+  border-radius: 0px 0px 15px 15px;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #0A0A0A;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+  text-align: center;
+	color: #ffffff; 
+	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
+}
+
+/*Timetable*/
+.fourth-block {
+  border-radius: 0px 0px 15px 15px;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #574D3D;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
+}
+
+/*Overview*/
+.fifth-block {
+  border-radius: 0px 0px 15px 15px;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #1B241C;
+  text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
+}
+
+/*Location*/
+.sixth-block {
+  border-radius: 0px 0px 15px 15px;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #578700;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
+}
+
+/*Executives*/
+.seventh-block {
+  border-radius: 0px 0px 15px 15px;
+	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #150F0C;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+  text-align: center;
+	/*opacity: 0;*/
+}
+
+/*Contact*/
+.eighth-block {
+  border-radius: 0px 0px 15px 15px;
+ 	height: 100%;
+ 	margin: 0 auto;
+	position: relative;
+	background-color: #ffffff;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	z-index: 11;
+	font-color: #000000;
+	font-family: 'Lato', sans-serif;
+	/*opacity: 0;*/
+}
+
+.swipe {
+  height: 50px;
+  opacity: 0.5;
+  position: relative;
+}
+.second-block, .fourth-block, .sixth-block, .eighth-block{
+  text-align: center;
+  box-shadow: inset 0px 4px 62px -1px #333333;
+  -webkit-box-shadow: inset 0px 4px 62px -1px #333333;
+  -moz-box-shadow: inset 0px 4px 62px -1px #333333;
+  -o-box-shadow: inset 0px 4px 62px -1px #333333;
+}
+
+.third-block:before, .fourth-block:before, .fifth-block:before, .sixth-block:before, .seventh-block:before {
+  display: inline-block;
+  vertical-align: middle;
+  /* For visualization 
+  background: #808080; width: 5px;
+  */
+}
+
+.fixed {
+	z-index: 10;
+	height: 600px;
+	width: 100%;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  width: 85%;
+  opacity: 0;
+
+}
+
+.centered-overview, .centered-about, .centered-executives, .centered-map {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  width: 85%;
+  opacity: 0;
+
+}
+
+.centered-contact {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0C2D56;
+  width: 85%;
+  opacity: 0;
+}
+
+.centered-carousel {
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.encapsulate {
+	max-width: 85%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+  position: relative;
+  opacity: 1;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-overflow-scrolling: touch;
+  background-size: cover;
+  z-index: 10;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.bgimg-initial {
+  background-image: url(../img/wall_initial.jpg);
+  min-height: 100%;
+  width: 75%;
+  padding-top: 5.1%;
+  padding-bottom: 5.1%;
+}
+
+.bgimg-1 {
+  background-image: url(../img/wall_1.jpg);
+  min-height: 100%;
+}
+
+/*.bgimg-2 {
+  background-image: url(../img/wall_2.jpg);
+  min-height: 100%;
+  width: 75%;
+}*/
+
+.bgimg-3 {
+  background-image: url(../img/wall_3.jpg);
+  min-height: 100%;
+}
+
+.bgimg-4 {
+  background-image: url(../img/wall_4.jpg);
+  min-height: 100%;
+}
+
+/*.bgimg-5 {
+  background-image: url(../img/wall_5.jpg);
+  min-height: 100%;
+  border-radius: 80px 40px 0px 0px;
+  width: 86.25%;
+}*/
+
+.bgimg-6 {
+  background-image: url(../img/wall_6.jpg);
+  min-height: 100%;
+}
+
+.bgimg-7 {
+  background-image: url(../img/wall_7.jpg);
+  min-height: 100%;
+}
+
+.bgimg-8 {
+  background-image: url(../img/wall_8.jpg);
+  min-height: 100%;
+}
+
+/* RESPONSIVE DIVS */
+@media screen and ( max-width: 359px ) { /*for iPhone 5 and 5S*/
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 92.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 94.4%;
+    }
+
+    .navbar-default {
+      width: 90%;
+    }
+}
+
+@media screen and ( min-width: 360px ) { /*for Samsung and Android devices with screen res=1080x1920 and above*/
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 91.95%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    .bgimg-initial {
+      width: 93.2%;
+    }
+
+    .navbar-default {
+        width: 92%;
+    }
+}
+
+@media screen and ( min-width: 375px ) { /*for iPhone 6 and above*/
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 92.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 93%;
+    }
+
+    .navbar-default {
+      width: 92%;
+    }
+}
+
+@media screen and ( min-width: 400px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 92.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 91.4%;
+    }
+
+    .navbar-default {
+      width: 91%;
+    }
+}
+
+
+@media screen and ( min-width: 500px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 92.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 90.2%;
+    }
+
+    .navbar-default {
+        width: 90%;
+    }
+}
+
+@media screen and ( min-width: 600px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 95.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 89.2%;
+    }
+
+    .navbar-default {
+        width: 88.8%;
+    }
+}
+
+@media screen and ( min-width: 700px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 95.8%;
+    }
+
+    .bgimg-initial, .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+      height: 160px;
+      
+    }
+
+    .bgimg-initial {
+      width: 89%;
+    }
+
+    .navbar-default {
+        width: 88.5%;
+    }
+}
+
+@media screen and ( min-width: 800px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 96.5%;
+    }
+
+    .bgimg-initial {
+      width: 88.5%;
+    }
+
+    .navbar-default {
+        width: 88%;
+    }
+}
+
+
+@media screen and ( min-width: 960px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 97%;
+    }
+
+    .bgimg-initial {
+      width: 87.6%;
+    }
+
+    .navbar-default {
+        width: 87.2%;
+    }
+}
+
+@media screen and ( min-width: 1000px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 97%;
+    }
+
+    .bgimg-initial {
+      width: 87.6%;
+    }
+}
+
+@media screen and ( min-width: 1000px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 97%;
+    }
+
+    .bgimg-initial {
+      width: 88%;
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 97.5%;
+    }
+
+    .bgimg-initial {
+      width: 87.2%;
+    }
+
+    .navbar-default {
+      width: 86.8%;
+    }
+}
+
+
+@media screen and ( min-width: 1440px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 97.8%;
+    }
+
+    .bgimg-initial {
+      width: 87%;
+    }
+
+  .navbar-default {
+      width: 86.6%;
+  }
+
+}
+
+@media screen and ( min-width: 1600px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 98%;
+    }
+
+    .bgimg-initial {
+      width: 86.7%;
+    }
+
+    .navbar-default {
+      width: 86.4%;
+    }
+}
+
+@media screen and ( min-width: 1800px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 98.3%;
+    }
+
+    .bgimg-initial {
+      width: 86.6%;
+    }
+
+    .navbar-default {
+      width: 86.3%;
+    }
+
+}
+
+@media screen and ( min-width: 1900px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 98.3%;
+    }
+
+    .bgimg-initial {
+      width: 86.6%;
+    }
+
+    .navbar-default {
+      width: 86.3%;
+    }
+}
+
+
+@media screen and ( min-width: 2000px ) {
+  .fourth-block, .fifth-block, .sixth-block, .seventh-block, .eighth-block{
+      width: 98.7%;
+    }
+
+    .bgimg-initial {
+      width: 86.1%;
+    }
+
+    .navbar-default {
+      width: 85.9%;
+    }
+}
+
+.caption-block {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: #ffffff; 
+	z-index: 11;
+	font-family: 'Lato', sans-serif; 
+ }
+
+.caption {
+    position: absolute;
+    left: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+  	font-family: 'Lato', sans-serif;
+}
+
+.caption span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.race-table {
+	border-color: #0C2D56;
+}
+
+.dots {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.75%;
+  padding-top: 1.75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sponsors {
+	padding-top: 50px;
+}
+
+#map-canvas {
+	height: 700px;
+	width: 100%;
+	display: block;
+}
+
+.color-white {
+	color: #ffffff;
+}
+.color-blue {
+	color: #0C2D56;
+}
+
+.timetable {
+	width: 100%;
+}
+.executives-1 {
+	padding-bottom: 20px;
+}
+
+.executives-2 {
+	padding-bottom: 20px;
+}
+
+body:before {
+  content: " ";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../img/wall.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%
+}
+
+/* Timetable */
+
+th {
+	color: white;
+	background-color: #0C2D56;
+}
+
+td {
+	color: white;
+	background-color: #0C2D56;
+}
+
+.run {
+	background-color: #00B55B;
+}
+.intermediate-run {
+  background-color: #ffffff;
+}
+.workout {
+	background-color: #CF1A02;
+}
+.swim {
+	background-color: #00DFFC;
+}
+.social {
+	background-color: #FF9100;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color: #ffffff;
+    color: #000033;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #ffffff;
+      color: #0C2D56;
+}
+
+a.session-box {
+    color: #0C2D56;
+    text-decoration: underline;
+}
+a.session-box:hover {
+	text-decoration: underline;
+	color: #ff9900;
+}
+
+.img-responsive {
+	display:block;
+    margin:auto;
+}
+
+.dont-break-out {
+
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+
+}
+
+
+
+/* Navbar */
+
+.navbar-default {
+  -webkit-transition: all 0.6s;
+   -moz-transition: all 0.6s;
+  transition: all 0.6s; 
+  transition: background 0.2s, padding 0.2s;
+  opacity: 0.8;
+  background-color: #06182d;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0px;
+  z-index: 99;
+  margin: 0 auto;
+}
+
+.navbar {
+  border: 0px;
+}
+
+.affix {
+  -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+  transition: all 0.8s; 
+  width: 100%;
+  top:0;
+  z-index: 9999;
+}
+
+.affix ~ .container {
+  -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+  transition: all 0.8s;  
+  background-color: #000000 !important;
+  position: relative;
+}	
+
+.affix .navbar-default {
+   background-color: #000000 !important;
+}
+
+.navbar-header {
+  opacity: 0;
+}
+
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #00A4C4;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	-webkit-transition: all 0.6s;
+   -moz-transition: all 0.6s;
+  transition: all 0.6s;
+  color: #000000;
+  background-color: #e7e7e7;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
