@@ -34,6 +34,97 @@
   font-style: normal;
   font-display: block;
 }
+/* poppins-200 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/poppins-v12-latin-200.eot'); /* IE9 Compat Modes */
+  src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'),
+       url('../fonts/poppins-v12-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-200.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-200.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-200italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 200;
+  src: url('../fonts/poppins-v12-latin-200italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins ExtraLight Italic'), local('Poppins-ExtraLightItalic'),
+       url('../fonts/poppins-v12-latin-200italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-200italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-200italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+       url('../fonts/poppins-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v12-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Medium'), local('Poppins-Medium'),
+       url('../fonts/poppins-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v12-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Bold'), local('Poppins-Bold'),
+       url('../fonts/poppins-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/poppins-v12-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+       url('../fonts/poppins-v12-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-800.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-900italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/poppins-v12-latin-900italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Black Italic'), local('Poppins-BlackItalic'),
+       url('../fonts/poppins-v12-latin-900italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v12-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v12-latin-900italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v12-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v12-latin-900italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
 /*----------------------------------------------
 ----------------------GENERAL--------------------
 ------------------------------------------------*/
@@ -44,7 +135,7 @@ body {
 }
 *::selection { 
   background: #d6ecff;
-  color: #3b3b3b;
+  color: #fff;
 }
 
 img {
@@ -107,7 +198,7 @@ hr {
   background-size: cover !important;
   background-color: unset !important;
 }
-.parallax .overlay {
+.parallax-wrapper .overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -127,6 +218,10 @@ hr {
   width: 100%;
   z-index: -100;
 }
+.parallax.before-load {
+  transform: scale(1.1) !important;
+  opacity: 0;
+}
 .parallax {
   background-position: center;
   background-repeat: no-repeat;
@@ -139,7 +234,8 @@ hr {
   transform-style: preserve-3d;
   transform: translateZ(0px) !important;
   width: 100%;
-  transition: height 0.7s ease;
+  opacity: 1;
+  transition: height 0.7s ease, transform 0.7s ease, opacity 0.7s ease;
 }
 
 /*----------------------------------------------
@@ -192,7 +288,7 @@ hr {
 }
 .caption {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 	font-weight: 300;
   /*transition: all 0.4s ease-in-out;*/
 }
@@ -256,19 +352,16 @@ hr {
 .large-img {
   display: block;
   width: auto;
-  overflow: hidden;
   transition: all 0.5s ease;
 }
 .large-img img {
   width: 100%;
-  transition: all 1s ease;
+  transition: all 0.7s ease;
   backface-visibility: hidden;
 }
-.large-img:hover {
-  border-radius: 24px;
-}
 .large-img img:hover {
-  transform: scale(1.1);
+  border-radius: 30px;
+  transform: scale(1.05);
 }
 .about p,
 .social p,
@@ -278,8 +371,8 @@ hr {
 .contact p {
   margin: 0 auto;
   text-align: left;
-  font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+	font-weight: 200;
   font-size: 17px; 
 }
 .about .section-container .left-container {
@@ -320,6 +413,39 @@ hr {
   border-bottom: 2px solid #9b9b9b;
   margin-bottom: 50px;
   color: #fff;
+}
+.social .notice {
+  background: rgba(0,0,0,0.45);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.social .notice .notice-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+.social .notice .warning {
+  width: 100%;
+  overflow: hidden;
+}
+.social .notice .warning span {
+  float: left;
+  color: #d24040;
+  background: #fff;
+  border: 2px solid #d24040;
+  padding: 6px 6px 4px 4px;
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.social .notice .warning span img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 .social p {
   margin-bottom: 10px;
@@ -409,7 +535,7 @@ hr {
   width: 100%;
 }
 dl {
-  margin-top: 124px;
+  margin-top: 103px;
   padding: 10px;
   text-align: left;
   color: #fff;
@@ -437,7 +563,7 @@ dd.price {
   width: 400px;
   opacity: 0;
   z-index: -1;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 15px;
   transition: bottom 0.4s ease, opacity 0.2s ease;
@@ -467,7 +593,7 @@ dd.price {
   z-index: 24;
 }
 .timetable p {
-  font-size: 12px;
+  font-size: 13px;
 }
 .timetable .section-container {
   -webkit-transform: perspective(1px) skewY(2deg) translateZ(0) !important;
@@ -486,7 +612,7 @@ dd.price {
 }
 .table {
   margin-bottom: 0px !important;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 	font-weight: 400;
   font-size: 12px;
 }
@@ -506,6 +632,7 @@ td {
 .table>thead>tr>th {
   text-align: center;
   vertical-align: middle;
+  padding: 12px;
 }
 .table>caption+thead>tr:first-child>td, 
 .table>caption+thead>tr:first-child>th, 
@@ -520,16 +647,16 @@ td {
   overflow: auto;
   transition: 0.2s ease;
 }
-.run-session, .beginner-session {
+.run-session {
   background-color: #43A047;
 }
 .workout-session {
   background-color: #f44336;
 }
-.social-session {
+.speed-session {
   background-color: #FF9800;
 }
-.parkrun-session {
+.stairs-session {
   background-color: #82c9cf;
 }
 a.session-box {
@@ -556,12 +683,12 @@ a.session-box:hover {
 .info-icon picture img {
   width: 100%;
 }
-.parkrun-info, .run-info, .beginner-info,
-.bootcamp-info, .social-info {
+.speed-info, .run-info, .stairs-info,
+.bootcamp-info {
   opacity: 0;
   position: absolute;
   background: #fff;
-  top: 440px;
+  top: 240px;
   left: 0;
   padding: 10px 10px 10px 0px;
   border: 1px solid #acacac;
@@ -569,12 +696,12 @@ a.session-box:hover {
   max-width: 520px;
   /*z-index: -1;*/
 }
-.parkrun-info p, .run-info p, .beginner-info p,
-.bootcamp-info p, .social-info p {
+.speed-info p, .run-info p, 
+.stairs-info p, .bootcamp-info p {
   width: 90%;
   font-size: 15px;
   margin-top: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
@@ -601,7 +728,7 @@ a.session-box:hover {
   margin-bottom: 0;
 }
 .executives p b {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 .executives .text-container {
@@ -745,7 +872,7 @@ a.session-box:hover {
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
   box-shadow: unset;
-  transition: background 0.4s ease, color 0.2s ease, opacity 0.8s ease;
+  transition: background 0.4s ease, color 0.2s ease, opacity 0.8s ease !important;
   padding-left: 35px;
 }
 .mobile {
@@ -936,10 +1063,6 @@ a.session-box:hover {
   .contact {
     margin-bottom: -100px;
   }
-  .parkrun-info, .run-info, .beginner-info,
-  .bootcamp-info, .social-info {
-    top: 360px;
-  }
 }
 @media only screen and (max-width: 991px) {
   .main {
@@ -974,7 +1097,7 @@ a.session-box:hover {
     font-size: 24px;
   }
   dl {
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 12px;
   }
   .membership-card .logo-img {
@@ -1237,7 +1360,10 @@ a.session-box:hover {
     bottom: 69px;
   }
   dl {
-    margin-top: 100px;
+    margin-top: 79px;
     font-size: 14px;
+  }
+  .speed-info, .run-info, .stairs-info, .bootcamp-info {
+    top: 226px;
   }
 }

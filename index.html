@@ -22,7 +22,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:800i,900i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-minimal.min.css" integrity="sha256-6JGNgkzJ/plvOfsg/ENvu2BYcOWSf6vxVc9nBrULVR4=" crossorigin="anonymous" />
-	<link href="./public/css/style.css?v=2.2" rel="stylesheet">
+	<link href="./public/css/style.css?v=2.3" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -87,9 +87,9 @@
 		</div>
 	</section>
 	<div class="parallax-wrapper">
-		<div class="parallax" data-parallax-image="./public/img/background.jpg">
-			<div class="overlay">
-			</div>
+		<div class="parallax before-load" data-parallax-image="./public/img/background.jpg">
+		</div>
+		<div class="overlay">
 		</div>
 	</div>
 	<section class="about" id="about">
@@ -130,6 +130,17 @@
 				</header>
 				<hr>
 				<div class="text-container">
+					<div class="notice">
+						<div class="warning">
+							<span><img src="./public/img/warning.png">COVID-19</span>
+						</div>
+						<p class="notice-text">
+							Due to the ongoing pandemic and restrictions surrounding social distancing, QUT Running has temporarily paused social events following runs. 
+						</p>
+						<p class="notice-text">
+							We hope that these will resume shortly as we monitor government guidelines and updates closely.
+						</p>
+					</div>
 					<p>
 						Our club has a big social aspect. Following Monday's session, we unwind with dinner or drinks at a venue located within the city. This is a great way to meet new friends thanks to a relaxed and friendly atmosphere. After dinner sometimes we kick on at Music City for karaoke or head to the Down Under bar. On Monday's Down Under Bar host games called Bar Wars which is always massive fun. Every few weeks we spice things up by booking out a couple of lanes at Strike Bowling and playing laser tag, or having pizza and drinks on the lawn at South Bank.
 					</p>
@@ -161,11 +172,11 @@
 						<dl>
 							<dt>1 YEAR MEMBERSHIP</dt>
 							<dd>
-								Expiry 01/2021
+								Expiry 06/2021
 							</dd>
-							<!-- <dd class="price">
+							<dd class="price">
 								$15.00
-							</dd> -->
+							</dd>
 						</dl>
 						<div class="logo-img">
 							<picture>
@@ -175,7 +186,7 @@
 					</div>
 					<div class="membership-info">
 						<p>
-							Provides access to all sessions and events for the 2020 year!
+							Provides access to all sessions and events for one year!
 						</p>
 					</div>
 				</a>
@@ -200,81 +211,38 @@
 								<th>Wednesday</th>
 								<th>Thursday</th>
 								<th>Friday</th>
-								<th>Saturday</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th scope="row">7:00 - 8:00am</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>										
-								<td class="parkrun-session">
-									<a href="#" class="session-box">Parkrun</a>
-								</td>
-							</tr>
-							<tr>
 								<th scope="row">4:30 - 5:30pm</th>
 								<td class="run-session">
-									<a href="#" class="session-box">Run</a>
+									<a href="#" class="session-box">Social Run</a>
 								</td>
-								<td class="run-session">
-									<a href="#" class="session-box">Run</a>
+								<td class="speed-session">
+									<a href="#" class="session-box">Speed/Intervals Run</a>
 								</td>										
-								<td class="run-session">
-									<a href="#" class="session-box">Run</a>
-								</td>	
-								<td></td>																
-								<td></td>																
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">5pm - 6pm</th>
-								<td></td>
-								<td></td>
-								<td></td>
 								<td class="workout-session">
-									<a href="#" class="session-box" >Boot Camp</a>
-								</td>
-								<td></td>
-								<td></td>
-							</tr>
-							
-							<tr>
-								<th scope="row">6pm-7pm</th>			
-								<td></td>
-								<td></td>									
-								<td></td>
-								<td class="beginner-session">
-									<a href="#" class="session-box">Run</a>
+									<a href="#" class="session-box">Bootcamp</a>
 								</td>	
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<th scope="row">Late</th>
-								<td class="social-session">
-									<a href="#" class="session-box">QUT Social</a>
-								</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="run-session">
+									<a href="#" class="session-box">Social Run</a>
+								</td>																
+								<td class="stairs-session">
+									<a href="#" class="session-box">Hills/Stairs Run</a>
+								</td>																
 							</tr>
 						</tbody>
 					</table>						
 				</div>
-				<div class="parkrun-info">
+				<div class="speed-info">
 					<div class="info-icon">
 						<picture>
 							<img src="./public/img/icons/info.png" alt="Information">
 						</picture>
 					</div>
 					<p>
-						Free timed 5km run bright and early in the morning at Southbank. Supervised by Parkrun community. Message us on Facebook for more info!
+						Continuous interval and speed repetitions with paces alternating between intensity and recovery. Great way to improve your level of fitness! 
 					</p>
 				</div>
 				<div class="run-info">
@@ -284,17 +252,7 @@
 						</picture>
 					</div>
 					<p>
-						All running levels welcome. Mixture of interval exercises throughout the Botanic Garden. Improving agility, acceleration, endurance and speed. Great opportunity to meet fellow runners. Supervised by the QUT Running Exec Team.
-					</p>
-				</div>
-				<div class="beginner-info">
-					<div class="info-icon">
-						<picture>
-							<img src="./public/img/icons/info.png" alt="Information">
-						</picture>
-					</div>
-					<p>
-						All running levels welcome. Casual session through Botanic Garden or along the Brisbane River.
+						All running levels welcome. Mixture of interval exercises throughout the Botanic Garden. Improving agility, acceleration, endurance and speed. Great opportunity to meet fellow runners!
 					</p>
 				</div>
 				<div class="bootcamp-info">
@@ -304,17 +262,17 @@
 						</picture>
 					</div>
 					<p>
-						Improve stamina, stability and strength. Various exercises for all levels.
+						Improve stamina, stability and strength. Various exercises for all levels!
 					</p>
 				</div>
-				<div class="social-info">
+				<div class="stairs-info">
 					<div class="info-icon">
 						<picture>
 							<img src="./public/img/icons/info.png" alt="Information">
 						</picture>
 					</div>
 					<p>
-						Everyone welcome. A relaxed, low-key way to meet people outside the sessions. We go to a variety of venues so you won’t get bored! We leave after the running session is complete. Non-runners, friends and guests are encouraged to attend!
+						Resistance training through incline running on hills or stairs around the Botanic Gardens. Helps build and strengthen important calf, quad, hamstring and glute muscles! 
 					</p>
 				</div>
 				<p>Tap or hover over a session to read more about it.</p>
@@ -339,21 +297,21 @@
 							<img class="img-cube" src="./public/img/executives/cooper.jpg" alt="President">
 						</div>
 						<p><b>President</b><br>
-						Cooper Redhead</p>
+						Cooper</p>
 			        </div>
 			        <div class="executive-member">
 						<div class="padding-container">
 							<img class="img-cube" src="./public/img/executives/cailum.jpg" alt="Vice President">
 						</div>
 						<p><b>Vice President</b><br>
-						Cailum Roberts</p>							
+						Cailum</p>							
 			        </div>
 			        <div class="executive-member">
 						<div class="padding-container">
 							<img class="img-cube" src="./public/img/executives/phedra.jpg" alt="Treasurer">
 						</div>
 						<p><b>Treasurer</b><br>
-						Phedra Chew</p>							
+						Phedra</p>							
 					</div>
 				</div>
 				<div class="executive-row">
@@ -362,7 +320,7 @@
 							<img class="img-cube" src="./public/img/executives/andrew.jpg" alt="Bootcamp Supervisor">
 						</div>
 						<p><b>Bootcamp Supervisor</b><br>
-						Andrew Crawshaw</p>
+						Andrew</p>
 					</div>
 					<div class="executive-member">
 						<div class="padding-container">
@@ -376,7 +334,7 @@
 							<img class="img-cube" src="./public/img/executives/tim.jpg" alt="IT">
 						</div>
 						<p><b>IT</b><br>
-						Tim Jones</p>
+						Tim</p>
 					</div>					
 				</div>
 			</div>

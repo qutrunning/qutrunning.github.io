@@ -1,5 +1,6 @@
 Pace.restart();
 Pace.on("done", function(){
+  $(".parallax").removeClass('before-load');
   setTimeout(function(){
     $(".navbar-default").css('opacity', '1');
   },200);
@@ -50,12 +51,12 @@ function bindVelocity(){
   });
 }
 function sessionInfoBoxes(){
-  $(".parkrun-session").hover(
+  $(".speed-session").hover(
     function() {
-      $(".parkrun-info").css("opacity", "1");
+      $(".speed-info").css("opacity", "1");
     },
     function() {
-      $(".parkrun-info").css("opacity", "0");
+      $(".speed-info").css("opacity", "0");
     }
   );
   $(".run-session").hover(
@@ -66,12 +67,12 @@ function sessionInfoBoxes(){
       $(".run-info").css("opacity", "0");
     }
   );
-  $(".beginner-session").hover(
+  $(".stairs-session").hover(
     function() {
-      $(".beginner-info").css("opacity", "1");
+      $(".stairs-info").css("opacity", "1");
     },
     function() {
-      $(".beginner-info").css("opacity", "0");
+      $(".stairs-info").css("opacity", "0");
     }
   );
   $(".workout-session").hover(
@@ -80,14 +81,6 @@ function sessionInfoBoxes(){
     },
     function() {
       $(".bootcamp-info").css("opacity", "0");
-    }
-  );
-  $(".social-session").hover(
-    function() {
-      $(".social-info").css("opacity", "1");
-    },
-    function() {
-      $(".social-info").css("opacity", "0");
     }
   );
 }
