@@ -109,7 +109,6 @@ function addDarkNav(){
   // $(".navbar-nav li a").css("color", "rgb(155, 204, 255)");
   $(".navbar-collapse").css("background-color", "rgba(0, 14, 53, 0.87)");
   $(".navbar-nav li a:hover ").css("color", "white");
-  $(".navbar-nav li a:focus ").css("color", "rgb(205, 230, 255)");
 }
 function addDarkNavDesktop(){
   $(".navbar-default").css("background", "rgba(0, 14, 53, 0.93)");
@@ -122,7 +121,6 @@ function addTransparentNav(){
   $(".navbar-default").css("box-shadow", "none");
   $(".navbar-collapse").css("background-color", "none");
   // $(".navbar-nav li a:hover ").css("color", "#6776d3");
-  $(".navbar-nav li a:focus ").css("color", "white");
 }
 function animateNavbar(){
   //If on mobile
