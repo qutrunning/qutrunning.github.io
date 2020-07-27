@@ -245,5 +245,10 @@ $(document).ready(function(){
   $('.navbar-toggle').click(function(){
     $(this).toggleClass('open');
   });
+  $('.notice').css('height', $('.notice').outerHeight() + 'px');
+  $('.close_message').click(function(){
+    $('.notice').css('height', '0px');
+    $('.notice').css('padding', '0px');
+  });
   $(".header-container").css("height", ($(window).height() - 110) + "px")
 });

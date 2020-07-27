@@ -419,6 +419,9 @@ hr {
   padding: 20px;
   border-radius: 6px;
   margin-bottom: 15px;
+  position: relative;
+  transition: all 0.7s ease;
+  overflow: hidden;
 }
 .social .notice .notice-text {
   font-family: 'Poppins', sans-serif;
@@ -428,6 +431,20 @@ hr {
 .social .notice .warning {
   width: 100%;
   overflow: hidden;
+}
+.social .notice .close_message {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.social .notice.hide {
+  height: 0px !important;
+}
+.social .notice .close_message img {
+  width: 100%;
 }
 .social .notice .warning span {
   float: left;
@@ -1353,10 +1370,10 @@ a.session-box:hover {
   }
   .membership-card {
     height: 198px;
-    width: 345px;
+    width: 310px;
   }
   .membership-card .logo-img {
-    left: 287px;
+    left: 254px;
     bottom: 69px;
   }
   dl {
