@@ -248,7 +248,9 @@ $(document).ready(function(){
   $('.notice').css('height', $('.notice').outerHeight() + 'px');
   $('.close_message').click(function(){
     $('.notice').css('height', '0px');
-    $('.notice').css('padding', '0px');
+    setTimeout(function(){
+      $('.notice').css('padding', '0px');
+    },300);
   });
   $(".header-container").css("height", ($(window).height() - 110) + "px")
 });
