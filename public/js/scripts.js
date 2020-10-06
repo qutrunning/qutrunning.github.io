@@ -1,21 +1,21 @@
 Pace.restart();
 Pace.on("done", function(){
-  $(".parallax").removeClass('before-load');
   setTimeout(function(){
-    $(".navbar-default").css('opacity', '1');
-  },200);
+    $(".parallax").removeClass('before-load');
+  },400);
   setTimeout(function(){
-    $(".desktopFade").css('opacity', '1');
-  },1000);
+    $(".navbar-default").removeClass('show_none');
+  },600);
   setTimeout(function(){
-    $(".firstFade").css('opacity', '1');
-  },1000);
+    $(".desktopFade").removeClass('show_none');
+    $(".firstFade").removeClass('show_none');
+  },1400);
   setTimeout(function(){
-    $(".secondFade").css('opacity', '1');
-  },1700);
+    $(".secondFade").removeClass('show_none');
+  },2100);
   setTimeout(function(){
-    $(".thirdFade").css('opacity', '1');
-  },2600);
+    $(".thirdFade").removeClass('show_none');
+  },3000);
 });
 
 function bindVelocity(){

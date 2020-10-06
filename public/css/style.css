@@ -275,11 +275,21 @@ hr {
   padding-top: 10vh;
   overflow: hidden;
 }
+.navbar-default.show_none,
+.desktopFade.show_none,
+.firstFade.show_none,
+.secondFade.show_none,
+.thirdFade.show_none {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+.navbar-default,
 .desktopFade,
 .firstFade,
 .secondFade,
 .thirdFade {
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: opacity 1s ease;
 }
 .main .header-container header .titleAnim .mobileTitle {
@@ -884,7 +894,7 @@ a.session-box:hover {
   justify-content: flex-start;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   -webkit-box-shadow: unset;
   -moz-box-shadow: unset;
@@ -1234,8 +1244,21 @@ a.session-box:hover {
   .bootcamp-info p, .social-info p {
     font-size: 14px;
   }
+  .membership, .timetable, .executives, .contact {
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .membership, .timetable {
+    width: 100%;
+    min-height: auto;
+    border-bottom: 2px solid #9b9b9b;
+  }
+  .about, .social, .membership, .timetable, .executives, .contact {
+    margin-top: -50px;
+  }
 }
-
 @media only screen and (max-width: 479px) {
   .executives .text-container .executive-member {
     width: 50%;
@@ -1382,5 +1405,27 @@ a.session-box:hover {
   }
   .speed-info, .run-info, .stairs-info, .bootcamp-info {
     top: 226px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .membership-card {
+    height: 155px;
+    width: 100%;
+  }
+  .membership-card h2 {
+    font-size: 19px;
+  }
+  dt, dd {
+    margin-bottom: 1px;
+  }
+  dl {
+    margin-top: 43px;
+  }
+  .membership-card .logo-img {
+    left: 193px;
+  }
+  .membership-card .logo-img {
+    right: 0px;
+    left: unset;
   }
 }
