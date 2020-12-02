@@ -245,7 +245,7 @@ $(document).ready(function(){
   $('.navbar-toggle').click(function(){
     $(this).toggleClass('open');
   });
-  $('.notice').css('height', $('.notice').outerHeight() + 'px');
+  $('.notice').css('height', ($('.notice').outerHeight() + 5) + 'px');
   $('.close_message').click(function(){
     $('.notice').css('height', '0px');
     setTimeout(function(){
