@@ -239,9 +239,6 @@ $(document).ready(function(){
   $( ".info-icon" ).each(function( index ) {
     $(this).css('height', $(this).next().height() + 'px');
   });
-  new universalParallax().init({
-      speed: 2.0
-    });
   $('.navbar-toggle').click(function(){
     $(this).toggleClass('open');
   });
@@ -252,5 +249,10 @@ $(document).ready(function(){
       $('.notice').css('padding', '0px');
     },300);
   });
+  setTimeout(function(){
+    new universalParallax().init({
+      speed: 2.0
+    });
+  }, 500);
   $(".header-container").css("height", ($(window).height() - 110) + "px")
 });
