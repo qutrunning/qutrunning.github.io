@@ -249,10 +249,8 @@ $(document).ready(function(){
       $('.notice').css('padding', '0px');
     },300);
   });
-  setTimeout(function(){
-    new universalParallax().init({
-      speed: 2.0
-    });
-  }, 500);
+  new universalParallax().init({
+    speed: 2.0
+  });
   $(".header-container").css("height", ($(window).height() - 110) + "px")
 });
