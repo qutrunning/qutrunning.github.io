@@ -20,7 +20,6 @@ Pace.on("done", function(){
     $(".fourthFade").removeClass('show_none');
   },3500);
 });
-
 function bindVelocity(){
   // bind click event to all internal page anchors
   $('a[href*="#"]').on('click', function (e) {
@@ -156,6 +155,9 @@ function fadeCaptionAndHeader(){
     $('.caption').css('margin-top', $(document).scrollTop() * 0.2);
   }
   $('.caption').css({
+    'opacity': ((height - $(document).scrollTop()) / (height))
+  });
+  $('.fourthFade').css({
     'opacity': ((height - $(document).scrollTop()) / (height))
   });
   // $('.desktopTitle').css('margin-top', $(document).scrollTop() * 0.5);

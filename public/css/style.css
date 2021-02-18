@@ -283,7 +283,7 @@ hr {
   z-index: 999;
   width: 35px;
   transform: translate(-50%);
-  transition: bottom 0.5s ease, opacity 1s ease;
+  transition: bottom 0.5s ease, opacity 0.5s ease;
   cursor: pointer;
 }
 .arrow_down:hover {
