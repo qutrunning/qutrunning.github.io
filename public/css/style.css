@@ -276,11 +276,25 @@ hr {
   padding-top: 10vh;
   overflow: hidden;
 }
+.arrow_down {
+  position: absolute;
+  left: 50%;
+  bottom: 110px;
+  z-index: 999;
+  width: 35px;
+  transform: translate(-50%);
+  transition: bottom 0.5s ease, opacity 1s ease;
+  cursor: pointer;
+}
+.arrow_down:hover {
+  bottom: 100px;
+}
 .navbar-default.show_none,
 .desktopFade.show_none,
 .firstFade.show_none,
 .secondFade.show_none,
-.thirdFade.show_none {
+.thirdFade.show_none,
+.fourthFade.show_none {
   opacity: 0 !important;
   visibility: hidden;
 }

@@ -16,6 +16,9 @@ Pace.on("done", function(){
   setTimeout(function(){
     $(".thirdFade").removeClass('show_none');
   },3000);
+  setTimeout(function(){
+    $(".fourthFade").removeClass('show_none');
+  },3500);
 });
 
 function bindVelocity(){
@@ -224,12 +227,18 @@ function createScrollMagicTitleObjects(){
     
   });
 }
+function createArrowDown(){
+  $('.arrow_down').click(function(){
+    $('#about').velocity("scroll", { duration: 1000, offset: -85 });
+  });
+}
 $(document).ready(function(){
   bindVelocity();
   createScrollMagicTitleObjects();
   animateNavbar();
   fadeCaptionAndHeader();
   sessionInfoBoxes();
+  createArrowDown();
   $(window).scroll(function(){
     animateNavbar();
     fadeCaptionAndHeader();
