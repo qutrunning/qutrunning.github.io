@@ -279,10 +279,10 @@ hr {
 .arrow_down {
   position: absolute;
   left: 50%;
-  bottom: 110px;
+  top: 80vh;
   z-index: 999;
   width: 35px;
-  transform: translate(-50%);
+  transform: translate(-50%, 0%);
   transition: bottom 0.5s ease, opacity 0.5s ease;
   cursor: pointer;
 }
