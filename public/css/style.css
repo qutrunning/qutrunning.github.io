@@ -280,7 +280,7 @@ hr {
   position: absolute;
   left: 50%;
   top: 80vh;
-  z-index: 999;
+  z-index: 7;
   width: 35px;
   transform: translate(-50%, 0%);
   transition: bottom 0.5s ease, opacity 0.5s ease;
@@ -998,7 +998,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li,
 .navbar-default .navbar-nav > li > a {
-  font-size: 12px;
+  font-size: 20px;
   display: inherit;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -1186,6 +1186,7 @@ a.session-box:hover {
   }
   .navbar-nav {
     height: 100vh;
+    padding-top: 50px;
   }
   .navbar-nav li {
     float: left;
