@@ -689,17 +689,20 @@ td {
   overflow: auto;
   transition: 0.2s ease;
 }
-.run-session {
+.lsd-session {
   background-color: #43A047;
 }
-.workout-session {
+.bootcamp-session {
   background-color: #f44336;
 }
-.speed-session {
+.hills-session {
   background-color: #FF9800;
 }
-.stairs-session {
+.interval-session {
   background-color: #82c9cf;
+}
+.recovery-session {
+  background-color: #323084;
 }
 a.session-box {
     color: #fff;
@@ -725,8 +728,8 @@ a.session-box:hover {
 .info-icon picture img {
   width: 100%;
 }
-.speed-info, .run-info, .stairs-info,
-.bootcamp-info {
+.lsd-info, .bootcamp-info, .hill-info,
+.interval-info, .recovery-info {
   opacity: 0;
   position: absolute;
   background: #fff;
@@ -738,8 +741,8 @@ a.session-box:hover {
   max-width: 520px;
   /*z-index: -1;*/
 }
-.speed-info p, .run-info p, 
-.stairs-info p, .bootcamp-info p {
+.lsd-info p, .bootcamp-info p, 
+.hill-info p, .interval-info p,  .recovery-info p {
   width: 90%;
   font-size: 15px;
   margin-top: 0;
@@ -998,7 +1001,7 @@ a.session-box:hover {
 }
 .navbar-default .navbar-nav > li,
 .navbar-default .navbar-nav > li > a {
-  font-size: 20px;
+  font-size: 14px;
   display: inherit;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -1231,6 +1234,7 @@ a.session-box:hover {
   }
   .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > li > a {
     padding-bottom: 0px; 
+    font-size: 20px;
   }
   .navbar-nav {
     margin-left: -6px;

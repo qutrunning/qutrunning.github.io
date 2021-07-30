@@ -53,36 +53,44 @@ function bindVelocity(){
   });
 }
 function sessionInfoBoxes(){
-  $(".speed-session").hover(
+  $(".lsd-session").hover(
     function() {
-      $(".speed-info").css("opacity", "1");
+      $(".lsd-info").css("opacity", "1");
     },
     function() {
-      $(".speed-info").css("opacity", "0");
+      $(".lsd-info").css("opacity", "0");
     }
   );
-  $(".run-session").hover(
-    function() {
-      $(".run-info").css("opacity", "1");
-    },
-    function() {
-      $(".run-info").css("opacity", "0");
-    }
-  );
-  $(".stairs-session").hover(
-    function() {
-      $(".stairs-info").css("opacity", "1");
-    },
-    function() {
-      $(".stairs-info").css("opacity", "0");
-    }
-  );
-  $(".workout-session").hover(
+  $(".bootcamp-session").hover(
     function() {
       $(".bootcamp-info").css("opacity", "1");
     },
     function() {
       $(".bootcamp-info").css("opacity", "0");
+    }
+  );
+  $(".hill-session").hover(
+    function() {
+      $(".hill-info").css("opacity", "1");
+    },
+    function() {
+      $(".hill-info").css("opacity", "0");
+    }
+  );
+  $(".interval-session").hover(
+    function() {
+      $(".interval-info").css("opacity", "1");
+    },
+    function() {
+      $(".interval-info").css("opacity", "0");
+    }
+  );
+  $(".recovery-session").hover(
+    function() {
+      $(".recovery-info").css("opacity", "1");
+    },
+    function() {
+      $(".recovery-info").css("opacity", "0");
     }
   );
 }
